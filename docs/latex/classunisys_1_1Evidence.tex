@@ -1,0 +1,181 @@
+\hypertarget{classunisys_1_1Evidence}{\section{unisys\-:\-:Evidence Class Reference}
+\label{classunisys_1_1Evidence}\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}}
+}
+
+
+The C++ representative class for evidence data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Evidence\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Evidence__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Evidence\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Evidence__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Evidence_ae8c055dcc1043da7a655487931f67864}{Evidence} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Evidence_ab349472863abf438f40c5f2f089281ac}{Evidence} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Evidence_a6b74b64b25249e38e9b2524c8882adca}{set\-Experiment\-Method} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Evidence_a10bdc5b89865dea993dde0782270c836}{set\-Experiment\-Method} (std\-::string const \&onto\-Id)
+\item 
+void \hyperlink{classunisys_1_1Evidence_a9bc4f40a58aae2b0fafc73ed0d647d5a}{set\-Confidence} (\hyperlink{classunisys_1_1Score}{Score} \&score)
+\item 
+void \hyperlink{classunisys_1_1Evidence_a7cbfcbc96a2364d268012c09df1e6eca}{set\-Biological\-Source} (\hyperlink{classunisys_1_1BioSource}{Bio\-Source} \&biological\-Source)
+\item 
+void \hyperlink{classunisys_1_1Evidence_a3d9c295abcdaf773621427536d742b8b}{set\-Evidence\-Source} (\hyperlink{classunisys_1_1Xref}{Xref} \&evidence\-Source)
+\item 
+void \hyperlink{classunisys_1_1Evidence_a5bf3367415dbe2e37dfcff827101c65d}{set\-Evidence\-Source} (std\-::string const \&evidence\-Source\-Id, std\-::string const \&detail=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1Evidence_ac3ecf7240bc24d235f2ee1226e9be83e}{insert\-Publication\-Support} (\hyperlink{classunisys_1_1Xref}{Xref} \&publication\-Support)
+\item 
+void \hyperlink{classunisys_1_1Evidence_a16f5abbb62d6231681b74244d8060cb8}{insert\-Publication\-Support} (std\-::string const \&publication\-Support\-Id, std\-::string const \&detail=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Evidence_a8ce7e3da30295b98aa095031ef8491bc}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for evidence data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            experimentMethod: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            score: <ScoreBSONStructure>,
+            biologicalSource: <BioSourceBSONStructure>,
+            evidenceSource: <XRefBSONStructure>,
+            publicationSupport: {<XRefBSONStructure>, <XRefBSONStructure>, ...}
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Evidence_ae8c055dcc1043da7a655487931f67864}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!Evidence@{Evidence}}
+\index{Evidence@{Evidence}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{Evidence}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Evidence\-::\-Evidence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_ae8c055dcc1043da7a655487931f67864}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Evidence_ab349472863abf438f40c5f2f089281ac}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!Evidence@{Evidence}}
+\index{Evidence@{Evidence}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{Evidence}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Evidence\-::\-Evidence (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_ab349472863abf438f40c5f2f089281ac}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Evidence_a8ce7e3da30295b98aa095031ef8491bc}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Evidence_a8ce7e3da30295b98aa095031ef8491bc}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1Evidence_ac3ecf7240bc24d235f2ee1226e9be83e}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!insert\-Publication\-Support@{insert\-Publication\-Support}}
+\index{insert\-Publication\-Support@{insert\-Publication\-Support}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{insert\-Publication\-Support}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::insert\-Publication\-Support (
+\begin{DoxyParamCaption}
+\item[{{\bf Xref} \&}]{publication\-Support}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_ac3ecf7240bc24d235f2ee1226e9be83e}
+\hypertarget{classunisys_1_1Evidence_a16f5abbb62d6231681b74244d8060cb8}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!insert\-Publication\-Support@{insert\-Publication\-Support}}
+\index{insert\-Publication\-Support@{insert\-Publication\-Support}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{insert\-Publication\-Support}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::insert\-Publication\-Support (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{publication\-Support\-Id, }
+\item[{std\-::string const \&}]{detail = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a16f5abbb62d6231681b74244d8060cb8}
+\hypertarget{classunisys_1_1Evidence_a7cbfcbc96a2364d268012c09df1e6eca}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!set\-Biological\-Source@{set\-Biological\-Source}}
+\index{set\-Biological\-Source@{set\-Biological\-Source}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{set\-Biological\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::set\-Biological\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Bio\-Source} \&}]{biological\-Source}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a7cbfcbc96a2364d268012c09df1e6eca}
+\hypertarget{classunisys_1_1Evidence_a9bc4f40a58aae2b0fafc73ed0d647d5a}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!set\-Confidence@{set\-Confidence}}
+\index{set\-Confidence@{set\-Confidence}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{set\-Confidence}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::set\-Confidence (
+\begin{DoxyParamCaption}
+\item[{{\bf Score} \&}]{score}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a9bc4f40a58aae2b0fafc73ed0d647d5a}
+\hypertarget{classunisys_1_1Evidence_a3d9c295abcdaf773621427536d742b8b}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!set\-Evidence\-Source@{set\-Evidence\-Source}}
+\index{set\-Evidence\-Source@{set\-Evidence\-Source}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{set\-Evidence\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::set\-Evidence\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Xref} \&}]{evidence\-Source}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a3d9c295abcdaf773621427536d742b8b}
+\hypertarget{classunisys_1_1Evidence_a5bf3367415dbe2e37dfcff827101c65d}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!set\-Evidence\-Source@{set\-Evidence\-Source}}
+\index{set\-Evidence\-Source@{set\-Evidence\-Source}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{set\-Evidence\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::set\-Evidence\-Source (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{evidence\-Source\-Id, }
+\item[{std\-::string const \&}]{detail = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a5bf3367415dbe2e37dfcff827101c65d}
+\hypertarget{classunisys_1_1Evidence_a6b74b64b25249e38e9b2524c8882adca}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!set\-Experiment\-Method@{set\-Experiment\-Method}}
+\index{set\-Experiment\-Method@{set\-Experiment\-Method}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{set\-Experiment\-Method}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::set\-Experiment\-Method (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a6b74b64b25249e38e9b2524c8882adca}
+\hypertarget{classunisys_1_1Evidence_a10bdc5b89865dea993dde0782270c836}{\index{unisys\-::\-Evidence@{unisys\-::\-Evidence}!set\-Experiment\-Method@{set\-Experiment\-Method}}
+\index{set\-Experiment\-Method@{set\-Experiment\-Method}!unisys::Evidence@{unisys\-::\-Evidence}}
+\subsubsection[{set\-Experiment\-Method}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Evidence\-::set\-Experiment\-Method (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Evidence_a10bdc5b89865dea993dde0782270c836}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+\hypertarget{classunisys_1_1Score}{\section{unisys\-:\-:Score Class Reference}
+\label{classunisys_1_1Score}\index{unisys\-::\-Score@{unisys\-::\-Score}}
+}
+
+
+The C++ representative class for \hyperlink{classunisys_1_1Score}{Score} class in data structure.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Score\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Score__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Score\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Score__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Score_acb7e200a5e4adc5d740eb37fbd28657f}{Score} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Score_aceecffa613f9aa5f30e28d06d9723011}{Score} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Score_a18b81a6ebf1e0f892bf332e1fba46abf}{set\-Score\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Score_a161dff3485bb432219ed2e2968989a1f}{set\-Value} (double value)
+\item 
+void \hyperlink{classunisys_1_1Score_a395e9276ac7a5219eb449f8119603af9}{set\-Unit} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Score_a3fece7415530d4b577fffcb284535c05}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for \hyperlink{classunisys_1_1Score}{Score} class in data structure. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>, 
+            scoreType: {$ref: <collname>, $id: <idvalue>}, #format by idref class 
+            value: <number>, 
+            unit: {$ref: <collname>, $id: <idvalue>} #format by idref class 
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Score_acb7e200a5e4adc5d740eb37fbd28657f}{\index{unisys\-::\-Score@{unisys\-::\-Score}!Score@{Score}}
+\index{Score@{Score}!unisys::Score@{unisys\-::\-Score}}
+\subsubsection[{Score}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Score\-::\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Score_acb7e200a5e4adc5d740eb37fbd28657f}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Score_aceecffa613f9aa5f30e28d06d9723011}{\index{unisys\-::\-Score@{unisys\-::\-Score}!Score@{Score}}
+\index{Score@{Score}!unisys::Score@{unisys\-::\-Score}}
+\subsubsection[{Score}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Score\-::\-Score (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Score_aceecffa613f9aa5f30e28d06d9723011}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Score_a3fece7415530d4b577fffcb284535c05}{\index{unisys\-::\-Score@{unisys\-::\-Score}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Score@{unisys\-::\-Score}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Score\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Score_a3fece7415530d4b577fffcb284535c05}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1Score_a18b81a6ebf1e0f892bf332e1fba46abf}{\index{unisys\-::\-Score@{unisys\-::\-Score}!set\-Score\-Type@{set\-Score\-Type}}
+\index{set\-Score\-Type@{set\-Score\-Type}!unisys::Score@{unisys\-::\-Score}}
+\subsubsection[{set\-Score\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Score\-::set\-Score\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Score_a18b81a6ebf1e0f892bf332e1fba46abf}
+\hypertarget{classunisys_1_1Score_a395e9276ac7a5219eb449f8119603af9}{\index{unisys\-::\-Score@{unisys\-::\-Score}!set\-Unit@{set\-Unit}}
+\index{set\-Unit@{set\-Unit}!unisys::Score@{unisys\-::\-Score}}
+\subsubsection[{set\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Score\-::set\-Unit (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Score_a395e9276ac7a5219eb449f8119603af9}
+\hypertarget{classunisys_1_1Score_a161dff3485bb432219ed2e2968989a1f}{\index{unisys\-::\-Score@{unisys\-::\-Score}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!unisys::Score@{unisys\-::\-Score}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Score\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Score_a161dff3485bb432219ed2e2968989a1f}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

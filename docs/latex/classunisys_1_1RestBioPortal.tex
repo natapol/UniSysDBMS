@@ -1,0 +1,178 @@
+\hypertarget{classunisys_1_1RestBioPortal}{\section{unisys\-:\-:Rest\-Bio\-Portal Class Reference}
+\label{classunisys_1_1RestBioPortal}\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}}
+}
+
+
+The main class of Bio\-Portal \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service library.  
+
+
+
+
+{\ttfamily \#include $<$rest\-Bio\-Portal.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Rest\-Bio\-Portal\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classunisys_1_1RestBioPortal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Rest\-Bio\-Portal\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1RestBioPortal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1RestBioPortal_a149c09fcddb96ef4cc6ae4be1396613b}{Rest\-Bio\-Portal} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1RestBioPortal_a069c59631f0007cf347cc473e38a4c85}{list\-All\-Lastest\-Ontologies} (std\-::string const \&apikey)
+\begin{DoxyCompactList}\small\item\em List all of the lastest ontology classes and thier details. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1RestBioPortal_a23181747eee2610741b8388efe8c1adb}{get\-Specific\-Ontology} (std\-::string const \&apikey, std\-::string const \&ontology\-Version\-Id)
+\begin{DoxyCompactList}\small\item\em Retern the detail of specific ontology class id. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1RestBioPortalSearchResult}{Rest\-Bio\-Portal\-Search\-Result} \hyperlink{classunisys_1_1RestBioPortal_ac9df074500973674dd6995aa1f20eff0}{search} (std\-::string const \&apikey, std\-::string const \&query, std\-::string const \&ontologyids, bool isexactmatch=false, bool includeproperties=false, int maxnumhits=1000, bool includedefinitions=true)
+\begin{DoxyCompactList}\small\item\em Searching for related ontology term. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1RestBioPortalTermResult}{Rest\-Bio\-Portal\-Term\-Result} \hyperlink{classunisys_1_1RestBioPortal_a606b15f2e8c10c60012347d52dd67270}{term} (std\-::string const \&apikey, std\-::string const \&ontology\-\_\-virtual\-\_\-id, std\-::string const \&concept\-\_\-id, bool light=false, bool norelation=false, int maxnumchildren=-\/1)
+\begin{DoxyCompactList}\small\item\em Retrieving the information of the specific ontology id from specific ontology class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\-::string \hyperlink{classunisys_1_1RestBioPortal_ab2740f2624e7e3f5c3b8b5cafeda7edf}{base\-U\-R\-L}
+\begin{DoxyCompactList}\small\item\em The base U\-R\-I of Bio\-Portal \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The main class of Bio\-Portal \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service library. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1RestBioPortal_a149c09fcddb96ef4cc6ae4be1396613b}{\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}!Rest\-Bio\-Portal@{Rest\-Bio\-Portal}}
+\index{Rest\-Bio\-Portal@{Rest\-Bio\-Portal}!unisys::RestBioPortal@{unisys\-::\-Rest\-Bio\-Portal}}
+\subsubsection[{Rest\-Bio\-Portal}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Rest\-Bio\-Portal\-::\-Rest\-Bio\-Portal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortal_a149c09fcddb96ef4cc6ae4be1396613b}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1RestBioPortal_a23181747eee2610741b8388efe8c1adb}{\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}!get\-Specific\-Ontology@{get\-Specific\-Ontology}}
+\index{get\-Specific\-Ontology@{get\-Specific\-Ontology}!unisys::RestBioPortal@{unisys\-::\-Rest\-Bio\-Portal}}
+\subsubsection[{get\-Specific\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-Rest\-Bio\-Portal\-::get\-Specific\-Ontology (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{apikey, }
+\item[{std\-::string const \&}]{ontology\-Version\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortal_a23181747eee2610741b8388efe8c1adb}
+
+
+Retern the detail of specific ontology class id. 
+
+\hypertarget{classunisys_1_1RestBioPortal_a069c59631f0007cf347cc473e38a4c85}{\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}!list\-All\-Lastest\-Ontologies@{list\-All\-Lastest\-Ontologies}}
+\index{list\-All\-Lastest\-Ontologies@{list\-All\-Lastest\-Ontologies}!unisys::RestBioPortal@{unisys\-::\-Rest\-Bio\-Portal}}
+\subsubsection[{list\-All\-Lastest\-Ontologies}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-Rest\-Bio\-Portal\-::list\-All\-Lastest\-Ontologies (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{apikey}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortal_a069c59631f0007cf347cc473e38a4c85}
+
+
+List all of the lastest ontology classes and thier details. 
+
+\hypertarget{classunisys_1_1RestBioPortal_ac9df074500973674dd6995aa1f20eff0}{\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}!search@{search}}
+\index{search@{search}!unisys::RestBioPortal@{unisys\-::\-Rest\-Bio\-Portal}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rest\-Bio\-Portal\-Search\-Result} unisys\-::\-Rest\-Bio\-Portal\-::search (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{apikey, }
+\item[{std\-::string const \&}]{query, }
+\item[{std\-::string const \&}]{ontologyids, }
+\item[{bool}]{isexactmatch = {\ttfamily false}, }
+\item[{bool}]{includeproperties = {\ttfamily false}, }
+\item[{int}]{maxnumhits = {\ttfamily 1000}, }
+\item[{bool}]{includedefinitions = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortal_ac9df074500973674dd6995aa1f20eff0}
+
+
+Searching for related ontology term. 
+
+search The \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service structure for seach command. Signature\-: ./search/\{query\}\mbox{[}?\{optional args\}\mbox{]}\&apikey=\{Your\-A\-P\-I\-Key\} Alt Signature\-: ./search/?query=\{uri-\/encoded query\}\mbox{[}\&\{optional args\}\mbox{]}\&apikey=\{Your\-A\-P\-I\-Key\}
+
+
+\begin{DoxyParams}{Parameters}
+{\em apikey} & -\/ A\-P\-I key. This is a mandatory parameter. You can get one from Bio\-Portal website. \\
+\hline
+{\em query} & -\/ \hyperlink{classunisys_1_1Query}{Query} word (examples\-: \char`\"{}aluminium\char`\"{}, \char`\"{}software\char`\"{}) \\
+\hline
+{\em ontologyids} & -\/ \hyperlink{classunisys_1_1Ontology}{Ontology} class id. You can specify nothing or more than one seperated with comma without space. (\char`\"{}1007\char`\"{} for Ch\-E\-B\-I ontology, \char`\"{}1007,1104\char`\"{}) \\
+\hline
+{\em isexactmatch} & -\/ Exact match or not. (default\-: false) \\
+\hline
+{\em includeproperties} & -\/ Return the property information or not. (default\-: false) \\
+\hline
+{\em maxnumhits} & -\/ Maximum number of result. (default\-: 1000) \\
+\hline
+{\em includedefinitions} & -\/ If a search result is a hit for a term, adding this parameter will include the definition in the search result xml. (default\-: true) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1RestBioPortal_a606b15f2e8c10c60012347d52dd67270}{\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}!term@{term}}
+\index{term@{term}!unisys::RestBioPortal@{unisys\-::\-Rest\-Bio\-Portal}}
+\subsubsection[{term}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rest\-Bio\-Portal\-Term\-Result} unisys\-::\-Rest\-Bio\-Portal\-::term (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{apikey, }
+\item[{std\-::string const \&}]{ontology\-\_\-virtual\-\_\-id, }
+\item[{std\-::string const \&}]{concept\-\_\-id, }
+\item[{bool}]{light = {\ttfamily false}, }
+\item[{bool}]{norelation = {\ttfamily false}, }
+\item[{int}]{maxnumchildren = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortal_a606b15f2e8c10c60012347d52dd67270}
+
+
+Retrieving the information of the specific ontology id from specific ontology class. 
+
+term The \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service structure for seach term. Virtual Signature\-: ./virtual/ontology/\{ontology virtual id\}/\{concept id\} Alt Virtual Signature\-: ./virtual/ontology/\{ontology virtual id\}?conceptid=\{uri-\/encoded concept id\}
+
+
+\begin{DoxyParams}{Parameters}
+{\em apikey} & -\/ A\-P\-I key. This is a mandatory parameter. You can get one from Bio\-Portal website. \\
+\hline
+{\em ontology\-\_\-virtual\-\_\-id} & -\/ \hyperlink{classunisys_1_1Ontology}{Ontology} class identifier (examples\-: \char`\"{}1007\char`\"{}, \char`\"{}1104\char`\"{}) \\
+\hline
+{\em concept\-\_\-id} & -\/ \hyperlink{classunisys_1_1Ontology}{Ontology} term identifier (examples\-: \char`\"{}\-C\-H\-E\-B\-I\-:28984\char`\"{}) \\
+\hline
+{\em light} & -\/ Light version of result or not(default\-: false) \\
+\hline
+{\em norelation} & -\/ Don't return the relation fields (default\-: false) \\
+\hline
+{\em maxnumchildren} & -\/ An integer that sets threshold on the number of children in the Sub\-Class relation for a term. If a term contains more children than the \char`\"{}maxnumchildren\char`\"{}, the Sub\-Class relation returns an empty list. The Child\-Count relation still contains the correct number of children. If this parameter set to minus number, this parameter will not set.(default\-: -\/1) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1RestBioPortal_ab2740f2624e7e3f5c3b8b5cafeda7edf}{\index{unisys\-::\-Rest\-Bio\-Portal@{unisys\-::\-Rest\-Bio\-Portal}!base\-U\-R\-L@{base\-U\-R\-L}}
+\index{base\-U\-R\-L@{base\-U\-R\-L}!unisys::RestBioPortal@{unisys\-::\-Rest\-Bio\-Portal}}
+\subsubsection[{base\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string unisys\-::\-Rest\-Bio\-Portal\-::base\-U\-R\-L\hspace{0.3cm}{\ttfamily [static]}}}\label{classunisys_1_1RestBioPortal_ab2740f2624e7e3f5c3b8b5cafeda7edf}
+
+
+The base U\-R\-I of Bio\-Portal \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{restBioPortal_8h}{rest\-Bio\-Portal.\-h}\end{DoxyCompactItemize}

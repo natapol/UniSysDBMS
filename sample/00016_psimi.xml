@@ -1,0 +1,1534 @@
+<entrySet level="2" version="5" xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+  <entry>
+      <source>
+         <names>
+           <shortLabel>HPRD</shortLabel>
+            <fullName>Human Protein Reference Database</fullName>
+         </names>
+         <bibref>
+             <xref>
+                  <primaryRef db="PubMed" id="18988627"/>
+                  <secondaryRef db="PubMed" id="14525934"/>
+                  <secondaryRef db="PubMed" id="14681466"/>
+                  <secondaryRef db="PubMed" id="16381900"/>
+             </xref>
+         </bibref>
+      </source>
+      <availabilityList>
+         <availability id="1">
+              This data is copyrighted by Johns Hopkins University.
+              Commercial entities may not use this without prior licensing
+              authorization. Other databases must agree to enforce the same
+              licensing guidelines before making this data public on their website.
+         </availability>
+      </availabilityList>
+    <experimentList>
+     <experimentDescription id="0">
+       <bibref>
+          <xref>
+            <primaryRef db="pubmed" dbAc="MI:0446" id="15862967" refType="primary-reference" refTypeAc="MI:0358"/>
+          </xref>
+       </bibref>
+       <interactionDetectionMethod>
+         <names>
+           <shortLabel>2H</shortLabel>
+           <fullName>two hybrid</fullName>
+         </names>
+         <xref>
+             <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0018" refType="identity" refTypeAc="MI:0356"/>
+         </xref>
+       </interactionDetectionMethod>
+     </experimentDescription>
+     <experimentDescription id="1">
+       <bibref>
+          <xref>
+            <primaryRef db="pubmed" dbAc="MI:0446" id="16212417" refType="primary-reference" refTypeAc="MI:0358"/>
+          </xref>
+       </bibref>
+       <interactionDetectionMethod>
+         <names>
+           <shortLabel>vv</shortLabel>
+           <fullName>in vivo</fullName>
+         </names>
+         <xref>
+             <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0493" refType="identity" refTypeAc="MI:0356"/>
+         </xref>
+       </interactionDetectionMethod>
+     </experimentDescription>
+     <experimentDescription id="2">
+       <bibref>
+          <xref>
+            <primaryRef db="pubmed" dbAc="MI:0446" id="16212417" refType="primary-reference" refTypeAc="MI:0358"/>
+          </xref>
+       </bibref>
+       <interactionDetectionMethod>
+         <names>
+           <shortLabel>vt</shortLabel>
+           <fullName>in vitro</fullName>
+         </names>
+         <xref>
+             <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0493" refType="identity" refTypeAc="MI:0356"/>
+         </xref>
+       </interactionDetectionMethod>
+     </experimentDescription>
+    </experimentList>
+    <interactorList>
+     <interactor id="00016">
+       <names>
+         <shortLabel>Actin gamma 2, smooth muscle enteric</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">ACTSG</alias>
+         <alias type="gene name" typeAc="MI:0301">ACTE</alias>
+         <alias type="gene name" typeAc="MI:0301">Actin alpha 3</alias>
+         <alias type="gene name" typeAc="MI:0301">ACTA3</alias>
+         <alias type="gene name" typeAc="MI:0301">ACTL3</alias>
+         <alias type="gene name" typeAc="MI:0301">Gamma sm actin</alias>
+         <alias type="gene name" typeAc="MI:0301">Gamma smooth muscle actin</alias>
+         <alias type="gene name" typeAc="MI:0301">SMgammaA</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00016" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P63267"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="72"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="102545"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="9606">
+         <names>
+           <shortLabel>Human</shortLabel>
+           <fullName>Homo sapiens</fullName>
+         </names>
+       </organism>
+       <sequence>
+mceeettalv cdngsglcka gfagddapra vfpsivgrpr hqgvmvgmgq 
+kdsyvgdeaq skrgiltlky piehgiitnw ddmekiwhhs fynelrvape 
+ehptllteap lnpkanrekm tqimfetfnv pamyvaiqav lslyasgrtt 
+givldsgdgv thnvpiyegy alphaimrld lagrdltdyl mkiltergys 
+fvttaereiv rdikeklcyv aldfenemat aassssleks yelpdgqvit 
+ignerfrcpe tlfqpsfigm esagihetty nsimkcdidi rkdlyannvl 
+sggttmypgi adrmqkeita lapstmkiki iapperkysv wiggsilasl 
+stfqqmwisk peydeagpsi vhrkcf
+       </sequence>
+     </interactor>
+     <interactor id="01646">
+       <names>
+         <shortLabel>Androgen binding protein</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Sex hormone binding globulin</alias>
+         <alias type="gene name" typeAc="MI:0301">ABP</alias>
+         <alias type="gene name" typeAc="MI:0301">Sex steroid binding protein</alias>
+         <alias type="gene name" typeAc="MI:0301">Testis specific androgen binding protein</alias>
+         <alias type="gene name" typeAc="MI:0301">SBP</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01646" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P04278,B0FWH4,B0FWH2"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="6462"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="182205"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1D2S"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="9606">
+         <names>
+           <shortLabel>Human</shortLabel>
+           <fullName>Homo sapiens</fullName>
+         </names>
+       </organism>
+       <sequence>
+mesrgplats rlllllllll lrhtrqgwal rpvlptqsah dppavhlsng 
+pgqepiavmt fdltkitkts ssfevrtwdp egvifygdtn pkddwfmlgl 
+rdgrpeiqlh nhwaqltvga gprlddgrwh qvevkmegds vllevdgeev 
+lrlrqvsgpl tskrhpimri alggllfpas nlrlplvpal dgclrrdswl 
+dkqaeisasa ptslrscdve snpgiflppg tqaefnlrdi pqphaepwaf 
+sldlglkqaa gsghllalgt penpswlslh lqdqkvvlss gsgpgldlpl 
+vlglplqlkl smsrvvlsqg skmkalalpp lglapllnlw akpqgrlflg 
+alpgedssts fclnglwaqg qrldvdqaln rsheiwthsc pqspgngtda 
+sh
+       </sequence>
+     </interactor>
+     <interactor id="05222">
+       <names>
+         <shortLabel>Actinin alpha 4</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Non muscle alpha actinin 4</alias>
+         <alias type="gene name" typeAc="MI:0301">F actin cross linking protein</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="05222" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="O43707"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="81"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="604638"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1WLX"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mvdyhaanqs yqygpssagn gaggggsmgd ymaqeddwdr dllldpawek 
+qqrktftawc nshlrkagtq ienidedfrd glklmlllev isgerlpkpe 
+rgkmrvhkin nvnkaldfia skgvklvsig aeeivdgnak mtlgmiwtii 
+lrfaiqdisv eetsakegll lwcqrktapy knvnvqnfhi swkdglafna 
+lihrhrpeli eydklrkddp vtnlnnafev aekyldipkm ldaedivnta 
+rpdekaimty vssfyhafsg aqkaetaanr ickvlavnqe nehlmedyek 
+lasdllewir rtipwledrv pqktiqemqq kledfrdyrr vhkppkvqek 
+cqleinfntl qtklrlsnrp afmpsegkmv sdinngwqhl eqaekgyeew 
+llneirrler ldhlaekfrq kasiheawtd gkeamlkhrd yetatlsdik 
+alirkheafe sdlaahqdrv eqiaaiaqel neldyydshn vntrcqkicd 
+qwdalgslth srrealekte kqleaidqlh leyakraapf nnwmesamed 
+lqdmfivhti eeieglisah dqfkstlpda drereailai hkeaqriaes 
+nhiklsgsnp yttvtpqiin skwekvqqlv pkrdhallee qskqqsnehl 
+rrqfasqanv vgpwiqtkme eigrisiemn gtledqlshl kqyersivdy 
+kpnldlleqq hqliqealif dnkhtnytme hirvgweqll ttiartinev 
+enqiltrdak gisqeqmqef rasfnhfdkd hggalgpeef kaclislgyd 
+vendrqgeae fnrimslvdp nhsglvtfqa fidfmsrett dtdtadqvia 
+sfkvlagdkn fitaeelrre lppdqaeyci armapyqgpd avpgaldyks 
+fstalygesd l
+       </sequence>
+     </interactor>
+     <interactor id="00286">
+       <names>
+         <shortLabel>Catenin beta</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Catenin, beta 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Cadherin associated protein, beta</alias>
+         <alias type="gene name" typeAc="MI:0301">CTNNB</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00286" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P35222"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="1499"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="116806"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1G3J"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+matqadlmel dmamepdrka avshwqqqsy ldsgihsgat ttapslsgkg 
+npeeedvdts qvlyeweqgf sqsftqeqva didgqyamtr aqrvraamfp 
+etldegmqip stqfdaahpt nvqrlaepsq mlkhavvnli nyqddaelat 
+raipeltkll ndedqvvvnk aavmvhqlsk keasrhaimr spqmvsaivr 
+tmqntndvet arctagtlhn lshhreglla ifksggipal vkmlgspvds 
+vlfyaittlh nlllhqegak mavrlagglq kmvallnktn vkflaittdc 
+lqilaygnqe skliilasgg pqalvnimrt ytyekllwtt srvlkvlsvc 
+ssnkpaivea ggmqalglhl tdpsqrlvqn clwtlrnlsd aatkqegmeg 
+llgtlvqllg sddinvvtca agilsnltcn nyknkmmvcq vggiealvrt 
+vlragdredi tepaicalrh ltsrhqeaem aqnavrlhyg lpvvvkllhp 
+pshwplikat vglirnlalc panhaplreq gaiprlvqll vrahqdtqrr 
+tsmggtqqqf vegvrmeeiv egctgalhil ardvhnrivi rglntiplfv 
+qllyspieni qrvaagvlce laqdkeaaea ieaegatapl tellhsrneg 
+vatyaaavlf rmsedkpqdy kkrlsvelts slfrtepmaw netadlgldi 
+gaqgeplgyr qddpsyrsfh sggygqdalg mdpmmehemg ghhpgadypv 
+dglpdlghaq dlmdglppgd snqlawfdtd l
+       </sequence>
+     </interactor>
+     <interactor id="00062">
+       <names>
+         <shortLabel>Albumin</shortLabel>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00062" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P02768"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="213"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="103600"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1AO6"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mkwvtfisll flfssaysrg vfrrdahkse vahrfkdlge enfkalvlia 
+faqylqqcpf edhvklvnev tefaktcvad esaencdksl htlfgdklct 
+vatlretyge madccakqep ernecflqhk ddnpnlprlv rpevdvmcta 
+fhdneetflk kylyeiarrh pyfyapellf fakrykaaft eccqaadkaa 
+cllpkldelr degkassakq rlkcaslqkf gerafkawav arlsqrfpka 
+efaevsklvt dltkvhtecc hgdllecadd radlakyice nqdsissklk 
+eccekpllek shciaevend empadlpsla adfveskdvc knyaeakdvf 
+lgmflyeyar rhpdysvvll lrlaktyett lekccaaadp hecyakvfde 
+fkplveepqn likqncelfe qlgeykfqna llvrytkkvp qvstptlvev 
+srnlgkvgsk cckhpeakrm pcaedylsvv lnqlcvlhek tpvsdrvtkc 
+cteslvnrrp cfsalevdet yvpkefnaet ftfhadictl sekerqikkq 
+talvelvkhk pkatkeqlka vmddfaafve kcckaddket cfaeegkklv 
+aasqaalgl
+       </sequence>
+     </interactor>
+     <interactor id="00032">
+       <names>
+         <shortLabel>Actin beta</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Beta actin</alias>
+         <alias type="gene name" typeAc="MI:0301">Beta cytoskeletal actin</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00032" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P60709,Q1KLZ0"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="60"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="102630"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="3BYH"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mdddiaalvv dngsgmckag fagddaprav fpsivgrprh qgvmvgmgqk 
+dsyvgdeaqs krgiltlkyp iehgivtnwd dmekiwhhtf ynelrvapee 
+hpvllteapl npkanrekmt qimfetfntp amyvaiqavl slyasgrttg 
+ivmdsgdgvt htvpiyegya lphailrldl agrdltdylm kiltergysf 
+tttaereivr dikeklcyva ldfeqemata assssleksy elpdgqviti 
+gnerfrcpea lfqpsflgme scgihettfn simkcdvdir kdlyantvls 
+ggttmypgia drmqkeital apstmkikii apperkysvw iggsilasls 
+tfqqmwiskq eydesgpsiv hrkcf
+       </sequence>
+     </interactor>
+     <interactor id="00777">
+       <names>
+         <shortLabel>HSP90A</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Lipopolysaccharide ssociated protein 2</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 90kD protein 1, alpha</alias>
+         <alias type="gene name" typeAc="MI:0301">HSPC1</alias>
+         <alias type="gene name" typeAc="MI:0301">LAP2</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock protein HSP 90-alpha 4</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 90kDa protein 1, alpha isoform 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 90kDa protein 1, alpha isoform 2</alias>
+         <alias type="gene name" typeAc="MI:0301">HSP86</alias>
+         <alias type="gene name" typeAc="MI:0301">Hsp89</alias>
+         <alias type="gene name" typeAc="MI:0301">Hsp90</alias>
+         <alias type="gene name" typeAc="MI:0301">HSPCAL1</alias>
+         <alias type="gene name" typeAc="MI:0301">FLJ31884</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock protein HSP 90-alpha 2</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00777" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P07900,Q86SX1"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3320"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="140571"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1BYQ"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mpeetqtqdq pmeeeevetf afqaeiaqlm sliintfysn keiflrelis 
+nssdaldkir yesltdpskl dsgkelhinl ipnkqdrtlt ivdtgigmtk 
+adlinnlgti aksgtkafme alqagadism igqfgvgfys aylvaekvtv 
+itkhnddeqy awessaggsf tvrtdtgepm grgtkvilhl kedqteylee 
+rrikeivkkh sqfigypitl fvekerdkev sddeaeeked keeekekeek 
+esedkpeied vgsdeeeekk dgdkkkkkki kekyidqeel nktkpiwtrn 
+pdditneeyg efyksltndw edhlavkhfs vegqlefral lfvprrapfd 
+lfenrkkknn iklyvrrvfi mdnceelipe ylnfirgvvd sedlplnisr 
+emlqqskilk virknlvkkc lelftelaed kenykkfyeq fskniklgih 
+edsqnrkkls ellryytsas gdemvslkdy ctrmkenqkh iyyitgetkd 
+qvansafver lrkhgleviy miepideycv qqlkefegkt lvsvtkegle 
+lpedeeekkk qeekktkfen lckimkdile kkvekvvvsn rlvtspcciv 
+tstygwtanm erimkaqalr dnstmgymaa kkhleinpdh siietlrqka 
+eadkndksvk dlvillyeta llssgfsled pqthanriyr miklglgide 
+ddptaddtsa avteempple gdddtsrmee vd
+       </sequence>
+     </interactor>
+     <interactor id="00318">
+       <names>
+         <shortLabel>Heat shock 60 KD protein 1 (chaperonin)</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">HSP65</alias>
+         <alias type="gene name" typeAc="MI:0301">SPG13</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock protein 65</alias>
+         <alias type="gene name" typeAc="MI:0301">Short heat shock protein 60 Hsp60s1</alias>
+         <alias type="gene name" typeAc="MI:0301">Chaperonin</alias>
+         <alias type="gene name" typeAc="MI:0301">GroEL homolog</alias>
+         <alias type="gene name" typeAc="MI:0301">Chaperonin 60 homolog</alias>
+         <alias type="gene name" typeAc="MI:0301">cpn60 homolog</alias>
+         <alias type="gene name" typeAc="MI:0301">60 kDa heat shock protein, mitochondrial</alias>
+         <alias type="gene name" typeAc="MI:0301">Hsp60</alias>
+         <alias type="gene name" typeAc="MI:0301">60 kDa chaperonin</alias>
+         <alias type="gene name" typeAc="MI:0301">CPN60</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock protein 60</alias>
+         <alias type="gene name" typeAc="MI:0301">Mitochondrial matrix protein P1</alias>
+         <alias type="gene name" typeAc="MI:0301">P60 lymphocyte protein</alias>
+         <alias type="gene name" typeAc="MI:0301">HuCHA60</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00318" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P10809"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3329"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="118190"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mlrlptvfrq mrpvsrvlap hltrayakdv kfgadaralm lqgvdllada 
+vavtmgpkgr tviieqswgs pkvtkdgvtv aksidlkdky knigaklvqd 
+vanntneeag dgtttatvla rsiakegfek iskganpvei rrgvmlavda 
+viaelkkqsk pvttpeeiaq vatisangdk eigniisdam kkvgrkgvit 
+vkdgktlnde leiiegmkfd rgyispyfin tskgqkcefq dayvllsekk 
+issiqsivpa leianahrkp lviiaedvdg ealstlvlnr lkvglqvvav 
+kapgfgdnrk nqlkdmaiat ggavfgeegl tlnledvqph dlgkvgeviv 
+tkddamllkg kgdkaqiekr iqeiieqldv ttseyekekl nerlaklsdg 
+vavlkvggts dvevnekkdr vtdalnatra aveegivlgg gcallrcipa 
+ldsltpaned qkigieiikr tlkipamtia knagvegsli vekimqssse 
+vgydamagdf vnmvekgiid ptkvvrtall daagvasllt taevvvteip 
+keekdpgmga mggmgggmgg gmf
+       </sequence>
+     </interactor>
+     <interactor id="00774">
+       <names>
+         <shortLabel>Heat shock 70 KD protein 1A</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 70KD protein 1</alias>
+         <alias type="gene name" typeAc="MI:0301">HSPA1</alias>
+         <alias type="gene name" typeAc="MI:0301">HSP70 1</alias>
+         <alias type="gene name" typeAc="MI:0301">HSP72</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00774" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P08107,B3KTT5,A8K5I0"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3303"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="140550"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1HJO"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+makaaaigid lgttyscvgv fqhgkveiia ndqgnrttps yvaftdterl 
+igdaaknqva lnpqntvfda krligrkfgd pvvqsdmkhw pfqvindgdk 
+pkvqvsykge tkafypeeis smvltkmkei aeaylgypvt navitvpayf 
+ndsqrqatkd agviaglnvl riineptaaa iaygldrtgk gernvlifdl 
+gggtfdvsil tiddgifevk atagdthlgg edfdnrlvnh fveefkrkhk 
+kdisqnkrav rrlrtacera krtlssstqa sleidslfeg idfytsitra 
+rfeelcsdlf rstlepveka lrdakldkaq ihdlvlvggs tripkvqkll 
+qdffngrdln ksinpdeava ygaavqaail mgdksenvqd lllldvapls 
+lgletaggvm talikrnsti ptkqtqiftt ysdnqpgvli qvyegeramt 
+kdnnllgrfe lsgippaprg vpqievtfdi dangilnvta tdkstgkank 
+ititndkgrl skeeiermvq eaekykaede vqrervsakn alesyafnmk 
+savedeglkg kiseadkkkv ldkcqevisw ldantlaekd efehkrkele 
+qvcnpiisgl yqgaggpgpg gfgaqgpkgg sgsgptieev d
+       </sequence>
+     </interactor>
+     <interactor id="17853">
+       <names>
+         <shortLabel>Pipecolic acid oxidase</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Peroxisomal sarcosine oxidase</alias>
+         <alias type="gene name" typeAc="MI:0301">EC 1.5.3.1</alias>
+         <alias type="gene name" typeAc="MI:0301">PSO</alias>
+         <alias type="gene name" typeAc="MI:0301">L-pipecolate oxidase</alias>
+         <alias type="gene name" typeAc="MI:0301">EC 1.5.3.7</alias>
+         <alias type="gene name" typeAc="MI:0301">L-pipecolic acid oxidase</alias>
+         <alias type="gene name" typeAc="MI:0301">LPIPOX</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="17853" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="Q9P0Z9"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="51268"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="-"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+maaqkdlwda ivigagiqgc ftayhlakhr krillleqff lphsrgsshg 
+qsriirkayl edfytrmmhe cyqiwaqleh eagtqlhrqt gllllgmken 
+qelktiqanl srqrvehqcl sseelkqrfp nirlprgevg lldnsggviy 
+aykalralqd airqlggivr dgekvveinp gllvtvktts rsyqakslvi 
+tagpwtnqll rplgiemplq tlrinvcywr emvpgsygvs qafpcflwlg 
+lcphhiyglp tgeypglmkv syhhgnhadp eerdcptart digdvqilss 
+fvrdhlpdlk pepaviescm ytntpdeqfi ldrhpkydni vigagfsghg 
+fklapvvgki lyelsmkltp sydlapfris rfpslgkahl 
+       </sequence>
+     </interactor>
+     <interactor id="15946">
+       <names>
+         <shortLabel>RNA polymerase IIA 25 kd subunit</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Polymerase II, RNA, subunit E</alias>
+         <alias type="gene name" typeAc="MI:0301">RPB5</alias>
+         <alias type="gene name" typeAc="MI:0301">XAP4</alias>
+         <alias type="gene name" typeAc="MI:0301">RPABC1</alias>
+         <alias type="gene name" typeAc="MI:0301">hRPB25</alias>
+         <alias type="gene name" typeAc="MI:0301">hsRPB5</alias>
+         <alias type="gene name" typeAc="MI:0301">DNA directed RNA polymerase II 23 kDa polypeptide</alias>
+         <alias type="gene name" typeAc="MI:0301">EC 2.7.7.6</alias>
+         <alias type="gene name" typeAc="MI:0301">RPB25</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="15946" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P19388"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="5434"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="180664"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mddeeetyrl wkirktimql chdrgylvtq deldqtleef kaqfgdkpse 
+grprrtdltv lvahnddptd qmfvffpeep kvgiktikvy cqrmqeenit 
+ralivvqqgm tpsakqslvd mapkyileqf lqqellinit ehelvpehvv 
+mtkeevtell aryklrenql priqagdpva ryfgikrgqv vkiirpseta 
+gryityrlvq 
+       </sequence>
+     </interactor>
+     <interactor id="08935">
+       <names>
+         <shortLabel>Ku antigen, 80kDa</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Ku80</alias>
+         <alias type="gene name" typeAc="MI:0301">Ku86</alias>
+         <alias type="gene name" typeAc="MI:0301">TLAA</alias>
+         <alias type="gene name" typeAc="MI:0301">CTCBF</alias>
+         <alias type="gene name" typeAc="MI:0301">CTC85</alias>
+         <alias type="gene name" typeAc="MI:0301">KARP-1</alias>
+         <alias type="gene name" typeAc="MI:0301">Nuclear factor IV</alias>
+         <alias type="gene name" typeAc="MI:0301">Thyroid-lupus autoantigen</alias>
+         <alias type="gene name" typeAc="MI:0301">Ku antigen, 80-KD subunit</alias>
+         <alias type="gene name" typeAc="MI:0301">86 kDa subunit of Ku antigen</alias>
+         <alias type="gene name" typeAc="MI:0301">ATP-dependant DNA helicase II</alias>
+         <alias type="gene name" typeAc="MI:0301">Lupus Ku autoantigen protein p86</alias>
+         <alias type="gene name" typeAc="MI:0301">Ku86 autoantigen related protein 1</alias>
+         <alias type="gene name" typeAc="MI:0301">CTC box binding factor 85 kDa subunit</alias>
+         <alias type="gene name" typeAc="MI:0301">NFIV</alias>
+         <alias type="gene name" typeAc="MI:0301">DNA repair protein XRCC5</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="08935" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P13010"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="7520"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="194364"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1JEQ"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mvrsgnkaav vlcmdvgftm snsipgiesp feqakkvitm fvqrqvfaen 
+kdeialvlfg tdgtdnplsg gdqyqnitvh rhlmlpdfdl ledieskiqp 
+gsqqadflda livsmdviqh etigkkfekr hieiftdlss rfsksqldii 
+ihslkkcdis lqfflpfslg kedgsgdrgd gpfrlgghgp sfplkgiteq 
+qkegleivkm vmislegedg ldeiysfses lrklcvfkki erhsihwpcr 
+ltigsnlsir iaayksilqe rvkktwtvvd aktlkkediq ketvyclndd 
+detevlkedi iqgfrygsdi vpfskvdeeq mkyksegkcf svlgfckssq 
+vqrrffmgnq vlkvfaardd eaaavalssl ihalddldmv aivryaydkr 
+anpqvgvafp hikhnyeclv yvqlpfmedl rqymfsslkn skkyapteaq 
+lnavdalids mslakkdekt dtledlfptt kipnprfqrl fqcllhralh 
+preplppiqq hiwnmlnppa evttksqipl skiktlfpli eakkkdqvta 
+qeifqdnhed gptakklkte qggahfsvss laegsvtsvg svnpaenfrv 
+lvkqkkasfe easnqlinhi eqfldtnetp yfmksidcir afreeaikfs 
+eeqrfnnflk alqekveikq lnhfweivvq dgitlitkee asgssvtaee 
+akkflapkdk psgdtaavfe eggdvddlld mi
+       </sequence>
+     </interactor>
+     <interactor id="01035">
+       <names>
+         <shortLabel>Lamin A/C</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Lamin A/C isoform 1 precursor</alias>
+         <alias type="gene name" typeAc="MI:0301">Lamin A/C isoform 3</alias>
+         <alias type="gene name" typeAc="MI:0301">Lamin A/C isoform 2</alias>
+         <alias type="gene name" typeAc="MI:0301">Lamin A</alias>
+         <alias type="gene name" typeAc="MI:0301">Lamin C</alias>
+         <alias type="gene name" typeAc="MI:0301">LMNC</alias>
+         <alias type="gene name" typeAc="MI:0301">70 kDa lamin</alias>
+         <alias type="gene name" typeAc="MI:0301">FPL</alias>
+         <alias type="gene name" typeAc="MI:0301">LFP</alias>
+         <alias type="gene name" typeAc="MI:0301">EMD2</alias>
+         <alias type="gene name" typeAc="MI:0301">FPLD</alias>
+         <alias type="gene name" typeAc="MI:0301">LDP1</alias>
+         <alias type="gene name" typeAc="MI:0301">LMN1</alias>
+         <alias type="gene name" typeAc="MI:0301">Prelamin A</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01035" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P02545"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="4000"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="150330"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1IFR"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+metpsqrrat rsgaqasstp lsptritrlq ekedlqelnd rlavyidrvr 
+sletenaglr lriteseevv srevsgikaa yeaelgdark tldsvakera 
+rlqlelskvr eefkelkarn tkkegdliaa qarlkdleal lnskeaalst 
+alsekrtleg elhdlrgqva kleaalgeak kqlqdemlrr vdaenrlqtm 
+keeldfqkni yseelretkr rhetrlveid ngkqrefesr ladalqelra 
+qhedqveqyk kelektysak ldnarqsaer nsnlvgaahe elqqsririd 
+slsaqlsqlq kqlaakeakl rdledslare rdtsrrllae keremaemra 
+rmqqqldeyq elldiklald meihayrkll egeeerlrls psptsqrsrg 
+rasshssqtq gggsvtkkrk lestesrssf sqhartsgrv aveevdeegk 
+fvrlrnksne dqsmgnwqik rqngddpllt yrfppkftlk agqvvtiwaa 
+gagathsppt dlvwkaqntw gcgnslrtal instgeevam rklvrsvtvv 
+eddededgdd llhhhhvsgs rr
+       </sequence>
+     </interactor>
+     <interactor id="01940">
+       <names>
+         <shortLabel>Acyl CoA dehydrogenase, very long chain</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">VLCAD</alias>
+         <alias type="gene name" typeAc="MI:0301">Acyl Coenzyme A dehydrogenase, very long chain</alias>
+         <alias type="gene name" typeAc="MI:0301">Acyl CoA dehydrogenase, very long chain specific, mitochondrial</alias>
+         <alias type="gene name" typeAc="MI:0301">LCACD</alias>
+         <alias type="gene name" typeAc="MI:0301">ACAD6</alias>
+         <alias type="gene name" typeAc="MI:0301">EC 1.3.99.-</alias>
+         <alias type="gene name" typeAc="MI:0301">Acyl-Coenzyme A dehydrogenase, very long chain isoform 1 precursor</alias>
+         <alias type="gene name" typeAc="MI:0301">Acyl-Coenzyme A dehydrogenase, very long chain isoform 2 precursor</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01940" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P49748"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="37"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="609575"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="2UXW"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mqaarmaasl grqllrlggg ssrltallgq prpgparrpy aggaaqesks 
+favgmfkgql ttdqvfpyps vlneeqtqfl kelvepvsrf feevndpakn 
+dalemveett wqglkelgaf glqvpselgg vglcntqyar lveivgmhdl 
+gvgitlgahq sigfkgillf gtkaqkekyl pklasgetva afcltepssg 
+sdaasirtsa vpspcgkyyt lngsklwisn ggladiftvf aktpvtdpat 
+gavkekitaf vvergfggit hgppekkmgi kasntaevff dgvrvpsenv 
+lgevgsgfkv amhilnngrf gmaaalagtm rgiiakavdh atnrtqfgek 
+ihnfgliqek larmvmlqyv tesmaymvsa nmdqgatdfq ieaaiskifg 
+seaawkvtde ciqimggmgf mkepgvervl rdlrifrife gtndilrlfv 
+alqgcmdkgk elsglgsalk npfgnaglll geagkqlrrr aglgsglsls 
+glvhpelsrs gelavraleq fatvveakli khkkgivneq fllqrladga 
+idlyamvvvl srasrslseg hptaqhekml cdtwcieaaa riregmaalq 
+sdpwqqelyr nfksiskalv erggvvtsnp lgf
+       </sequence>
+     </interactor>
+     <interactor id="01825">
+       <names>
+         <shortLabel>Transglutaminase 2</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Transglutaminase tissue</alias>
+         <alias type="gene name" typeAc="MI:0301">Transglutaminase C</alias>
+         <alias type="gene name" typeAc="MI:0301">TGC</alias>
+         <alias type="gene name" typeAc="MI:0301">TGase C</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01825" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P21980"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="7052"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="190196"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1FAU"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+maeelvlerc dleletngrd hhtadlcrek lvvrrgqpfw ltlhfegrny 
+easvdsltfs vvtgpapsqe agtkarfplr daveegdwta tvvdqqdctl 
+slqlttpana piglyrlsle astgyqgssf vlghfillfn awcpadavyl 
+dseeerqeyv ltqqgfiyqg sakfiknipw nfgqfedgil diclilldvn 
+pkflknagrd csrrsspvyv grvvsgmvnc nddqgvllgr wdnnygdgvs 
+pmswigsvdi lrrwknhgcq rvkygqcwvf aavactvlrc lgiptrvvtn 
+ynsahdqnsn llieyfrnef geiqgdksem iwnfhcwves wmtrpdlqpg 
+yegwqaldpt pqeksegtyc cgpvpvraik egdlstkyda pfvfaevnad 
+vvdwiqqddg svhksinrsl ivglkistks vgrderedit htykypegss 
+eereaftran hlnklaekee tgmamrirvg qsmnmgsdfd vfahitnnta 
+eeyvcrlllc artvsyngil gpecgtkyll nlnlepfsgk alcswsic
+       </sequence>
+     </interactor>
+     <interactor id="00285">
+       <names>
+         <shortLabel>Catenin alpha 1</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Catenin (cadherin-associated protein), alpha 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Alpha E catenin</alias>
+         <alias type="gene name" typeAc="MI:0301">Cadherin associated protein</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00285" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P35221"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="1495"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="116805"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1H6G"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mtavhagnin fkwdpkslei rtlaverlle plvtqvttlv ntnskgpsnk 
+krgrskkahv laasveqate nflekgdkia kesqflkeel vaavedvrkq 
+gdlmkaaage faddpcssvk rgnmvraara llsavtrlli ladmadvykl 
+lvqlkvvedg ilklrnagne qdlgiqykal kpevdklnim aakrqqelkd 
+vghrdqmaaa rgilqknvpi lytasqaclq hpdvaaykan rdliykqlqq 
+avtgisnaaq atasddasqh qgggggelay alnnfdkqii vdplsfseer 
+frpsleerle siisgaalma dssctrddrr erivaecnav rqalqdllse 
+ymgnagrker sdalnsaidk mtkktrdlrr qlrkavmdhv sdsfletnvp 
+llvlieaakn gnekevkeya qvfrehankl ievanlacsi snneegvklv 
+rmsasqleal cpqvinaala laakpqskla qenmdlfkeq wekqvrvltd 
+avdditsidd flavsenhil edvnkcvial qekdvdgldr tagairgraa 
+rvihvvtsem dnyepgvyte kvleatklls ntvmprfteq veaavealss 
+dpaqpmdene fidasrlvyd girdirkavl mirtpeeldd sdfetedfdv 
+rsrtsvqted dqliagqsar aimaqlpqeq kakiaeqvas fqeeksklda 
+evskwddsgn diivlakqmc mimmemtdft rgkgplknts dvisaakkia 
+eagsrmdklg rtiadhcpds ackqdllayl qrialychql nicskvkaev 
+qnlggelvvs gvdsamsliq aaknlmnavv qtvkasyvas tkyqksqgma 
+slnlpavswk mkapekkplv krekqdetqt kikrasqkkh vnpvqalsef 
+kamdsi
+       </sequence>
+     </interactor>
+     <interactor id="00682">
+       <names>
+         <shortLabel>BIP</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Glucose related protein 78KD</alias>
+         <alias type="gene name" typeAc="MI:0301">GRP78</alias>
+         <alias type="gene name" typeAc="MI:0301">Immunoglobulin heavy chain binding-protein</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 70kD protein 5</alias>
+         <alias type="gene name" typeAc="MI:0301">Endoplasmic reticulum lumenal Ca(2+) binding protein grp78</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00682" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P11021"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3309"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="138120"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="3IUC"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mklslvaaml lllsaaraee edkkedvgtv vgidlgttys cvgvfkngrv 
+eiiandqgnr itpsyvaftp egerligdaa knqltsnpen tvfdakrlig 
+rtwndpsvqq dikflpfkvv ekktkpyiqv digggqtktf apeeisamvl 
+tkmketaeay lgkkvthavv tvpayfndaq rqatkdagti aglnvmriin 
+eptaaaiayg ldkregekni lvfdlgggtf dvslltidng vfevvatngd 
+thlggedfdq rvmehfikly kkktgkdvrk dnravqklrr evekakrals 
+sqhqarieie sfyegedfse tltrakfeel nmdlfrstmk pvqkvledsd 
+lkksdideiv lvggstripk iqqlvkeffn gkepsrginp deavaygaav 
+qagvlsgdqd tgdlvlldvc pltlgietvg gvmtkliprn tvvptkksqi 
+fstasdnqpt vtikvyeger pltkdnhllg tfdltgippa prgvpqievt 
+feidvngilr vtaedkgtgn knkititndq nrltpeeier mvndaekfae 
+edkklkerid trnelesyay slknqigdke klggklssed ketmekavee 
+kiewleshqd adiedfkakk keleeivqpi isklygsagp pptgeedtae 
+kdel
+       </sequence>
+     </interactor>
+     <interactor id="02770">
+       <names>
+         <shortLabel>Mortalin 2</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">MOT2</alias>
+         <alias type="gene name" typeAc="MI:0301">MOT</alias>
+         <alias type="gene name" typeAc="MI:0301">PBP74</alias>
+         <alias type="gene name" typeAc="MI:0301">GRP75</alias>
+         <alias type="gene name" typeAc="MI:0301">HSPA9</alias>
+         <alias type="gene name" typeAc="MI:0301">p66 mortalin</alias>
+         <alias type="gene name" typeAc="MI:0301">Mortalin, perinuclear</alias>
+         <alias type="gene name" typeAc="MI:0301">Peptide binding protein 74</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 70 KD protein 9</alias>
+         <alias type="gene name" typeAc="MI:0301">Heat shock 70 KD protein 9B</alias>
+         <alias type="gene name" typeAc="MI:0301">Stress 70 protein, mitochondrial</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="02770" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P38646"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3313"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="600548"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+misasraaaa rlvgaaasrg ptaarhqdsw nglsheafrl vsrrdyasea 
+ikgavvgidl gttnscvavm egkqakvlen aegarttpsv vaftadgerl 
+vgmpakrqav tnpnntfyat krligrrydd pevqkdiknv pfkivrasng 
+dawveahgkl yspsqigafv lmkmketaen ylghtaknav itvpayfnds 
+qrqatkdagq isglnvlrvi neptaaalay gldksedkvi avydlgggtf 
+disileiqkg vfevkstngd tflggedfdq allrhivkef kretgvdltk 
+dnmalqrvre aaekakcels ssvqtdinlp yltmdssgpk hlnmkltraq 
+fegivtdlir rtiapcqkam qdaevsksdi gevilvggmt rmpkvqqtvq 
+dlfgrapska vnpdeavaig aaiqggvlag dvtdvllldv tplslgietl 
+ggvftklinr nttiptkksq vfstaadgqt qveikvcqge remagdnkll 
+gqftligipp aprgvpqiev tfdidangiv hvsakdkgtg reqqiviqss 
+gglskddien mvknaekyae edrrkkerve avnmaegiih dtetkmeefk 
+dqlpadecnk lkeeiskmre llarkdsetg enirqaassl qqaslklfem 
+aykkmasere gsgssgtgeq kedqkeekq
+       </sequence>
+     </interactor>
+     <interactor id="00017">
+       <names>
+         <shortLabel>Actin gamma 1</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Cytoskeletal gamma actin</alias>
+         <alias type="gene name" typeAc="MI:0301">Actin gamma</alias>
+         <alias type="gene name" typeAc="MI:0301">ACTG</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00017" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P63261"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="71"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="102560"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+meeeiaalvi dngsgmckag fagddaprav fpsivgrprh qgvmvgmgqk 
+dsyvgdeaqs krgiltlkyp iehgivtnwd dmekiwhhtf ynelrvapee 
+hpvllteapl npkanrekmt qimfetfntp amyvaiqavl slyasgrttg 
+ivmdsgdgvt htvpiyegya lphailrldl agrdltdylm kiltergysf 
+tttaereivr dikeklcyva ldfeqemata assssleksy elpdgqviti 
+gnerfrcpea lfqpsflgme scgihettfn simkcdvdir kdlyantvls 
+ggttmypgia drmqkeital apstmkikii apperkysvw iggsilasls 
+tfqqmwiskq eydesgpsiv hrkcf
+       </sequence>
+     </interactor>
+     <interactor id="09023">
+       <names>
+         <shortLabel>SET protein</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">TAF-I</alias>
+         <alias type="gene name" typeAc="MI:0301">PHAPII</alias>
+         <alias type="gene name" typeAc="MI:0301">IGAAD</alias>
+         <alias type="gene name" typeAc="MI:0301">I-2PP2A</alias>
+         <alias type="gene name" typeAc="MI:0301">TAF-IBETA</alias>
+         <alias type="gene name" typeAc="MI:0301">HLA-DR associated protein II</alias>
+         <alias type="gene name" typeAc="MI:0301">SET translocation</alias>
+         <alias type="gene name" typeAc="MI:0301">Template activating factor I</alias>
+         <alias type="gene name" typeAc="MI:0301">Phosphatase 2A inhibitor I2PP2A</alias>
+         <alias type="gene name" typeAc="MI:0301">Inhibitor of granzyme A-activated DNase</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="09023" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="Q01105,Q5VXV3"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="6418"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="600960"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="2E50"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+msapaakvsk kelnsnhdga detsekeqqe aiehidevqn eidrlneqas 
+eeilkveqky nklrqpffqk rseliakipn fwvttfvnhp qvsallgeed 
+eealhyltrv evtefediks gyridfyfde npyfenkvls kefhlnesgd 
+pssksteikw ksgkdltkrs sqtqnkasrk rqheepesff twftdhsdag 
+adelgevikd diwpnplqyy lvpdmddeeg egeeddddde eeegledide 
+egdedegeed edddegeege edegedd
+       </sequence>
+     </interactor>
+     <interactor id="09803">
+       <names>
+         <shortLabel>APRIL</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Acidic leucine-rich nuclear phosphoprotein 32 family member B</alias>
+         <alias type="gene name" typeAc="MI:0301">PHAPI2</alias>
+         <alias type="gene name" typeAc="MI:0301">SSP29</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="09803" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="Q92688"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="10541"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="-"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="2ELL"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mdmkrrihle lrnrtpaavr elvldncksn dgkiegltae fvnleflsli 
+nvglisvsnl pklpklkkle lsenrifggl dmlaeklpnl thlnlsgnkl 
+kdistleplk kleclksldl fncevtnlnd yresvfkllp qltyldgydr 
+edqeapdsda evdgvdeeee deegedeede ddedgeeeef deeddededv 
+egdedddevs eeeeefglde ededededee eeeggkgekr kretddeged 
+d
+       </sequence>
+     </interactor>
+     <interactor id="01885">
+       <names>
+         <shortLabel>Cadherin 1</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">E cadherin</alias>
+         <alias type="gene name" typeAc="MI:0301">CDHE</alias>
+         <alias type="gene name" typeAc="MI:0301">ECAD</alias>
+         <alias type="gene name" typeAc="MI:0301">Uvomorulin</alias>
+         <alias type="gene name" typeAc="MI:0301">UVO</alias>
+         <alias type="gene name" typeAc="MI:0301">Calcium dependent adhesion protein, epithelial</alias>
+         <alias type="gene name" typeAc="MI:0301">Liver cell adhesion molecule</alias>
+         <alias type="gene name" typeAc="MI:0301">LCAM</alias>
+         <alias type="gene name" typeAc="MI:0301">Arc-1</alias>
+         <alias type="gene name" typeAc="MI:0301">Cadherin 1, type 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Cell-CAM 120/80</alias>
+         <alias type="gene name" typeAc="MI:0301">Epithelial-cadherin</alias>
+         <alias type="gene name" typeAc="MI:0301">CAM 120/80</alias>
+         <alias type="gene name" typeAc="MI:0301">CD324 antigen</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01885" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P12830,A8K1U7"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="999"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="192090"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1O6S"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mgpwsrslsa lllllqvssw lcqepepchp gfdaesytft vprrhlergr 
+vlgrvnfedc tgrqrtayfs ldtrfkvgtd gvitvkrplr fhnpqihflv 
+yawdstyrkf stkvtlntvg hhhrppphqa svsgiqaell tfpnsspglr 
+rqkrdwvipp iscpenekgp fpknlvqiks nkdkegkvfy sitgqgadtp 
+pvgvfiiere tgwlkvtepl dreriatytl fshavssngn avedpmeili 
+tvtdqndnkp eftqevfkgs vmegalpgts vmevtatdad ddvntynaai 
+aytilsqdpe lpdknmftin rntgvisvvt tgldresfpt ytlvvqaadl 
+qgeglsttat avitvtdtnd nppifnptty kgqvpenean vvittlkvtd 
+adapntpawe avytilnddg gqfvvttnpv nndgilktak gldfeakqqy 
+ilhvavtnvv pfevslttst atvtvdvldv neapifvppe krvevsedfg 
+vgqeitsyta qepdtfmeqk ityriwrdta nwleinpdtg aistraeldr 
+edfehvknst ytaliiatdn gspvatgtgt lllilsdvnd napipeprti 
+ffcernpkpq viniidadlp pntspftael thgasanwti qyndptqesi 
+ilkpkmalev gdykinlklm dnqnkdqvtt levsvcdceg aagvcrkaqp 
+veaglqipai lgilggilal lililllllf lrrravvkep llppeddtrd 
+nvyyydeegg geedqdfdls qlhrgldarp evtrndvapt lmsvprylpr 
+panpdeignf idenlkaadt dptappydsl lvfdyegsgs eaaslsslns 
+sesdkdqdyd ylnewgnrfk kladmyggge dd
+       </sequence>
+     </interactor>
+     <interactor id="03168">
+       <names>
+         <shortLabel>Complement component C1q binding protein</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Hyaluronan binding protein 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Complement component 1 q subcomponent binding protein</alias>
+         <alias type="gene name" typeAc="MI:0301">C1q globular domain binding protein</alias>
+         <alias type="gene name" typeAc="MI:0301">Splicing factor sf2 associated protein</alias>
+         <alias type="gene name" typeAc="MI:0301">HABP1</alias>
+         <alias type="gene name" typeAc="MI:0301">Glycoprotein gC1qBP</alias>
+         <alias type="gene name" typeAc="MI:0301">GC1q-R protein</alias>
+         <alias type="gene name" typeAc="MI:0301">SF2p32</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="03168" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="Q07021"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="708"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="601269"/>
+         <secondaryRef db="pdb" dbAc="MI:0460" id="1P32"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mlpllrcvpr vlgssvaglr aaapaspfrq llqpaprlct rpfgllsvra 
+gserrpgllr prgpcacgcg cgslhtdgdk afvdflsdei keerkiqkhk 
+tlpkmsggwe lelngteakl vrkvagekit vtfninnsip ptfdgeeeps 
+qgqkveeqep eltstpnfvv eviknddgkk alvldchype devgqedeae 
+sdifsirevs fqstgesewk dtnytlntds ldwalydhlm dfladrgvdn 
+tfadelvels talehqeyit fledlksfvk sq
+       </sequence>
+     </interactor>
+     <interactor id="10342">
+       <names>
+         <shortLabel>NipSnap1</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">4-nitrophenylphosphatase domain and non neuronal</alias>
+         <alias type="gene name" typeAc="MI:0301">SNAP25 like 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Nipsnap homolog 1</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="10342" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="Q9BPW8"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="8508"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="603249"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+maprlcsisv tarrllggpg pragdvasaa aarfyskdne gswfrslfvh 
+kvdprkdahs tllskketsn lykiqfhnvk peyldaynsl teavlpklhl 
+dedypcslvg nwntwygeqd qavhlwrfsg gypalmdcmn klknnkeyle 
+frrersqmll srrnqlllef sfwnepqprm gpniyelrty klkpgtmiew 
+gnnwaraiky rqenqeavgg ffsqigelyv vhhlwaykdl qsreetrnaa 
+wrkrgwdenv yytvplvrhm esrimiplki splq
+       </sequence>
+     </interactor>
+     <interactor id="04302">
+       <names>
+         <shortLabel>GBAS</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Glioblastoma amplified sequence</alias>
+         <alias type="gene name" typeAc="MI:0301">NIPSNAP2</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="04302" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="O75323"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="2631"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="603004"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+maarvlrarg aawaggllqr aapcsllprl rtwtsssnrs redswlkslf 
+vrkvdprkda hsnllakket snlyklqfhn vkpecleayn kicqevlpki 
+hedkhypctl vgtwntwyge qdqavhlwry eggypaltev mnklrenkef 
+lefrkarsdm llsrknqlll efsfwnepvp rsgpniyelr syqlrpgtmi 
+ewgnywarai rfrqdgneav ggffsqigql ymvhhlwayr dlqtredirn 
+aawhkhgwee lvyytvpliq emesrimipl ktsplq
+       </sequence>
+     </interactor>
+     <interactor id="06351">
+       <names>
+         <shortLabel>Keratin 9</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Cytokeratin 9</alias>
+         <alias type="gene name" typeAc="MI:0301">CK 9</alias>
+         <alias type="gene name" typeAc="MI:0301">Keratin, type I cytoskeletal 9</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="06351" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P35527"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3857"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="607606"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+mscrqfsssy lsrsgggggg glgsggsirs sysrfsssgg gggggrfsss 
+sgygggssrv cgrggggsfg ysygggsggg fsasslgggf gggsrgfgga 
+sgggysssgg fgggfgggsg ggfgggygsg fggfggfggg agggdggilt 
+anekstmqel nsrlasyldk vqaleeannd lenkiqdwyd kkgpaaiqkn 
+yspyyntidd lkdqivdltv gnnktlldid ntrmtlddfr ikfemeqnlr 
+qgvdadingl rqvldnltme ksdlemqyet lqeelmalkk nhkeemsqlt 
+gqnsgdvnve invapgkdlt ktlndmrqey eqliaknrkd ienqyetqit 
+qiehevsssg qevqssakev tqlrhgvqel eielqsqlsk kaaleksled 
+tknrycgqlq miqeqisnle aqitdvrqei ecqnqeysll lsikmrleke 
+ietyhnlleg gqedfessga gkiglggrgg sggsygrgsr ggsggsyggg 
+gsgggygggs gsrggsggsy gggsgsgggs gggygggsgg ghsggsgggh 
+sggsggnygg gsgsgggsgg gygggsgsrg gsggshgggs gfggesggsy 
+gggeeasgsg ggygggsgks shs
+       </sequence>
+     </interactor>
+     <interactor id="00763">
+       <names>
+         <shortLabel>Keratin 1</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">Cytokeratin</alias>
+         <alias type="gene name" typeAc="MI:0301">Keratin, type II cytoskeletal 1</alias>
+         <alias type="gene name" typeAc="MI:0301">Cytokeratin 1</alias>
+         <alias type="gene name" typeAc="MI:0301">K1</alias>
+         <alias type="gene name" typeAc="MI:0301">CK 1</alias>
+         <alias type="gene name" typeAc="MI:0301">67 kDa cytokeratin</alias>
+         <alias type="gene name" typeAc="MI:0301">Hair alpha protein</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="00763" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P04264"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3848"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="139350"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+msrqfssrsg yrsgggfssg sagiinyqrr ttssstrrsg ggggrfsscg 
+ggggsfgagg gfgsrslvnl ggsksisisv argggrgsgf gggyggggfg 
+gggfggggfg gggiggggfg gfgsggggfg gggfggggyg ggygpvcppg 
+giqevtinqs llqplnveid peiqkvksre reqikslnnq fasfidkvrf 
+leqqnqvlqt kwellqqvdt strthnlepy fesfinnlrr rvdqlksdqs 
+rldselknmq dmvedyrnky edeinkrtna enefvtikkd vdgaymtkvd 
+lqakldnlqq eidfltalyq aelsqmqtqi setnvilsmd nnrsldldsi 
+iaevkaqyed iaqkskaeae slyqskyeel qitagrhgds vrnskieise 
+lnrviqrlrs eidnvkkqis nlqqsisdae qrgenalkda knklndleda 
+lqqakedlar llrdyqelmn tklaldleia tyrtllegee srmsgecapn 
+vsvsvstsht tisgggsrgg ggggygsggs sygsgggsyg sgggggggrg 
+sygsggssyg sgggsygsgg gggghgsygs gsssggyrgg sggggggssg 
+grgsgggssg gsiggrgsss ggvkssggss svkfvsttys gvtr
+       </sequence>
+     </interactor>
+     <interactor id="01020">
+       <names>
+         <shortLabel>Keratin 18</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">K18</alias>
+         <alias type="gene name" typeAc="MI:0301">Cytokeratin 18</alias>
+         <alias type="gene name" typeAc="MI:0301">CYK18</alias>
+         <alias type="gene name" typeAc="MI:0301">Keratin 18 type I cytoskeletal</alias>
+         <alias type="gene name" typeAc="MI:0301">CK 18</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01020" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P05783"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3875"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="148070"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+msfttrstfs tnyrslgsvq apsygarpvs saasvyagag gsgsrisvsr 
+stsfrggmgs gglatgiagg lagmggiqne ketmqslndr lasyldrvrs 
+letenrrles kirehlekkg pqvrdwshyf kiiedlraqi fantvdnari 
+vlqidnarla addfrvkyet elamrqsven dihglrkvid dtnitrlqle 
+teiealkeel lfmkknheee vkglqaqias sgltvevdap ksqdlakima 
+diraqydela rknreeldky wsqqieestt vvttqsaevg aaettltelr 
+rtvqsleidl dsmrnlkasl enslrevear yalqmeqlng illhlesela 
+qtraegqrqa qeyeallnik vkleaeiaty rrlledgedf nlgdaldssn 
+smqtiqkttt rrivdgkvvs etndtkvlrh 
+       </sequence>
+     </interactor>
+     <interactor id="01015">
+       <names>
+         <shortLabel>Keratin 8</shortLabel>
+         <alias type="gene name" typeAc="MI:0301">K8</alias>
+         <alias type="gene name" typeAc="MI:0301">Cytokeratin 8</alias>
+         <alias type="gene name" typeAc="MI:0301">Keratin type II cytoskeletal 8</alias>
+         <alias type="gene name" typeAc="MI:0301">CK 8</alias>
+       </names>
+       <xref>
+         <primaryRef db="HPRD" dbAc="MI:0468" id="01015" refType="identity" refTypeAc="MI:0356"/>
+         <secondaryRef db="uniprot" dbAc="MI:0486" id="P05787"/>
+         <secondaryRef db="entrezgene" dbAc="MI:0477" id="3856"/>
+         <secondaryRef db="omim" dbAc="MI:0480" id="148060"/>
+       </xref>
+       <interactorType>
+          <names>
+             <shortLabel>protein</shortLabel>
+             <fullName>protein</fullName>
+          </names>
+          <xref>
+            <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326"/>
+          </xref>
+       </interactorType>
+       <organism ncbiTaxId="40674">
+         <names>
+           <shortLabel>Mammalia</shortLabel>
+           <fullName>Mammalia</fullName>
+         </names>
+       </organism>
+       <sequence>
+msirvtqksy kvstsgpraf ssrsytsgpg srissssfsr vgssnfrggl 
+gggyggasgm ggitavtvnq sllsplvlev dpniqavrtq ekeqiktlnn 
+kfasfidkvr fleqqnkmle tkwsllqqqk tarsnmdnmf esyinnlrrq 
+letlgqeklk leaelgnmqg lvedfknkye deinkrteme nefvlikkdv 
+deaymnkvel esrlegltde inflrqlyee eirelqsqis dtsvvlsmdn 
+srsldmdsii aevkaqyedi anrsraeaes myqikyeelq slagkhgddl 
+rrtkteisem nrnisrlqae ieglkgqras leaaiadaeq rgelaikdan 
+aklseleaal qrakqdmarq lreyqelmnv klaldieiat yrkllegees 
+rlesgmqnms ihtkttsgya gglssayggl tspglsyslg ssfgsgagss 
+sfsrtsssra vvvkkietrd gklvsessdv lpk
+       </sequence>
+     </interactor>
+    </interactorList>
+    <interactionList>
+     <interaction id="0">
+       <experimentList>
+         <experimentRef>0</experimentRef>
+       </experimentList>
+       <participantList>
+           <participant id="0">
+              <interactorRef>00016</interactorRef>
+           </participant>
+           <participant id="1">
+              <interactorRef>01646</interactorRef>
+           </participant>
+       </participantList>
+     </interaction>
+     <interaction id="1">
+       <experimentList>
+         <experimentRef>1</experimentRef>
+         <experimentRef>2</experimentRef>
+       </experimentList>
+       <participantList>
+           <participant id="2">
+              <interactorRef>00016</interactorRef>
+           </participant>
+           <participant id="3">
+              <interactorRef>05222</interactorRef>
+           </participant>
+           <participant id="4">
+              <interactorRef>00286</interactorRef>
+           </participant>
+           <participant id="5">
+              <interactorRef>00062</interactorRef>
+           </participant>
+           <participant id="6">
+              <interactorRef>00032</interactorRef>
+           </participant>
+           <participant id="7">
+              <interactorRef>00777</interactorRef>
+           </participant>
+           <participant id="8">
+              <interactorRef>00318</interactorRef>
+           </participant>
+           <participant id="9">
+              <interactorRef>00774</interactorRef>
+           </participant>
+           <participant id="10">
+              <interactorRef>17853</interactorRef>
+           </participant>
+           <participant id="11">
+              <interactorRef>15946</interactorRef>
+           </participant>
+           <participant id="12">
+              <interactorRef>08935</interactorRef>
+           </participant>
+           <participant id="13">
+              <interactorRef>01035</interactorRef>
+           </participant>
+           <participant id="14">
+              <interactorRef>01940</interactorRef>
+           </participant>
+           <participant id="15">
+              <interactorRef>01825</interactorRef>
+           </participant>
+           <participant id="16">
+              <interactorRef>00285</interactorRef>
+           </participant>
+           <participant id="17">
+              <interactorRef>00682</interactorRef>
+           </participant>
+           <participant id="18">
+              <interactorRef>02770</interactorRef>
+           </participant>
+           <participant id="19">
+              <interactorRef>00017</interactorRef>
+           </participant>
+           <participant id="20">
+              <interactorRef>09023</interactorRef>
+           </participant>
+           <participant id="21">
+              <interactorRef>09803</interactorRef>
+           </participant>
+           <participant id="22">
+              <interactorRef>01885</interactorRef>
+           </participant>
+           <participant id="23">
+              <interactorRef>00285</interactorRef>
+           </participant>
+           <participant id="24">
+              <interactorRef>03168</interactorRef>
+           </participant>
+           <participant id="25">
+              <interactorRef>10342</interactorRef>
+           </participant>
+           <participant id="26">
+              <interactorRef>04302</interactorRef>
+           </participant>
+           <participant id="27">
+              <interactorRef>06351</interactorRef>
+           </participant>
+           <participant id="28">
+              <interactorRef>00763</interactorRef>
+           </participant>
+           <participant id="29">
+              <interactorRef>01020</interactorRef>
+           </participant>
+           <participant id="30">
+              <interactorRef>01015</interactorRef>
+           </participant>
+       </participantList>
+     </interaction>
+    </interactionList>
+  </entry>
+</entrySet>

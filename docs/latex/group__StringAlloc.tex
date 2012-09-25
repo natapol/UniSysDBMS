@@ -1,0 +1,54 @@
+\hypertarget{group__StringAlloc}{\section{String Allocation/\-Free functions}
+\label{group__StringAlloc}\index{String Allocation/\-Free functions@{String Allocation/\-Free functions}}
+}
+Collaboration diagram for String Allocation/\-Free functions\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__StringAlloc}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} \hyperlink{group__StringAlloc_gac35b3be05a320f835b3976179637fe76}{string\-Dup} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} source, int cb\-Data=-\/1)
+\begin{DoxyCompactList}\small\item\em Duplicate (copy in a new allocated buffer) the source string. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} void \hyperlink{group__StringAlloc_ga6a510c9553d7fa49d0afdda1d7928669}{free\-X\-M\-L\-String} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} t)
+\begin{DoxyCompactList}\small\item\em to free the string allocated inside the \char`\"{}string\-Dup\char`\"{} function or the \char`\"{}create\-X\-M\-L\-String\char`\"{} function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__StringAlloc_ga6a510c9553d7fa49d0afdda1d7928669}{\index{String Allocation/\-Free functions@{String Allocation/\-Free functions}!free\-X\-M\-L\-String@{free\-X\-M\-L\-String}}
+\index{free\-X\-M\-L\-String@{free\-X\-M\-L\-String}!String Allocation/Free functions@{String Allocation/\-Free functions}}
+\subsubsection[{free\-X\-M\-L\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} void free\-X\-M\-L\-String (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{t}
+\end{DoxyParamCaption}
+)}}\label{group__StringAlloc_ga6a510c9553d7fa49d0afdda1d7928669}
+
+
+to free the string allocated inside the \char`\"{}string\-Dup\char`\"{} function or the \char`\"{}create\-X\-M\-L\-String\char`\"{} function. 
+
+\hypertarget{group__StringAlloc_gac35b3be05a320f835b3976179637fe76}{\index{String Allocation/\-Free functions@{String Allocation/\-Free functions}!string\-Dup@{string\-Dup}}
+\index{string\-Dup@{string\-Dup}!String Allocation/Free functions@{String Allocation/\-Free functions}}
+\subsubsection[{string\-Dup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} {\bf X\-M\-L\-S\-T\-R} string\-Dup (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{source, }
+\item[{int}]{cb\-Data = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{group__StringAlloc_gac35b3be05a320f835b3976179637fe76}
+
+
+Duplicate (copy in a new allocated buffer) the source string. 
+
+This is a very handy function when used with all the \char`\"{}\-X\-M\-L\-Node\-::$\ast$\-\_\-\-W\-O\-S\-D\char`\"{} functions (\hyperlink{group__xmlWOSD}{xml\-W\-O\-S\-D}). 
+\begin{DoxyParams}{Parameters}
+{\em cb\-Data} & If !=0 then cb\-Data is the number of chars to duplicate. New strings allocated with this function should be free'd using the \char`\"{}free\-X\-M\-L\-String\char`\"{} function. \\
+\hline
+{\em source} & \\
+\hline
+\end{DoxyParams}

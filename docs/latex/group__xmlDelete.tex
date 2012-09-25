@@ -1,0 +1,140 @@
+\hypertarget{group__xmlDelete}{\section{Deleting Nodes or Attributes}
+\label{group__xmlDelete}\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+}
+Collaboration diagram for Deleting Nodes or Attributes\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__xmlDelete}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__xmlDelete_gaa4d133999da220e916bdf3a969d493c4}{X\-M\-L\-Node\-::delete\-Node\-Content} ()
+\begin{DoxyCompactList}\small\item\em The \char`\"{}delete\-Node\-Content\char`\"{} function forces the deletion of the content of this \hyperlink{structXMLNode}{X\-M\-L\-Node} and the subtree. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga61b2405305063594b35b309cc2e22c01}{X\-M\-L\-Node\-::delete\-Attribute} (int i=0)
+\begin{DoxyCompactList}\small\item\em Delete the ith attribute of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga2b21339e5b370f1d7ebde2dc51217eed}{X\-M\-L\-Node\-::delete\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name)
+\begin{DoxyCompactList}\small\item\em Delete the attribute with the given name (the \char`\"{}strcmp\char`\"{} function is used to find the right attribute) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga6f00d7c1b4eaa29cfdd9d4a709495aca}{X\-M\-L\-Node\-::delete\-Attribute} (\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$an\-Attribute)
+\begin{DoxyCompactList}\small\item\em Delete the attribute with the name \char`\"{}an\-Attribute-\/$>$lpsz\-Name\char`\"{} (the \char`\"{}strcmp\char`\"{} function is used to find the right attribute) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga14a49a23735ea10a44864cb6b4302250}{X\-M\-L\-Node\-::delete\-Text} (int i=0)
+\begin{DoxyCompactList}\small\item\em Delete the Ith text content of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga21ee499630d71ab6026753a85f02f582}{X\-M\-L\-Node\-::delete\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value)
+\begin{DoxyCompactList}\small\item\em Delete the text content \char`\"{}lpsz\-Value\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison is used to find the right text) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga44b72c82310eb4319dba46eb9cc9f6e9}{X\-M\-L\-Node\-::delete\-Clear} (int i=0)
+\begin{DoxyCompactList}\small\item\em Delete the Ith clear tag inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga8fff4baa9a8000f8662ee302438fff64}{X\-M\-L\-Node\-::delete\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value)
+\begin{DoxyCompactList}\small\item\em Delete the clear tag \char`\"{}lpsz\-Value\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison is used to find the clear tag) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_gae92182823d3d5b40893103ad222ec4a8}{X\-M\-L\-Node\-::delete\-Clear} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Delete the clear tag \char`\"{}p\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison on the lpsz\-Name of the clear tag is used to find the clear tag) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some deletion functions\-: 
+
+\subsection{Function Documentation}
+\hypertarget{group__xmlDelete_ga61b2405305063594b35b309cc2e22c01}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Attribute@{delete\-Attribute}}
+\index{delete\-Attribute@{delete\-Attribute}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Attribute (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga61b2405305063594b35b309cc2e22c01}
+
+
+Delete the ith attribute of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. 
+
+\hypertarget{group__xmlDelete_ga2b21339e5b370f1d7ebde2dc51217eed}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Attribute@{delete\-Attribute}}
+\index{delete\-Attribute@{delete\-Attribute}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Name}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga2b21339e5b370f1d7ebde2dc51217eed}
+
+
+Delete the attribute with the given name (the \char`\"{}strcmp\char`\"{} function is used to find the right attribute) 
+
+\hypertarget{group__xmlDelete_ga6f00d7c1b4eaa29cfdd9d4a709495aca}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Attribute@{delete\-Attribute}}
+\index{delete\-Attribute@{delete\-Attribute}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Attribute} $\ast$}]{an\-Attribute}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga6f00d7c1b4eaa29cfdd9d4a709495aca}
+
+
+Delete the attribute with the name \char`\"{}an\-Attribute-\/$>$lpsz\-Name\char`\"{} (the \char`\"{}strcmp\char`\"{} function is used to find the right attribute) 
+
+\hypertarget{group__xmlDelete_ga44b72c82310eb4319dba46eb9cc9f6e9}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Clear@{delete\-Clear}}
+\index{delete\-Clear@{delete\-Clear}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Clear (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga44b72c82310eb4319dba46eb9cc9f6e9}
+
+
+Delete the Ith clear tag inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. 
+
+\hypertarget{group__xmlDelete_ga8fff4baa9a8000f8662ee302438fff64}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Clear@{delete\-Clear}}
+\index{delete\-Clear@{delete\-Clear}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga8fff4baa9a8000f8662ee302438fff64}
+
+
+Delete the clear tag \char`\"{}lpsz\-Value\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison is used to find the clear tag) 
+
+\hypertarget{group__xmlDelete_gae92182823d3d5b40893103ad222ec4a8}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Clear@{delete\-Clear}}
+\index{delete\-Clear@{delete\-Clear}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Clear} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_gae92182823d3d5b40893103ad222ec4a8}
+
+
+Delete the clear tag \char`\"{}p\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison on the lpsz\-Name of the clear tag is used to find the clear tag) 
+
+\hypertarget{group__xmlDelete_gaa4d133999da220e916bdf3a969d493c4}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Node\-Content@{delete\-Node\-Content}}
+\index{delete\-Node\-Content@{delete\-Node\-Content}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Node\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Node\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_gaa4d133999da220e916bdf3a969d493c4}
+
+
+The \char`\"{}delete\-Node\-Content\char`\"{} function forces the deletion of the content of this \hyperlink{structXMLNode}{X\-M\-L\-Node} and the subtree. 
+
+\begin{DoxyNote}{Note}
+The \hyperlink{structXMLNode}{X\-M\-L\-Node} instances that are referring to the part of the subtree that has been deleted C\-A\-N\-N\-O\-T be used anymore!!. Unexpected results will occur if you continue using them. 
+\end{DoxyNote}
+\hypertarget{group__xmlDelete_ga14a49a23735ea10a44864cb6b4302250}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Text@{delete\-Text}}
+\index{delete\-Text@{delete\-Text}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Text (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga14a49a23735ea10a44864cb6b4302250}
+
+
+Delete the Ith text content of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. 
+
+\hypertarget{group__xmlDelete_ga21ee499630d71ab6026753a85f02f582}{\index{Deleting Nodes or Attributes@{Deleting Nodes or Attributes}!delete\-Text@{delete\-Text}}
+\index{delete\-Text@{delete\-Text}!Deleting Nodes or Attributes@{Deleting Nodes or Attributes}}
+\subsubsection[{delete\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::delete\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value}
+\end{DoxyParamCaption}
+)}}\label{group__xmlDelete_ga21ee499630d71ab6026753a85f02f582}
+
+
+Delete the text content \char`\"{}lpsz\-Value\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison is used to find the right text) 
+

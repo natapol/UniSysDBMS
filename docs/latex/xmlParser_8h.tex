@@ -1,0 +1,324 @@
+\hypertarget{xmlParser_8h}{\section{xml\-Parser.\-h File Reference}
+\label{xmlParser_8h}\index{xml\-Parser.\-h@{xml\-Parser.\-h}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$wchar.\-h$>$}\\*
+Include dependency graph for xml\-Parser.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{xmlParser_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xmlParser_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structXMLResults}{X\-M\-L\-Results}
+\begin{DoxyCompactList}\small\item\em Structure used to obtain error details if the parse fails. \end{DoxyCompactList}\item 
+struct \hyperlink{structXMLClear}{X\-M\-L\-Clear}
+\begin{DoxyCompactList}\small\item\em Structure for X\-M\-L clear (unformatted) node (usually comments) \end{DoxyCompactList}\item 
+struct \hyperlink{structXMLAttribute}{X\-M\-L\-Attribute}
+\begin{DoxyCompactList}\small\item\em Structure for X\-M\-L attribute. \end{DoxyCompactList}\item 
+struct \hyperlink{structXMLNode}{X\-M\-L\-Node}
+\begin{DoxyCompactList}\small\item\em Main Class representing a X\-M\-L node. \end{DoxyCompactList}\item 
+struct \hyperlink{structXMLNode_1_1XMLNodeDataTag}{X\-M\-L\-Node\-::\-X\-M\-L\-Node\-Data\-Tag}
+\item 
+struct \hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents}
+\begin{DoxyCompactList}\small\item\em This structure is given by the function \hyperlink{group__navigate_gaf56414ef38a13892afc4f22177a7760a}{X\-M\-L\-Node\-::enum\-Contents}. \end{DoxyCompactList}\item 
+struct \hyperlink{structToXMLStringTool}{To\-X\-M\-L\-String\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions. \end{DoxyCompactList}\item 
+struct \hyperlink{structXMLParserBase64Tool}{X\-M\-L\-Parser\-Base64\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}
+\item 
+\#define \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}
+\item 
+\#define \hyperlink{xmlParser_8h_a17b1f4694ce8bdeef4c07319c5f8f84d}{\-\_\-\-C\-X\-M\-L}(c)~c
+\item 
+\#define \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R}~const char $\ast$
+\item 
+\#define \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R}~char $\ast$
+\item 
+\#define \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R}~char
+\item 
+\#define \hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}~0
+\item 
+\#define \hyperlink{xmlParser_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\-R\-U\-E}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{X\-M\-L\-Error} \hyperlink{xmlParser_8h_a1b079e7e429bd933ca6b2134846689b6}{X\-M\-L\-Error}
+\begin{DoxyCompactList}\small\item\em Enumeration for X\-M\-L parse errors. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}{X\-M\-L\-Element\-Type} \hyperlink{xmlParser_8h_a8e42cd83bc7037162ed779d78881bf20}{X\-M\-L\-Element\-Type}
+\begin{DoxyCompactList}\small\item\em Enumeration used to manage type of data. Use in conjunction with structure \hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents}. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structXMLResults}{X\-M\-L\-Results} \hyperlink{xmlParser_8h_aafbd547d290f82864b1f840025e972bc}{X\-M\-L\-Results}
+\begin{DoxyCompactList}\small\item\em Structure used to obtain error details if the parse fails. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structXMLClear}{X\-M\-L\-Clear} \hyperlink{xmlParser_8h_ac66e91f36b3c0c314c4fc8894820aee8}{X\-M\-L\-Clear}
+\begin{DoxyCompactList}\small\item\em Structure for X\-M\-L clear (unformatted) node (usually comments) \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} \hyperlink{xmlParser_8h_a4a11e7f02fa98cb7850c6d33e5eb9a77}{X\-M\-L\-Attribute}
+\begin{DoxyCompactList}\small\item\em Structure for X\-M\-L attribute. \end{DoxyCompactList}\item 
+typedef int \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position}
+\begin{DoxyCompactList}\small\item\em X\-M\-L\-Element\-Position are not interchangeable with simple indexes. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{xmlParser_8h_a40876d6c58776ec0adb69baea534b2de}{X\-M\-L\-Node}
+\begin{DoxyCompactList}\small\item\em Main Class representing a X\-M\-L node. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents} \hyperlink{xmlParser_8h_adb1f38c236e48d32771c48b14ed627d1}{X\-M\-L\-Node\-Contents}
+\begin{DoxyCompactList}\small\item\em This structure is given by the function \hyperlink{group__navigate_gaf56414ef38a13892afc4f22177a7760a}{X\-M\-L\-Node\-::enum\-Contents}. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \\*
+\hyperlink{structToXMLStringTool}{To\-X\-M\-L\-String\-Tool} \hyperlink{group__ToXMLStringTool_ga0460d731addf12b0863d4fd857ca8281}{To\-X\-M\-L\-String\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \\*
+\hyperlink{structXMLParserBase64Tool}{X\-M\-L\-Parser\-Base64\-Tool} \hyperlink{group__XMLParserBase64Tool_ga90d0646ff4a054f9d8ea0d29fb86f3a9}{X\-M\-L\-Parser\-Base64\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{X\-M\-L\-Error} \{ \\*
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a7cf226016a9a9ebc47ee5124e413b511}{e\-X\-M\-L\-Error\-None} =  0, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a26a80e15de947fae9fb44b67e1a3a263}{e\-X\-M\-L\-Error\-Missing\-End\-Tag}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a164e2a597f12c1b2e186519fc893cc58}{e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a0961a8e0bbf11a91009adaf4b1c66e46}{e\-X\-M\-L\-Error\-Empty}, 
+\\*
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a943343714a3946a264fa0bfa7a4fbe7d}{e\-X\-M\-L\-Error\-Missing\-Tag\-Name}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a489af43e5e1f882ed5c3dd9f59bbfde4}{e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a4eb9d0115e3d9fcfad342c7387c26c63}{e\-X\-M\-L\-Error\-Unmatched\-End\-Tag}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a90b020017d16093c6ccff3ccf3d92ee8}{e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag}, 
+\\*
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a26e2e2231f2d3941d4b4bbb96cd9ed2c}{e\-X\-M\-L\-Error\-Unexpected\-Token}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5ad0687f19145845937f24cecd9f5e9fa9}{e\-X\-M\-L\-Error\-No\-Elements}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a55441ddd2419acb3674a9068f5c3930f}{e\-X\-M\-L\-Error\-File\-Not\-Found}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a750c78b6de79d89e2184fc7caff939e0}{e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found}, 
+\\*
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5aeca604d14ec57d6dcfdc5e74dbc559dc}{e\-X\-M\-L\-Error\-Unknown\-Character\-Entity}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a4e9a09e10bdc0c9071a8b2c4442ecae9}{e\-X\-M\-L\-Error\-Character\-Code\-Above255}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a5e54f63f442005ae89fdf1fe4fb17725}{e\-X\-M\-L\-Error\-Char\-Conversion\-Error}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a8596c0bf247f549ff306b6889fe2cb5c}{e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File}, 
+\\*
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a1dad0c33ae33d61b2f5f6f7f72838209}{e\-X\-M\-L\-Error\-Cannot\-Write\-File}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a85384d57e765bd52aaaa06096cb186d9}{e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5afc16bb8e15fab680665d3b8bedfc980b}{e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character}, 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5af2d54f7b3a0299a7051a196a125bf62d}{e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data}, 
+\\*
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5adcc1aaa78e2f45feb792585ab1d747bd}{e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for X\-M\-L parse errors. \end{DoxyCompactList}\item 
+enum \hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}{X\-M\-L\-Element\-Type} \{ \\*
+\hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851abef700648a317ca089d00a9285791f8f}{e\-Node\-Child} = 0, 
+\hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a98e1935d617c2377530661c2d8905d46}{e\-Node\-Attribute} = 1, 
+\hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a0d667f729ee0477d741d7939cf025201}{e\-Node\-Text} = 2, 
+\hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851ae32d7d859f74292c7474f96804f0cf81}{e\-Node\-Clear} = 3, 
+\\*
+\hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a1e67ba6c14f35fdc461da667721bff31}{e\-Node\-N\-U\-L\-L} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration used to manage type of data. Use in conjunction with structure \hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} \hyperlink{group__StringAlloc_gac35b3be05a320f835b3976179637fe76}{string\-Dup} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} source, int cb\-Data=-\/1)
+\begin{DoxyCompactList}\small\item\em Duplicate (copy in a new allocated buffer) the source string. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} void \hyperlink{group__StringAlloc_ga6a510c9553d7fa49d0afdda1d7928669}{free\-X\-M\-L\-String} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} t)
+\begin{DoxyCompactList}\small\item\em to free the string allocated inside the \char`\"{}string\-Dup\char`\"{} function or the \char`\"{}create\-X\-M\-L\-String\char`\"{} function. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} char \hyperlink{group__atoX_gac93e613b4563072bf7b43f91d2696c75}{xmltob} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} xml\-String, char defaut\-Value=0)
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} int \hyperlink{group__atoX_ga17b00a11ddc49e8e253160cc56d6377f}{xmltoi} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} xml\-String, int defaut\-Value=0)
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} long \hyperlink{group__atoX_gab69be88d6b554476470e7a1e6ec23589}{xmltol} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} xml\-String, long defaut\-Value=0)
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} double \hyperlink{group__atoX_gaf820a1a0f8055c8e4a006a566be9500a}{xmltof} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} xml\-String, double defaut\-Value=.\-0)
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__atoX_ga20998546f61a5d41ed3fe4553702473a}{xmltoa} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} xml\-String, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} defaut\-Value=\hyperlink{xmlParser_8h_a17b1f4694ce8bdeef4c07319c5f8f84d}{\-\_\-\-C\-X\-M\-L}(\char`\"{}\char`\"{}))
+\item 
+\hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R} \hyperlink{group__atoX_gaa929f34f436c3466e66196e5e2091e73}{xmltoc} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} xml\-String, const \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R} defaut\-Value=\hyperlink{xmlParser_8h_a17b1f4694ce8bdeef4c07319c5f8f84d}{\-\_\-\-C\-X\-M\-L}('\textbackslash{}0'))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{xmlParser_8h_a17b1f4694ce8bdeef4c07319c5f8f84d}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!\-\_\-\-C\-X\-M\-L@{\-\_\-\-C\-X\-M\-L}}
+\index{\-\_\-\-C\-X\-M\-L@{\-\_\-\-C\-X\-M\-L}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{\-\_\-\-C\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-C\-X\-M\-L(
+\begin{DoxyParamCaption}
+\item[{}]{c}
+\end{DoxyParamCaption}
+)~c}}\label{xmlParser_8h_a17b1f4694ce8bdeef4c07319c5f8f84d}
+\hypertarget{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!F\-A\-L\-S\-E@{F\-A\-L\-S\-E}}
+\index{F\-A\-L\-S\-E@{F\-A\-L\-S\-E}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{F\-A\-L\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-A\-L\-S\-E~0}}\label{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}
+\hypertarget{xmlParser_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!T\-R\-U\-E@{T\-R\-U\-E}}
+\index{T\-R\-U\-E@{T\-R\-U\-E}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{T\-R\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-R\-U\-E~1}}\label{xmlParser_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+\hypertarget{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-C\-H\-A\-R@{X\-M\-L\-C\-H\-A\-R}}
+\index{X\-M\-L\-C\-H\-A\-R@{X\-M\-L\-C\-H\-A\-R}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-M\-L\-C\-H\-A\-R~char}}\label{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}
+\hypertarget{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-C\-S\-T\-R@{X\-M\-L\-C\-S\-T\-R}}
+\index{X\-M\-L\-C\-S\-T\-R@{X\-M\-L\-C\-S\-T\-R}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-C\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-M\-L\-C\-S\-T\-R~const char $\ast$}}\label{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}
+\hypertarget{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y@{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}}
+\index{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y@{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}}\label{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}
+\hypertarget{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y@{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}}
+\index{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y@{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y}}\label{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}
+\hypertarget{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-S\-T\-R@{X\-M\-L\-S\-T\-R}}
+\index{X\-M\-L\-S\-T\-R@{X\-M\-L\-S\-T\-R}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-M\-L\-S\-T\-R~char $\ast$}}\label{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{xmlParser_8h_a4a11e7f02fa98cb7850c6d33e5eb9a77}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Attribute@{X\-M\-L\-Attribute}}
+\index{X\-M\-L\-Attribute@{X\-M\-L\-Attribute}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-Attribute}  {\bf X\-M\-L\-Attribute}}}\label{xmlParser_8h_a4a11e7f02fa98cb7850c6d33e5eb9a77}
+
+
+Structure for X\-M\-L attribute. 
+
+\hypertarget{xmlParser_8h_ac66e91f36b3c0c314c4fc8894820aee8}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Clear@{X\-M\-L\-Clear}}
+\index{X\-M\-L\-Clear@{X\-M\-L\-Clear}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-Clear}  {\bf X\-M\-L\-Clear}}}\label{xmlParser_8h_ac66e91f36b3c0c314c4fc8894820aee8}
+
+
+Structure for X\-M\-L clear (unformatted) node (usually comments) 
+
+\hypertarget{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Element\-Position@{X\-M\-L\-Element\-Position}}
+\index{X\-M\-L\-Element\-Position@{X\-M\-L\-Element\-Position}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Element\-Position}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf X\-M\-L\-Element\-Position}}}\label{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}
+
+
+X\-M\-L\-Element\-Position are not interchangeable with simple indexes. 
+
+\hypertarget{xmlParser_8h_a8e42cd83bc7037162ed779d78881bf20}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Element\-Type@{X\-M\-L\-Element\-Type}}
+\index{X\-M\-L\-Element\-Type@{X\-M\-L\-Element\-Type}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf X\-M\-L\-Element\-Type}  {\bf X\-M\-L\-Element\-Type}}}\label{xmlParser_8h_a8e42cd83bc7037162ed779d78881bf20}
+
+
+Enumeration used to manage type of data. Use in conjunction with structure \hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents}. 
+
+\hypertarget{xmlParser_8h_a1b079e7e429bd933ca6b2134846689b6}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Error@{X\-M\-L\-Error}}
+\index{X\-M\-L\-Error@{X\-M\-L\-Error}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Error}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf X\-M\-L\-Error}  {\bf X\-M\-L\-Error}}}\label{xmlParser_8h_a1b079e7e429bd933ca6b2134846689b6}
+
+
+Enumeration for X\-M\-L parse errors. 
+
+\hypertarget{xmlParser_8h_a40876d6c58776ec0adb69baea534b2de}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Node@{X\-M\-L\-Node}}
+\index{X\-M\-L\-Node@{X\-M\-L\-Node}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} {\bf X\-M\-L\-Node}  {\bf X\-M\-L\-Node}}}\label{xmlParser_8h_a40876d6c58776ec0adb69baea534b2de}
+
+
+Main Class representing a X\-M\-L node. 
+
+All operations are performed using this class. \begin{DoxyNote}{Note}
+The constructors of the \hyperlink{structXMLNode}{X\-M\-L\-Node} class are protected, so use instead one of these four methods to get your first instance of \hyperlink{structXMLNode}{X\-M\-L\-Node}\-: 
+\begin{DoxyItemize}
+\item \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String}  
+\item \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File}  
+\item \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper}  
+\item \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node} (or \hyperlink{group__xmlWOSD_ga9c8b3bfa9671cb2a0a977ef30bab364a}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node\-\_\-\-W\-O\-S\-D}) 
+\end{DoxyItemize}
+\end{DoxyNote}
+\hypertarget{xmlParser_8h_adb1f38c236e48d32771c48b14ed627d1}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Node\-Contents@{X\-M\-L\-Node\-Contents}}
+\index{X\-M\-L\-Node\-Contents@{X\-M\-L\-Node\-Contents}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Node\-Contents}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-Node\-Contents}  {\bf X\-M\-L\-Node\-Contents}}}\label{xmlParser_8h_adb1f38c236e48d32771c48b14ed627d1}
+
+
+This structure is given by the function \hyperlink{group__navigate_gaf56414ef38a13892afc4f22177a7760a}{X\-M\-L\-Node\-::enum\-Contents}. 
+
+\hypertarget{xmlParser_8h_aafbd547d290f82864b1f840025e972bc}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Results@{X\-M\-L\-Results}}
+\index{X\-M\-L\-Results@{X\-M\-L\-Results}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Results}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-Results}  {\bf X\-M\-L\-Results}}}\label{xmlParser_8h_aafbd547d290f82864b1f840025e972bc}
+
+
+Structure used to obtain error details if the parse fails. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Element\-Type@{X\-M\-L\-Element\-Type}}
+\index{X\-M\-L\-Element\-Type@{X\-M\-L\-Element\-Type}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf X\-M\-L\-Element\-Type}}}\label{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}
+
+
+Enumeration used to manage type of data. Use in conjunction with structure \hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents}. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{e\-Node\-Child@{e\-Node\-Child}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-Node\-Child@{e\-Node\-Child}}\item[{\em 
+\hypertarget{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851abef700648a317ca089d00a9285791f8f}{e\-Node\-Child}\label{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851abef700648a317ca089d00a9285791f8f}
+}]\index{e\-Node\-Attribute@{e\-Node\-Attribute}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-Node\-Attribute@{e\-Node\-Attribute}}\item[{\em 
+\hypertarget{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a98e1935d617c2377530661c2d8905d46}{e\-Node\-Attribute}\label{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a98e1935d617c2377530661c2d8905d46}
+}]\index{e\-Node\-Text@{e\-Node\-Text}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-Node\-Text@{e\-Node\-Text}}\item[{\em 
+\hypertarget{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a0d667f729ee0477d741d7939cf025201}{e\-Node\-Text}\label{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a0d667f729ee0477d741d7939cf025201}
+}]\index{e\-Node\-Clear@{e\-Node\-Clear}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-Node\-Clear@{e\-Node\-Clear}}\item[{\em 
+\hypertarget{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851ae32d7d859f74292c7474f96804f0cf81}{e\-Node\-Clear}\label{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851ae32d7d859f74292c7474f96804f0cf81}
+}]\index{e\-Node\-N\-U\-L\-L@{e\-Node\-N\-U\-L\-L}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-Node\-N\-U\-L\-L@{e\-Node\-N\-U\-L\-L}}\item[{\em 
+\hypertarget{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a1e67ba6c14f35fdc461da667721bff31}{e\-Node\-N\-U\-L\-L}\label{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851a1e67ba6c14f35fdc461da667721bff31}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{\index{xml\-Parser.\-h@{xml\-Parser.\-h}!X\-M\-L\-Error@{X\-M\-L\-Error}}
+\index{X\-M\-L\-Error@{X\-M\-L\-Error}!xmlParser.h@{xml\-Parser.\-h}}
+\subsubsection[{X\-M\-L\-Error}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf X\-M\-L\-Error}}}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}
+
+
+Enumeration for X\-M\-L parse errors. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{e\-X\-M\-L\-Error\-None@{e\-X\-M\-L\-Error\-None}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-None@{e\-X\-M\-L\-Error\-None}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a7cf226016a9a9ebc47ee5124e413b511}{e\-X\-M\-L\-Error\-None}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a7cf226016a9a9ebc47ee5124e413b511}
+}]\index{e\-X\-M\-L\-Error\-Missing\-End\-Tag@{e\-X\-M\-L\-Error\-Missing\-End\-Tag}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Missing\-End\-Tag@{e\-X\-M\-L\-Error\-Missing\-End\-Tag}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a26a80e15de947fae9fb44b67e1a3a263}{e\-X\-M\-L\-Error\-Missing\-End\-Tag}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a26a80e15de947fae9fb44b67e1a3a263}
+}]\index{e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found@{e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found@{e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a164e2a597f12c1b2e186519fc893cc58}{e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a164e2a597f12c1b2e186519fc893cc58}
+}]\index{e\-X\-M\-L\-Error\-Empty@{e\-X\-M\-L\-Error\-Empty}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Empty@{e\-X\-M\-L\-Error\-Empty}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a0961a8e0bbf11a91009adaf4b1c66e46}{e\-X\-M\-L\-Error\-Empty}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a0961a8e0bbf11a91009adaf4b1c66e46}
+}]\index{e\-X\-M\-L\-Error\-Missing\-Tag\-Name@{e\-X\-M\-L\-Error\-Missing\-Tag\-Name}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Missing\-Tag\-Name@{e\-X\-M\-L\-Error\-Missing\-Tag\-Name}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a943343714a3946a264fa0bfa7a4fbe7d}{e\-X\-M\-L\-Error\-Missing\-Tag\-Name}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a943343714a3946a264fa0bfa7a4fbe7d}
+}]\index{e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name@{e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name@{e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a489af43e5e1f882ed5c3dd9f59bbfde4}{e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a489af43e5e1f882ed5c3dd9f59bbfde4}
+}]\index{e\-X\-M\-L\-Error\-Unmatched\-End\-Tag@{e\-X\-M\-L\-Error\-Unmatched\-End\-Tag}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Unmatched\-End\-Tag@{e\-X\-M\-L\-Error\-Unmatched\-End\-Tag}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a4eb9d0115e3d9fcfad342c7387c26c63}{e\-X\-M\-L\-Error\-Unmatched\-End\-Tag}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a4eb9d0115e3d9fcfad342c7387c26c63}
+}]\index{e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag@{e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag@{e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a90b020017d16093c6ccff3ccf3d92ee8}{e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a90b020017d16093c6ccff3ccf3d92ee8}
+}]\index{e\-X\-M\-L\-Error\-Unexpected\-Token@{e\-X\-M\-L\-Error\-Unexpected\-Token}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Unexpected\-Token@{e\-X\-M\-L\-Error\-Unexpected\-Token}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a26e2e2231f2d3941d4b4bbb96cd9ed2c}{e\-X\-M\-L\-Error\-Unexpected\-Token}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a26e2e2231f2d3941d4b4bbb96cd9ed2c}
+}]\index{e\-X\-M\-L\-Error\-No\-Elements@{e\-X\-M\-L\-Error\-No\-Elements}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-No\-Elements@{e\-X\-M\-L\-Error\-No\-Elements}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5ad0687f19145845937f24cecd9f5e9fa9}{e\-X\-M\-L\-Error\-No\-Elements}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5ad0687f19145845937f24cecd9f5e9fa9}
+}]\index{e\-X\-M\-L\-Error\-File\-Not\-Found@{e\-X\-M\-L\-Error\-File\-Not\-Found}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-File\-Not\-Found@{e\-X\-M\-L\-Error\-File\-Not\-Found}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a55441ddd2419acb3674a9068f5c3930f}{e\-X\-M\-L\-Error\-File\-Not\-Found}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a55441ddd2419acb3674a9068f5c3930f}
+}]\index{e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found@{e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found@{e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a750c78b6de79d89e2184fc7caff939e0}{e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a750c78b6de79d89e2184fc7caff939e0}
+}]\index{e\-X\-M\-L\-Error\-Unknown\-Character\-Entity@{e\-X\-M\-L\-Error\-Unknown\-Character\-Entity}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Unknown\-Character\-Entity@{e\-X\-M\-L\-Error\-Unknown\-Character\-Entity}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5aeca604d14ec57d6dcfdc5e74dbc559dc}{e\-X\-M\-L\-Error\-Unknown\-Character\-Entity}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5aeca604d14ec57d6dcfdc5e74dbc559dc}
+}]\index{e\-X\-M\-L\-Error\-Character\-Code\-Above255@{e\-X\-M\-L\-Error\-Character\-Code\-Above255}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Character\-Code\-Above255@{e\-X\-M\-L\-Error\-Character\-Code\-Above255}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a4e9a09e10bdc0c9071a8b2c4442ecae9}{e\-X\-M\-L\-Error\-Character\-Code\-Above255}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a4e9a09e10bdc0c9071a8b2c4442ecae9}
+}]\index{e\-X\-M\-L\-Error\-Char\-Conversion\-Error@{e\-X\-M\-L\-Error\-Char\-Conversion\-Error}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Char\-Conversion\-Error@{e\-X\-M\-L\-Error\-Char\-Conversion\-Error}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a5e54f63f442005ae89fdf1fe4fb17725}{e\-X\-M\-L\-Error\-Char\-Conversion\-Error}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a5e54f63f442005ae89fdf1fe4fb17725}
+}]\index{e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File@{e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File@{e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a8596c0bf247f549ff306b6889fe2cb5c}{e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a8596c0bf247f549ff306b6889fe2cb5c}
+}]\index{e\-X\-M\-L\-Error\-Cannot\-Write\-File@{e\-X\-M\-L\-Error\-Cannot\-Write\-File}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Cannot\-Write\-File@{e\-X\-M\-L\-Error\-Cannot\-Write\-File}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a1dad0c33ae33d61b2f5f6f7f72838209}{e\-X\-M\-L\-Error\-Cannot\-Write\-File}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a1dad0c33ae33d61b2f5f6f7f72838209}
+}]\index{e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4@{e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4@{e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a85384d57e765bd52aaaa06096cb186d9}{e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5a85384d57e765bd52aaaa06096cb186d9}
+}]\index{e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character@{e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character@{e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5afc16bb8e15fab680665d3b8bedfc980b}{e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5afc16bb8e15fab680665d3b8bedfc980b}
+}]\index{e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data@{e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data@{e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5af2d54f7b3a0299a7051a196a125bf62d}{e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5af2d54f7b3a0299a7051a196a125bf62d}
+}]\index{e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small@{e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small}!xml\-Parser.\-h@{xml\-Parser.\-h}}\index{xml\-Parser.\-h@{xml\-Parser.\-h}!e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small@{e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small}}\item[{\em 
+\hypertarget{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5adcc1aaa78e2f45feb792585ab1d747bd}{e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small}\label{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5adcc1aaa78e2f45feb792585ab1d747bd}
+}]\end{description}
+\end{Desc}
+

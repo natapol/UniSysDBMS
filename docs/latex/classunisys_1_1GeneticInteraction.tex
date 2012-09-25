@@ -1,0 +1,128 @@
+\hypertarget{classunisys_1_1GeneticInteraction}{\section{unisys\-:\-:Genetic\-Interaction Class Reference}
+\label{classunisys_1_1GeneticInteraction}\index{unisys\-::\-Genetic\-Interaction@{unisys\-::\-Genetic\-Interaction}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Genetic\-Interaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1GeneticInteraction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Genetic\-Interaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1GeneticInteraction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1GeneticInteraction_a53ef22c5219fa6eff75d40a464356d8e}{Genetic\-Interaction} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1GeneticInteraction_a8a085b9625e51fce04c13477af04314f}{Genetic\-Interaction} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1GeneticInteraction_a086ef8611b4006eb33fd111c2cd109aa}{set\-Interaction\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1GeneticInteraction_ae65dcf635fa1ae1a5590f0c7e718ae30}{set\-Phenotype} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1GeneticInteraction_a946b8270db467290f49a050bd29f55d2}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            participant: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            interactionType: <DbRef>,
+            phynotype: <DbRef>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1GeneticInteraction_a53ef22c5219fa6eff75d40a464356d8e}{\index{unisys\-::\-Genetic\-Interaction@{unisys\-::\-Genetic\-Interaction}!Genetic\-Interaction@{Genetic\-Interaction}}
+\index{Genetic\-Interaction@{Genetic\-Interaction}!unisys::GeneticInteraction@{unisys\-::\-Genetic\-Interaction}}
+\subsubsection[{Genetic\-Interaction}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Genetic\-Interaction\-::\-Genetic\-Interaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1GeneticInteraction_a53ef22c5219fa6eff75d40a464356d8e}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1GeneticInteraction_a8a085b9625e51fce04c13477af04314f}{\index{unisys\-::\-Genetic\-Interaction@{unisys\-::\-Genetic\-Interaction}!Genetic\-Interaction@{Genetic\-Interaction}}
+\index{Genetic\-Interaction@{Genetic\-Interaction}!unisys::GeneticInteraction@{unisys\-::\-Genetic\-Interaction}}
+\subsubsection[{Genetic\-Interaction}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Genetic\-Interaction\-::\-Genetic\-Interaction (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1GeneticInteraction_a8a085b9625e51fce04c13477af04314f}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1GeneticInteraction_a946b8270db467290f49a050bd29f55d2}{\index{unisys\-::\-Genetic\-Interaction@{unisys\-::\-Genetic\-Interaction}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::GeneticInteraction@{unisys\-::\-Genetic\-Interaction}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Genetic\-Interaction\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1GeneticInteraction_a946b8270db467290f49a050bd29f55d2}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Interaction_a84c6c3e09f83ec8dd8dec7485f97e02b}{unisys\-::\-Interaction}.
+
+\hypertarget{classunisys_1_1GeneticInteraction_a086ef8611b4006eb33fd111c2cd109aa}{\index{unisys\-::\-Genetic\-Interaction@{unisys\-::\-Genetic\-Interaction}!set\-Interaction\-Type@{set\-Interaction\-Type}}
+\index{set\-Interaction\-Type@{set\-Interaction\-Type}!unisys::GeneticInteraction@{unisys\-::\-Genetic\-Interaction}}
+\subsubsection[{set\-Interaction\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Genetic\-Interaction\-::set\-Interaction\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1GeneticInteraction_a086ef8611b4006eb33fd111c2cd109aa}
+\hypertarget{classunisys_1_1GeneticInteraction_ae65dcf635fa1ae1a5590f0c7e718ae30}{\index{unisys\-::\-Genetic\-Interaction@{unisys\-::\-Genetic\-Interaction}!set\-Phenotype@{set\-Phenotype}}
+\index{set\-Phenotype@{set\-Phenotype}!unisys::GeneticInteraction@{unisys\-::\-Genetic\-Interaction}}
+\subsubsection[{set\-Phenotype}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Genetic\-Interaction\-::set\-Phenotype (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1GeneticInteraction_ae65dcf635fa1ae1a5590f0c7e718ae30}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{DBClass_8h}{\section{D\-B\-Class.\-h File Reference}
+\label{DBClass_8h}\index{D\-B\-Class.\-h@{D\-B\-Class.\-h}}
+}
+
+
+It contain Miriam, Id\-Ref, Tracking and Literal\-B\-S\-O\-N class using for formating data to database structure.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$boost/date\-\_\-time/posix\-\_\-time/posix\-\_\-time.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/algorithm/string/predicate.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/algorithm/string/replace.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/algorithm/string/erase.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/algorithm/string/split.\-hpp$>$}\\*
+{\ttfamily \#include \char`\"{}client/dbclient.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}database/database.\-h\char`\"{}}\\*
+Include dependency graph for D\-B\-Class.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DBClass_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{DBClass_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classunisys_1_1DataObj}{unisys\-::\-Data\-Obj}
+\item 
+class \hyperlink{classunisys_1_1Miriam}{unisys\-::\-Miriam}
+\begin{DoxyCompactList}\small\item\em This class is for miriam cross reference annotation. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1IdRef}{unisys\-::\-Id\-Ref}
+\begin{DoxyCompactList}\small\item\em Identifier reference class. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1PEIdRef}{unisys\-::\-P\-E\-Id\-Ref}
+\begin{DoxyCompactList}\small\item\em Identifier reference class specific to physicalentity collection namespace. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1IntIdRef}{unisys\-::\-Int\-Id\-Ref}
+\begin{DoxyCompactList}\small\item\em Identifier reference class specific to Iinteraction collection namespace. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1OntoIdRef}{unisys\-::\-Onto\-Id\-Ref}
+\begin{DoxyCompactList}\small\item\em Identifier reference class specific to obo collection namespace. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1Tracking}{unisys\-::\-Tracking}
+\begin{DoxyCompactList}\small\item\em Data updating history class. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1LiteralBSON}{unisys\-::\-Literal\-B\-S\-O\-N}
+\begin{DoxyCompactList}\small\item\em Specific B\-S\-O\-N object to manage general \hyperlink{classunisys_1_1Literal}{Literal} data object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceunisys}{unisys}
+\begin{DoxyCompactList}\small\item\em This namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class type $>$ }\\mongo\-::\-B\-S\-O\-N\-Array \hyperlink{namespaceunisys_ab99d42c514d40e0a3752a9d97e8049f6}{unisys\-::to\-B\-S\-O\-N\-Array} (type const \&input)
+\item 
+{\footnotesize template$<$class type $>$ }\\std\-::set$<$ type $>$ \hyperlink{namespaceunisys_a3fcaf2bd3c84c1169b4d7771ad49520b}{unisys\-::\-B\-S\-O\-N\-To\-Set} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\item 
+{\footnotesize template$<$class type $>$ }\\std\-::vector$<$ type $>$ \hyperlink{namespaceunisys_a9f6f070f7120ff13e625fe438dc14dea}{unisys\-::\-B\-S\-O\-N\-To\-Vector} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It contain Miriam, Id\-Ref, Tracking and Literal\-B\-S\-O\-N class using for formating data to database structure. 

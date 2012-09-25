@@ -1,0 +1,162 @@
+\hypertarget{classunisys_1_1Relation}{\section{unisys\-:\-:Relation Class Reference}
+\label{classunisys_1_1Relation}\index{unisys\-::\-Relation@{unisys\-::\-Relation}}
+}
+
+
+The C++ representative class for relationship data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Relation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Relation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Relation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Relation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Relation_a7c9ac1aa53c405470dd58d707b93d2e0}{Relation} ()
+\item 
+\hyperlink{classunisys_1_1Relation_ac7791ff194a3c58e8e8164b9c013df6a}{Relation} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\item 
+void \hyperlink{classunisys_1_1Relation_ac1876058f3a544e40b567750f3737570}{set\-Type} (std\-::string const \&string)
+\item 
+void \hyperlink{classunisys_1_1Relation_a389133d7ae3062fcc79c78aa90b64e2b}{set\-Relation\-With} (\hyperlink{classunisys_1_1IdRef}{Id\-Ref} \&\hyperlink{classunisys_1_1IdRef}{Id\-Ref})
+\item 
+void \hyperlink{classunisys_1_1Relation_afd179cc8bde372ef4e52c80a382fbb20}{set\-Relation\-With} (std\-::string const \&Id\-Ref\-Id, std\-::string const \&target\-Obj\-Type=\char`\"{}physicalentity\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1Relation_a920d95e9c1d85bceaed69c22d3eff4e1}{set\-Coefficient} (double coefficient)
+\item 
+void \hyperlink{classunisys_1_1Relation_af44e7c08aeaccaa4c73a8e68757c0c01}{set\-Evidence} (\hyperlink{classunisys_1_1Evidence}{Evidence} \&evidence)
+\item 
+std\-::string \hyperlink{classunisys_1_1Relation_af165c04680b41c48ebc792e6cf5e7893}{to\-R\-X\-N\-String} (std\-::string const \&compartment) const 
+\item 
+bool \hyperlink{classunisys_1_1Relation_a45b8b2e7c70084c00749031cb450bf7a}{is\-Valid} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Relation_a2793345e5ca711cf0f6f8229a4c652ab}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for relationship data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            type: <string>, #format by idref class
+            coefficient: <float>,
+            relationWith: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            evidence: <EvidenceBSONStructure>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Relation_a7c9ac1aa53c405470dd58d707b93d2e0}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!Relation@{Relation}}
+\index{Relation@{Relation}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{Relation}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Relation\-::\-Relation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_a7c9ac1aa53c405470dd58d707b93d2e0}
+\hypertarget{classunisys_1_1Relation_ac7791ff194a3c58e8e8164b9c013df6a}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!Relation@{Relation}}
+\index{Relation@{Relation}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{Relation}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Relation\-::\-Relation (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_ac7791ff194a3c58e8e8164b9c013df6a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Relation_a2793345e5ca711cf0f6f8229a4c652ab}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Relation\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Relation_a2793345e5ca711cf0f6f8229a4c652ab}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1Relation_a45b8b2e7c70084c00749031cb450bf7a}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Relation\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_a45b8b2e7c70084c00749031cb450bf7a}
+\hypertarget{classunisys_1_1Relation_a920d95e9c1d85bceaed69c22d3eff4e1}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!set\-Coefficient@{set\-Coefficient}}
+\index{set\-Coefficient@{set\-Coefficient}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{set\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Relation\-::set\-Coefficient (
+\begin{DoxyParamCaption}
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_a920d95e9c1d85bceaed69c22d3eff4e1}
+\hypertarget{classunisys_1_1Relation_af44e7c08aeaccaa4c73a8e68757c0c01}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!set\-Evidence@{set\-Evidence}}
+\index{set\-Evidence@{set\-Evidence}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{set\-Evidence}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Relation\-::set\-Evidence (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence} \&}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_af44e7c08aeaccaa4c73a8e68757c0c01}
+\hypertarget{classunisys_1_1Relation_a389133d7ae3062fcc79c78aa90b64e2b}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!set\-Relation\-With@{set\-Relation\-With}}
+\index{set\-Relation\-With@{set\-Relation\-With}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{set\-Relation\-With}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Relation\-::set\-Relation\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Id\-Ref} \&}]{Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_a389133d7ae3062fcc79c78aa90b64e2b}
+\hypertarget{classunisys_1_1Relation_afd179cc8bde372ef4e52c80a382fbb20}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!set\-Relation\-With@{set\-Relation\-With}}
+\index{set\-Relation\-With@{set\-Relation\-With}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{set\-Relation\-With}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Relation\-::set\-Relation\-With (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{Id\-Ref\-Id, }
+\item[{std\-::string const \&}]{target\-Obj\-Type = {\ttfamily \char`\"{}physicalentity\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_afd179cc8bde372ef4e52c80a382fbb20}
+\hypertarget{classunisys_1_1Relation_ac1876058f3a544e40b567750f3737570}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!set\-Type@{set\-Type}}
+\index{set\-Type@{set\-Type}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Relation\-::set\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{string}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Relation_ac1876058f3a544e40b567750f3737570}
+\hypertarget{classunisys_1_1Relation_af165c04680b41c48ebc792e6cf5e7893}{\index{unisys\-::\-Relation@{unisys\-::\-Relation}!to\-R\-X\-N\-String@{to\-R\-X\-N\-String}}
+\index{to\-R\-X\-N\-String@{to\-R\-X\-N\-String}!unisys::Relation@{unisys\-::\-Relation}}
+\subsubsection[{to\-R\-X\-N\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Relation\-::to\-R\-X\-N\-String (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{compartment}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Relation_af165c04680b41c48ebc792e6cf5e7893}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

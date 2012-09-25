@@ -1,0 +1,128 @@
+\hypertarget{classunisys_1_1Ontology}{\section{unisys\-:\-:Ontology Class Reference}
+\label{classunisys_1_1Ontology}\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}}
+}
+
+
+\hyperlink{classunisys_1_1Ontology}{Ontology} data class.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Ontology\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Ontology__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Ontology\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Ontology__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Ontology_ac06bef5e383945da202ab2e520a57743}{Ontology} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Ontology_a2863117154f8956d467ec670085d039e}{Ontology} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Ontology_a596d20a8d63b48d41859494f223f6189}{set\-Term} (std\-::string const \&term)
+\item 
+void \hyperlink{classunisys_1_1Ontology_a1af4e5d96284a958ddd1d5fc7a0445cf}{set\-Definition} (std\-::string const \&definition)
+\item 
+void \hyperlink{classunisys_1_1Ontology_a8735c51449d33f90e754ef4b0addd8b2}{set\-N\-S} (std\-::string const \&ns)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Ontology_a42f1c4257f60144420b1bc9ac128b5cc}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classunisys_1_1Ontology}{Ontology} data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...}
+            term: <string>,
+            definition: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Ontology_ac06bef5e383945da202ab2e520a57743}{\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}!Ontology@{Ontology}}
+\index{Ontology@{Ontology}!unisys::Ontology@{unisys\-::\-Ontology}}
+\subsubsection[{Ontology}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Ontology\-::\-Ontology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Ontology_ac06bef5e383945da202ab2e520a57743}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Ontology_a2863117154f8956d467ec670085d039e}{\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}!Ontology@{Ontology}}
+\index{Ontology@{Ontology}!unisys::Ontology@{unisys\-::\-Ontology}}
+\subsubsection[{Ontology}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Ontology\-::\-Ontology (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Ontology_a2863117154f8956d467ec670085d039e}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Ontology_a42f1c4257f60144420b1bc9ac128b5cc}{\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Ontology@{unisys\-::\-Ontology}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ontology\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Ontology_a42f1c4257f60144420b1bc9ac128b5cc}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Object_ad0a4afaf978d2cca8a6a27506f06138c}{unisys\-::\-Object}.
+
+\hypertarget{classunisys_1_1Ontology_a1af4e5d96284a958ddd1d5fc7a0445cf}{\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}!set\-Definition@{set\-Definition}}
+\index{set\-Definition@{set\-Definition}!unisys::Ontology@{unisys\-::\-Ontology}}
+\subsubsection[{set\-Definition}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ontology\-::set\-Definition (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{definition}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Ontology_a1af4e5d96284a958ddd1d5fc7a0445cf}
+\hypertarget{classunisys_1_1Ontology_a8735c51449d33f90e754ef4b0addd8b2}{\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}!set\-N\-S@{set\-N\-S}}
+\index{set\-N\-S@{set\-N\-S}!unisys::Ontology@{unisys\-::\-Ontology}}
+\subsubsection[{set\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ontology\-::set\-N\-S (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{ns}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Ontology_a8735c51449d33f90e754ef4b0addd8b2}
+\hypertarget{classunisys_1_1Ontology_a596d20a8d63b48d41859494f223f6189}{\index{unisys\-::\-Ontology@{unisys\-::\-Ontology}!set\-Term@{set\-Term}}
+\index{set\-Term@{set\-Term}!unisys::Ontology@{unisys\-::\-Ontology}}
+\subsubsection[{set\-Term}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ontology\-::set\-Term (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{term}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Ontology_a596d20a8d63b48d41859494f223f6189}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

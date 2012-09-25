@@ -1,0 +1,90 @@
+\hypertarget{classunisys_1_1BatchInsert}{\section{unisys\-:\-:Batch\-Insert Class Reference}
+\label{classunisys_1_1BatchInsert}\index{unisys\-::\-Batch\-Insert@{unisys\-::\-Batch\-Insert}}
+}
+
+
+{\ttfamily \#include $<$updater.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Batch\-Insert\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classunisys_1_1BatchInsert__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Batch\-Insert\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BatchInsert__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1BatchInsert_a6ae2cc7e268f83cf1ecc99058b62011d}{Batch\-Insert} ()
+\item 
+\hyperlink{classunisys_1_1BatchInsert_a751ec752b94fd29565e5e515a3f83d50}{Batch\-Insert} (\hyperlink{classunisys_1_1Database}{Database} $\ast$database\-Handle\-Pt)
+\item 
+{\footnotesize template$<$class my\-Type $>$ }\\std\-::vector$<$ mongo\-::\-B\-S\-O\-N\-Obj $>$ \hyperlink{classunisys_1_1BatchInsert_a3fa151c77cd33efbbd97311aa51acbcd}{insert} (std\-::vector$<$ my\-Type $>$ data\-List, std\-::string id\-N\-S=\char`\"{}\char`\"{}, unsigned int start\-Id=0, std\-::string id\-Prefix=\char`\"{}\char`\"{}, unsigned int version=0, bool with\-Ver=true, bool dryrun=false)  throw (\-Update\-Error, Data\-Error)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ mongo\-::\-B\-S\-O\-N\-Obj $>$ \hyperlink{classunisys_1_1BatchInsert_adc2dcf20f672d02d3f73dfee371e9c2a}{insert} (std\-::vector$<$ mongo\-::\-B\-S\-O\-N\-Obj $>$ data\-List, std\-::string id\-N\-S=\char`\"{}\char`\"{}, int start\-Id=1, bool dryrun=false)  throw (\-Update\-Error, Data\-Error)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1BatchInsert_a6ae2cc7e268f83cf1ecc99058b62011d}{\index{unisys\-::\-Batch\-Insert@{unisys\-::\-Batch\-Insert}!Batch\-Insert@{Batch\-Insert}}
+\index{Batch\-Insert@{Batch\-Insert}!unisys::BatchInsert@{unisys\-::\-Batch\-Insert}}
+\subsubsection[{Batch\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Batch\-Insert\-::\-Batch\-Insert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BatchInsert_a6ae2cc7e268f83cf1ecc99058b62011d}
+\hypertarget{classunisys_1_1BatchInsert_a751ec752b94fd29565e5e515a3f83d50}{\index{unisys\-::\-Batch\-Insert@{unisys\-::\-Batch\-Insert}!Batch\-Insert@{Batch\-Insert}}
+\index{Batch\-Insert@{Batch\-Insert}!unisys::BatchInsert@{unisys\-::\-Batch\-Insert}}
+\subsubsection[{Batch\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Batch\-Insert\-::\-Batch\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Database} $\ast$}]{database\-Handle\-Pt}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BatchInsert_a751ec752b94fd29565e5e515a3f83d50}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1BatchInsert_adc2dcf20f672d02d3f73dfee371e9c2a}{\index{unisys\-::\-Batch\-Insert@{unisys\-::\-Batch\-Insert}!insert@{insert}}
+\index{insert@{insert}!unisys::BatchInsert@{unisys\-::\-Batch\-Insert}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$mongo\-::\-B\-S\-O\-N\-Obj$>$ unisys\-::\-Batch\-Insert\-::insert (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ mongo\-::\-B\-S\-O\-N\-Obj $>$}]{data\-List, }
+\item[{std\-::string}]{id\-N\-S = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{int}]{start\-Id = {\ttfamily 1}, }
+\item[{bool}]{dryrun = {\ttfamily false}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1BatchInsert_adc2dcf20f672d02d3f73dfee371e9c2a}
+\hypertarget{classunisys_1_1BatchInsert_a3fa151c77cd33efbbd97311aa51acbcd}{\index{unisys\-::\-Batch\-Insert@{unisys\-::\-Batch\-Insert}!insert@{insert}}
+\index{insert@{insert}!unisys::BatchInsert@{unisys\-::\-Batch\-Insert}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class my\-Type $>$ std\-::vector$<$mongo\-::\-B\-S\-O\-N\-Obj$>$ unisys\-::\-Batch\-Insert\-::insert (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ my\-Type $>$}]{data\-List, }
+\item[{std\-::string}]{id\-N\-S = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{start\-Id = {\ttfamily 0}, }
+\item[{std\-::string}]{id\-Prefix = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{version = {\ttfamily 0}, }
+\item[{bool}]{with\-Ver = {\ttfamily true}, }
+\item[{bool}]{dryrun = {\ttfamily false}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1BatchInsert_a3fa151c77cd33efbbd97311aa51acbcd}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{updater_8h}{updater.\-h}\end{DoxyCompactItemize}

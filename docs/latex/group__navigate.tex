@@ -1,0 +1,382 @@
+\hypertarget{group__navigate}{\section{Navigate the X\-M\-L\-Node structure}
+\label{group__navigate}\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}}
+}
+Collaboration diagram for Navigate the X\-M\-L\-Node structure\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{group__navigate}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga7e07715aa0ed894da96bd66c90d423f0}{X\-M\-L\-Node\-::get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em name of the node \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{X\-M\-L\-Node\-::get\-Text} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith text field \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga22e7e7cf8f173a1ec3ec3d6ff60819d9}{X\-M\-L\-Node\-::n\-Text} () const 
+\begin{DoxyCompactList}\small\item\em nbr of text field \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gad30a8420556e220742c681e353a875d8}{X\-M\-L\-Node\-::get\-Parent\-Node} () const 
+\begin{DoxyCompactList}\small\item\em return the parent node \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga77a21438b6d48a52cf8a1270f82f4475}{X\-M\-L\-Node\-::get\-Child\-Node} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith child node \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gaf46d002a855acb46c18e47b70e686808}{X\-M\-L\-Node\-::get\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int i) const 
+\begin{DoxyCompactList}\small\item\em return ith child node with specific name (return an empty node if failing). If i==-\/1, this returns the last \hyperlink{structXMLNode}{X\-M\-L\-Node} with the given name. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gac2e8c96fc51b59b6667ee02785cb6943}{X\-M\-L\-Node\-::get\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int $\ast$i=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em return next child node with specific name (return an empty node if failing) \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga5d2775ee0704a2c028d76d267db7960a}{X\-M\-L\-Node\-::get\-Child\-Node\-With\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} attribute\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} attribute\-Value=N\-U\-L\-L, int $\ast$i=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em return child node with specific name/attribute (return an empty node if failing) \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga18176d2a9e4830dcb1bca62f9c664b15}{X\-M\-L\-Node\-::get\-Child\-Node\-By\-Path} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} path, char create\-Node\-If\-Missing=0, \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R} sep='/')
+\begin{DoxyCompactList}\small\item\em return the first child node with specific path \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga0f3b175875c5d35a0dd88b4ed836079d}{X\-M\-L\-Node\-::get\-Child\-Node\-By\-Path\-Non\-Const} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} path, char create\-Node\-If\-Missing=0, \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R} sep='/')
+\begin{DoxyCompactList}\small\item\em return the first child node with specific path. \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga8e52198f258167cd796dae21f1ffc352}{X\-M\-L\-Node\-::n\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name) const 
+\begin{DoxyCompactList}\small\item\em return the number of child node with specific name \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga65aad0220b231b1bf5cd5c69d7c5de41}{X\-M\-L\-Node\-::n\-Child\-Node} () const 
+\begin{DoxyCompactList}\small\item\em nbr of child node \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} \hyperlink{group__navigate_gaa07572a057ce7ffc8843e468d952f490}{X\-M\-L\-Node\-::get\-Attribute} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga67cf7717fa32175d8c6daa8f3f03ce7a}{X\-M\-L\-Node\-::get\-Attribute\-Name} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute name \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga4abc0c5a3eec14e2f67518b625431541}{X\-M\-L\-Node\-::get\-Attribute\-Value} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute value \end{DoxyCompactList}\item 
+char \hyperlink{group__navigate_ga8059888e8dd5d9caf04f765059c1b934}{X\-M\-L\-Node\-::is\-Attribute\-Set} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name) const 
+\begin{DoxyCompactList}\small\item\em test if an attribute with a specific name is given \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_gaba897c342d3c55d71f4d987332789f69}{X\-M\-L\-Node\-::get\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int i) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute content with specific name (return a N\-U\-L\-L if failing) \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga23af0b5c771a9a5e7503a7dd2de72fc8}{X\-M\-L\-Node\-::get\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int $\ast$i=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em return next attribute content with specific name (return a N\-U\-L\-L if failing) \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga9561f62b9ed1fa653fe9135c4f16a41d}{X\-M\-L\-Node\-::n\-Attribute} () const 
+\begin{DoxyCompactList}\small\item\em nbr of attribute \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} \hyperlink{group__navigate_gab99fbcb5534ab2194889c4802e290354}{X\-M\-L\-Node\-::get\-Clear} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith clear field (comments) \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga87d34f1ba1ba7d49e8aeacc63548dead}{X\-M\-L\-Node\-::n\-Clear} () const 
+\begin{DoxyCompactList}\small\item\em nbr of clear field \end{DoxyCompactList}\item 
+\hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents} \hyperlink{group__navigate_gaf56414ef38a13892afc4f22177a7760a}{X\-M\-L\-Node\-::enum\-Contents} (\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} i) const 
+\begin{DoxyCompactList}\small\item\em enumerate all the different contents (attribute,child,text, clear) of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. The order is reflecting the order of the original file/string. N\-O\-T\-E\-: 0 $<$= i $<$ \hyperlink{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}{n\-Element()}; \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}{X\-M\-L\-Node\-::n\-Element} () const 
+\begin{DoxyCompactList}\small\item\em nbr of different contents for current node \end{DoxyCompactList}\item 
+char \hyperlink{group__navigate_ga764ce0ff117af3e30ab0959114d36f9c}{X\-M\-L\-Node\-::is\-Empty} () const 
+\begin{DoxyCompactList}\small\item\em is this node Empty? \end{DoxyCompactList}\item 
+char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{X\-M\-L\-Node\-::is\-Declaration} () const 
+\begin{DoxyCompactList}\small\item\em is this node a declaration $<$? .... ?$>$ \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gadb69f8d2db5997d84590ce3380e210f1}{X\-M\-L\-Node\-::deep\-Copy} () const 
+\begin{DoxyCompactList}\small\item\em deep copy (duplicate/clone) a \hyperlink{structXMLNode}{X\-M\-L\-Node} \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga47c8238226a693d0aaf1111f1fa44ea0}{X\-M\-L\-Node\-::empty\-Node} ()
+\begin{DoxyCompactList}\small\item\em return \hyperlink{structXMLNode_a90565bdb240d2f14f6a3d43f15100b63}{X\-M\-L\-Node\-::empty\-X\-M\-L\-Node}; \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__navigate_gadb69f8d2db5997d84590ce3380e210f1}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!deep\-Copy@{deep\-Copy}}
+\index{deep\-Copy@{deep\-Copy}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{deep\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::deep\-Copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gadb69f8d2db5997d84590ce3380e210f1}
+
+
+deep copy (duplicate/clone) a \hyperlink{structXMLNode}{X\-M\-L\-Node} 
+
+\hypertarget{group__navigate_ga47c8238226a693d0aaf1111f1fa44ea0}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!empty\-Node@{empty\-Node}}
+\index{empty\-Node@{empty\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{empty\-Node}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-Node} X\-M\-L\-Node\-::empty\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__navigate_ga47c8238226a693d0aaf1111f1fa44ea0}
+
+
+return \hyperlink{structXMLNode_a90565bdb240d2f14f6a3d43f15100b63}{X\-M\-L\-Node\-::empty\-X\-M\-L\-Node}; 
+
+\hypertarget{group__navigate_gaf56414ef38a13892afc4f22177a7760a}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!enum\-Contents@{enum\-Contents}}
+\index{enum\-Contents@{enum\-Contents}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{enum\-Contents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node\-Contents} X\-M\-L\-Node\-::enum\-Contents (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Element\-Position}}]{i}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gaf56414ef38a13892afc4f22177a7760a}
+
+
+enumerate all the different contents (attribute,child,text, clear) of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. The order is reflecting the order of the original file/string. N\-O\-T\-E\-: 0 $<$= i $<$ \hyperlink{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}{n\-Element()}; 
+
+\hypertarget{group__navigate_gaa07572a057ce7ffc8843e468d952f490}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Attribute@{get\-Attribute}}
+\index{get\-Attribute@{get\-Attribute}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute} X\-M\-L\-Node\-::get\-Attribute (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gaa07572a057ce7ffc8843e468d952f490}
+
+
+return ith attribute 
+
+\hypertarget{group__navigate_gaba897c342d3c55d71f4d987332789f69}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Attribute@{get\-Attribute}}
+\index{get\-Attribute@{get\-Attribute}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gaba897c342d3c55d71f4d987332789f69}
+
+
+return ith attribute content with specific name (return a N\-U\-L\-L if failing) 
+
+\hypertarget{group__navigate_ga23af0b5c771a9a5e7503a7dd2de72fc8}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Attribute@{get\-Attribute}}
+\index{get\-Attribute@{get\-Attribute}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name, }
+\item[{int $\ast$}]{i = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga23af0b5c771a9a5e7503a7dd2de72fc8}
+
+
+return next attribute content with specific name (return a N\-U\-L\-L if failing) 
+
+\hypertarget{group__navigate_ga67cf7717fa32175d8c6daa8f3f03ce7a}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Attribute\-Name@{get\-Attribute\-Name}}
+\index{get\-Attribute\-Name@{get\-Attribute\-Name}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Attribute\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Attribute\-Name (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga67cf7717fa32175d8c6daa8f3f03ce7a}
+
+
+return ith attribute name 
+
+\hypertarget{group__navigate_ga4abc0c5a3eec14e2f67518b625431541}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Attribute\-Value@{get\-Attribute\-Value}}
+\index{get\-Attribute\-Value@{get\-Attribute\-Value}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Attribute\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Attribute\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga4abc0c5a3eec14e2f67518b625431541}
+
+
+return ith attribute value 
+
+\hypertarget{group__navigate_ga77a21438b6d48a52cf8a1270f82f4475}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Child\-Node@{get\-Child\-Node}}
+\index{get\-Child\-Node@{get\-Child\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga77a21438b6d48a52cf8a1270f82f4475}
+
+
+return ith child node 
+
+\hypertarget{group__navigate_gaf46d002a855acb46c18e47b70e686808}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Child\-Node@{get\-Child\-Node}}
+\index{get\-Child\-Node@{get\-Child\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gaf46d002a855acb46c18e47b70e686808}
+
+
+return ith child node with specific name (return an empty node if failing). If i==-\/1, this returns the last \hyperlink{structXMLNode}{X\-M\-L\-Node} with the given name. 
+
+\hypertarget{group__navigate_gac2e8c96fc51b59b6667ee02785cb6943}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Child\-Node@{get\-Child\-Node}}
+\index{get\-Child\-Node@{get\-Child\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name, }
+\item[{int $\ast$}]{i = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gac2e8c96fc51b59b6667ee02785cb6943}
+
+
+return next child node with specific name (return an empty node if failing) 
+
+\hypertarget{group__navigate_ga18176d2a9e4830dcb1bca62f9c664b15}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Child\-Node\-By\-Path@{get\-Child\-Node\-By\-Path}}
+\index{get\-Child\-Node\-By\-Path@{get\-Child\-Node\-By\-Path}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Child\-Node\-By\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Child\-Node\-By\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{path, }
+\item[{char}]{create\-Node\-If\-Missing = {\ttfamily 0}, }
+\item[{{\bf X\-M\-L\-C\-H\-A\-R}}]{sep = {\ttfamily '/'}}
+\end{DoxyParamCaption}
+)}}\label{group__navigate_ga18176d2a9e4830dcb1bca62f9c664b15}
+
+
+return the first child node with specific path 
+
+\hypertarget{group__navigate_ga0f3b175875c5d35a0dd88b4ed836079d}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Child\-Node\-By\-Path\-Non\-Const@{get\-Child\-Node\-By\-Path\-Non\-Const}}
+\index{get\-Child\-Node\-By\-Path\-Non\-Const@{get\-Child\-Node\-By\-Path\-Non\-Const}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Child\-Node\-By\-Path\-Non\-Const}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Child\-Node\-By\-Path\-Non\-Const (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{path, }
+\item[{char}]{create\-Node\-If\-Missing = {\ttfamily 0}, }
+\item[{{\bf X\-M\-L\-C\-H\-A\-R}}]{sep = {\ttfamily '/'}}
+\end{DoxyParamCaption}
+)}}\label{group__navigate_ga0f3b175875c5d35a0dd88b4ed836079d}
+
+
+return the first child node with specific path. 
+
+\hypertarget{group__navigate_ga5d2775ee0704a2c028d76d267db7960a}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Child\-Node\-With\-Attribute@{get\-Child\-Node\-With\-Attribute}}
+\index{get\-Child\-Node\-With\-Attribute@{get\-Child\-Node\-With\-Attribute}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Child\-Node\-With\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Child\-Node\-With\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{tag\-Name, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{attribute\-Name, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{attribute\-Value = {\ttfamily NULL}, }
+\item[{int $\ast$}]{i = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga5d2775ee0704a2c028d76d267db7960a}
+
+
+return child node with specific name/attribute (return an empty node if failing) 
+
+\hypertarget{group__navigate_gab99fbcb5534ab2194889c4802e290354}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Clear@{get\-Clear}}
+\index{get\-Clear@{get\-Clear}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear} X\-M\-L\-Node\-::get\-Clear (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gab99fbcb5534ab2194889c4802e290354}
+
+
+return ith clear field (comments) 
+
+\hypertarget{group__navigate_ga7e07715aa0ed894da96bd66c90d423f0}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga7e07715aa0ed894da96bd66c90d423f0}
+
+
+name of the node 
+
+\hypertarget{group__navigate_gad30a8420556e220742c681e353a875d8}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Parent\-Node@{get\-Parent\-Node}}
+\index{get\-Parent\-Node@{get\-Parent\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Parent\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::get\-Parent\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gad30a8420556e220742c681e353a875d8}
+
+
+return the parent node 
+
+\hypertarget{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!get\-Text@{get\-Text}}
+\index{get\-Text@{get\-Text}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{get\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Text (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}
+
+
+return ith text field 
+
+\hypertarget{group__navigate_ga8059888e8dd5d9caf04f765059c1b934}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!is\-Attribute\-Set@{is\-Attribute\-Set}}
+\index{is\-Attribute\-Set@{is\-Attribute\-Set}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{is\-Attribute\-Set}]{\setlength{\rightskip}{0pt plus 5cm}char X\-M\-L\-Node\-::is\-Attribute\-Set (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga8059888e8dd5d9caf04f765059c1b934}
+
+
+test if an attribute with a specific name is given 
+
+\hypertarget{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!is\-Declaration@{is\-Declaration}}
+\index{is\-Declaration@{is\-Declaration}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{is\-Declaration}]{\setlength{\rightskip}{0pt plus 5cm}char X\-M\-L\-Node\-::is\-Declaration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}
+
+
+is this node a declaration $<$? .... ?$>$ 
+
+\hypertarget{group__navigate_ga764ce0ff117af3e30ab0959114d36f9c}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}char X\-M\-L\-Node\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga764ce0ff117af3e30ab0959114d36f9c}
+
+
+is this node Empty? 
+
+\hypertarget{group__navigate_ga9561f62b9ed1fa653fe9135c4f16a41d}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!n\-Attribute@{n\-Attribute}}
+\index{n\-Attribute@{n\-Attribute}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{n\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::n\-Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga9561f62b9ed1fa653fe9135c4f16a41d}
+
+
+nbr of attribute 
+
+\hypertarget{group__navigate_ga8e52198f258167cd796dae21f1ffc352}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!n\-Child\-Node@{n\-Child\-Node}}
+\index{n\-Child\-Node@{n\-Child\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{n\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::n\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga8e52198f258167cd796dae21f1ffc352}
+
+
+return the number of child node with specific name 
+
+\hypertarget{group__navigate_ga65aad0220b231b1bf5cd5c69d7c5de41}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!n\-Child\-Node@{n\-Child\-Node}}
+\index{n\-Child\-Node@{n\-Child\-Node}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{n\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::n\-Child\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga65aad0220b231b1bf5cd5c69d7c5de41}
+
+
+nbr of child node 
+
+\hypertarget{group__navigate_ga87d34f1ba1ba7d49e8aeacc63548dead}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!n\-Clear@{n\-Clear}}
+\index{n\-Clear@{n\-Clear}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{n\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::n\-Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga87d34f1ba1ba7d49e8aeacc63548dead}
+
+
+nbr of clear field 
+
+\hypertarget{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!n\-Element@{n\-Element}}
+\index{n\-Element@{n\-Element}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{n\-Element}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::n\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}
+
+
+nbr of different contents for current node 
+
+\hypertarget{group__navigate_ga22e7e7cf8f173a1ec3ec3d6ff60819d9}{\index{Navigate the X\-M\-L\-Node structure@{Navigate the X\-M\-L\-Node structure}!n\-Text@{n\-Text}}
+\index{n\-Text@{n\-Text}!Navigate the XMLNode structure@{Navigate the X\-M\-L\-Node structure}}
+\subsubsection[{n\-Text}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::n\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{group__navigate_ga22e7e7cf8f173a1ec3ec3d6ff60819d9}
+
+
+nbr of text field 
+

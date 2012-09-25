@@ -1,0 +1,268 @@
+\hypertarget{classunisys_1_1PSIMI}{\section{unisys\-:\-:P\-S\-I\-M\-I Class Reference}
+\label{classunisys_1_1PSIMI}\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}}
+}
+
+
+A \hyperlink{classunisys_1_1PSIMI}{P\-S\-I\-M\-I} class is used for a data in P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file format.  
+
+
+
+
+{\ttfamily \#include $<$psimi.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:P\-S\-I\-M\-I\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1PSIMI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+\hyperlink{structXMLNode}{X\-M\-L\-Node} $>$ \hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node}
+\begin{DoxyCompactList}\small\item\em A map container contains list of X\-M\-L data. \end{DoxyCompactList}\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::string $>$ \hyperlink{classunisys_1_1PSIMI_acf60eee34b73f37af16a0aea2aecebd3}{map\-Of\-String\-String}
+\begin{DoxyCompactList}\small\item\em A map container contains data in std\-::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1PSIMI_a6497808571f79e5a57c072bbc6b5a185}{P\-S\-I\-M\-I} ()
+\begin{DoxyCompactList}\small\item\em Class constructor for non-\/parameter passing. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a5db191aaa5b9e170c62b572688bcc356}{P\-S\-I\-M\-I} (std\-::string const \&filename)
+\begin{DoxyCompactList}\small\item\em Class constructor overloaded with P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file as an input. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1PSIMI_ac8af54bbfd8a79229c2129dfb262639f}{parse} (std\-::string const \&filename)  throw (\-Parsing\-Error)
+\begin{DoxyCompactList}\small\item\em Parse a P\-S\-I-\/\-M\-I X\-M\-L2.\-5 input file. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_ad6ff25bf694abebf7fe847953c36b3b5}{get\-Node\-Source} () const 
+\begin{DoxyCompactList}\small\item\em Get 'source' node. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_afee1135476d1b1703ce5a8bcace75c55}{get\-Node\-Availability\-List} () const 
+\begin{DoxyCompactList}\small\item\em Get 'availability\-List' node. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_af3cdcfffd869026bbe81cd81f20d5484}{get\-Node\-Experiment\-List} () const 
+\begin{DoxyCompactList}\small\item\em Get 'experiment\-List' node. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_a3c7fac640a804b0e46a7dcc233b0aa05}{get\-Node\-Interactor\-List} () const 
+\begin{DoxyCompactList}\small\item\em Get 'interactor\-List' node. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_a2253e5f2637090b29f231f94e3f23a89}{get\-Node\-Interaction\-List} () const 
+\begin{DoxyCompactList}\small\item\em Get 'interaction\-List' node. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_afc45d63f72bad94f4c26e87c2e7d8f94}{get\-Node\-Attribute\-List} () const 
+\begin{DoxyCompactList}\small\item\em Get 'attribute\-List' node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_a69f3464b518bc0c67ece6a4976d521b6}{source}
+\begin{DoxyCompactList}\small\item\em an \hyperlink{structXMLNode}{X\-M\-L\-Node} object 'source'. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_a6101dbe254c85337509cdc0dc3870c6f}{availability\-List}
+\begin{DoxyCompactList}\small\item\em A map container 'availability\-List', containing 0-\/multiple 'availability' elements. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_a8cf7de1d5c6972fb0145cf4836eb9fac}{experiment\-List}
+\begin{DoxyCompactList}\small\item\em A map container 'experiment\-List', containing 0-\/multiple 'experiment\-Description' elements. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_a5e4a20340555d16d2166fc93a15d0769}{interactor\-List}
+\begin{DoxyCompactList}\small\item\em A map container 'interactor\-List', containing 0-\/multiple 'interactor' elements. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_ad294c997b1b45b4cfbcc01d10b029142}{interaction\-List}
+\begin{DoxyCompactList}\small\item\em A map container 'interaction\-List', containing 1-\/multiple 'interaction' elements. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{map\-Of\-X\-M\-L\-Node} \hyperlink{classunisys_1_1PSIMI_ad38582c2fa15a80ce9d04404b2097608}{attribute\-List}
+\begin{DoxyCompactList}\small\item\em A map container 'attribute\-List', containing 0-\/multiple 'attribute' elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classunisys_1_1PSIMI}{P\-S\-I\-M\-I} class is used for a data in P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file format. 
+
+A \hyperlink{classunisys_1_1PSIMI}{P\-S\-I\-M\-I} object contains an 'entry' element of the root element 'entry\-Set' of P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file. Functions are implemented for parsing data in P\-S\-I-\/\-M\-I X\-M\-L format to Uni\-Sys\-D\-B. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classunisys_1_1PSIMI_acf60eee34b73f37af16a0aea2aecebd3}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!map\-Of\-String\-String@{map\-Of\-String\-String}}
+\index{map\-Of\-String\-String@{map\-Of\-String\-String}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{map\-Of\-String\-String}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<$ std\-::string, std\-::string $>$ {\bf unisys\-::\-P\-S\-I\-M\-I\-::map\-Of\-String\-String}}}\label{classunisys_1_1PSIMI_acf60eee34b73f37af16a0aea2aecebd3}
+
+
+A map container contains data in std\-::string. 
+
+Data is kept in following structure\-: map$<$key,value$>$ where 
+\begin{DoxyParams}{Parameters}
+{\em key} & = a key value and \\
+\hline
+{\em value} & = a mapped value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!map\-Of\-X\-M\-L\-Node@{map\-Of\-X\-M\-L\-Node}}
+\index{map\-Of\-X\-M\-L\-Node@{map\-Of\-X\-M\-L\-Node}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{map\-Of\-X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<$ std\-::string, {\bf X\-M\-L\-Node} $>$ {\bf unisys\-::\-P\-S\-I\-M\-I\-::map\-Of\-X\-M\-L\-Node}}}\label{classunisys_1_1PSIMI_a0cc51198d3cd685cfa21a42c5dc0ee7f}
+
+
+A map container contains list of X\-M\-L data. 
+
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \mbox{[}name\mbox{]}List contains list of sub-\/nodes \mbox{[}name\mbox{]} These nodes \mbox{[}name\mbox{]}List are parsed to following structure\-: map$<$key, X\-M\-L\-Node$>$ where 
+\begin{DoxyParams}{Parameters}
+{\em key} & = value of attribute 'id' (of node 'availability', 'experiment\-Description', 'interactor', 'interaction') or value of attribute 'name' (of node 'attribute') and \\
+\hline
+{\em \hyperlink{structXMLNode}{X\-M\-L\-Node}} & = sub-\/node \mbox{[}name\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1PSIMI_a6497808571f79e5a57c072bbc6b5a185}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!P\-S\-I\-M\-I@{P\-S\-I\-M\-I}}
+\index{P\-S\-I\-M\-I@{P\-S\-I\-M\-I}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{P\-S\-I\-M\-I}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-P\-S\-I\-M\-I\-::\-P\-S\-I\-M\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1PSIMI_a6497808571f79e5a57c072bbc6b5a185}
+
+
+Class constructor for non-\/parameter passing. 
+
+Instantiate a \hyperlink{classunisys_1_1PSIMI}{P\-S\-I\-M\-I} object. \hypertarget{classunisys_1_1PSIMI_a5db191aaa5b9e170c62b572688bcc356}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!P\-S\-I\-M\-I@{P\-S\-I\-M\-I}}
+\index{P\-S\-I\-M\-I@{P\-S\-I\-M\-I}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{P\-S\-I\-M\-I}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-P\-S\-I\-M\-I\-::\-P\-S\-I\-M\-I (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1PSIMI_a5db191aaa5b9e170c62b572688bcc356}
+
+
+Class constructor overloaded with P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file as an input. 
+
+Instantiate a \hyperlink{classunisys_1_1PSIMI}{P\-S\-I\-M\-I} object using the given P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file. 
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & is the path to the P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1PSIMI_afc45d63f72bad94f4c26e87c2e7d8f94}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!get\-Node\-Attribute\-List@{get\-Node\-Attribute\-List}}
+\index{get\-Node\-Attribute\-List@{get\-Node\-Attribute\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{get\-Node\-Attribute\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::get\-Node\-Attribute\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1PSIMI_afc45d63f72bad94f4c26e87c2e7d8f94}
+
+
+Get 'attribute\-List' node. 
+
+Return a map container of 'attribute' elements. \hypertarget{classunisys_1_1PSIMI_afee1135476d1b1703ce5a8bcace75c55}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!get\-Node\-Availability\-List@{get\-Node\-Availability\-List}}
+\index{get\-Node\-Availability\-List@{get\-Node\-Availability\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{get\-Node\-Availability\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::get\-Node\-Availability\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1PSIMI_afee1135476d1b1703ce5a8bcace75c55}
+
+
+Get 'availability\-List' node. 
+
+Return a map container of 'availability' elements. \hypertarget{classunisys_1_1PSIMI_af3cdcfffd869026bbe81cd81f20d5484}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!get\-Node\-Experiment\-List@{get\-Node\-Experiment\-List}}
+\index{get\-Node\-Experiment\-List@{get\-Node\-Experiment\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{get\-Node\-Experiment\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::get\-Node\-Experiment\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1PSIMI_af3cdcfffd869026bbe81cd81f20d5484}
+
+
+Get 'experiment\-List' node. 
+
+Return a map container of 'experiment\-Description' elements. \hypertarget{classunisys_1_1PSIMI_a2253e5f2637090b29f231f94e3f23a89}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!get\-Node\-Interaction\-List@{get\-Node\-Interaction\-List}}
+\index{get\-Node\-Interaction\-List@{get\-Node\-Interaction\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{get\-Node\-Interaction\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::get\-Node\-Interaction\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1PSIMI_a2253e5f2637090b29f231f94e3f23a89}
+
+
+Get 'interaction\-List' node. 
+
+Return a map container of 'interaction' elements. \hypertarget{classunisys_1_1PSIMI_a3c7fac640a804b0e46a7dcc233b0aa05}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!get\-Node\-Interactor\-List@{get\-Node\-Interactor\-List}}
+\index{get\-Node\-Interactor\-List@{get\-Node\-Interactor\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{get\-Node\-Interactor\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::get\-Node\-Interactor\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1PSIMI_a3c7fac640a804b0e46a7dcc233b0aa05}
+
+
+Get 'interactor\-List' node. 
+
+Return a map container of 'interactor' elements. \hypertarget{classunisys_1_1PSIMI_ad6ff25bf694abebf7fe847953c36b3b5}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!get\-Node\-Source@{get\-Node\-Source}}
+\index{get\-Node\-Source@{get\-Node\-Source}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{get\-Node\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::get\-Node\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1PSIMI_ad6ff25bf694abebf7fe847953c36b3b5}
+
+
+Get 'source' node. 
+
+Return 'source' node. \hypertarget{classunisys_1_1PSIMI_ac8af54bbfd8a79229c2129dfb262639f}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!parse@{parse}}
+\index{parse@{parse}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-P\-S\-I\-M\-I\-::parse (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{filename}
+\end{DoxyParamCaption}
+)  throw ({\bf Parsing\-Error})}}\label{classunisys_1_1PSIMI_ac8af54bbfd8a79229c2129dfb262639f}
+
+
+Parse a P\-S\-I-\/\-M\-I X\-M\-L2.\-5 input file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & is the path to the P\-S\-I-\/\-M\-I X\-M\-L2.\-5 file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1PSIMI_ad38582c2fa15a80ce9d04404b2097608}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!attribute\-List@{attribute\-List}}
+\index{attribute\-List@{attribute\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{attribute\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::attribute\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1PSIMI_ad38582c2fa15a80ce9d04404b2097608}
+
+
+A map container 'attribute\-List', containing 0-\/multiple 'attribute' elements. 
+
+\hypertarget{classunisys_1_1PSIMI_a6101dbe254c85337509cdc0dc3870c6f}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!availability\-List@{availability\-List}}
+\index{availability\-List@{availability\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{availability\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::availability\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1PSIMI_a6101dbe254c85337509cdc0dc3870c6f}
+
+
+A map container 'availability\-List', containing 0-\/multiple 'availability' elements. 
+
+\hypertarget{classunisys_1_1PSIMI_a8cf7de1d5c6972fb0145cf4836eb9fac}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!experiment\-List@{experiment\-List}}
+\index{experiment\-List@{experiment\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{experiment\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::experiment\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1PSIMI_a8cf7de1d5c6972fb0145cf4836eb9fac}
+
+
+A map container 'experiment\-List', containing 0-\/multiple 'experiment\-Description' elements. 
+
+\hypertarget{classunisys_1_1PSIMI_ad294c997b1b45b4cfbcc01d10b029142}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!interaction\-List@{interaction\-List}}
+\index{interaction\-List@{interaction\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{interaction\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::interaction\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1PSIMI_ad294c997b1b45b4cfbcc01d10b029142}
+
+
+A map container 'interaction\-List', containing 1-\/multiple 'interaction' elements. 
+
+\hypertarget{classunisys_1_1PSIMI_a5e4a20340555d16d2166fc93a15d0769}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!interactor\-List@{interactor\-List}}
+\index{interactor\-List@{interactor\-List}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{interactor\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf map\-Of\-X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::interactor\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1PSIMI_a5e4a20340555d16d2166fc93a15d0769}
+
+
+A map container 'interactor\-List', containing 0-\/multiple 'interactor' elements. 
+
+\hypertarget{classunisys_1_1PSIMI_a69f3464b518bc0c67ece6a4976d521b6}{\index{unisys\-::\-P\-S\-I\-M\-I@{unisys\-::\-P\-S\-I\-M\-I}!source@{source}}
+\index{source@{source}!unisys::PSIMI@{unisys\-::\-P\-S\-I\-M\-I}}
+\subsubsection[{source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-P\-S\-I\-M\-I\-::source\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1PSIMI_a69f3464b518bc0c67ece6a4976d521b6}
+
+
+an \hyperlink{structXMLNode}{X\-M\-L\-Node} object 'source'. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{psimi_8h}{psimi.\-h}\end{DoxyCompactItemize}

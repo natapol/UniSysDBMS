@@ -1,0 +1,206 @@
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport}{\section{unisys\-:\-:Biochemical\-Reaction\-With\-Transport Class Reference}
+\label{classunisys_1_1BiochemicalReactionWithTransport}\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Biochemical\-Reaction\-With\-Transport\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BiochemicalReactionWithTransport__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Biochemical\-Reaction\-With\-Transport\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BiochemicalReactionWithTransport__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a0123a9057d275ac2a5c1c7ece8760c45}{Biochemical\-Reaction\-With\-Transport} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1BiochemicalReactionWithTransport_ae43f3ef0de1f8adcc07c3a0aae37ce5d}{Biochemical\-Reaction\-With\-Transport} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a1a2cf84dd0f2ff964c30d128672fe6f4}{add\-Left\-In} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_ae19e6120575e8cf5bcc79f83024d8f75}{add\-Left\-Out} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a61aeefa2111c40134c9072c96fb84627}{add\-Right\-In} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a3567d77df0d2f9ebc7b5c14bcfcfa2c2}{add\-Right\-Out} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_adf0e10be1ddb1bc58591a8e305d4bfd7}{add\-Import} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a95ad769f30ccf98bde213af8e282c979}{add\-Export} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_aa47aa306b9157473a48ad8e83a27cda3}{set\-Interaction\-Key} ()
+\item 
+std\-::string \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_af0a913d23fbc37e845840570249b46f4}{to\-R\-X\-N\-String} (std\-::string const \&outside, std\-::string const \&inside) const 
+\begin{DoxyCompactList}\small\item\em converse to a string of reaction \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a9999c6a5353e9b62056691cf0187f04f}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            participant: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            conversionDirection: <DbRef>,
+            kineticLaw: {<MathMLBOSON>, <MathMLBOSON>, ...}
+            spontaneous: <string>,
+            functional: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_a0123a9057d275ac2a5c1c7ece8760c45}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!Biochemical\-Reaction\-With\-Transport@{Biochemical\-Reaction\-With\-Transport}}
+\index{Biochemical\-Reaction\-With\-Transport@{Biochemical\-Reaction\-With\-Transport}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{Biochemical\-Reaction\-With\-Transport}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::\-Biochemical\-Reaction\-With\-Transport (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_a0123a9057d275ac2a5c1c7ece8760c45}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_ae43f3ef0de1f8adcc07c3a0aae37ce5d}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!Biochemical\-Reaction\-With\-Transport@{Biochemical\-Reaction\-With\-Transport}}
+\index{Biochemical\-Reaction\-With\-Transport@{Biochemical\-Reaction\-With\-Transport}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{Biochemical\-Reaction\-With\-Transport}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::\-Biochemical\-Reaction\-With\-Transport (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_ae43f3ef0de1f8adcc07c3a0aae37ce5d}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_a95ad769f30ccf98bde213af8e282c979}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!add\-Export@{add\-Export}}
+\index{add\-Export@{add\-Export}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{add\-Export}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::add\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_a95ad769f30ccf98bde213af8e282c979}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_adf0e10be1ddb1bc58591a8e305d4bfd7}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!add\-Import@{add\-Import}}
+\index{add\-Import@{add\-Import}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{add\-Import}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::add\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_adf0e10be1ddb1bc58591a8e305d4bfd7}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_a1a2cf84dd0f2ff964c30d128672fe6f4}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!add\-Left\-In@{add\-Left\-In}}
+\index{add\-Left\-In@{add\-Left\-In}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{add\-Left\-In}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::add\-Left\-In (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_a1a2cf84dd0f2ff964c30d128672fe6f4}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_ae19e6120575e8cf5bcc79f83024d8f75}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!add\-Left\-Out@{add\-Left\-Out}}
+\index{add\-Left\-Out@{add\-Left\-Out}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{add\-Left\-Out}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::add\-Left\-Out (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_ae19e6120575e8cf5bcc79f83024d8f75}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_a61aeefa2111c40134c9072c96fb84627}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!add\-Right\-In@{add\-Right\-In}}
+\index{add\-Right\-In@{add\-Right\-In}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{add\-Right\-In}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::add\-Right\-In (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_a61aeefa2111c40134c9072c96fb84627}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_a3567d77df0d2f9ebc7b5c14bcfcfa2c2}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!add\-Right\-Out@{add\-Right\-Out}}
+\index{add\-Right\-Out@{add\-Right\-Out}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{add\-Right\-Out}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::add\-Right\-Out (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_a3567d77df0d2f9ebc7b5c14bcfcfa2c2}
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_a9999c6a5353e9b62056691cf0187f04f}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1BiochemicalReactionWithTransport_a9999c6a5353e9b62056691cf0187f04f}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{unisys\-::\-Conversion}.
+
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_aa47aa306b9157473a48ad8e83a27cda3}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!set\-Interaction\-Key@{set\-Interaction\-Key}}
+\index{set\-Interaction\-Key@{set\-Interaction\-Key}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{set\-Interaction\-Key}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::set\-Interaction\-Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReactionWithTransport_aa47aa306b9157473a48ad8e83a27cda3}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Interaction_a73354f785c9c853654a58b2c1a2339ea}{unisys\-::\-Interaction}.
+
+\hypertarget{classunisys_1_1BiochemicalReactionWithTransport_af0a913d23fbc37e845840570249b46f4}{\index{unisys\-::\-Biochemical\-Reaction\-With\-Transport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}!to\-R\-X\-N\-String@{to\-R\-X\-N\-String}}
+\index{to\-R\-X\-N\-String@{to\-R\-X\-N\-String}!unisys::BiochemicalReactionWithTransport@{unisys\-::\-Biochemical\-Reaction\-With\-Transport}}
+\subsubsection[{to\-R\-X\-N\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Biochemical\-Reaction\-With\-Transport\-::to\-R\-X\-N\-String (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{outside, }
+\item[{std\-::string const \&}]{inside}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1BiochemicalReactionWithTransport_af0a913d23fbc37e845840570249b46f4}
+
+
+converse to a string of reaction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em outside} & \\
+\hline
+{\em inside} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

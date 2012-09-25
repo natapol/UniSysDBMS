@@ -1,0 +1,150 @@
+\hypertarget{classunisys_1_1CellularLocation}{\section{unisys\-:\-:Cellular\-Location Class Reference}
+\label{classunisys_1_1CellularLocation}\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}}
+}
+
+
+The C++ representative class for cellular location data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Cellular\-Location\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1CellularLocation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Cellular\-Location\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1CellularLocation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1CellularLocation_a46ed7fca62bedc9f3ac621c79eb128bb}{Cellular\-Location} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1CellularLocation_aa9065ea0a1430e686f45b6c124bd1e5c}{Cellular\-Location} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1CellularLocation_a20b1883b266c82b190ffcddf65b7bd06}{Cellular\-Location} (std\-::string const \&onto\-Id)
+\item 
+\hyperlink{classunisys_1_1CellularLocation_aa53a8503c5194bdf73754eb43d85679f}{Cellular\-Location} (std\-::string const \&onto\-Id, \hyperlink{classunisys_1_1Evidence}{Evidence} \&evidence)
+\item 
+void \hyperlink{classunisys_1_1CellularLocation_ac9293b818286bb95c9457dbe5c0d8b2a}{set\-Location} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1CellularLocation_a67cdc4c13710e2abbe206883eda1db78}{set\-Location} (std\-::string const \&onto\-Id)
+\item 
+void \hyperlink{classunisys_1_1CellularLocation_ae19abcc07b3bee3a133125dc550f4414}{set\-Evidence} (\hyperlink{classunisys_1_1Evidence}{Evidence} \&evidence)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1CellularLocation_a3aa4c3ebf735ecf9672d0986a63b1dfe}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for cellular location data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            location: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            evidence: <EvidenceBSONStructure>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1CellularLocation_a46ed7fca62bedc9f3ac621c79eb128bb}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!Cellular\-Location@{Cellular\-Location}}
+\index{Cellular\-Location@{Cellular\-Location}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{Cellular\-Location}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Cellular\-Location\-::\-Cellular\-Location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_a46ed7fca62bedc9f3ac621c79eb128bb}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1CellularLocation_aa9065ea0a1430e686f45b6c124bd1e5c}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!Cellular\-Location@{Cellular\-Location}}
+\index{Cellular\-Location@{Cellular\-Location}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{Cellular\-Location}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Cellular\-Location\-::\-Cellular\-Location (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_aa9065ea0a1430e686f45b6c124bd1e5c}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+\hypertarget{classunisys_1_1CellularLocation_a20b1883b266c82b190ffcddf65b7bd06}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!Cellular\-Location@{Cellular\-Location}}
+\index{Cellular\-Location@{Cellular\-Location}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{Cellular\-Location}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Cellular\-Location\-::\-Cellular\-Location (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_a20b1883b266c82b190ffcddf65b7bd06}
+\hypertarget{classunisys_1_1CellularLocation_aa53a8503c5194bdf73754eb43d85679f}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!Cellular\-Location@{Cellular\-Location}}
+\index{Cellular\-Location@{Cellular\-Location}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{Cellular\-Location}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Cellular\-Location\-::\-Cellular\-Location (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id, }
+\item[{{\bf Evidence} \&}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_aa53a8503c5194bdf73754eb43d85679f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1CellularLocation_a3aa4c3ebf735ecf9672d0986a63b1dfe}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Cellular\-Location\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1CellularLocation_a3aa4c3ebf735ecf9672d0986a63b1dfe}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1CellularLocation_ae19abcc07b3bee3a133125dc550f4414}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!set\-Evidence@{set\-Evidence}}
+\index{set\-Evidence@{set\-Evidence}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{set\-Evidence}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Cellular\-Location\-::set\-Evidence (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence} \&}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_ae19abcc07b3bee3a133125dc550f4414}
+\hypertarget{classunisys_1_1CellularLocation_ac9293b818286bb95c9457dbe5c0d8b2a}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!set\-Location@{set\-Location}}
+\index{set\-Location@{set\-Location}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{set\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Cellular\-Location\-::set\-Location (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_ac9293b818286bb95c9457dbe5c0d8b2a}
+\hypertarget{classunisys_1_1CellularLocation_a67cdc4c13710e2abbe206883eda1db78}{\index{unisys\-::\-Cellular\-Location@{unisys\-::\-Cellular\-Location}!set\-Location@{set\-Location}}
+\index{set\-Location@{set\-Location}!unisys::CellularLocation@{unisys\-::\-Cellular\-Location}}
+\subsubsection[{set\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Cellular\-Location\-::set\-Location (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1CellularLocation_a67cdc4c13710e2abbe206883eda1db78}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+This is a basic X\-M\-L parser written in A\-N\-S\-I C++ for portability. It works by using recursion and a node tree for breaking down the elements of an X\-M\-L document.
+
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Natapol Pornputtapong, Kwanjeera Wanichtanarak
+\end{DoxyAuthor}
+Copyright (c) 2010-\/11, \href{http://www.sysbio.se}{\tt Systems and synthetic biology, Chalmers University of Technology} All rights reserved. See the file \href{../../AFPL-license.txt}{\tt A\-F\-P\-L-\/license.\-txt} about the licensing terms\hypertarget{index_tutorial}{}\section{First Tutorial}\label{index_tutorial}
+You can follow a simple \href{../../xmlParser.html}{\tt Tutorial} to know the basics...\hypertarget{index_usage}{}\section{General usage\-: How to include the X\-M\-L\-Parser library inside your project.}\label{index_usage}
+The library is composed of two files\-: \href{../../xmlParser.cpp}{\tt xml\-Parser.\-cpp} and \href{../../xmlParser.h}{\tt xml\-Parser.\-h}. These are the O\-N\-L\-Y 2 files that you need when using the library inside your own projects.
+
+All the functions of the library are documented inside the comments of the file \href{../../xmlParser.h}{\tt xml\-Parser.\-h}. These comments can be transformed in full-\/fledged H\-T\-M\-L documentation using the D\-O\-X\-Y\-G\-E\-N software\-: simply type\-: \char`\"{}doxygen doxy.\-cfg\char`\"{}
+
+By default, the X\-M\-L\-Parser library uses (char$\ast$) for string representation.\-To use the (wchar\-\_\-t$\ast$) version of the library, you need to define the \char`\"{}\-\_\-\-U\-N\-I\-C\-O\-D\-E\char`\"{} preprocessor definition variable (this is usually done inside your project definition file) (This is done automatically for you when using Visual Studio). 

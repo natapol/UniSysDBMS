@@ -1,0 +1,139 @@
+\hypertarget{classunisys_1_1DNARegion}{\section{unisys\-:\-:D\-N\-A\-Region Class Reference}
+\label{classunisys_1_1DNARegion}\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:D\-N\-A\-Region\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1DNARegion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:D\-N\-A\-Region\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1DNARegion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1DNARegion_af142125cfb0ab547f47e00bd96a66c0b}{D\-N\-A\-Region} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1DNARegion_a9fe4a81c75d6af75126e4962c0adb40a}{D\-N\-A\-Region} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1DNARegion_a50fb9c5129cbcf18d0603dc177ca7fd1}{set\-Position} (unsigned int start, unsigned int stop)
+\item 
+void \hyperlink{classunisys_1_1DNARegion_ac66d69ad5a779ba72bdf54e099085948}{set\-D\-N\-A\-Source} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1DNARegion_a33a75b0bcde3731bfbc76770a564ed06}{add\-Transcription\-Product} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&trans)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1DNARegion_a213d2340cc8f4172e3f220f1fe9883f1}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            interaction: {<DbRef>, <DbRef>, ...},
+            complex: {<DbRef>, <DbRef>, ...},
+            subRegion: {<SubRegionBOSON>, <SubRegionBOSON>, ...}
+            position: <positionPairBSON>,
+            dnaSource: <DbRef>,
+            transcriptionProduct: {<DbRef>, <DbRef>, ...}
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1DNARegion_af142125cfb0ab547f47e00bd96a66c0b}{\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}!D\-N\-A\-Region@{D\-N\-A\-Region}}
+\index{D\-N\-A\-Region@{D\-N\-A\-Region}!unisys::DNARegion@{unisys\-::\-D\-N\-A\-Region}}
+\subsubsection[{D\-N\-A\-Region}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-D\-N\-A\-Region\-::\-D\-N\-A\-Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DNARegion_af142125cfb0ab547f47e00bd96a66c0b}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1DNARegion_a9fe4a81c75d6af75126e4962c0adb40a}{\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}!D\-N\-A\-Region@{D\-N\-A\-Region}}
+\index{D\-N\-A\-Region@{D\-N\-A\-Region}!unisys::DNARegion@{unisys\-::\-D\-N\-A\-Region}}
+\subsubsection[{D\-N\-A\-Region}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-D\-N\-A\-Region\-::\-D\-N\-A\-Region (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DNARegion_a9fe4a81c75d6af75126e4962c0adb40a}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1DNARegion_a33a75b0bcde3731bfbc76770a564ed06}{\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}!add\-Transcription\-Product@{add\-Transcription\-Product}}
+\index{add\-Transcription\-Product@{add\-Transcription\-Product}!unisys::DNARegion@{unisys\-::\-D\-N\-A\-Region}}
+\subsubsection[{add\-Transcription\-Product}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-D\-N\-A\-Region\-::add\-Transcription\-Product (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{trans}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DNARegion_a33a75b0bcde3731bfbc76770a564ed06}
+\hypertarget{classunisys_1_1DNARegion_a213d2340cc8f4172e3f220f1fe9883f1}{\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::DNARegion@{unisys\-::\-D\-N\-A\-Region}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-D\-N\-A\-Region\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1DNARegion_a213d2340cc8f4172e3f220f1fe9883f1}
+
+
+Reimplemented from \hyperlink{classunisys_1_1PhysicalEntity_ad445727cb6b1c12e954819d8207104e8}{unisys\-::\-Physical\-Entity}.
+
+\hypertarget{classunisys_1_1DNARegion_ac66d69ad5a779ba72bdf54e099085948}{\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}!set\-D\-N\-A\-Source@{set\-D\-N\-A\-Source}}
+\index{set\-D\-N\-A\-Source@{set\-D\-N\-A\-Source}!unisys::DNARegion@{unisys\-::\-D\-N\-A\-Region}}
+\subsubsection[{set\-D\-N\-A\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-D\-N\-A\-Region\-::set\-D\-N\-A\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DNARegion_ac66d69ad5a779ba72bdf54e099085948}
+\hypertarget{classunisys_1_1DNARegion_a50fb9c5129cbcf18d0603dc177ca7fd1}{\index{unisys\-::\-D\-N\-A\-Region@{unisys\-::\-D\-N\-A\-Region}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!unisys::DNARegion@{unisys\-::\-D\-N\-A\-Region}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-D\-N\-A\-Region\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{start, }
+\item[{unsigned int}]{stop}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DNARegion_a50fb9c5129cbcf18d0603dc177ca7fd1}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

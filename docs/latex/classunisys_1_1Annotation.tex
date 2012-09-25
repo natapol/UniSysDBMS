@@ -1,0 +1,131 @@
+\hypertarget{classunisys_1_1Annotation}{\section{unisys\-:\-:Annotation Class Reference}
+\label{classunisys_1_1Annotation}\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}}
+}
+
+
+The C++ representative class for annotation data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Annotation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Annotation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Annotation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Annotation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Annotation_a08702dfa8f734012f7c68d7317a3a540}{Annotation} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Annotation_a36f2000bdfe49eef240bdf0dabd3df2d}{Annotation} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Annotation_a61390650d258397c76f8482318d58741}{set\-Definition} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Annotation_ac10cd6a0c92eb085de8a7e3ba76a8069}{set\-Definition} (std\-::string const \&onto\-Id)
+\item 
+void \hyperlink{classunisys_1_1Annotation_a61aed5074b5497728e9ce33eeb3e2b4c}{set\-Evidence} (\hyperlink{classunisys_1_1Evidence}{Evidence} \&evidence)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Annotation_a56a0503bd22b05cae674b8d4df046d9e}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for annotation data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            definition: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            evidence: <EvidenceBSONStructure>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Annotation_a08702dfa8f734012f7c68d7317a3a540}{\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}!Annotation@{Annotation}}
+\index{Annotation@{Annotation}!unisys::Annotation@{unisys\-::\-Annotation}}
+\subsubsection[{Annotation}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Annotation\-::\-Annotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Annotation_a08702dfa8f734012f7c68d7317a3a540}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Annotation_a36f2000bdfe49eef240bdf0dabd3df2d}{\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}!Annotation@{Annotation}}
+\index{Annotation@{Annotation}!unisys::Annotation@{unisys\-::\-Annotation}}
+\subsubsection[{Annotation}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Annotation\-::\-Annotation (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Annotation_a36f2000bdfe49eef240bdf0dabd3df2d}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Annotation_a56a0503bd22b05cae674b8d4df046d9e}{\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Annotation@{unisys\-::\-Annotation}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Annotation\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Annotation_a56a0503bd22b05cae674b8d4df046d9e}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1Annotation_a61390650d258397c76f8482318d58741}{\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}!set\-Definition@{set\-Definition}}
+\index{set\-Definition@{set\-Definition}!unisys::Annotation@{unisys\-::\-Annotation}}
+\subsubsection[{set\-Definition}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Annotation\-::set\-Definition (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Annotation_a61390650d258397c76f8482318d58741}
+\hypertarget{classunisys_1_1Annotation_ac10cd6a0c92eb085de8a7e3ba76a8069}{\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}!set\-Definition@{set\-Definition}}
+\index{set\-Definition@{set\-Definition}!unisys::Annotation@{unisys\-::\-Annotation}}
+\subsubsection[{set\-Definition}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Annotation\-::set\-Definition (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Annotation_ac10cd6a0c92eb085de8a7e3ba76a8069}
+\hypertarget{classunisys_1_1Annotation_a61aed5074b5497728e9ce33eeb3e2b4c}{\index{unisys\-::\-Annotation@{unisys\-::\-Annotation}!set\-Evidence@{set\-Evidence}}
+\index{set\-Evidence@{set\-Evidence}!unisys::Annotation@{unisys\-::\-Annotation}}
+\subsubsection[{set\-Evidence}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Annotation\-::set\-Evidence (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence} \&}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Annotation_a61aed5074b5497728e9ce33eeb3e2b4c}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,438 @@
+\hypertarget{classunisys_1_1Updater}{\section{unisys\-:\-:Updater Class Reference}
+\label{classunisys_1_1Updater}\index{unisys\-::\-Updater@{unisys\-::\-Updater}}
+}
+
+
+{\ttfamily \#include $<$updater.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Updater\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classunisys_1_1Updater__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Updater\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Updater__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Updater_ab0079f44f1add44d18692c2f87c3f1e6}{Updater} ()
+\item 
+\hyperlink{classunisys_1_1Updater_aeaa204ad3c2cfc686ec0c3a3d57fdbf3}{Updater} (\hyperlink{classunisys_1_1Database}{Database} $\ast$database\-Handle\-Pt)
+\item 
+void \hyperlink{classunisys_1_1Updater_aae02dfd6f04722346226e547afc85ed7}{set\-Db\-Handle} (\hyperlink{classunisys_1_1Database}{Database} $\ast$database\-Handle\-Pt)
+\item 
+void \hyperlink{classunisys_1_1Updater_ad8033c6fbe0e45b1742f2d9ce428b6d1}{insert} (\hyperlink{classunisys_1_1Tracking}{Tracking} tracking)  throw (\-Update\-Error, Data\-Error)
+\item 
+void \hyperlink{classunisys_1_1Updater_a5380b25675232f85a7a21eb2b17e1732}{insert} (\hyperlink{classunisys_1_1Ontology}{Ontology} \&ontology)  throw (\-Update\-Error, Data\-Error)
+\item 
+void \hyperlink{classunisys_1_1Updater_a285cdbf9ff2a5aae97e606ef70781e9e}{insert} (\hyperlink{classunisys_1_1PhysicalEntity}{Physical\-Entity} \&data, bool strict=true)  throw (\-Update\-Error, Data\-Error)
+\item 
+void \hyperlink{classunisys_1_1Updater_ac8e83863cb9ee8d775f7c5394cb469af}{insert} (\hyperlink{classunisys_1_1Interaction}{Interaction} \&data, bool strict=true)  throw (\-Update\-Error, Data\-Error)
+\item 
+void \hyperlink{classunisys_1_1Updater_a640ab1f4cdfcb9b0d1d30039fb8eb217}{remove} (std\-::string const \&collection\-N\-S, std\-::string const \&id, bool remove\-Rela=true, bool remove\-Product=true)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a1e0a275963366933893bd91f1ee1edf9}{remove} (std\-::string const \&collection\-N\-S, std\-::set$<$ std\-::string $>$ const \&ids, bool remove\-Rela=true, bool remove\-Product=true)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_af0462b05f3161a4180b6e5b616e6708b}{update} (\hyperlink{classunisys_1_1Ontology}{Ontology} const \&ontology, bool check=true)  throw (\-Update\-Error, Data\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a1ff3e10dde0a8f9355e198b390930162}{update} (\hyperlink{classunisys_1_1PhysicalEntity}{Physical\-Entity} \&physicalentity, bool check=true)  throw (\-Update\-Error, Data\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a1c3139e122339e0d734de0b7a3142059}{update} (\hyperlink{classunisys_1_1Interaction}{Interaction} \&interaction, bool check=true)  throw (\-Update\-Error, Data\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1IdRef}{Id\-Ref} \hyperlink{classunisys_1_1Updater_acc303f1ec5d238b4fcabf20c7a6816aa}{id\-Converter} (\hyperlink{classunisys_1_1IdRef}{Id\-Ref} const \&ref)  throw (\-Query\-Error)
+\item 
+bool \hyperlink{classunisys_1_1Updater_a1bdbed297a8dd1be0b58461787bca8ba}{check\-Id\-Pair} (\hyperlink{classunisys_1_1BioObject}{Bio\-Object} obj, bool strict=true) const 
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database compare all cross references to Id\-Pair collection. If found, return true. \end{DoxyCompactList}\item 
+mongo\-::\-Query \hyperlink{classunisys_1_1Updater_ac2566c015970f24ceb04d71bd22cca79}{id\-Converter} (std\-::string const \&ns, mongo\-::\-B\-S\-O\-N\-Obj const \&bsonobj)  throw (\-Query\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database compare all cross references to Id\-Pair collection. If found, return true. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a1924cb2ddca02dfe4645c97feb58068b}{update\-Id\-Pair} (mongo\-::\-B\-S\-O\-N\-Obj const \&bsonobj, bool is\-Insert=true)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database compare all cross references to Id\-Pair collection. If found, return true. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a711b1a9f35937e4bbaf8c9334df62b12}{update} (std\-::string const \&collection\-N\-S, mongo\-::\-Query query, mongo\-::\-B\-S\-O\-N\-Obj bson\-Obj, bool upsert=false, bool multi=false)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a99c3e5ade4001d9226945cff25b45680}{insert} (std\-::string const \&collection\-N\-S, mongo\-::\-B\-S\-O\-N\-Obj bson\-Obj)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a4e288baa91e0d8774886f7a89f284ef1}{remove} (std\-::string const \&collection\-N\-S, mongo\-::\-Query q, bool just\-One)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a2af088e6f51a35808623a55a35c36366}{update\-Relation\-Add} (\hyperlink{classunisys_1_1Object}{Object} const \&obj, bool upsert=false, bool multi=false)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Updater_a4fc882390d8b42a79b33bc2e533a018d}{update\-Relation\-Del} (\hyperlink{classunisys_1_1Object}{Object} const \&obj, bool is\-Remove=true, bool just\-One=0, bool upsert=false, bool multi=false)  throw (\-Update\-Error)
+\begin{DoxyCompactList}\small\item\em compare cross reference to object in database \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Database}{Database} $\ast$ \hyperlink{classunisys_1_1Updater_a9fd851b4b2c640c9ce6adf73aa3570cc}{database\-Handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Updater_ab0079f44f1add44d18692c2f87c3f1e6}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!Updater@{Updater}}
+\index{Updater@{Updater}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{Updater}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Updater\-::\-Updater (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Updater_ab0079f44f1add44d18692c2f87c3f1e6}
+\hypertarget{classunisys_1_1Updater_aeaa204ad3c2cfc686ec0c3a3d57fdbf3}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!Updater@{Updater}}
+\index{Updater@{Updater}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{Updater}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Updater\-::\-Updater (
+\begin{DoxyParamCaption}
+\item[{{\bf Database} $\ast$}]{database\-Handle\-Pt}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Updater_aeaa204ad3c2cfc686ec0c3a3d57fdbf3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Updater_a1bdbed297a8dd1be0b58461787bca8ba}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!check\-Id\-Pair@{check\-Id\-Pair}}
+\index{check\-Id\-Pair@{check\-Id\-Pair}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{check\-Id\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Updater\-::check\-Id\-Pair (
+\begin{DoxyParamCaption}
+\item[{{\bf Bio\-Object}}]{obj, }
+\item[{bool}]{strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a1bdbed297a8dd1be0b58461787bca8ba}
+
+
+compare cross reference to object in database compare all cross references to Id\-Pair collection. If found, return true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em strict} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_acc303f1ec5d238b4fcabf20c7a6816aa}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!id\-Converter@{id\-Converter}}
+\index{id\-Converter@{id\-Converter}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{id\-Converter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id\-Ref} unisys\-::\-Updater\-::id\-Converter (
+\begin{DoxyParamCaption}
+\item[{{\bf Id\-Ref} const \&}]{ref}
+\end{DoxyParamCaption}
+)  throw ({\bf Query\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_acc303f1ec5d238b4fcabf20c7a6816aa}
+\hypertarget{classunisys_1_1Updater_ac2566c015970f24ceb04d71bd22cca79}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!id\-Converter@{id\-Converter}}
+\index{id\-Converter@{id\-Converter}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{id\-Converter}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-Query unisys\-::\-Updater\-::id\-Converter (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{ns, }
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bsonobj}
+\end{DoxyParamCaption}
+)  throw ({\bf Query\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_ac2566c015970f24ceb04d71bd22cca79}
+
+
+compare cross reference to object in database compare all cross references to Id\-Pair collection. If found, return true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ns} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em bsonobj} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a99c3e5ade4001d9226945cff25b45680}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!insert@{insert}}
+\index{insert@{insert}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::insert (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{collection\-N\-S, }
+\item[{mongo\-::\-B\-S\-O\-N\-Obj}]{bson\-Obj}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a99c3e5ade4001d9226945cff25b45680}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\-N\-S} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em bson\-Obj} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_ad8033c6fbe0e45b1742f2d9ce428b6d1}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!insert@{insert}}
+\index{insert@{insert}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Tracking}}]{tracking}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_ad8033c6fbe0e45b1742f2d9ce428b6d1}
+\hypertarget{classunisys_1_1Updater_a5380b25675232f85a7a21eb2b17e1732}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!insert@{insert}}
+\index{insert@{insert}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Ontology} \&}]{ontology}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_a5380b25675232f85a7a21eb2b17e1732}
+\hypertarget{classunisys_1_1Updater_a285cdbf9ff2a5aae97e606ef70781e9e}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!insert@{insert}}
+\index{insert@{insert}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Entity} \&}]{data, }
+\item[{bool}]{strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_a285cdbf9ff2a5aae97e606ef70781e9e}
+\hypertarget{classunisys_1_1Updater_ac8e83863cb9ee8d775f7c5394cb469af}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!insert@{insert}}
+\index{insert@{insert}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Interaction} \&}]{data, }
+\item[{bool}]{strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_ac8e83863cb9ee8d775f7c5394cb469af}
+\hypertarget{classunisys_1_1Updater_a4e288baa91e0d8774886f7a89f284ef1}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!remove@{remove}}
+\index{remove@{remove}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::remove (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{collection\-N\-S, }
+\item[{mongo\-::\-Query}]{q, }
+\item[{bool}]{just\-One}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a4e288baa91e0d8774886f7a89f284ef1}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\-N\-S} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em q} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em just\-One} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a640ab1f4cdfcb9b0d1d30039fb8eb217}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!remove@{remove}}
+\index{remove@{remove}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::remove (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{collection\-N\-S, }
+\item[{std\-::string const \&}]{id, }
+\item[{bool}]{remove\-Rela = {\ttfamily true}, }
+\item[{bool}]{remove\-Product = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})}}\label{classunisys_1_1Updater_a640ab1f4cdfcb9b0d1d30039fb8eb217}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\-N\-S} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em id} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em remove\-Rela} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em remove\-Product} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a1e0a275963366933893bd91f1ee1edf9}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!remove@{remove}}
+\index{remove@{remove}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::remove (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{collection\-N\-S, }
+\item[{std\-::set$<$ std\-::string $>$ const \&}]{ids, }
+\item[{bool}]{remove\-Rela = {\ttfamily true}, }
+\item[{bool}]{remove\-Product = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})}}\label{classunisys_1_1Updater_a1e0a275963366933893bd91f1ee1edf9}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\-N\-S} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em ids} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em remove\-Rela} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em remove\-Product} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_aae02dfd6f04722346226e547afc85ed7}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!set\-Db\-Handle@{set\-Db\-Handle}}
+\index{set\-Db\-Handle@{set\-Db\-Handle}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{set\-Db\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::set\-Db\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf Database} $\ast$}]{database\-Handle\-Pt}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Updater_aae02dfd6f04722346226e547afc85ed7}
+\hypertarget{classunisys_1_1Updater_a711b1a9f35937e4bbaf8c9334df62b12}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update@{update}}
+\index{update@{update}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{collection\-N\-S, }
+\item[{mongo\-::\-Query}]{query, }
+\item[{mongo\-::\-B\-S\-O\-N\-Obj}]{bson\-Obj, }
+\item[{bool}]{upsert = {\ttfamily false}, }
+\item[{bool}]{multi = {\ttfamily false}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a711b1a9f35937e4bbaf8c9334df62b12}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\-N\-S} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em query} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em bson\-Obj} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em upsert} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em multi} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_af0462b05f3161a4180b6e5b616e6708b}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update@{update}}
+\index{update@{update}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Ontology} const \&}]{ontology, }
+\item[{bool}]{check = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_af0462b05f3161a4180b6e5b616e6708b}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ontology} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em check} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a1ff3e10dde0a8f9355e198b390930162}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update@{update}}
+\index{update@{update}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Entity} \&}]{physicalentity, }
+\item[{bool}]{check = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_a1ff3e10dde0a8f9355e198b390930162}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em physicalentity} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em check} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a1c3139e122339e0d734de0b7a3142059}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update@{update}}
+\index{update@{update}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Interaction} \&}]{interaction, }
+\item[{bool}]{check = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error}, {\bf Data\-Error})}}\label{classunisys_1_1Updater_a1c3139e122339e0d734de0b7a3142059}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interaction} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em check} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a1924cb2ddca02dfe4645c97feb58068b}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update\-Id\-Pair@{update\-Id\-Pair}}
+\index{update\-Id\-Pair@{update\-Id\-Pair}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update\-Id\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update\-Id\-Pair (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bsonobj, }
+\item[{bool}]{is\-Insert = {\ttfamily true}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a1924cb2ddca02dfe4645c97feb58068b}
+
+
+compare cross reference to object in database compare all cross references to Id\-Pair collection. If found, return true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bsonobj} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em is\-Insert} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a2af088e6f51a35808623a55a35c36366}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update\-Relation\-Add@{update\-Relation\-Add}}
+\index{update\-Relation\-Add@{update\-Relation\-Add}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update\-Relation\-Add}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update\-Relation\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} const \&}]{obj, }
+\item[{bool}]{upsert = {\ttfamily false}, }
+\item[{bool}]{multi = {\ttfamily false}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a2af088e6f51a35808623a55a35c36366}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em upsert} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em multi} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Updater_a4fc882390d8b42a79b33bc2e533a018d}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!update\-Relation\-Del@{update\-Relation\-Del}}
+\index{update\-Relation\-Del@{update\-Relation\-Del}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{update\-Relation\-Del}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Updater\-::update\-Relation\-Del (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} const \&}]{obj, }
+\item[{bool}]{is\-Remove = {\ttfamily true}, }
+\item[{bool}]{just\-One = {\ttfamily 0}, }
+\item[{bool}]{upsert = {\ttfamily false}, }
+\item[{bool}]{multi = {\ttfamily false}}
+\end{DoxyParamCaption}
+)  throw ({\bf Update\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a4fc882390d8b42a79b33bc2e533a018d}
+
+
+compare cross reference to object in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em is\-Remove} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em just\-One} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+{\em upsert} & compare all cross refernces and if obj is \hyperlink{classunisys_1_1Interaction}{Interaction} object, also compare with interaction\-Key \\
+\hline
+{\em multi} & boson object of \hyperlink{classunisys_1_1BioObject}{Bio\-Object} class \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1Updater_a9fd851b4b2c640c9ce6adf73aa3570cc}{\index{unisys\-::\-Updater@{unisys\-::\-Updater}!database\-Handle@{database\-Handle}}
+\index{database\-Handle@{database\-Handle}!unisys::Updater@{unisys\-::\-Updater}}
+\subsubsection[{database\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Database}$\ast$ unisys\-::\-Updater\-::database\-Handle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Updater_a9fd851b4b2c640c9ce6adf73aa3570cc}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{updater_8h}{updater.\-h}\end{DoxyCompactItemize}

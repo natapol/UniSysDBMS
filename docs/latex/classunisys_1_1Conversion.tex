@@ -1,0 +1,125 @@
+\hypertarget{classunisys_1_1Conversion}{\section{unisys\-:\-:Conversion Class Reference}
+\label{classunisys_1_1Conversion}\index{unisys\-::\-Conversion@{unisys\-::\-Conversion}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Conversion\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Conversion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Conversion\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Conversion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Conversion_afca30f92317873b364fe2a25e194dc04}{add\-Kinetic\-Law} (\hyperlink{classunisys_1_1MathML}{Math\-M\-L} \&kinetic\-Law)
+\item 
+void \hyperlink{classunisys_1_1Conversion_a7deb28962c5f6ba35dab941585bce610}{set\-Spontaneous} (bool value=true)
+\item 
+void \hyperlink{classunisys_1_1Conversion_ad845f9c8f2e968f346fc67507f48d565}{set\-Functional} (bool value=true)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{init\-Field} ()
+\item 
+\hyperlink{classunisys_1_1Conversion_ac70f7803971acc97b3b69b7225eb3c06}{Conversion} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            participant: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            conversionDirection: <DbRef>,
+            kineticLaw: {<MathMLBOSON>, <MathMLBOSON>, ...}
+            spontaneous: <string>,
+            functional: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Conversion_ac70f7803971acc97b3b69b7225eb3c06}{\index{unisys\-::\-Conversion@{unisys\-::\-Conversion}!Conversion@{Conversion}}
+\index{Conversion@{Conversion}!unisys::Conversion@{unisys\-::\-Conversion}}
+\subsubsection[{Conversion}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Conversion\-::\-Conversion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Conversion_ac70f7803971acc97b3b69b7225eb3c06}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Conversion_afca30f92317873b364fe2a25e194dc04}{\index{unisys\-::\-Conversion@{unisys\-::\-Conversion}!add\-Kinetic\-Law@{add\-Kinetic\-Law}}
+\index{add\-Kinetic\-Law@{add\-Kinetic\-Law}!unisys::Conversion@{unisys\-::\-Conversion}}
+\subsubsection[{add\-Kinetic\-Law}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Conversion\-::add\-Kinetic\-Law (
+\begin{DoxyParamCaption}
+\item[{{\bf Math\-M\-L} \&}]{kinetic\-Law}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Conversion_afca30f92317873b364fe2a25e194dc04}
+\hypertarget{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{\index{unisys\-::\-Conversion@{unisys\-::\-Conversion}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Conversion@{unisys\-::\-Conversion}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Conversion\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Interaction_a84c6c3e09f83ec8dd8dec7485f97e02b}{unisys\-::\-Interaction}.
+
+
+
+Reimplemented in \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a9999c6a5353e9b62056691cf0187f04f}{unisys\-::\-Biochemical\-Reaction\-With\-Transport}, \hyperlink{classunisys_1_1Transport_a04f17e27ff568c45688cde1a95265dea}{unisys\-::\-Transport}, and \hyperlink{classunisys_1_1BiochemicalReaction_a61d5cb519be2ac672ae8e243abdc7489}{unisys\-::\-Biochemical\-Reaction}.
+
+\hypertarget{classunisys_1_1Conversion_ad845f9c8f2e968f346fc67507f48d565}{\index{unisys\-::\-Conversion@{unisys\-::\-Conversion}!set\-Functional@{set\-Functional}}
+\index{set\-Functional@{set\-Functional}!unisys::Conversion@{unisys\-::\-Conversion}}
+\subsubsection[{set\-Functional}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Conversion\-::set\-Functional (
+\begin{DoxyParamCaption}
+\item[{bool}]{value = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Conversion_ad845f9c8f2e968f346fc67507f48d565}
+\hypertarget{classunisys_1_1Conversion_a7deb28962c5f6ba35dab941585bce610}{\index{unisys\-::\-Conversion@{unisys\-::\-Conversion}!set\-Spontaneous@{set\-Spontaneous}}
+\index{set\-Spontaneous@{set\-Spontaneous}!unisys::Conversion@{unisys\-::\-Conversion}}
+\subsubsection[{set\-Spontaneous}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Conversion\-::set\-Spontaneous (
+\begin{DoxyParamCaption}
+\item[{bool}]{value = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Conversion_a7deb28962c5f6ba35dab941585bce610}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

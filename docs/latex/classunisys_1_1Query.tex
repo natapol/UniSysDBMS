@@ -1,0 +1,167 @@
+\hypertarget{classunisys_1_1Query}{\section{unisys\-:\-:Query Class Reference}
+\label{classunisys_1_1Query}\index{unisys\-::\-Query@{unisys\-::\-Query}}
+}
+
+
+{\ttfamily \#include $<$query.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:Query\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Query__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Query_a9b8dec8e01ea5876edcd9899814176f4}{Query} ()
+\item 
+\hyperlink{classunisys_1_1Query_af17e3a152dbc1f76e63845b2f7259602}{Query} (\hyperlink{classunisys_1_1Database}{Database} $\ast$database\-Handle\-Pt)
+\item 
+\hyperlink{classunisys_1_1Query}{Query} \& \hyperlink{classunisys_1_1Query_aa186ae44601eec2e8961277edcbcff7c}{set\-Query} (mongo\-::\-Query const \&\hyperlink{classunisys_1_1Query_af86fd3dc2340b9b91452a47b338e5010}{query})
+\item 
+\hyperlink{classunisys_1_1Query}{Query} \& \hyperlink{classunisys_1_1Query_a93b1e5f1fc9644005468a5582d0c2dbd}{set\-Query} (mongo\-::\-B\-S\-O\-N\-Obj const \&\hyperlink{classunisys_1_1Query_af86fd3dc2340b9b91452a47b338e5010}{query})
+\item 
+\hyperlink{classunisys_1_1Query}{Query} \& \hyperlink{classunisys_1_1Query_a4436ed66a4a573dc942f767fbbbf5d13}{set\-Db\-Handle} (\hyperlink{classunisys_1_1Database}{Database} $\ast$database\-Handle\-Pt)
+\item 
+\hyperlink{classunisys_1_1Query}{Query} \& \hyperlink{classunisys_1_1Query_a85c3bad91cab280d4416462c3d7299de}{sort} (std\-::string const \&field, int asc=1)
+\item 
+\hyperlink{classunisys_1_1Query}{Query} \& \hyperlink{classunisys_1_1Query_a1c265602b716b6f7a04b557da3220ace}{explain} ()
+\item 
+\hyperlink{classunisys_1_1Query}{Query} \& \hyperlink{classunisys_1_1Query_a893cdb5bdb4a210bf8509c1f9d125b75}{where} (const std\-::string \&jscode)
+\item 
+std\-::string \hyperlink{classunisys_1_1Query_af547981311fe5334de85b0c2b078041e}{to\-String} () const 
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1Query_a6e33ab94af524a42c9cf990fa4b7de51}{perform} (const std\-::string \&ns, int n\-To\-Return=0, int n\-To\-Skip=0, const mongo\-::\-B\-S\-O\-N\-Obj $\ast$fields\-To\-Return=0, int query\-Options=0, int batch\-Size=0)  throw (\-Query\-Error)
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1Query_a6ba986cd88c6f422b2f1535ed158c1e3}{perform\-One} (const std\-::string \&ns, int n\-To\-Return=0, int n\-To\-Skip=0, const mongo\-::\-B\-S\-O\-N\-Obj $\ast$fields\-To\-Return=0, int query\-Options=0, int batch\-Size=0)  throw (\-Query\-Error)
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1Query_a64158cd5fd94611f0691f63a39f54a25}{query\-By\-Id} (const std\-::string \&ns, const std\-::string \&id)  throw (\-Query\-Error)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Database}{Database} $\ast$ \hyperlink{classunisys_1_1Query_ac2341bd1258446f1af5e33ad3426bdb3}{database\-Handle}
+\item 
+mongo\-::\-Query \hyperlink{classunisys_1_1Query_af86fd3dc2340b9b91452a47b338e5010}{query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Query_a9b8dec8e01ea5876edcd9899814176f4}{\index{unisys\-::\-Query@{unisys\-::\-Query}!Query@{Query}}
+\index{Query@{Query}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{Query}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Query\-::\-Query (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_a9b8dec8e01ea5876edcd9899814176f4}
+\hypertarget{classunisys_1_1Query_af17e3a152dbc1f76e63845b2f7259602}{\index{unisys\-::\-Query@{unisys\-::\-Query}!Query@{Query}}
+\index{Query@{Query}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{Query}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Query\-::\-Query (
+\begin{DoxyParamCaption}
+\item[{{\bf Database} $\ast$}]{database\-Handle\-Pt}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_af17e3a152dbc1f76e63845b2f7259602}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Query_a1c265602b716b6f7a04b557da3220ace}{\index{unisys\-::\-Query@{unisys\-::\-Query}!explain@{explain}}
+\index{explain@{explain}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{explain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Query}\& unisys\-::\-Query\-::explain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_a1c265602b716b6f7a04b557da3220ace}
+\hypertarget{classunisys_1_1Query_a6e33ab94af524a42c9cf990fa4b7de51}{\index{unisys\-::\-Query@{unisys\-::\-Query}!perform@{perform}}
+\index{perform@{perform}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{perform}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Query\-::perform (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{ns, }
+\item[{int}]{n\-To\-Return = {\ttfamily 0}, }
+\item[{int}]{n\-To\-Skip = {\ttfamily 0}, }
+\item[{const mongo\-::\-B\-S\-O\-N\-Obj $\ast$}]{fields\-To\-Return = {\ttfamily 0}, }
+\item[{int}]{query\-Options = {\ttfamily 0}, }
+\item[{int}]{batch\-Size = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)  throw ({\bf Query\-Error})}}\label{classunisys_1_1Query_a6e33ab94af524a42c9cf990fa4b7de51}
+\hypertarget{classunisys_1_1Query_a6ba986cd88c6f422b2f1535ed158c1e3}{\index{unisys\-::\-Query@{unisys\-::\-Query}!perform\-One@{perform\-One}}
+\index{perform\-One@{perform\-One}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{perform\-One}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Query\-::perform\-One (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{ns, }
+\item[{int}]{n\-To\-Return = {\ttfamily 0}, }
+\item[{int}]{n\-To\-Skip = {\ttfamily 0}, }
+\item[{const mongo\-::\-B\-S\-O\-N\-Obj $\ast$}]{fields\-To\-Return = {\ttfamily 0}, }
+\item[{int}]{query\-Options = {\ttfamily 0}, }
+\item[{int}]{batch\-Size = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)  throw ({\bf Query\-Error})}}\label{classunisys_1_1Query_a6ba986cd88c6f422b2f1535ed158c1e3}
+\hypertarget{classunisys_1_1Query_a64158cd5fd94611f0691f63a39f54a25}{\index{unisys\-::\-Query@{unisys\-::\-Query}!query\-By\-Id@{query\-By\-Id}}
+\index{query\-By\-Id@{query\-By\-Id}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{query\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Query\-::query\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{ns, }
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+)  throw ({\bf Query\-Error})}}\label{classunisys_1_1Query_a64158cd5fd94611f0691f63a39f54a25}
+\hypertarget{classunisys_1_1Query_a4436ed66a4a573dc942f767fbbbf5d13}{\index{unisys\-::\-Query@{unisys\-::\-Query}!set\-Db\-Handle@{set\-Db\-Handle}}
+\index{set\-Db\-Handle@{set\-Db\-Handle}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{set\-Db\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Query}\& unisys\-::\-Query\-::set\-Db\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf Database} $\ast$}]{database\-Handle\-Pt}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_a4436ed66a4a573dc942f767fbbbf5d13}
+\hypertarget{classunisys_1_1Query_aa186ae44601eec2e8961277edcbcff7c}{\index{unisys\-::\-Query@{unisys\-::\-Query}!set\-Query@{set\-Query}}
+\index{set\-Query@{set\-Query}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{set\-Query}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Query}\& unisys\-::\-Query\-::set\-Query (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-Query const \&}]{query}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_aa186ae44601eec2e8961277edcbcff7c}
+\hypertarget{classunisys_1_1Query_a93b1e5f1fc9644005468a5582d0c2dbd}{\index{unisys\-::\-Query@{unisys\-::\-Query}!set\-Query@{set\-Query}}
+\index{set\-Query@{set\-Query}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{set\-Query}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Query}\& unisys\-::\-Query\-::set\-Query (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{query}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_a93b1e5f1fc9644005468a5582d0c2dbd}
+\hypertarget{classunisys_1_1Query_a85c3bad91cab280d4416462c3d7299de}{\index{unisys\-::\-Query@{unisys\-::\-Query}!sort@{sort}}
+\index{sort@{sort}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Query}\& unisys\-::\-Query\-::sort (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field, }
+\item[{int}]{asc = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_a85c3bad91cab280d4416462c3d7299de}
+\hypertarget{classunisys_1_1Query_af547981311fe5334de85b0c2b078041e}{\index{unisys\-::\-Query@{unisys\-::\-Query}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Query\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Query_af547981311fe5334de85b0c2b078041e}
+\hypertarget{classunisys_1_1Query_a893cdb5bdb4a210bf8509c1f9d125b75}{\index{unisys\-::\-Query@{unisys\-::\-Query}!where@{where}}
+\index{where@{where}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{where}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Query}\& unisys\-::\-Query\-::where (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{jscode}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Query_a893cdb5bdb4a210bf8509c1f9d125b75}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1Query_ac2341bd1258446f1af5e33ad3426bdb3}{\index{unisys\-::\-Query@{unisys\-::\-Query}!database\-Handle@{database\-Handle}}
+\index{database\-Handle@{database\-Handle}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{database\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Database}$\ast$ unisys\-::\-Query\-::database\-Handle\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Query_ac2341bd1258446f1af5e33ad3426bdb3}
+\hypertarget{classunisys_1_1Query_af86fd3dc2340b9b91452a47b338e5010}{\index{unisys\-::\-Query@{unisys\-::\-Query}!query@{query}}
+\index{query@{query}!unisys::Query@{unisys\-::\-Query}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-Query unisys\-::\-Query\-::query\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Query_af86fd3dc2340b9b91452a47b338e5010}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{query_8h}{query.\-h}\end{DoxyCompactItemize}

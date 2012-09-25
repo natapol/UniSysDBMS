@@ -1,0 +1,34 @@
+\hypertarget{group__xmlModify}{\section{Create or Update the X\-M\-L\-Node structure}
+\label{group__xmlModify}\index{Create or Update the X\-M\-L\-Node structure@{Create or Update the X\-M\-L\-Node structure}}
+}
+Collaboration diagram for Create or Update the X\-M\-L\-Node structure\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__xmlModify}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__creation}{Creating from scratch a X\-M\-L\-Node structure}
+\item 
+\hyperlink{group__xmlUpdate}{Updating Nodes}
+\item 
+\hyperlink{group__xmlDelete}{Deleting Nodes or Attributes}
+\item 
+\hyperlink{group__xmlWOSD}{???\-\_\-\-W\-O\-S\-D functions.}
+\item 
+\hyperlink{group__xmlPosition}{Position helper functions (use in conjunction with the update\&add functions}
+\item 
+\hyperlink{group__StringAlloc}{String Allocation/\-Free functions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The functions in this group allows you to create from scratch (or update) a \hyperlink{structXMLNode}{X\-M\-L\-Node} structure. Start by creating your top node with the \char`\"{}create\-X\-M\-L\-Top\-Node\char`\"{} function and then add new nodes with the \char`\"{}add\-Child\char`\"{} function. The parameter 'pos' gives the position where the child\-Node, the text or the X\-M\-L\-Clear\-Tag will be inserted. The default value (pos=-\/1) inserts at the end. The value (pos=0) insert at the beginning (Insertion at the beginning is slower than at the end). \par
+
+
+R\-E\-M\-A\-R\-K\-: 0 $<$= pos $<$ n\-Child()+n\-Text()+n\-Clear() \par
+ 

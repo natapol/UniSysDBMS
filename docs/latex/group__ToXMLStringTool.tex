@@ -1,0 +1,39 @@
+\hypertarget{group__ToXMLStringTool}{\section{Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions.}
+\label{group__ToXMLStringTool}\index{Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions.@{Helper class to create X\-M\-L files using ""printf"", ""fprintf"", ""cout"",... functions.}}
+}
+Collaboration diagram for Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions.\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ToXMLStringTool}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structToXMLStringTool}{To\-X\-M\-L\-String\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \\*
+\hyperlink{structToXMLStringTool}{To\-X\-M\-L\-String\-Tool} \hyperlink{group__ToXMLStringTool_ga0460d731addf12b0863d4fd857ca8281}{To\-X\-M\-L\-String\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{group__ToXMLStringTool_ga0460d731addf12b0863d4fd857ca8281}{\index{Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions.@{Helper class to create X\-M\-L files using ""printf"", ""fprintf"", ""cout"",... functions.}!To\-X\-M\-L\-String\-Tool@{To\-X\-M\-L\-String\-Tool}}
+\index{To\-X\-M\-L\-String\-Tool@{To\-X\-M\-L\-String\-Tool}!Helper class to create XML files using "printf", "fprintf", "cout",... functions.@{Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions.}}
+\subsubsection[{To\-X\-M\-L\-String\-Tool}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} {\bf To\-X\-M\-L\-String\-Tool}  {\bf To\-X\-M\-L\-String\-Tool}}}\label{group__ToXMLStringTool_ga0460d731addf12b0863d4fd857ca8281}
+
+
+Helper class to create X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions. 
+
+The \hyperlink{structToXMLStringTool}{To\-X\-M\-L\-String\-Tool} class helps you creating X\-M\-L files using \char`\"{}printf\char`\"{}, \char`\"{}fprintf\char`\"{}, \char`\"{}cout\char`\"{},... functions. The \char`\"{}\-To\-X\-M\-L\-String\-Tool\char`\"{} class is processing strings so that all the characters \&,",',$<$,$>$ are replaced by their X\-M\-L equivalent\-: \begin{DoxyVerb}&amp;, &quot;, &apos;, &lt;, &gt; \end{DoxyVerb}
+ Using the \char`\"{}\-To\-X\-M\-L\-String\-Tool class\char`\"{} and the \char`\"{}fprintf function\char`\"{} is T\-H\-E most efficient way to produce V\-E\-R\-Y large X\-M\-L documents V\-E\-R\-Y fast. \begin{DoxyNote}{Note}
+If you are creating from scratch an X\-M\-L file using the provided \hyperlink{structXMLNode}{X\-M\-L\-Node} class you must not use the \char`\"{}\-To\-X\-M\-L\-String\-Tool\char`\"{} class (because the \char`\"{}\-X\-M\-L\-Node\char`\"{} class does the processing job for you during rendering). 
+\end{DoxyNote}

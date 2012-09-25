@@ -1,0 +1,228 @@
+\hypertarget{classunisys_1_1ClassBean}{\section{unisys\-:\-:Class\-Bean Class Reference}
+\label{classunisys_1_1ClassBean}\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}}
+}
+
+
+This class is for taking care of the specific structure of response data call class\-Bean.  
+
+
+
+
+{\ttfamily \#include $<$rest\-Bio\-Portal.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:Class\-Bean\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1ClassBean__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structunisys_1_1ClassBean_1_1relationDataStructure}{relation\-Data\-Structure}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \\*
+\hyperlink{structunisys_1_1ClassBean_1_1relationDataStructure}{unisys\-::\-Class\-Bean\-::relation\-Data\-Structure} \hyperlink{classunisys_1_1ClassBean_aabeda0465f295816c6f784d7e3cbdb97}{relation\-Struct}
+\begin{DoxyCompactList}\small\item\em For collecting the data in the relations node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1ClassBean_a48b70a5fa37a3ea8c0fedbfe63ffb963}{Class\-Bean} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1ClassBean_a390c1b87bd723fd746f8151867961997}{Class\-Bean} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)
+\begin{DoxyCompactList}\small\item\em Overload constructor for parsing X\-M\-L response. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_ae1d0891bd0143a853914f218a14a08ff}{get\-Id} () const 
+\begin{DoxyCompactList}\small\item\em Return id. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_a53387132779d106a7dee6c897066480d}{get\-Full\-Id} () const 
+\begin{DoxyCompactList}\small\item\em Return full\-Id. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_a0a503067b948f19b098d3d71ec4a120b}{get\-Label} () const 
+\begin{DoxyCompactList}\small\item\em Return label. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_a83fecb8b41c64cc29d172b380ce16816}{get\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Returntype. \end{DoxyCompactList}\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ClassBean_a7e7e54c7c889d696cfc7fdb22ba4b861}{get\-Synonyms} () const 
+\begin{DoxyCompactList}\small\item\em Return the list of synonym. \end{DoxyCompactList}\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ClassBean_aaa76e4b0ade048567c4b8d52312ef1a9}{get\-Definitions} () const 
+\begin{DoxyCompactList}\small\item\em Return the list of definition. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{classunisys_1_1ClassBean_aabeda0465f295816c6f784d7e3cbdb97}{relation\-Struct} $>$ \hyperlink{classunisys_1_1ClassBean_a85e6aa6781b0379eb956fb1517496e82}{get\-Relations} () const 
+\begin{DoxyCompactList}\small\item\em Return the list of relation data structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_a0873b3a3895796ebf52f92860beea2a9}{id}
+\begin{DoxyCompactList}\small\item\em I\-D. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_a99394c8ec3b4e477c7e44702e68310bb}{full\-Id}
+\begin{DoxyCompactList}\small\item\em Full I\-D of the class in U\-R\-I format. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_ad68cdc52aa9e61e682f54cf5574d1b37}{label}
+\item 
+std\-::string \hyperlink{classunisys_1_1ClassBean_a3cd934e3687f96b0dc87a3fcafbec4ca}{type}
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ClassBean_a50623767ece8ef538c949558bfbc53af}{synonyms}
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ClassBean_af811d05369c1981390be001ad4b9b24d}{definitions}
+\item 
+std\-::vector$<$ \hyperlink{classunisys_1_1ClassBean_aabeda0465f295816c6f784d7e3cbdb97}{relation\-Struct} $>$ \hyperlink{classunisys_1_1ClassBean_a39022db9b3e14d792b3d73c7c85c253d}{relations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is for taking care of the specific structure of response data call class\-Bean. 
+
+This class is normally used for parsing the response of term command. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classunisys_1_1ClassBean_aabeda0465f295816c6f784d7e3cbdb97}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!relation\-Struct@{relation\-Struct}}
+\index{relation\-Struct@{relation\-Struct}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{relation\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf unisys\-::\-Class\-Bean\-::relation\-Struct}}}\label{classunisys_1_1ClassBean_aabeda0465f295816c6f784d7e3cbdb97}
+
+
+For collecting the data in the relations node. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1ClassBean_a48b70a5fa37a3ea8c0fedbfe63ffb963}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!Class\-Bean@{Class\-Bean}}
+\index{Class\-Bean@{Class\-Bean}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{Class\-Bean}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Class\-Bean\-::\-Class\-Bean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ClassBean_a48b70a5fa37a3ea8c0fedbfe63ffb963}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1ClassBean_a390c1b87bd723fd746f8151867961997}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!Class\-Bean@{Class\-Bean}}
+\index{Class\-Bean@{Class\-Bean}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{Class\-Bean}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Class\-Bean\-::\-Class\-Bean (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ClassBean_a390c1b87bd723fd746f8151867961997}
+
+
+Overload constructor for parsing X\-M\-L response. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1ClassBean_aaa76e4b0ade048567c4b8d52312ef1a9}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Definitions@{get\-Definitions}}
+\index{get\-Definitions@{get\-Definitions}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Definitions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Class\-Bean\-::get\-Definitions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_aaa76e4b0ade048567c4b8d52312ef1a9}
+
+
+Return the list of definition. 
+
+\hypertarget{classunisys_1_1ClassBean_a53387132779d106a7dee6c897066480d}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Full\-Id@{get\-Full\-Id}}
+\index{get\-Full\-Id@{get\-Full\-Id}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Full\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::get\-Full\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_a53387132779d106a7dee6c897066480d}
+
+
+Return full\-Id. 
+
+\hypertarget{classunisys_1_1ClassBean_ae1d0891bd0143a853914f218a14a08ff}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_ae1d0891bd0143a853914f218a14a08ff}
+
+
+Return id. 
+
+\hypertarget{classunisys_1_1ClassBean_a0a503067b948f19b098d3d71ec4a120b}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Label@{get\-Label}}
+\index{get\-Label@{get\-Label}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Label}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::get\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_a0a503067b948f19b098d3d71ec4a120b}
+
+
+Return label. 
+
+\hypertarget{classunisys_1_1ClassBean_a85e6aa6781b0379eb956fb1517496e82}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Relations@{get\-Relations}}
+\index{get\-Relations@{get\-Relations}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Relations}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf relation\-Struct}$>$ unisys\-::\-Class\-Bean\-::get\-Relations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_a85e6aa6781b0379eb956fb1517496e82}
+
+
+Return the list of relation data structure. 
+
+\hypertarget{classunisys_1_1ClassBean_a7e7e54c7c889d696cfc7fdb22ba4b861}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Synonyms@{get\-Synonyms}}
+\index{get\-Synonyms@{get\-Synonyms}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Synonyms}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Class\-Bean\-::get\-Synonyms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_a7e7e54c7c889d696cfc7fdb22ba4b861}
+
+
+Return the list of synonym. 
+
+\hypertarget{classunisys_1_1ClassBean_a83fecb8b41c64cc29d172b380ce16816}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ClassBean_a83fecb8b41c64cc29d172b380ce16816}
+
+
+Returntype. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1ClassBean_af811d05369c1981390be001ad4b9b24d}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!definitions@{definitions}}
+\index{definitions@{definitions}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{definitions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Class\-Bean\-::definitions\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_af811d05369c1981390be001ad4b9b24d}
+\hypertarget{classunisys_1_1ClassBean_a99394c8ec3b4e477c7e44702e68310bb}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!full\-Id@{full\-Id}}
+\index{full\-Id@{full\-Id}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{full\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::full\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_a99394c8ec3b4e477c7e44702e68310bb}
+
+
+Full I\-D of the class in U\-R\-I format. 
+
+\hypertarget{classunisys_1_1ClassBean_a0873b3a3895796ebf52f92860beea2a9}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!id@{id}}
+\index{id@{id}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::id\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_a0873b3a3895796ebf52f92860beea2a9}
+
+
+I\-D. 
+
+\hypertarget{classunisys_1_1ClassBean_ad68cdc52aa9e61e682f54cf5574d1b37}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!label@{label}}
+\index{label@{label}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::label\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_ad68cdc52aa9e61e682f54cf5574d1b37}
+\hypertarget{classunisys_1_1ClassBean_a39022db9b3e14d792b3d73c7c85c253d}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!relations@{relations}}
+\index{relations@{relations}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{relations}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf relation\-Struct}$>$ unisys\-::\-Class\-Bean\-::relations\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_a39022db9b3e14d792b3d73c7c85c253d}
+\hypertarget{classunisys_1_1ClassBean_a50623767ece8ef538c949558bfbc53af}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!synonyms@{synonyms}}
+\index{synonyms@{synonyms}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{synonyms}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Class\-Bean\-::synonyms\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_a50623767ece8ef538c949558bfbc53af}
+\hypertarget{classunisys_1_1ClassBean_a3cd934e3687f96b0dc87a3fcafbec4ca}{\index{unisys\-::\-Class\-Bean@{unisys\-::\-Class\-Bean}!type@{type}}
+\index{type@{type}!unisys::ClassBean@{unisys\-::\-Class\-Bean}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Class\-Bean\-::type\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ClassBean_a3cd934e3687f96b0dc87a3fcafbec4ca}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{restBioPortal_8h}{rest\-Bio\-Portal.\-h}\end{DoxyCompactItemize}

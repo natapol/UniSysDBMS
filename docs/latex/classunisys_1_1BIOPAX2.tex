@@ -1,0 +1,126 @@
+\hypertarget{classunisys_1_1BIOPAX2}{\section{unisys\-:\-:B\-I\-O\-P\-A\-X2 Class Reference}
+\label{classunisys_1_1BIOPAX2}\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+}
+
+
+This class is used to parse O\-W\-L format.  
+
+
+
+
+{\ttfamily \#include $<$biopax.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:B\-I\-O\-P\-A\-X2\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BIOPAX2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+\hyperlink{classunisys_1_1BIOPAX__obj}{B\-I\-O\-P\-A\-X\-\_\-obj} $>$ \hyperlink{classunisys_1_1BIOPAX2_afc4e3a4ce60303565431949e09527ba3}{biopax\-Obj\-Map}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1BIOPAX2_a05bdb19fae62f0a4826c6a83bf1cb63b}{B\-I\-O\-P\-A\-X2} ()
+\begin{DoxyCompactList}\small\item\em Defualt constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1BIOPAX2_a012b1c9a86e129648cc67c7791703aa5}{B\-I\-O\-P\-A\-X2} (std\-::string file\-Name)
+\begin{DoxyCompactList}\small\item\em Constructor with file\-Name as parameter. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1BIOPAX2_a355067caeb9981702d1c4a73ab5e9fa3}{get\-O\-W\-L\-Node} () const 
+\item 
+biopax\-Obj\-Map\-::const\-\_\-iterator \hyperlink{classunisys_1_1BIOPAX2_aeaa3de452a37cdf4850289f6d12eeb29}{begin} () const 
+\item 
+biopax\-Obj\-Map\-::const\-\_\-iterator \hyperlink{classunisys_1_1BIOPAX2_a6592a5950bb80975a0628d439813e1eb}{end} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1BIOPAX2_adbffce99fec989b7e1318bffdb88697a}{biopax}
+\item 
+std\-::map$<$ std\-::string, \hyperlink{classunisys_1_1BIOPAX__obj}{B\-I\-O\-P\-A\-X\-\_\-obj} $>$ \hyperlink{classunisys_1_1BIOPAX2_aaa492741eb15232183400166a123f94d}{objects}
+\begin{DoxyCompactList}\small\item\em All objects map with their ids. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to parse O\-W\-L format. 
+
+Data structure using to store information from Tag-\/\-Value pair line except; name and id tag 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classunisys_1_1BIOPAX2_afc4e3a4ce60303565431949e09527ba3}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!biopax\-Obj\-Map@{biopax\-Obj\-Map}}
+\index{biopax\-Obj\-Map@{biopax\-Obj\-Map}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{biopax\-Obj\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<$std\-::string, {\bf B\-I\-O\-P\-A\-X\-\_\-obj}$>$ {\bf unisys\-::\-B\-I\-O\-P\-A\-X2\-::biopax\-Obj\-Map}}}\label{classunisys_1_1BIOPAX2_afc4e3a4ce60303565431949e09527ba3}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1BIOPAX2_a05bdb19fae62f0a4826c6a83bf1cb63b}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!B\-I\-O\-P\-A\-X2@{B\-I\-O\-P\-A\-X2}}
+\index{B\-I\-O\-P\-A\-X2@{B\-I\-O\-P\-A\-X2}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{B\-I\-O\-P\-A\-X2}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-B\-I\-O\-P\-A\-X2\-::\-B\-I\-O\-P\-A\-X2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BIOPAX2_a05bdb19fae62f0a4826c6a83bf1cb63b}
+
+
+Defualt constructor. 
+
+\hypertarget{classunisys_1_1BIOPAX2_a012b1c9a86e129648cc67c7791703aa5}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!B\-I\-O\-P\-A\-X2@{B\-I\-O\-P\-A\-X2}}
+\index{B\-I\-O\-P\-A\-X2@{B\-I\-O\-P\-A\-X2}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{B\-I\-O\-P\-A\-X2}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-B\-I\-O\-P\-A\-X2\-::\-B\-I\-O\-P\-A\-X2 (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BIOPAX2_a012b1c9a86e129648cc67c7791703aa5}
+
+
+Constructor with file\-Name as parameter. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1BIOPAX2_aeaa3de452a37cdf4850289f6d12eeb29}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!begin@{begin}}
+\index{begin@{begin}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}biopax\-Obj\-Map\-::const\-\_\-iterator unisys\-::\-B\-I\-O\-P\-A\-X2\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1BIOPAX2_aeaa3de452a37cdf4850289f6d12eeb29}
+\hypertarget{classunisys_1_1BIOPAX2_a6592a5950bb80975a0628d439813e1eb}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!end@{end}}
+\index{end@{end}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}biopax\-Obj\-Map\-::const\-\_\-iterator unisys\-::\-B\-I\-O\-P\-A\-X2\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1BIOPAX2_a6592a5950bb80975a0628d439813e1eb}
+\hypertarget{classunisys_1_1BIOPAX2_a355067caeb9981702d1c4a73ab5e9fa3}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!get\-O\-W\-L\-Node@{get\-O\-W\-L\-Node}}
+\index{get\-O\-W\-L\-Node@{get\-O\-W\-L\-Node}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{get\-O\-W\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-B\-I\-O\-P\-A\-X2\-::get\-O\-W\-L\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1BIOPAX2_a355067caeb9981702d1c4a73ab5e9fa3}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1BIOPAX2_adbffce99fec989b7e1318bffdb88697a}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!biopax@{biopax}}
+\index{biopax@{biopax}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{biopax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-B\-I\-O\-P\-A\-X2\-::biopax\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1BIOPAX2_adbffce99fec989b7e1318bffdb88697a}
+\hypertarget{classunisys_1_1BIOPAX2_aaa492741eb15232183400166a123f94d}{\index{unisys\-::\-B\-I\-O\-P\-A\-X2@{unisys\-::\-B\-I\-O\-P\-A\-X2}!objects@{objects}}
+\index{objects@{objects}!unisys::BIOPAX2@{unisys\-::\-B\-I\-O\-P\-A\-X2}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf B\-I\-O\-P\-A\-X\-\_\-obj}$>$ unisys\-::\-B\-I\-O\-P\-A\-X2\-::objects\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1BIOPAX2_aaa492741eb15232183400166a123f94d}
+
+
+All objects map with their ids. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{biopax_8h}{biopax.\-h}\end{DoxyCompactItemize}

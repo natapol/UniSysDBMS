@@ -1,0 +1,164 @@
+\hypertarget{classunisys_1_1KineticParameter}{\section{unisys\-:\-:Kinetic\-Parameter Class Reference}
+\label{classunisys_1_1KineticParameter}\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}}
+}
+
+
+The C++ representative class for kinetic parameter data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Kinetic\-Parameter\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1KineticParameter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Kinetic\-Parameter\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1KineticParameter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1KineticParameter_a107ffde8042bf3438e7f10fe5a4a7332}{Kinetic\-Parameter} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1KineticParameter_a4642bb482bdcb05cdd80bfd70046b244}{Kinetic\-Parameter} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+bool \hyperlink{classunisys_1_1KineticParameter_a784e2bd0fe8f2e1d8b72f8f4c1af7add}{operator$<$} (\hyperlink{classunisys_1_1KineticParameter}{Kinetic\-Parameter} const \&other) const 
+\begin{DoxyCompactList}\small\item\em Less than operator overload. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1KineticParameter_afa67168536156bf838bf8b31abb70966}{set\-Term} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1KineticParameter_a7bd5c02a95e97b67b44ae069be83a80d}{set\-Term} (std\-::string const \&onto\-Id)
+\item 
+void \hyperlink{classunisys_1_1KineticParameter_a551e087e8aca7dd05edde40bcc50265f}{set\-Value} (double value)
+\item 
+void \hyperlink{classunisys_1_1KineticParameter_a3100673430d3174515d8a0e8864e60a3}{set\-Unit} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1KineticParameter_addfc6fe1f5bec492188231525a69ffc6}{set\-Evidence} (\hyperlink{classunisys_1_1Evidence}{Evidence} \&evidence)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1KineticParameter_a433dff8934423dc18efda6bb44b2f477}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for kinetic parameter data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            term: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            value: <number>,
+            unit: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            evidence: <EvidenceBSONStructure>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1KineticParameter_a107ffde8042bf3438e7f10fe5a4a7332}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!Kinetic\-Parameter@{Kinetic\-Parameter}}
+\index{Kinetic\-Parameter@{Kinetic\-Parameter}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{Kinetic\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Kinetic\-Parameter\-::\-Kinetic\-Parameter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_a107ffde8042bf3438e7f10fe5a4a7332}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1KineticParameter_a4642bb482bdcb05cdd80bfd70046b244}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!Kinetic\-Parameter@{Kinetic\-Parameter}}
+\index{Kinetic\-Parameter@{Kinetic\-Parameter}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{Kinetic\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Kinetic\-Parameter\-::\-Kinetic\-Parameter (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_a4642bb482bdcb05cdd80bfd70046b244}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1KineticParameter_a433dff8934423dc18efda6bb44b2f477}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Kinetic\-Parameter\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1KineticParameter_a433dff8934423dc18efda6bb44b2f477}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1KineticParameter_a784e2bd0fe8f2e1d8b72f8f4c1af7add}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Kinetic\-Parameter\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Kinetic\-Parameter} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1KineticParameter_a784e2bd0fe8f2e1d8b72f8f4c1af7add}
+
+
+Less than operator overload. 
+
+\hypertarget{classunisys_1_1KineticParameter_addfc6fe1f5bec492188231525a69ffc6}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!set\-Evidence@{set\-Evidence}}
+\index{set\-Evidence@{set\-Evidence}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{set\-Evidence}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Kinetic\-Parameter\-::set\-Evidence (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence} \&}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_addfc6fe1f5bec492188231525a69ffc6}
+\hypertarget{classunisys_1_1KineticParameter_afa67168536156bf838bf8b31abb70966}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!set\-Term@{set\-Term}}
+\index{set\-Term@{set\-Term}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{set\-Term}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Kinetic\-Parameter\-::set\-Term (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_afa67168536156bf838bf8b31abb70966}
+\hypertarget{classunisys_1_1KineticParameter_a7bd5c02a95e97b67b44ae069be83a80d}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!set\-Term@{set\-Term}}
+\index{set\-Term@{set\-Term}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{set\-Term}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Kinetic\-Parameter\-::set\-Term (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_a7bd5c02a95e97b67b44ae069be83a80d}
+\hypertarget{classunisys_1_1KineticParameter_a3100673430d3174515d8a0e8864e60a3}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!set\-Unit@{set\-Unit}}
+\index{set\-Unit@{set\-Unit}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{set\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Kinetic\-Parameter\-::set\-Unit (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_a3100673430d3174515d8a0e8864e60a3}
+\hypertarget{classunisys_1_1KineticParameter_a551e087e8aca7dd05edde40bcc50265f}{\index{unisys\-::\-Kinetic\-Parameter@{unisys\-::\-Kinetic\-Parameter}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!unisys::KineticParameter@{unisys\-::\-Kinetic\-Parameter}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Kinetic\-Parameter\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1KineticParameter_a551e087e8aca7dd05edde40bcc50265f}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

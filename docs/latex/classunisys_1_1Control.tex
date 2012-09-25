@@ -1,0 +1,156 @@
+\hypertarget{classunisys_1_1Control}{\section{unisys\-:\-:Control Class Reference}
+\label{classunisys_1_1Control}\index{unisys\-::\-Control@{unisys\-::\-Control}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Control\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Control\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Control_a45a42fd37436cba1202d12315f5258be}{Control} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Control_a762428d4e00ddf84baf7f1a020ab5b6d}{Control} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Control_acfb48716bae9c0e0b8de04c31449db3b}{add\-Control\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Control_a5e008209a9c599b1aec5da00587f6297}{add\-Phenotype} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Control_aad4208e0899fa38f1160c16593c66f03}{add\-Modification\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Control_afcf95fc81aebf501b35f1cc11c7edc70}{set\-Controller} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Control_abdf99d44981306596d7120c46ea2a84f}{set\-Controlled} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Control_ab5bd5022b73b81e3fd18af06027213b1}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            participant: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            controlType: {<DbRef>, <DbRef>, ...},
+            phenotype: {<DbRef>, <DbRef>, ...},
+            modificationType: {<DbRef>, <DbRef>, ...}
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Control_a45a42fd37436cba1202d12315f5258be}{\index{unisys\-::\-Control@{unisys\-::\-Control}!Control@{Control}}
+\index{Control@{Control}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{Control}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Control\-::\-Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_a45a42fd37436cba1202d12315f5258be}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Control_a762428d4e00ddf84baf7f1a020ab5b6d}{\index{unisys\-::\-Control@{unisys\-::\-Control}!Control@{Control}}
+\index{Control@{Control}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{Control}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Control\-::\-Control (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_a762428d4e00ddf84baf7f1a020ab5b6d}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Control_acfb48716bae9c0e0b8de04c31449db3b}{\index{unisys\-::\-Control@{unisys\-::\-Control}!add\-Control\-Type@{add\-Control\-Type}}
+\index{add\-Control\-Type@{add\-Control\-Type}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{add\-Control\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Control\-::add\-Control\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_acfb48716bae9c0e0b8de04c31449db3b}
+\hypertarget{classunisys_1_1Control_aad4208e0899fa38f1160c16593c66f03}{\index{unisys\-::\-Control@{unisys\-::\-Control}!add\-Modification\-Type@{add\-Modification\-Type}}
+\index{add\-Modification\-Type@{add\-Modification\-Type}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{add\-Modification\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Control\-::add\-Modification\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_aad4208e0899fa38f1160c16593c66f03}
+\hypertarget{classunisys_1_1Control_a5e008209a9c599b1aec5da00587f6297}{\index{unisys\-::\-Control@{unisys\-::\-Control}!add\-Phenotype@{add\-Phenotype}}
+\index{add\-Phenotype@{add\-Phenotype}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{add\-Phenotype}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Control\-::add\-Phenotype (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_a5e008209a9c599b1aec5da00587f6297}
+\hypertarget{classunisys_1_1Control_ab5bd5022b73b81e3fd18af06027213b1}{\index{unisys\-::\-Control@{unisys\-::\-Control}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Control\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Control_ab5bd5022b73b81e3fd18af06027213b1}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Interaction_a84c6c3e09f83ec8dd8dec7485f97e02b}{unisys\-::\-Interaction}.
+
+\hypertarget{classunisys_1_1Control_abdf99d44981306596d7120c46ea2a84f}{\index{unisys\-::\-Control@{unisys\-::\-Control}!set\-Controlled@{set\-Controlled}}
+\index{set\-Controlled@{set\-Controlled}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{set\-Controlled}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Control\-::set\-Controlled (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_abdf99d44981306596d7120c46ea2a84f}
+\hypertarget{classunisys_1_1Control_afcf95fc81aebf501b35f1cc11c7edc70}{\index{unisys\-::\-Control@{unisys\-::\-Control}!set\-Controller@{set\-Controller}}
+\index{set\-Controller@{set\-Controller}!unisys::Control@{unisys\-::\-Control}}
+\subsubsection[{set\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Control\-::set\-Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Control_afcf95fc81aebf501b35f1cc11c7edc70}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

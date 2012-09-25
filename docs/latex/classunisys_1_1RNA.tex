@@ -1,0 +1,139 @@
+\hypertarget{classunisys_1_1RNA}{\section{unisys\-:\-:R\-N\-A Class Reference}
+\label{classunisys_1_1RNA}\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:R\-N\-A\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1RNA__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:R\-N\-A\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1RNA__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1RNA_a186626af12e4cb03b1a1ae8a22fae1f1}{R\-N\-A} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1RNA_a4a38ebf5fb351862d1128d655f25f11b}{R\-N\-A} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1RNA_ae9e7ece2423d7722b4f4c2ffafc54bfe}{add\-Position} (unsigned int start, unsigned int stop)
+\item 
+void \hyperlink{classunisys_1_1RNA_a08813cac2787fcae41243c46c2006dea}{set\-D\-N\-A\-Region\-Source} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1RNA_a804b761e9ca423e163bdd3d4650f24ed}{add\-Translation\-Product} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&trans)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1RNA_abeb5db8942c0d2ecac49086d50d6e7ab}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            interaction: {<DbRef>, <DbRef>, ...},
+            complex: {<DbRef>, <DbRef>, ...},
+            subRegion: {<SubRegionBOSON>, <SubRegionBOSON>, ...},
+            position: {<positionPairBSON>, <positionPairBSON>, ...},
+            dnaRegionSource: <DbRef>,
+            translationProduct: {<DbRef>, <DbRef>, ...}
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1RNA_a186626af12e4cb03b1a1ae8a22fae1f1}{\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}!R\-N\-A@{R\-N\-A}}
+\index{R\-N\-A@{R\-N\-A}!unisys::RNA@{unisys\-::\-R\-N\-A}}
+\subsubsection[{R\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-R\-N\-A\-::\-R\-N\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RNA_a186626af12e4cb03b1a1ae8a22fae1f1}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1RNA_a4a38ebf5fb351862d1128d655f25f11b}{\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}!R\-N\-A@{R\-N\-A}}
+\index{R\-N\-A@{R\-N\-A}!unisys::RNA@{unisys\-::\-R\-N\-A}}
+\subsubsection[{R\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-R\-N\-A\-::\-R\-N\-A (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RNA_a4a38ebf5fb351862d1128d655f25f11b}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1RNA_ae9e7ece2423d7722b4f4c2ffafc54bfe}{\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}!add\-Position@{add\-Position}}
+\index{add\-Position@{add\-Position}!unisys::RNA@{unisys\-::\-R\-N\-A}}
+\subsubsection[{add\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-N\-A\-::add\-Position (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{start, }
+\item[{unsigned int}]{stop}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RNA_ae9e7ece2423d7722b4f4c2ffafc54bfe}
+\hypertarget{classunisys_1_1RNA_a804b761e9ca423e163bdd3d4650f24ed}{\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}!add\-Translation\-Product@{add\-Translation\-Product}}
+\index{add\-Translation\-Product@{add\-Translation\-Product}!unisys::RNA@{unisys\-::\-R\-N\-A}}
+\subsubsection[{add\-Translation\-Product}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-N\-A\-::add\-Translation\-Product (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{trans}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RNA_a804b761e9ca423e163bdd3d4650f24ed}
+\hypertarget{classunisys_1_1RNA_abeb5db8942c0d2ecac49086d50d6e7ab}{\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::RNA@{unisys\-::\-R\-N\-A}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-N\-A\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1RNA_abeb5db8942c0d2ecac49086d50d6e7ab}
+
+
+Reimplemented from \hyperlink{classunisys_1_1PhysicalEntity_ad445727cb6b1c12e954819d8207104e8}{unisys\-::\-Physical\-Entity}.
+
+\hypertarget{classunisys_1_1RNA_a08813cac2787fcae41243c46c2006dea}{\index{unisys\-::\-R\-N\-A@{unisys\-::\-R\-N\-A}!set\-D\-N\-A\-Region\-Source@{set\-D\-N\-A\-Region\-Source}}
+\index{set\-D\-N\-A\-Region\-Source@{set\-D\-N\-A\-Region\-Source}!unisys::RNA@{unisys\-::\-R\-N\-A}}
+\subsubsection[{set\-D\-N\-A\-Region\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-N\-A\-::set\-D\-N\-A\-Region\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RNA_a08813cac2787fcae41243c46c2006dea}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

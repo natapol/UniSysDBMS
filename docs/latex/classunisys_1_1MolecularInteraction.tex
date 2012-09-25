@@ -1,0 +1,138 @@
+\hypertarget{classunisys_1_1MolecularInteraction}{\section{unisys\-:\-:Molecular\-Interaction Class Reference}
+\label{classunisys_1_1MolecularInteraction}\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Molecular\-Interaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1MolecularInteraction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Molecular\-Interaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1MolecularInteraction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1MolecularInteraction_aacb66a56367fa5e3a95b140688f5f8a7}{Molecular\-Interaction} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1MolecularInteraction_a085b8133090a289b2b2673ee79b8c754}{Molecular\-Interaction} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1MolecularInteraction_a8f03482d17171538122a10efa1601f9f}{set\-Kinetic\-Law} (\hyperlink{classunisys_1_1MathML}{Math\-M\-L} \&kinetic\-Law)
+\item 
+void \hyperlink{classunisys_1_1MolecularInteraction_ac45fdf2da80f5eb2cfa7d300b55c18db}{add\-Left} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1MolecularInteraction_a59e2664203fcea4e9a1bf0ac5c8c75a1}{add\-Right} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1MolecularInteraction_a6bae8353e2734eae8345228f7895665e}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            participant: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            kineticLaw: <MathMLBOSON>,
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1MolecularInteraction_aacb66a56367fa5e3a95b140688f5f8a7}{\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}!Molecular\-Interaction@{Molecular\-Interaction}}
+\index{Molecular\-Interaction@{Molecular\-Interaction}!unisys::MolecularInteraction@{unisys\-::\-Molecular\-Interaction}}
+\subsubsection[{Molecular\-Interaction}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Molecular\-Interaction\-::\-Molecular\-Interaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1MolecularInteraction_aacb66a56367fa5e3a95b140688f5f8a7}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1MolecularInteraction_a085b8133090a289b2b2673ee79b8c754}{\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}!Molecular\-Interaction@{Molecular\-Interaction}}
+\index{Molecular\-Interaction@{Molecular\-Interaction}!unisys::MolecularInteraction@{unisys\-::\-Molecular\-Interaction}}
+\subsubsection[{Molecular\-Interaction}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Molecular\-Interaction\-::\-Molecular\-Interaction (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1MolecularInteraction_a085b8133090a289b2b2673ee79b8c754}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1MolecularInteraction_ac45fdf2da80f5eb2cfa7d300b55c18db}{\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}!add\-Left@{add\-Left}}
+\index{add\-Left@{add\-Left}!unisys::MolecularInteraction@{unisys\-::\-Molecular\-Interaction}}
+\subsubsection[{add\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Molecular\-Interaction\-::add\-Left (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1MolecularInteraction_ac45fdf2da80f5eb2cfa7d300b55c18db}
+\hypertarget{classunisys_1_1MolecularInteraction_a59e2664203fcea4e9a1bf0ac5c8c75a1}{\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}!add\-Right@{add\-Right}}
+\index{add\-Right@{add\-Right}!unisys::MolecularInteraction@{unisys\-::\-Molecular\-Interaction}}
+\subsubsection[{add\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Molecular\-Interaction\-::add\-Right (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1MolecularInteraction_a59e2664203fcea4e9a1bf0ac5c8c75a1}
+\hypertarget{classunisys_1_1MolecularInteraction_a6bae8353e2734eae8345228f7895665e}{\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::MolecularInteraction@{unisys\-::\-Molecular\-Interaction}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Molecular\-Interaction\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1MolecularInteraction_a6bae8353e2734eae8345228f7895665e}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Interaction_a84c6c3e09f83ec8dd8dec7485f97e02b}{unisys\-::\-Interaction}.
+
+\hypertarget{classunisys_1_1MolecularInteraction_a8f03482d17171538122a10efa1601f9f}{\index{unisys\-::\-Molecular\-Interaction@{unisys\-::\-Molecular\-Interaction}!set\-Kinetic\-Law@{set\-Kinetic\-Law}}
+\index{set\-Kinetic\-Law@{set\-Kinetic\-Law}!unisys::MolecularInteraction@{unisys\-::\-Molecular\-Interaction}}
+\subsubsection[{set\-Kinetic\-Law}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Molecular\-Interaction\-::set\-Kinetic\-Law (
+\begin{DoxyParamCaption}
+\item[{{\bf Math\-M\-L} \&}]{kinetic\-Law}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1MolecularInteraction_a8f03482d17171538122a10efa1601f9f}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

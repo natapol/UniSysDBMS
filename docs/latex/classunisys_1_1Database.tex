@@ -1,0 +1,137 @@
+\hypertarget{classunisys_1_1Database}{\section{unisys\-:\-:Database Class Reference}
+\label{classunisys_1_1Database}\index{unisys\-::\-Database@{unisys\-::\-Database}}
+}
+
+
+This class is a database handle class.  
+
+
+
+
+{\ttfamily \#include $<$database.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:Database\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classunisys_1_1Database__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Database_a42a97889bb32435bb1ab8b84382a702d}{Database} (std\-::string const \&\hyperlink{classunisys_1_1Database_a0643effdb77f75a9f569a6c1a9aeaf90}{dbname}=\char`\"{}test\char`\"{})
+\begin{DoxyCompactList}\small\item\em Overloaded contructor with specific database name. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Database_a2df5d09f2fef6cb0ed002874fd4bee16}{connect} (std\-::string const \&server\-Hostname)
+\begin{DoxyCompactList}\small\item\em Overloaded interface of connection function. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Database_a842e22d2c0f68e9403ffb3e7d301a6fb}{set\-D\-B\-Name} (std\-::string const \&\hyperlink{classunisys_1_1Database_a0643effdb77f75a9f569a6c1a9aeaf90}{dbname})
+\begin{DoxyCompactList}\small\item\em Set or change database name. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Database_abf3f6aa38de47f1587163199d6aaae75}{get\-D\-B\-Name} ()
+\begin{DoxyCompactList}\small\item\em Return database name. \end{DoxyCompactList}\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1Database_ae87518cd37f1dddbc808e763ad1e9803}{fetch\-D\-B\-Ref} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)  throw (\-Query\-Error)
+\begin{DoxyCompactList}\small\item\em Dereference boson database reference (D\-B\-Ref) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classunisys_1_1Database_a0643effdb77f75a9f569a6c1a9aeaf90}{dbname}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classunisys_1_1Database}{Database} name, defualt is test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classunisys_1_1Database_a263621696f00d0fefadbd6b1b52da6b5}{Updater}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a database handle class. 
+
+\hyperlink{classunisys_1_1Database}{Database} class is derived from mongo\-::\-D\-B\-Client\-Connection, used to handle the connection between client and database. In this derived class, there are some functions that specific to Uni\-Sys\-D\-B database data structure. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Database_a42a97889bb32435bb1ab8b84382a702d}{\index{unisys\-::\-Database@{unisys\-::\-Database}!Database@{Database}}
+\index{Database@{Database}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{Database}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Database\-::\-Database (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{dbname = {\ttfamily \char`\"{}test\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Database_a42a97889bb32435bb1ab8b84382a702d}
+
+
+Overloaded contructor with specific database name. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Database_a2df5d09f2fef6cb0ed002874fd4bee16}{\index{unisys\-::\-Database@{unisys\-::\-Database}!connect@{connect}}
+\index{connect@{connect}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Database\-::connect (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{server\-Hostname}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Database_a2df5d09f2fef6cb0ed002874fd4bee16}
+
+
+Overloaded interface of connection function. 
+
+\hypertarget{classunisys_1_1Database_ae87518cd37f1dddbc808e763ad1e9803}{\index{unisys\-::\-Database@{unisys\-::\-Database}!fetch\-D\-B\-Ref@{fetch\-D\-B\-Ref}}
+\index{fetch\-D\-B\-Ref@{fetch\-D\-B\-Ref}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{fetch\-D\-B\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Database\-::fetch\-D\-B\-Ref (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)  throw ({\bf Query\-Error})}}\label{classunisys_1_1Database_ae87518cd37f1dddbc808e763ad1e9803}
+
+
+Dereference boson database reference (D\-B\-Ref) 
+
+This function retreives bson database reference, which format is \{\char`\"{}\$ref\char`\"{}\-: \char`\"{}collection\-N\-S\char`\"{}, \char`\"{}\$id\char`\"{}\-: \char`\"{}id\char`\"{}\mbox{[}, \char`\"{}\$db\char`\"{}\-: \char`\"{}database\-Name\char`\"{}\mbox{]}\}, as an input and searches for the document that has \char`\"{}\-\_\-id\char`\"{} as describe in D\-B\-Ref from specified collection namespace. 
+\begin{DoxyParams}{Parameters}
+{\em bson\-Obj} & boson object of D\-B\-Ref \\
+\hline
+\end{DoxyParams}
+\hypertarget{classunisys_1_1Database_abf3f6aa38de47f1587163199d6aaae75}{\index{unisys\-::\-Database@{unisys\-::\-Database}!get\-D\-B\-Name@{get\-D\-B\-Name}}
+\index{get\-D\-B\-Name@{get\-D\-B\-Name}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{get\-D\-B\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Database\-::get\-D\-B\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Database_abf3f6aa38de47f1587163199d6aaae75}
+
+
+Return database name. 
+
+\hypertarget{classunisys_1_1Database_a842e22d2c0f68e9403ffb3e7d301a6fb}{\index{unisys\-::\-Database@{unisys\-::\-Database}!set\-D\-B\-Name@{set\-D\-B\-Name}}
+\index{set\-D\-B\-Name@{set\-D\-B\-Name}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{set\-D\-B\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Database\-::set\-D\-B\-Name (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{dbname}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Database_a842e22d2c0f68e9403ffb3e7d301a6fb}
+
+
+Set or change database name. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classunisys_1_1Database_a263621696f00d0fefadbd6b1b52da6b5}{\index{unisys\-::\-Database@{unisys\-::\-Database}!Updater@{Updater}}
+\index{Updater@{Updater}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{Updater}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Updater}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classunisys_1_1Database_a263621696f00d0fefadbd6b1b52da6b5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1Database_a0643effdb77f75a9f569a6c1a9aeaf90}{\index{unisys\-::\-Database@{unisys\-::\-Database}!dbname@{dbname}}
+\index{dbname@{dbname}!unisys::Database@{unisys\-::\-Database}}
+\subsubsection[{dbname}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Database\-::dbname\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Database_a0643effdb77f75a9f569a6c1a9aeaf90}
+
+
+\hyperlink{classunisys_1_1Database}{Database} name, defualt is test. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{database_8h}{database.\-h}\end{DoxyCompactItemize}

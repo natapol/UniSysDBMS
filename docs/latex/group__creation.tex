@@ -1,0 +1,114 @@
+\hypertarget{group__creation}{\section{Creating from scratch a X\-M\-L\-Node structure}
+\label{group__creation}\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}}
+}
+Collaboration diagram for Creating from scratch a X\-M\-L\-Node structure\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__creation}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name, char is\-Declaration=\hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em Create the top node of an \hyperlink{structXMLNode}{X\-M\-L\-Node} structure. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__creation_ga51baa56a48f69cdea6f41ed38a2cbadd}{X\-M\-L\-Node\-::add\-Child} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name, char is\-Declaration=\hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new child node. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__creation_ga37c862f1d4a86f95417f97ceaa40d0fa}{X\-M\-L\-Node\-::add\-Child} (\hyperlink{structXMLNode}{X\-M\-L\-Node} node\-To\-Add, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em If the \char`\"{}node\-To\-Add\char`\"{} has some parents, it will be detached from it's parents before being attached to the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__creation_ga4f0e996a36cdda88b76bdf49d0d2e50c}{X\-M\-L\-Node\-::add\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Valuev)
+\begin{DoxyCompactList}\small\item\em Add a new attribute. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__creation_ga1de718e237befa215381d294fc644f11}{X\-M\-L\-Node\-::add\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new text content. \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__creation_gafb513cd0d881bcb153d702a885aebc44}{X\-M\-L\-Node\-::add\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Open=N\-U\-L\-L, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Close=N\-U\-L\-L, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__creation_ga4f0e996a36cdda88b76bdf49d0d2e50c}{\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}!add\-Attribute@{add\-Attribute}}
+\index{add\-Attribute@{add\-Attribute}!Creating from scratch a XMLNode structure@{Creating from scratch a X\-M\-L\-Node structure}}
+\subsubsection[{add\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute}$\ast$ X\-M\-L\-Node\-::add\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Name, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Valuev}
+\end{DoxyParamCaption}
+)}}\label{group__creation_ga4f0e996a36cdda88b76bdf49d0d2e50c}
+
+
+Add a new attribute. 
+
+\hypertarget{group__creation_ga51baa56a48f69cdea6f41ed38a2cbadd}{\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}!add\-Child@{add\-Child}}
+\index{add\-Child@{add\-Child}!Creating from scratch a XMLNode structure@{Creating from scratch a X\-M\-L\-Node structure}}
+\subsubsection[{add\-Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::add\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Name, }
+\item[{char}]{is\-Declaration = {\ttfamily {\bf F\-A\-L\-S\-E}}, }
+\item[{{\bf X\-M\-L\-Element\-Position}}]{pos = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{group__creation_ga51baa56a48f69cdea6f41ed38a2cbadd}
+
+
+Add a new child node. 
+
+\hypertarget{group__creation_ga37c862f1d4a86f95417f97ceaa40d0fa}{\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}!add\-Child@{add\-Child}}
+\index{add\-Child@{add\-Child}!Creating from scratch a XMLNode structure@{Creating from scratch a X\-M\-L\-Node structure}}
+\subsubsection[{add\-Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::add\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{node\-To\-Add, }
+\item[{{\bf X\-M\-L\-Element\-Position}}]{pos = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{group__creation_ga37c862f1d4a86f95417f97ceaa40d0fa}
+
+
+If the \char`\"{}node\-To\-Add\char`\"{} has some parents, it will be detached from it's parents before being attached to the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. 
+
+\hypertarget{group__creation_gafb513cd0d881bcb153d702a885aebc44}{\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}!add\-Clear@{add\-Clear}}
+\index{add\-Clear@{add\-Clear}!Creating from scratch a XMLNode structure@{Creating from scratch a X\-M\-L\-Node structure}}
+\subsubsection[{add\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear}$\ast$ X\-M\-L\-Node\-::add\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Open = {\ttfamily NULL}, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Close = {\ttfamily NULL}, }
+\item[{{\bf X\-M\-L\-Element\-Position}}]{pos = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{group__creation_gafb513cd0d881bcb153d702a885aebc44}
+Add a new clear tag 
+\begin{DoxyParams}{Parameters}
+{\em lpsz\-Open} & default value \char`\"{}$<$!\mbox{[}\-C\-D\-A\-T\-A\mbox{[}\char`\"{} \\
+\hline
+{\em lpsz\-Close} & default value \char`\"{}\mbox{]}\mbox{]}$>$\char`\"{} \\
+\hline
+{\em lpsz\-Value} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__creation_ga1de718e237befa215381d294fc644f11}{\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}!add\-Text@{add\-Text}}
+\index{add\-Text@{add\-Text}!Creating from scratch a XMLNode structure@{Creating from scratch a X\-M\-L\-Node structure}}
+\subsubsection[{add\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::add\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value, }
+\item[{{\bf X\-M\-L\-Element\-Position}}]{pos = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{group__creation_ga1de718e237befa215381d294fc644f11}
+
+
+Add a new text content. 
+
+\hypertarget{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{\index{Creating from scratch a X\-M\-L\-Node structure@{Creating from scratch a X\-M\-L\-Node structure}!create\-X\-M\-L\-Top\-Node@{create\-X\-M\-L\-Top\-Node}}
+\index{create\-X\-M\-L\-Top\-Node@{create\-X\-M\-L\-Top\-Node}!Creating from scratch a XMLNode structure@{Creating from scratch a X\-M\-L\-Node structure}}
+\subsubsection[{create\-X\-M\-L\-Top\-Node}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-Node} X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Name, }
+\item[{char}]{is\-Declaration = {\ttfamily {\bf F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__creation_ga1e2d0403450db891eedc76b6bfdba452}
+
+
+Create the top node of an \hyperlink{structXMLNode}{X\-M\-L\-Node} structure. 
+

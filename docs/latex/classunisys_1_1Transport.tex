@@ -1,0 +1,142 @@
+\hypertarget{classunisys_1_1Transport}{\section{unisys\-:\-:Transport Class Reference}
+\label{classunisys_1_1Transport}\index{unisys\-::\-Transport@{unisys\-::\-Transport}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Transport\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Transport__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Transport\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Transport__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Transport_af3be99c55e210bc3c8205b56e9c97991}{Transport} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Transport_a11ddfe7770384efc6c45d0d3345e110e}{Transport} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Transport_af8483dd137f4d882b1cc73a842241f76}{add\-Import} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+void \hyperlink{classunisys_1_1Transport_a47ffd50f8a885493050424f87ab773fd}{add\-Export} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\item 
+std\-::string \hyperlink{classunisys_1_1Transport_a1df6e95965bb238dc0060b11d12be7b0}{to\-R\-X\-N\-String} (std\-::string const \&outside, std\-::string const \&inside) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Transport_a04f17e27ff568c45688cde1a95265dea}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            participant: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            conversionDirection: <DbRef>,
+            kineticLaw: {<MathMLBOSON>, <MathMLBOSON>, ...}
+            spontaneous: <string>,
+            functional: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Transport_af3be99c55e210bc3c8205b56e9c97991}{\index{unisys\-::\-Transport@{unisys\-::\-Transport}!Transport@{Transport}}
+\index{Transport@{Transport}!unisys::Transport@{unisys\-::\-Transport}}
+\subsubsection[{Transport}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Transport\-::\-Transport (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Transport_af3be99c55e210bc3c8205b56e9c97991}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Transport_a11ddfe7770384efc6c45d0d3345e110e}{\index{unisys\-::\-Transport@{unisys\-::\-Transport}!Transport@{Transport}}
+\index{Transport@{Transport}!unisys::Transport@{unisys\-::\-Transport}}
+\subsubsection[{Transport}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Transport\-::\-Transport (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Transport_a11ddfe7770384efc6c45d0d3345e110e}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Transport_a47ffd50f8a885493050424f87ab773fd}{\index{unisys\-::\-Transport@{unisys\-::\-Transport}!add\-Export@{add\-Export}}
+\index{add\-Export@{add\-Export}!unisys::Transport@{unisys\-::\-Transport}}
+\subsubsection[{add\-Export}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Transport\-::add\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Transport_a47ffd50f8a885493050424f87ab773fd}
+\hypertarget{classunisys_1_1Transport_af8483dd137f4d882b1cc73a842241f76}{\index{unisys\-::\-Transport@{unisys\-::\-Transport}!add\-Import@{add\-Import}}
+\index{add\-Import@{add\-Import}!unisys::Transport@{unisys\-::\-Transport}}
+\subsubsection[{add\-Import}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Transport\-::add\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Transport_af8483dd137f4d882b1cc73a842241f76}
+\hypertarget{classunisys_1_1Transport_a04f17e27ff568c45688cde1a95265dea}{\index{unisys\-::\-Transport@{unisys\-::\-Transport}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Transport@{unisys\-::\-Transport}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Transport\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Transport_a04f17e27ff568c45688cde1a95265dea}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{unisys\-::\-Conversion}.
+
+\hypertarget{classunisys_1_1Transport_a1df6e95965bb238dc0060b11d12be7b0}{\index{unisys\-::\-Transport@{unisys\-::\-Transport}!to\-R\-X\-N\-String@{to\-R\-X\-N\-String}}
+\index{to\-R\-X\-N\-String@{to\-R\-X\-N\-String}!unisys::Transport@{unisys\-::\-Transport}}
+\subsubsection[{to\-R\-X\-N\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Transport\-::to\-R\-X\-N\-String (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{outside, }
+\item[{std\-::string const \&}]{inside}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Transport_a1df6e95965bb238dc0060b11d12be7b0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

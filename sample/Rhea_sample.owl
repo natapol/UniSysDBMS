@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rhea="http://www.ebi.ac.uk/rhea/#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns="http://www.ebi.ac.uk/rhea/#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level2.owl#"
+ xml:base="http://www.ebi.ac.uk/rhea/#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level2.owl#" />
+</owl:Ontology>
+
+<bp:physicalEntityParticipant rdf:about="13499_right_1_x_6-phospho-5-dehydro-2-deoxy-D-gluconate">
+ <bp:PHYSICAL-ENTITY rdf:resource="6-phospho-5-dehydro-2-deoxy-D-gluconate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="19771_right_1_x_phaseollidin">
+ <bp:PHYSICAL-ENTITY rdf:resource="phaseollidin" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:relationshipXref rdf:about="left+to+right_Rhea%5B16698%5D">
+ <bp:ID rdf:datatype = "xsd:string">16698</bp:ID>
+ <bp:DB rdf:datatype = "xsd:string">Rhea</bp:DB>
+ <bp:RELATIONSHIP-TYPE rdf:datatype = "xsd:string">left to right</bp:RELATIONSHIP-TYPE>
+</bp:relationshipXref>
+
+<bp:unificationXref rdf:about="Rhea%5B14609%5D">
+ <bp:ID rdf:datatype = "xsd:string">14609</bp:ID>
+ <bp:DB-VERSION rdf:datatype = "xsd:string">22</bp:DB-VERSION>
+ <bp:DB rdf:datatype = "xsd:string">Rhea</bp:DB>
+</bp:unificationXref>
+
+<bp:unificationXref rdf:about="Rhea%5B21756%5D">
+ <bp:ID rdf:datatype = "xsd:string">21756</bp:ID>
+ <bp:DB-VERSION rdf:datatype = "xsd:string">22</bp:DB-VERSION>
+ <bp:DB rdf:datatype = "xsd:string">Rhea</bp:DB>
+</bp:unificationXref>
+
+<bp:physicalEntityParticipant rdf:about="25936_left_1_x_H2O">
+ <bp:PHYSICAL-ENTITY rdf:resource="H2O" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="24869_left_1_x_phosphate">
+ <bp:PHYSICAL-ENTITY rdf:resource="phosphate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="15781_right_1_x_3-amino-3-%25284-hydroxyphenyl%2529propanoate">
+ <bp:PHYSICAL-ENTITY rdf:resource="3-amino-3-%284-hydroxyphenyl%29propanoate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:unificationXref rdf:about="Rhea%5B22138%5D">
+ <bp:ID rdf:datatype = "xsd:string">22138</bp:ID>
+ <bp:DB-VERSION rdf:datatype = "xsd:string">22</bp:DB-VERSION>
+ <bp:DB rdf:datatype = "xsd:string">Rhea</bp:DB>
+</bp:unificationXref>
+
+<bp:smallMolecule rdf:about="oleamide">
+ <bp:DATA-SOURCE rdf:resource="ChEBI" />
+ <bp:CHEMICAL-FORMULA rdf:datatype = "xsd:string">C18H35NO</bp:CHEMICAL-FORMULA>
+ <bp:NAME rdf:datatype = "xsd:string">oleamide</bp:NAME>
+ <bp:XREF rdf:resource="ChEBI%5BCHEBI%3A116314%5D" />
+</bp:smallMolecule>
+
+<bp:physicalEntityParticipant rdf:about="23452_left_1_x_ATP">
+ <bp:PHYSICAL-ENTITY rdf:resource="ATP" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="25117_right_1_x_NADH">
+ <bp:PHYSICAL-ENTITY rdf:resource="NADH" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="10996_right_1_x_S-adenosyl-L-homocysteine">
+ <bp:PHYSICAL-ENTITY rdf:resource="S-adenosyl-L-homocysteine" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="29394_right_1_x_H%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="H%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="11032_right_1_x_H%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="H%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:biochemicalReaction rdf:about="28233">
+ <bp:DATA-SOURCE rdf:resource="IntEnz" />
+ <bp:RIGHT rdf:resource="28233_right_1_x_%2528%252B%2529-costunolide" />
+ <bp:RIGHT rdf:resource="28233_right_1_x_NADP%2528%252B%2529" />
+ <bp:RIGHT rdf:resource="28233_right_2_x_H2O" />
+ <bp:EC-NUMBER rdf:datatype = "xsd:string">1.14.13.120</bp:EC-NUMBER>
+ <bp:XREF rdf:resource="left+to+right_Rhea%5B28231%5D" />
+ <bp:XREF rdf:resource="Rhea%5B28233%5D" />
+ <bp:XREF rdf:resource="right+to+left_Rhea%5B28232%5D" />
+ <bp:XREF rdf:resource="IntEnz%5B18408%5D" />
+ <bp:XREF rdf:resource="MED12011356" />
+ <bp:XREF rdf:resource="undefined_Rhea%5B28230%5D" />
+ <bp:LEFT rdf:resource="28233_left_2_x_H%2528%252B%2529" />
+ <bp:LEFT rdf:resource="28233_left_1_x_germacra-1%252810%2529%252C4%252C11%252813%2529-trien-12-oate" />
+ <bp:LEFT rdf:resource="28233_left_1_x_O2" />
+ <bp:LEFT rdf:resource="28233_left_1_x_NADPH" />
+ <bp:NAME rdf:datatype = "xsd:string">germacra-1(10),4,11(13)-trien-12-oate + 2 H(+) + NADPH + O2 &lt;=&gt; (+)-costunolide + 2 H2O + NADP(+)</bp:NAME>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Polymerization=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Status=approved</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Mapped=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:IUBMB=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Class of reactions=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Chemically balanced=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Transport=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Direction=bidirectional</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Formuled=true</bp:COMMENT>
+</bp:biochemicalReaction>
+
+<bp:physicalEntityParticipant rdf:about="29906_left_1_x_ATP">
+ <bp:PHYSICAL-ENTITY rdf:resource="ATP" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:biochemicalReaction rdf:about="13828">
+ <bp:DATA-SOURCE rdf:resource="IntEnz" />
+ <bp:RIGHT rdf:resource="13828_right_1_x_NADH" />
+ <bp:RIGHT rdf:resource="13828_right_1_x_H%2528%252B%2529" />
+ <bp:RIGHT rdf:resource="13828_right_1_x_GDP-4-dehydro-6-deoxy-alpha-D-mannose" />
+ <bp:EC-NUMBER rdf:datatype = "xsd:string">1.1.1.281</bp:EC-NUMBER>
+ <bp:EC-NUMBER rdf:datatype = "xsd:string">1.1.1.187</bp:EC-NUMBER>
+ <bp:XREF rdf:resource="left+to+right_Rhea%5B13826%5D" />
+ <bp:XREF rdf:resource="KEGG+reaction%5BR03397%5D" />
+ <bp:XREF rdf:resource="IntEnz%5B11087%5D" />
+ <bp:XREF rdf:resource="right+to+left_Rhea%5B13827%5D" />
+ <bp:XREF rdf:resource="Rhea%5B13828%5D" />
+ <bp:XREF rdf:resource="undefined_Rhea%5B13825%5D" />
+ <bp:XREF rdf:resource="IntEnz%5B1185%5D" />
+ <bp:LEFT rdf:resource="13828_left_1_x_NAD%2528%252B%2529" />
+ <bp:LEFT rdf:resource="13828_left_1_x_GDP-6-deoxy-D-mannose" />
+ <bp:NAME rdf:datatype = "xsd:string">GDP-6-deoxy-D-mannose + NAD(+) &lt;=&gt; GDP-4-dehydro-6-deoxy-alpha-D-mannose + H(+) + NADH</bp:NAME>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Polymerization=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Status=approved</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Mapped=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:IUBMB=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Class of reactions=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Chemically balanced=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Transport=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Direction=bidirectional</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Formuled=true</bp:COMMENT>
+</bp:biochemicalReaction>
+
+<bp:physicalEntityParticipant rdf:about="25835_right_1_x_2D-2%252C3%252C5%252F4%252C6-pentahydroxycyclohexanone">
+ <bp:PHYSICAL-ENTITY rdf:resource="2D-2%2C3%2C5%2F4%2C6-pentahydroxycyclohexanone" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:unificationXref rdf:about="Rhea%5B16807%5D">
+ <bp:ID rdf:datatype = "xsd:string">16807</bp:ID>
+ <bp:DB-VERSION rdf:datatype = "xsd:string">22</bp:DB-VERSION>
+ <bp:DB rdf:datatype = "xsd:string">Rhea</bp:DB>
+</bp:unificationXref>
+
+<bp:physicalEntityParticipant rdf:about="23423_right_1_x_phosphate">
+ <bp:PHYSICAL-ENTITY rdf:resource="phosphate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="28104_right_1_x_H%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="H%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="30139_left_1_x_H2O">
+ <bp:PHYSICAL-ENTITY rdf:resource="H2O" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="12400_right_1_x_NH4%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="NH4%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="21190_left_1_x_deamido-NAD%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="deamido-NAD%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="10648_right_1_x_NADP%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="NADP%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="12508_right_1_x_loganin">
+ <bp:PHYSICAL-ENTITY rdf:resource="loganin" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:unificationXref rdf:about="KEGG+reaction%5BR06284%5D">
+ <bp:ID rdf:datatype = "xsd:string">R06284</bp:ID>
+ <bp:DB rdf:datatype = "xsd:string">KEGG reaction</bp:DB>
+</bp:unificationXref>
+
+<bp:physicalEntityParticipant rdf:about="25917_right_1_x_AH2">
+ <bp:PHYSICAL-ENTITY rdf:resource="AH2" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="26088_right_1_x_NADP%2528%252B%2529">
+ <bp:PHYSICAL-ENTITY rdf:resource="NADP%28%2B%29" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:unificationXref rdf:about="Rhea%5B24327%5D">
+ <bp:ID rdf:datatype = "xsd:string">24327</bp:ID>
+ <bp:DB-VERSION rdf:datatype = "xsd:string">22</bp:DB-VERSION>
+ <bp:DB rdf:datatype = "xsd:string">Rhea</bp:DB>
+</bp:unificationXref>
+
+<bp:physicalEntityParticipant rdf:about="17909_right_1_x_acetaldehyde">
+ <bp:PHYSICAL-ENTITY rdf:resource="acetaldehyde" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="14722_left_1_x_zeatin">
+ <bp:PHYSICAL-ENTITY rdf:resource="zeatin" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="11282_left_1_x_H2O">
+ <bp:PHYSICAL-ENTITY rdf:resource="H2O" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:biochemicalReaction rdf:about="24581">
+ <bp:DATA-SOURCE rdf:resource="IntEnz" />
+ <bp:RIGHT rdf:resource="24581_right_1_x_phosphate" />
+ <bp:RIGHT rdf:resource="24581_right_1_x_D-glucitol" />
+ <bp:XREF rdf:resource="right+to+left_Rhea%5B24582%5D" />
+ <bp:XREF rdf:resource="bidirectional_Rhea%5B24583%5D" />
+ <bp:XREF rdf:resource="undefined_Rhea%5B24580%5D" />
+ <bp:XREF rdf:resource="Rhea%5B24581%5D" />
+ <bp:XREF rdf:resource="MetaCyc%5BSORBITOL-6-PHOSPHATASE-RXN%5D" />
+ <bp:LEFT rdf:resource="24581_left_1_x_D-glucitol%2B6-phosphate" />
+ <bp:LEFT rdf:resource="24581_left_1_x_H2O" />
+ <bp:NAME rdf:datatype = "xsd:string">D-glucitol 6-phosphate + H2O =&gt; D-glucitol + phosphate</bp:NAME>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Polymerization=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Status=approved</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Mapped=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:IUBMB=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Class of reactions=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Chemically balanced=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Transport=false</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Formuled=true</bp:COMMENT>
+ <bp:COMMENT rdf:datatype = "xsd:string">RHEA:Direction=left to right</bp:COMMENT>
+</bp:biochemicalReaction>
+
+<bp:unificationXref rdf:about="ChEBI%5BCHEBI%3A58420%5D">
+ <bp:ID rdf:datatype = "xsd:string">CHEBI:58420</bp:ID>
+ <bp:DB rdf:datatype = "xsd:string">ChEBI</bp:DB>
+</bp:unificationXref>
+
+<bp:unificationXref rdf:about="ChEBI%5BCHEBI%3A57598%5D">
+ <bp:ID rdf:datatype = "xsd:string">CHEBI:57598</bp:ID>
+ <bp:DB rdf:datatype = "xsd:string">ChEBI</bp:DB>
+</bp:unificationXref>
+
+<bp:unificationXref rdf:about="UniPathway%5BUER00428%5D">
+ <bp:ID rdf:datatype = "xsd:string">UER00428</bp:ID>
+ <bp:DB rdf:datatype = "xsd:string">UniPathway</bp:DB>
+</bp:unificationXref>
+
+<bp:physicalEntityParticipant rdf:about="21629_right_1_x_acetate">
+ <bp:PHYSICAL-ENTITY rdf:resource="acetate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="27983_right_1_x_H2O">
+ <bp:PHYSICAL-ENTITY rdf:resource="H2O" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="15021_right_1_x_4-O-feruloyl-D-quinate">
+ <bp:PHYSICAL-ENTITY rdf:resource="4-O-feruloyl-D-quinate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="27490_left_1_x_sedoheptulose%2B7-phosphate">
+ <bp:PHYSICAL-ENTITY rdf:resource="sedoheptulose+7-phosphate" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+<bp:physicalEntityParticipant rdf:about="12982_left_1_x_S-sulfanylglutathione">
+ <bp:PHYSICAL-ENTITY rdf:resource="S-sulfanylglutathione" />
+ <bp:STOICHIOMETRIC-COEFFICIENT rdf:datatype = "xsd:double">1.0</bp:STOICHIOMETRIC-COEFFICIENT>
+</bp:physicalEntityParticipant>
+
+</rdf:RDF>

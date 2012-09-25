@@ -1,0 +1,219 @@
+\hypertarget{group__conversions}{\section{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}
+\label{group__conversions}\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+}
+Collaboration diagram for Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__conversions}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lp\-X\-M\-L\-String, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag=N\-U\-L\-L, \hyperlink{structXMLResults}{X\-M\-L\-Results} $\ast$p\-Results=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Parse an X\-M\-L string and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the string. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} filename, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag=N\-U\-L\-L, \hyperlink{structXMLResults}{X\-M\-L\-Results} $\ast$p\-Results=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the file. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} filename, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the file. A very crude error checking is made. An attempt to guess the Char Encoding used in the file is made. \end{DoxyCompactList}\item 
+static \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__conversions_ga615a6ca792929132043d1de511023772}{X\-M\-L\-Node\-::get\-Error} (\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{X\-M\-L\-Error} error)
+\begin{DoxyCompactList}\small\item\em this gives you a user-\/friendly explanation of the parsing error \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} \hyperlink{group__conversions_gac8710ba5e7ff6e62a222445501ef9972}{X\-M\-L\-Node\-::create\-X\-M\-L\-String} (int n\-Format=1, int $\ast$pn\-Size=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em Create an X\-M\-L string starting from the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{X\-M\-L\-Error} \hyperlink{group__conversions_gab8d92d057c0072cc195b1935b2f53d80}{X\-M\-L\-Node\-::write\-To\-File} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} filename, const char $\ast$encoding=N\-U\-L\-L, char n\-Format=1) const 
+\begin{DoxyCompactList}\small\item\em Save the content of an xml\-Node inside a file. \end{DoxyCompactList}\item 
+static char \hyperlink{group__conversions_ga2e3943ac932bf3e786810234e7c295b9}{X\-M\-L\-Node\-::set\-Global\-Options} (X\-M\-L\-Char\-Encoding character\-Encoding=\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a}{X\-M\-L\-Node\-::char\-\_\-encoding\-\_\-\-U\-T\-F8}, char guess\-Wide\-Char\-Chars=1, char drop\-White\-Space=1, char remove\-Comments\-In\-Middle\-Of\-Text=1)
+\begin{DoxyCompactList}\small\item\em Sets the global options for the conversions. \end{DoxyCompactList}\item 
+static X\-M\-L\-Char\-Encoding \hyperlink{group__conversions_ga2fb8e9b250d669776e5e1962a70a4196}{X\-M\-L\-Node\-::guess\-Char\-Encoding} (void $\ast$buffer, int buf\-Len, char use\-X\-M\-L\-Encoding\-Attribute=1)
+\begin{DoxyCompactList}\small\item\em Guess the character encoding of the string (ascii, utf8 or shift-\/\-J\-I\-S) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__conversions_gac8710ba5e7ff6e62a222445501ef9972}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!create\-X\-M\-L\-String@{create\-X\-M\-L\-String}}
+\index{create\-X\-M\-L\-String@{create\-X\-M\-L\-String}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{create\-X\-M\-L\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-S\-T\-R} X\-M\-L\-Node\-::create\-X\-M\-L\-String (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Format = {\ttfamily 1}, }
+\item[{int $\ast$}]{pn\-Size = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}\label{group__conversions_gac8710ba5e7ff6e62a222445501ef9972}
+
+
+Create an X\-M\-L string starting from the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. 
+
+The returned string should be free'd using the \char`\"{}free\-X\-M\-L\-String\char`\"{} function. \begin{DoxyVerb}    If nFormat==0, no formatting is required otherwise this returns an user friendly XML string from a given element
+    with appropriate white spaces and carriage returns. if pnSize is given it returns the size in character of the string.  \end{DoxyVerb}
+ \hypertarget{group__conversions_ga615a6ca792929132043d1de511023772}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!get\-Error@{get\-Error}}
+\index{get\-Error@{get\-Error}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{get\-Error}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Error}}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__conversions_ga615a6ca792929132043d1de511023772}
+
+
+this gives you a user-\/friendly explanation of the parsing error 
+
+\hypertarget{group__conversions_ga2fb8e9b250d669776e5e1962a70a4196}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!guess\-Char\-Encoding@{guess\-Char\-Encoding}}
+\index{guess\-Char\-Encoding@{guess\-Char\-Encoding}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{guess\-Char\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}static X\-M\-L\-Char\-Encoding X\-M\-L\-Node\-::guess\-Char\-Encoding (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{int}]{buf\-Len, }
+\item[{char}]{use\-X\-M\-L\-Encoding\-Attribute = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__conversions_ga2fb8e9b250d669776e5e1962a70a4196}
+
+
+Guess the character encoding of the string (ascii, utf8 or shift-\/\-J\-I\-S) 
+
+The \char`\"{}guess\-Char\-Encoding\char`\"{} function try to guess the character encoding. You most-\/probably will never have to use this function. It then returns the appropriate value of the global parameter \char`\"{}character\-Encoding\char`\"{} described in the \hyperlink{group__conversions_ga2e3943ac932bf3e786810234e7c295b9}{X\-M\-L\-Node\-::set\-Global\-Options}. The guess is based on the content of a buffer of length \char`\"{}buf\-Len\char`\"{} bytes that contains the first bytes (minimum 25 bytes; 200 bytes is a good value) of the file to be parsed. The \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper} function is using this function to automatically compute the value of the \char`\"{}character\-Encoding\char`\"{} global parameter. There are several heuristics used to do the guess. One of the heuristic is based on the \char`\"{}encoding\char`\"{} attribute. The original X\-M\-L specifications forbids to use this attribute to do the guess but you can still use it if you set \char`\"{}use\-X\-M\-L\-Encoding\-Attribute\char`\"{} to 1 (this is the default behavior and the behavior of most parsers). If an inconsistency in the encoding is detected, then the return value is \char`\"{}0\char`\"{}. \hypertarget{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!open\-File\-Helper@{open\-File\-Helper}}
+\index{open\-File\-Helper@{open\-File\-Helper}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{open\-File\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-Node} X\-M\-L\-Node\-::open\-File\-Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{filename, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{tag = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__conversions_ga46f99cf406604471e15d4378f74ecc63}
+
+
+Parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the file. A very crude error checking is made. An attempt to guess the Char Encoding used in the file is made. 
+
+The \char`\"{}open\-File\-Helper\char`\"{} function reports to the screen all the warnings and errors that occurred during parsing of the X\-M\-L file. This function also tries to guess char Encoding (U\-T\-F-\/8, A\-S\-C\-I\-I or S\-H\-I\-T-\/\-J\-I\-S) based on the first 200 bytes of the file. Since each application has its own way to report and deal with errors, you should rather use the \char`\"{}parse\-File\char`\"{} function to parse X\-M\-L files and program yourself thereafter an \char`\"{}error reporting\char`\"{} tailored for your needs (instead of using the very crude \char`\"{}error reporting\char`\"{} mechanism included inside the \char`\"{}open\-File\-Helper\char`\"{} function).
+
+If the X\-M\-L document is corrupted, the \char`\"{}open\-File\-Helper\char`\"{} method will\-:
+\begin{DoxyItemize}
+\item display an error message on the console (or inside a message\-Box for windows).
+\item stop execution (exit).
+\end{DoxyItemize}
+
+I strongly suggest that you write your own \char`\"{}open\-File\-Helper\char`\"{} method tailored to your needs. If you still want to parse the file, you can use the A\-P\-P\-R\-O\-X\-I\-M\-A\-T\-E\-\_\-\-P\-A\-R\-S\-I\-N\-G option as explained inside the note at the beginning of the \char`\"{}xml\-Parser.\-cpp\char`\"{} file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the path of the X\-M\-L file to parse. \\
+\hline
+{\em tag} & the name of the first tag inside the X\-M\-L file. If the tag parameter is omitted, this function returns a node that represents the head of the xml document including the declaration term ($<$? ... ?$>$). \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__conversions_gae984d7ebce97fad429b2b786439815fb}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!parse\-File@{parse\-File}}
+\index{parse\-File@{parse\-File}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{parse\-File}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-Node} X\-M\-L\-Node\-::parse\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{filename, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{tag = {\ttfamily NULL}, }
+\item[{{\bf X\-M\-L\-Results} $\ast$}]{p\-Results = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__conversions_gae984d7ebce97fad429b2b786439815fb}
+
+
+Parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the file. 
+
+The \char`\"{}parse\-File\char`\"{} function parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree. The \char`\"{}opposite\char`\"{} of this function is the function \char`\"{}write\-To\-File\char`\"{} that re-\/creates an X\-M\-L file from an \hyperlink{structXMLNode}{X\-M\-L\-Node} tree. If the X\-M\-L document is corrupted, the \char`\"{}parse\-File\char`\"{} method will initialize the \char`\"{}p\-Results\char`\"{} variable with some information that can be used to trace the error. If you still want to parse the file, you can use the A\-P\-P\-R\-O\-X\-I\-M\-A\-T\-E\-\_\-\-P\-A\-R\-S\-I\-N\-G option as explained inside the note at the beginning of the \char`\"{}xml\-Parser.\-cpp\char`\"{} file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the path to the X\-M\-L file to parse \\
+\hline
+{\em tag} & the name of the first tag inside the X\-M\-L file. If the tag parameter is omitted, this function returns a node that represents the head of the xml document including the declaration term ($<$? ... ?$>$). \\
+\hline
+{\em p\-Results} & a pointer to a \hyperlink{structXMLResults}{X\-M\-L\-Results} variable that will contain some information that can be used to trace the X\-M\-L parsing error. You can have a user-\/friendly explanation of the parsing error with the \char`\"{}get\-Error\char`\"{} function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!parse\-String@{parse\-String}}
+\index{parse\-String@{parse\-String}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{parse\-String}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-Node} X\-M\-L\-Node\-::parse\-String (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lp\-X\-M\-L\-String, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{tag = {\ttfamily NULL}, }
+\item[{{\bf X\-M\-L\-Results} $\ast$}]{p\-Results = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}
+
+
+Parse an X\-M\-L string and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the string. 
+
+The \char`\"{}parse\-String\char`\"{} function parse an X\-M\-L string and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree. The \char`\"{}opposite\char`\"{} of this function is the function \char`\"{}create\-X\-M\-L\-String\char`\"{} that re-\/creates an X\-M\-L string from an \hyperlink{structXMLNode}{X\-M\-L\-Node} tree. If the X\-M\-L document is corrupted, the \char`\"{}parse\-String\char`\"{} method will initialize the \char`\"{}p\-Results\char`\"{} variable with some information that can be used to trace the error. If you still want to parse the file, you can use the A\-P\-P\-R\-O\-X\-I\-M\-A\-T\-E\-\_\-\-P\-A\-R\-S\-I\-N\-G option as explained inside the note at the beginning of the \char`\"{}xml\-Parser.\-cpp\char`\"{} file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp\-X\-M\-L\-String} & the X\-M\-L string to parse \\
+\hline
+{\em tag} & the name of the first tag inside the X\-M\-L file. If the tag parameter is omitted, this function returns a node that represents the head of the xml document including the declaration term ($<$? ... ?$>$). \\
+\hline
+{\em p\-Results} & a pointer to a \hyperlink{structXMLResults}{X\-M\-L\-Results} variable that will contain some information that can be used to trace the X\-M\-L parsing error. You can have a user-\/friendly explanation of the parsing error with the \char`\"{}get\-Error\char`\"{} function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__conversions_ga2e3943ac932bf3e786810234e7c295b9}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!set\-Global\-Options@{set\-Global\-Options}}
+\index{set\-Global\-Options@{set\-Global\-Options}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{set\-Global\-Options}]{\setlength{\rightskip}{0pt plus 5cm}static char X\-M\-L\-Node\-::set\-Global\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Char\-Encoding}}]{character\-Encoding = {\ttfamily {\bf X\-M\-L\-Node\-::char\-\_\-encoding\-\_\-\-U\-T\-F8}}, }
+\item[{char}]{guess\-Wide\-Char\-Chars = {\ttfamily 1}, }
+\item[{char}]{drop\-White\-Space = {\ttfamily 1}, }
+\item[{char}]{remove\-Comments\-In\-Middle\-Of\-Text = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{group__conversions_ga2e3943ac932bf3e786810234e7c295b9}
+
+
+Sets the global options for the conversions. 
+
+The \char`\"{}set\-Global\-Options\char`\"{} function allows you to change four global parameters that affect string \& file parsing. First of all, you most-\/probably will never have to change these 3 global parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em guess\-Wide\-Char\-Chars} & If \char`\"{}guess\-Wide\-Char\-Chars\char`\"{}=1 and if this library is compiled in Wide\-Char mode, then the \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File} and \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper} functions will test if the file contains A\-S\-C\-I\-I characters. If this is the case, then the file will be loaded and converted in memory to Wide\-Char before being parsed. If 0, no conversion will be performed.\\
+\hline
+{\em guess\-Wide\-Char\-Chars} & If \char`\"{}guess\-Wide\-Char\-Chars\char`\"{}=1 and if this library is compiled in A\-S\-C\-I\-I/\-U\-T\-F8/char$\ast$ mode, then the \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File} and \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper} functions will test if the file contains Wide\-Char characters. If this is the case, then the file will be loaded and converted in memory to A\-S\-C\-I\-I/\-U\-T\-F8/char$\ast$ before being parsed. If 0, no conversion will be performed.\\
+\hline
+{\em character\-Encoding} & This parameter is only meaningful when compiling in char$\ast$ mode (multibyte character mode). In wchar\-\_\-t$\ast$ (wide char mode), this parameter is ignored. This parameter should be one of the three currently recognized encodings\-: X\-M\-L\-Node\-::encoding\-\_\-\-U\-T\-F8, X\-M\-L\-Node\-::encoding\-\_\-ascii, X\-M\-L\-Node\-::encoding\-\_\-\-Shift\-J\-I\-S.\\
+\hline
+{\em drop\-White\-Space} & In most situations, text fields containing only white spaces (and carriage returns) are useless. Even more, these \char`\"{}empty\char`\"{} text fields are annoying because they increase the complexity of the user's code for parsing. So, 99\% of the time, it's better to drop the \char`\"{}empty\char`\"{} text fields. However The X\-M\-L specification indicates that no white spaces should be lost when parsing the file. So to be perfectly X\-M\-L-\/compliant, you should set drop\-White\-Space=0. A note of caution\-: if you set \char`\"{}drop\-White\-Space=0\char`\"{}, the parser will be slower and your code will be more complex.\\
+\hline
+{\em remove\-Comments\-In\-Middle\-Of\-Text} & To explain this parameter, let's consider this code\-: 
+\begin{DoxyCode}
+              \hyperlink{structXMLNode}{XMLNode} x=\hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{XMLNode::parseString}(\textcolor{stringliteral}{"
+      <a>foo<!-- hello -->bar<!DOCTYPE world >chu</a>"},\textcolor{stringliteral}{"a"});
+\end{DoxyCode}
+ If remove\-Comments\-In\-Middle\-Of\-Text=0, then we will have\-: 
+\begin{DoxyCode}
+              x.\hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{getText}(0) -> \textcolor{stringliteral}{"foo"}
+              x.\hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{getText}(1) -> \textcolor{stringliteral}{"bar"}
+              x.\hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{getText}(2) -> \textcolor{stringliteral}{"chu"}
+              x.\hyperlink{group__navigate_gab99fbcb5534ab2194889c4802e290354}{getClear}(0) --> \textcolor{stringliteral}{"<!-- hello -->"}
+              x.\hyperlink{group__navigate_gab99fbcb5534ab2194889c4802e290354}{getClear}(1) --> \textcolor{stringliteral}{"<!DOCTYPE world >"}
+\end{DoxyCode}
+ If remove\-Comments\-In\-Middle\-Of\-Text=1, then we will have\-: 
+\begin{DoxyCode}
+              x.\hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{getText}(0) -> \textcolor{stringliteral}{"foobar"}
+              x.\hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{getText}(1) -> \textcolor{stringliteral}{"chu"}
+              x.\hyperlink{group__navigate_gab99fbcb5534ab2194889c4802e290354}{getClear}(0) --> \textcolor{stringliteral}{"<!DOCTYPE world >"}
+\end{DoxyCode}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}0\char`\"{} when there are no errors. If you try to set an unrecognized encoding then the return value will be \char`\"{}1\char`\"{} to signal an error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Sometime, it's useful to set \char`\"{}guess\-Wide\-Char\-Chars=0\char`\"{} to disable any conversion because the test to detect the file-\/type (A\-S\-C\-I\-I/\-U\-T\-F8/char$\ast$ or Wide\-Char) may fail (rarely). 
+\end{DoxyNote}
+\hypertarget{group__conversions_gab8d92d057c0072cc195b1935b2f53d80}{\index{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}!write\-To\-File@{write\-To\-File}}
+\index{write\-To\-File@{write\-To\-File}!Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.@{Parsing X\-M\-L files/strings to an X\-M\-L\-Node structure and Rendering X\-M\-L\-Node's to files/string.}}
+\subsubsection[{write\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Error} X\-M\-L\-Node\-::write\-To\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{filename, }
+\item[{const char $\ast$}]{encoding = {\ttfamily NULL}, }
+\item[{char}]{n\-Format = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const}}\label{group__conversions_gab8d92d057c0072cc195b1935b2f53d80}
+
+
+Save the content of an xml\-Node inside a file. 
+
+If n\-Format==0, no formatting is required otherwise this returns an user friendly X\-M\-L string from a given element with appropriate white spaces and carriage returns. If the global parameter \char`\"{}character\-Encoding==encoding\-\_\-\-U\-T\-F8\char`\"{}, then the \char`\"{}encoding\char`\"{} parameter is ignored and always set to \char`\"{}utf-\/8\char`\"{}. If the global parameter \char`\"{}character\-Encoding==encoding\-\_\-\-Shift\-J\-I\-S\char`\"{}, then the \char`\"{}encoding\char`\"{} parameter is ignored and always set to \char`\"{}\-S\-H\-I\-F\-T-\/\-J\-I\-S\char`\"{}. If \char`\"{}\-\_\-\-X\-M\-L\-W\-I\-D\-E\-C\-H\-A\-R=1\char`\"{}, then the \char`\"{}encoding\char`\"{} parameter is ignored and always set to \char`\"{}utf-\/16\char`\"{}. If no \char`\"{}encoding\char`\"{} parameter is given the \char`\"{}\-I\-S\-O-\/8859-\/1\char`\"{} encoding is used. 

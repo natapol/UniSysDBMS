@@ -1,0 +1,190 @@
+\hypertarget{classunisys_1_1Xref}{\section{unisys\-:\-:Xref Class Reference}
+\label{classunisys_1_1Xref}\index{unisys\-::\-Xref@{unisys\-::\-Xref}}
+}
+
+
+The C++ representative class for Cross reference data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Xref\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Xref__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Xref\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Xref__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Xref_a44813d6fdb5f9e53673812b9ebac2437}{Xref} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Xref_ac3de9eaba3dd45e75b3544af841d9f55}{Xref} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj, bool is\-Database=true)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Xref_aa1da5b743e2e30b240aef9e95c530b0e}{Xref} (std\-::string const \&uri, std\-::string const \&detail=\char`\"{}\char`\"{}, bool is\-Database=true)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classunisys_1_1Xref_a8a61152e215a60c459776e1c02955c32}{operator$<$} (\hyperlink{classunisys_1_1Xref}{Xref} const \&other) const 
+\begin{DoxyCompactList}\small\item\em Less than operator overload. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Xref_a4dfa4307eb47f62fb4b403095a0814d6}{set\-Type} (bool is\-Database=true)
+\begin{DoxyCompactList}\small\item\em Less than operator overload. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Xref_ada98dc86c0900918728bf131d18c95e6}{set\-Id} (\hyperlink{classunisys_1_1Miriam}{Miriam} const \&miriam, bool with\-Ver=true)
+\begin{DoxyCompactList}\small\item\em Define cross reference I\-D with \hyperlink{classunisys_1_1Miriam}{Miriam} object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Xref_a1696eb8eba56634de4b409219c95618e}{set\-Id} (std\-::string const \&uri, std\-::string const \&ns=\char`\"{}\char`\"{}, unsigned int version=0, bool with\-Ver=true)
+\begin{DoxyCompactList}\small\item\em Define cross reference I\-D. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Xref_aa62e4a4c92289242dc699836eb20b321}{set\-Detail} (std\-::string const \&detail)
+\begin{DoxyCompactList}\small\item\em define some detail of this cross reference \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Xref_afc94c9013bfe5cec8a474610212cb941}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for Cross reference data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {
+            type: <database|publication>,
+            comment: <string>,
+            id: <stringIdOfXref>,
+            detail: <string>,
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Xref_a44813d6fdb5f9e53673812b9ebac2437}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!Xref@{Xref}}
+\index{Xref@{Xref}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{Xref}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Xref\-::\-Xref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_a44813d6fdb5f9e53673812b9ebac2437}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Xref_ac3de9eaba3dd45e75b3544af841d9f55}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!Xref@{Xref}}
+\index{Xref@{Xref}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{Xref}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Xref\-::\-Xref (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj, }
+\item[{bool}]{is\-Database = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_ac3de9eaba3dd45e75b3544af841d9f55}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+\hypertarget{classunisys_1_1Xref_aa1da5b743e2e30b240aef9e95c530b0e}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!Xref@{Xref}}
+\index{Xref@{Xref}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{Xref}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Xref\-::\-Xref (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{uri, }
+\item[{std\-::string const \&}]{detail = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{bool}]{is\-Database = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_aa1da5b743e2e30b240aef9e95c530b0e}
+
+
+Overloaded constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Xref_afc94c9013bfe5cec8a474610212cb941}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Xref\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Xref_afc94c9013bfe5cec8a474610212cb941}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1Xref_a8a61152e215a60c459776e1c02955c32}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Xref\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Xref} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Xref_a8a61152e215a60c459776e1c02955c32}
+
+
+Less than operator overload. 
+
+\hypertarget{classunisys_1_1Xref_aa62e4a4c92289242dc699836eb20b321}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!set\-Detail@{set\-Detail}}
+\index{set\-Detail@{set\-Detail}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{set\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Xref\-::set\-Detail (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{detail}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_aa62e4a4c92289242dc699836eb20b321}
+
+
+define some detail of this cross reference 
+
+\hypertarget{classunisys_1_1Xref_ada98dc86c0900918728bf131d18c95e6}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!set\-Id@{set\-Id}}
+\index{set\-Id@{set\-Id}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Xref\-::set\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Miriam} const \&}]{miriam, }
+\item[{bool}]{with\-Ver = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_ada98dc86c0900918728bf131d18c95e6}
+
+
+Define cross reference I\-D with \hyperlink{classunisys_1_1Miriam}{Miriam} object. 
+
+\hypertarget{classunisys_1_1Xref_a1696eb8eba56634de4b409219c95618e}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!set\-Id@{set\-Id}}
+\index{set\-Id@{set\-Id}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Xref\-::set\-Id (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{uri, }
+\item[{std\-::string const \&}]{ns = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{version = {\ttfamily 0}, }
+\item[{bool}]{with\-Ver = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_a1696eb8eba56634de4b409219c95618e}
+
+
+Define cross reference I\-D. 
+
+\hypertarget{classunisys_1_1Xref_a4dfa4307eb47f62fb4b403095a0814d6}{\index{unisys\-::\-Xref@{unisys\-::\-Xref}!set\-Type@{set\-Type}}
+\index{set\-Type@{set\-Type}!unisys::Xref@{unisys\-::\-Xref}}
+\subsubsection[{set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Xref\-::set\-Type (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Database = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Xref_a4dfa4307eb47f62fb4b403095a0814d6}
+
+
+Less than operator overload. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

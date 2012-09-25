@@ -1,0 +1,128 @@
+\hypertarget{classunisys_1_1Complex}{\section{unisys\-:\-:Complex Class Reference}
+\label{classunisys_1_1Complex}\index{unisys\-::\-Complex@{unisys\-::\-Complex}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Complex\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Complex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Complex\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Complex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Complex_af1f053767f82558fca1aacbe506c80b3}{Complex} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Complex_adf5a0991130d29373856723ca7c90e69}{Complex} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Complex_a31f85126c8248ca57b0a64a54fa8f10f}{add\-Complex\-Member} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1Complex_af60845ea26c2e255e3d707a45ce67717}{add\-Specific\-Kinetic\-Parameter} (\hyperlink{classunisys_1_1KineticParameter}{Kinetic\-Parameter} \&kinetic\-Parameter)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Complex_a63e019fcca3e2d919937694678d9ee1f}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            interaction: {<DbRef>, <DbRef>, ...},
+            complex: {<DbRef>, <DbRef>, ...},
+            subRegion: {<SubRegionBOSON>, <SubRegionBOSON>, ...},
+            complexMember: {<DbRef>, <DbRef>, ...},
+            specificKineticParameter: {<KineticParameterBOSON>, <KineticParameterBOSON>, ...}
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Complex_af1f053767f82558fca1aacbe506c80b3}{\index{unisys\-::\-Complex@{unisys\-::\-Complex}!Complex@{Complex}}
+\index{Complex@{Complex}!unisys::Complex@{unisys\-::\-Complex}}
+\subsubsection[{Complex}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Complex\-::\-Complex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Complex_af1f053767f82558fca1aacbe506c80b3}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Complex_adf5a0991130d29373856723ca7c90e69}{\index{unisys\-::\-Complex@{unisys\-::\-Complex}!Complex@{Complex}}
+\index{Complex@{Complex}!unisys::Complex@{unisys\-::\-Complex}}
+\subsubsection[{Complex}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Complex\-::\-Complex (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Complex_adf5a0991130d29373856723ca7c90e69}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Complex_a31f85126c8248ca57b0a64a54fa8f10f}{\index{unisys\-::\-Complex@{unisys\-::\-Complex}!add\-Complex\-Member@{add\-Complex\-Member}}
+\index{add\-Complex\-Member@{add\-Complex\-Member}!unisys::Complex@{unisys\-::\-Complex}}
+\subsubsection[{add\-Complex\-Member}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Complex\-::add\-Complex\-Member (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Complex_a31f85126c8248ca57b0a64a54fa8f10f}
+\hypertarget{classunisys_1_1Complex_af60845ea26c2e255e3d707a45ce67717}{\index{unisys\-::\-Complex@{unisys\-::\-Complex}!add\-Specific\-Kinetic\-Parameter@{add\-Specific\-Kinetic\-Parameter}}
+\index{add\-Specific\-Kinetic\-Parameter@{add\-Specific\-Kinetic\-Parameter}!unisys::Complex@{unisys\-::\-Complex}}
+\subsubsection[{add\-Specific\-Kinetic\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Complex\-::add\-Specific\-Kinetic\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf Kinetic\-Parameter} \&}]{kinetic\-Parameter}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Complex_af60845ea26c2e255e3d707a45ce67717}
+\hypertarget{classunisys_1_1Complex_a63e019fcca3e2d919937694678d9ee1f}{\index{unisys\-::\-Complex@{unisys\-::\-Complex}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Complex@{unisys\-::\-Complex}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Complex\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Complex_a63e019fcca3e2d919937694678d9ee1f}
+
+
+Reimplemented from \hyperlink{classunisys_1_1PhysicalEntity_ad445727cb6b1c12e954819d8207104e8}{unisys\-::\-Physical\-Entity}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

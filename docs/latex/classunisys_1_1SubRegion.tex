@@ -1,0 +1,133 @@
+\hypertarget{classunisys_1_1SubRegion}{\section{unisys\-:\-:Sub\-Region Class Reference}
+\label{classunisys_1_1SubRegion}\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}}
+}
+
+
+The C++ representative class for sub-\/region data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Sub\-Region\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1SubRegion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Sub\-Region\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1SubRegion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1SubRegion_a4d6441c4b5c82c82fa1b480d6360f5df}{Sub\-Region} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1SubRegion_ad8352b3127f325cabfbb40eb744968bd}{Sub\-Region} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1SubRegion_a1d2a20adb4088337faced2847999b329}{add\-Position} (unsigned int start, unsigned int stop)
+\item 
+void \hyperlink{classunisys_1_1SubRegion_af9acab905fd9533bb053f86f539972f5}{set\-Strand} (int strand=0)
+\item 
+void \hyperlink{classunisys_1_1SubRegion_aeb33c5136705e179e0068052eda7a389}{set\-Annotation} (\hyperlink{classunisys_1_1Annotation}{Annotation} \&annotation)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1SubRegion_abaff0ecac757200f5e4173a86054927e}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for sub-\/region data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            position: {{start: <number>, stop: <number>}, {start: <number>, stop: <number>}, ...},
+            strand: <[-1|0|1]> default:0 = unknown,
+            annotation: <AnnotationBSONStructure>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1SubRegion_a4d6441c4b5c82c82fa1b480d6360f5df}{\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}!Sub\-Region@{Sub\-Region}}
+\index{Sub\-Region@{Sub\-Region}!unisys::SubRegion@{unisys\-::\-Sub\-Region}}
+\subsubsection[{Sub\-Region}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Sub\-Region\-::\-Sub\-Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SubRegion_a4d6441c4b5c82c82fa1b480d6360f5df}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1SubRegion_ad8352b3127f325cabfbb40eb744968bd}{\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}!Sub\-Region@{Sub\-Region}}
+\index{Sub\-Region@{Sub\-Region}!unisys::SubRegion@{unisys\-::\-Sub\-Region}}
+\subsubsection[{Sub\-Region}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Sub\-Region\-::\-Sub\-Region (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SubRegion_ad8352b3127f325cabfbb40eb744968bd}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1SubRegion_a1d2a20adb4088337faced2847999b329}{\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}!add\-Position@{add\-Position}}
+\index{add\-Position@{add\-Position}!unisys::SubRegion@{unisys\-::\-Sub\-Region}}
+\subsubsection[{add\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Sub\-Region\-::add\-Position (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{start, }
+\item[{unsigned int}]{stop}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SubRegion_a1d2a20adb4088337faced2847999b329}
+\hypertarget{classunisys_1_1SubRegion_abaff0ecac757200f5e4173a86054927e}{\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::SubRegion@{unisys\-::\-Sub\-Region}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Sub\-Region\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1SubRegion_abaff0ecac757200f5e4173a86054927e}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1SubRegion_aeb33c5136705e179e0068052eda7a389}{\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}!set\-Annotation@{set\-Annotation}}
+\index{set\-Annotation@{set\-Annotation}!unisys::SubRegion@{unisys\-::\-Sub\-Region}}
+\subsubsection[{set\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Sub\-Region\-::set\-Annotation (
+\begin{DoxyParamCaption}
+\item[{{\bf Annotation} \&}]{annotation}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SubRegion_aeb33c5136705e179e0068052eda7a389}
+\hypertarget{classunisys_1_1SubRegion_af9acab905fd9533bb053f86f539972f5}{\index{unisys\-::\-Sub\-Region@{unisys\-::\-Sub\-Region}!set\-Strand@{set\-Strand}}
+\index{set\-Strand@{set\-Strand}!unisys::SubRegion@{unisys\-::\-Sub\-Region}}
+\subsubsection[{set\-Strand}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Sub\-Region\-::set\-Strand (
+\begin{DoxyParamCaption}
+\item[{int}]{strand = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SubRegion_af9acab905fd9533bb053f86f539972f5}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

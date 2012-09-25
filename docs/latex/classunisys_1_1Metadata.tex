@@ -1,0 +1,121 @@
+\hypertarget{classunisys_1_1Metadata}{\section{unisys\-:\-:Metadata Class Reference}
+\label{classunisys_1_1Metadata}\index{unisys\-::\-Metadata@{unisys\-::\-Metadata}}
+}
+
+
+The C++ representative class for metadata data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Metadata\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Metadata__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Metadata\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Metadata__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Metadata_ad7af6c07ed0468c73e95a6e2571dba7f}{Metadata} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Metadata_a1becaf51b053c7c56a2da80d16050df3}{Metadata} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Metadata_a49b8011f336589cbc6bb08f3de5553ec}{Metadata} (std\-::string const \&detail)
+\item 
+void \hyperlink{classunisys_1_1Metadata_a65b8a94185f02d033e9b5ab90dd77853}{set\-Detail} (std\-::string const \&detail)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Metadata_a5c3596b451d9539846f8f6ed7bfceaf9}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for metadata data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            detail: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Metadata_ad7af6c07ed0468c73e95a6e2571dba7f}{\index{unisys\-::\-Metadata@{unisys\-::\-Metadata}!Metadata@{Metadata}}
+\index{Metadata@{Metadata}!unisys::Metadata@{unisys\-::\-Metadata}}
+\subsubsection[{Metadata}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Metadata\-::\-Metadata (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Metadata_ad7af6c07ed0468c73e95a6e2571dba7f}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Metadata_a1becaf51b053c7c56a2da80d16050df3}{\index{unisys\-::\-Metadata@{unisys\-::\-Metadata}!Metadata@{Metadata}}
+\index{Metadata@{Metadata}!unisys::Metadata@{unisys\-::\-Metadata}}
+\subsubsection[{Metadata}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Metadata\-::\-Metadata (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Metadata_a1becaf51b053c7c56a2da80d16050df3}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+\hypertarget{classunisys_1_1Metadata_a49b8011f336589cbc6bb08f3de5553ec}{\index{unisys\-::\-Metadata@{unisys\-::\-Metadata}!Metadata@{Metadata}}
+\index{Metadata@{Metadata}!unisys::Metadata@{unisys\-::\-Metadata}}
+\subsubsection[{Metadata}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Metadata\-::\-Metadata (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{detail}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Metadata_a49b8011f336589cbc6bb08f3de5553ec}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Metadata_a5c3596b451d9539846f8f6ed7bfceaf9}{\index{unisys\-::\-Metadata@{unisys\-::\-Metadata}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Metadata@{unisys\-::\-Metadata}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Metadata\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Metadata_a5c3596b451d9539846f8f6ed7bfceaf9}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1Metadata_a65b8a94185f02d033e9b5ab90dd77853}{\index{unisys\-::\-Metadata@{unisys\-::\-Metadata}!set\-Detail@{set\-Detail}}
+\index{set\-Detail@{set\-Detail}!unisys::Metadata@{unisys\-::\-Metadata}}
+\subsubsection[{set\-Detail}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Metadata\-::set\-Detail (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{detail}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Metadata_a65b8a94185f02d033e9b5ab90dd77853}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

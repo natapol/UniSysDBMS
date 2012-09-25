@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns2="http://xml.apache.org/xml-soap"
+ xmlns:ns3="http://model.web.ook.ebi.ac.uk"
+ xmlns:ns1="http://www.ebi.ac.uk/ontology-lookup/OntologyQuery">
+ <SOAP-ENV:Body>
+  <ns1:getTermsByAnnotationDataResponse>
+   <ns1:getTermsByAnnotationDataReturn>
+    <ns3:annotationNumberValue>0.0</ns3:annotationNumberValue>
+    <ns3:annotationStringValue></ns3:annotationStringValue>
+    <ns3:annotationType></ns3:annotationType>
+    <ns3:termId></ns3:termId>
+    <ns3:termName></ns3:termName>
+   </ns1:getTermsByAnnotationDataReturn>
+   <ns1:getTermsByAnnotationDataReturn>
+    <ns3:annotationNumberValue>0.0</ns3:annotationNumberValue>
+    <ns3:annotationStringValue></ns3:annotationStringValue>
+    <ns3:annotationType></ns3:annotationType>
+    <ns3:termId></ns3:termId>
+    <ns3:termName></ns3:termName>
+   </ns1:getTermsByAnnotationDataReturn>
+  </ns1:getTermsByAnnotationDataResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

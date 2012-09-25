@@ -1,0 +1,147 @@
+\hypertarget{group__xmlUpdate}{\section{Updating Nodes}
+\label{group__xmlUpdate}\index{Updating Nodes@{Updating Nodes}}
+}
+Collaboration diagram for Updating Nodes\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{group__xmlUpdate}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlUpdate_gae08b643a2b87a77bad3c70eb57ea3043}{X\-M\-L\-Node\-::update\-Name} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name)
+\begin{DoxyCompactList}\small\item\em change node's name \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlUpdate_ga49449139e44ef214d0c861e0b84f3757}{X\-M\-L\-Node\-::update\-Attribute} (\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$new\-Attribute, \hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$old\-Attribute)
+\begin{DoxyCompactList}\small\item\em if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlUpdate_ga43e30a2630824996f5eb74ffcfa54adf}{X\-M\-L\-Node\-::update\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Name=N\-U\-L\-L, int i=0)
+\begin{DoxyCompactList}\small\item\em if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlUpdate_gad334b0726cb7075a16aaca98aaff6372}{X\-M\-L\-Node\-::update\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Name)
+\begin{DoxyCompactList}\small\item\em set lpsz\-New\-Name=N\-U\-L\-L if you don't want to change the name of the attribute if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlUpdate_gaad04ffd86ca67253bbc81f941608f8d2}{X\-M\-L\-Node\-::update\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, int i=0)
+\begin{DoxyCompactList}\small\item\em if the text to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlUpdate_ga476a872fa595ea8416d2991ce3bea7a6}{X\-M\-L\-Node\-::update\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Value)
+\begin{DoxyCompactList}\small\item\em if the text to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlUpdate_gafe78ceff29e1853fdef9f9c3ac2605eb}{X\-M\-L\-Node\-::update\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Content, int i=0)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlUpdate_ga1279bfaade1376d25342440bd14dbb74}{X\-M\-L\-Node\-::update\-Clear} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$new\-P, \hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$old\-P)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlUpdate_ga49ad66755cd9b69fc1ec7a78cd162c70}{X\-M\-L\-Node\-::update\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Value)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some update functions\-: 
+
+\subsection{Function Documentation}
+\hypertarget{group__xmlUpdate_ga49449139e44ef214d0c861e0b84f3757}{\index{Updating Nodes@{Updating Nodes}!update\-Attribute@{update\-Attribute}}
+\index{update\-Attribute@{update\-Attribute}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute}$\ast$ X\-M\-L\-Node\-::update\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Attribute} $\ast$}]{new\-Attribute, }
+\item[{{\bf X\-M\-L\-Attribute} $\ast$}]{old\-Attribute}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_ga49449139e44ef214d0c861e0b84f3757}
+
+
+if the attribute to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_ga43e30a2630824996f5eb74ffcfa54adf}{\index{Updating Nodes@{Updating Nodes}!update\-Attribute@{update\-Attribute}}
+\index{update\-Attribute@{update\-Attribute}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute}$\ast$ X\-M\-L\-Node\-::update\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Value, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Name = {\ttfamily NULL}, }
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_ga43e30a2630824996f5eb74ffcfa54adf}
+
+
+if the attribute to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_gad334b0726cb7075a16aaca98aaff6372}{\index{Updating Nodes@{Updating Nodes}!update\-Attribute@{update\-Attribute}}
+\index{update\-Attribute@{update\-Attribute}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute}$\ast$ X\-M\-L\-Node\-::update\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Value, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Name, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Old\-Name}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_gad334b0726cb7075a16aaca98aaff6372}
+
+
+set lpsz\-New\-Name=N\-U\-L\-L if you don't want to change the name of the attribute if the attribute to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_gafe78ceff29e1853fdef9f9c3ac2605eb}{\index{Updating Nodes@{Updating Nodes}!update\-Clear@{update\-Clear}}
+\index{update\-Clear@{update\-Clear}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear}$\ast$ X\-M\-L\-Node\-::update\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Content, }
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_gafe78ceff29e1853fdef9f9c3ac2605eb}
+
+
+if the clear\-Tag to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_ga1279bfaade1376d25342440bd14dbb74}{\index{Updating Nodes@{Updating Nodes}!update\-Clear@{update\-Clear}}
+\index{update\-Clear@{update\-Clear}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear}$\ast$ X\-M\-L\-Node\-::update\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Clear} $\ast$}]{new\-P, }
+\item[{{\bf X\-M\-L\-Clear} $\ast$}]{old\-P}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_ga1279bfaade1376d25342440bd14dbb74}
+
+
+if the clear\-Tag to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_ga49ad66755cd9b69fc1ec7a78cd162c70}{\index{Updating Nodes@{Updating Nodes}!update\-Clear@{update\-Clear}}
+\index{update\-Clear@{update\-Clear}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear}$\ast$ X\-M\-L\-Node\-::update\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Value, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Old\-Value}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_ga49ad66755cd9b69fc1ec7a78cd162c70}
+
+
+if the clear\-Tag to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_gae08b643a2b87a77bad3c70eb57ea3043}{\index{Updating Nodes@{Updating Nodes}!update\-Name@{update\-Name}}
+\index{update\-Name@{update\-Name}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::update\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Name}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_gae08b643a2b87a77bad3c70eb57ea3043}
+
+
+change node's name 
+
+\hypertarget{group__xmlUpdate_gaad04ffd86ca67253bbc81f941608f8d2}{\index{Updating Nodes@{Updating Nodes}!update\-Text@{update\-Text}}
+\index{update\-Text@{update\-Text}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::update\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Value, }
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_gaad04ffd86ca67253bbc81f941608f8d2}
+
+
+if the text to update is missing, a new one will be added 
+
+\hypertarget{group__xmlUpdate_ga476a872fa595ea8416d2991ce3bea7a6}{\index{Updating Nodes@{Updating Nodes}!update\-Text@{update\-Text}}
+\index{update\-Text@{update\-Text}!Updating Nodes@{Updating Nodes}}
+\subsubsection[{update\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::update\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-New\-Value, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Old\-Value}
+\end{DoxyParamCaption}
+)}}\label{group__xmlUpdate_ga476a872fa595ea8416d2991ce3bea7a6}
+
+
+if the text to update is missing, a new one will be added 
+

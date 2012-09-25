@@ -1,0 +1,36 @@
+\hypertarget{group__XMLParserBase64Tool}{\section{Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}.}
+\label{group__XMLParserBase64Tool}\index{Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}.@{Helper class to include binary data inside X\-M\-L strings using ""Base64 encoding"".}}
+}
+Collaboration diagram for Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}.\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__XMLParserBase64Tool}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structXMLParserBase64Tool}{X\-M\-L\-Parser\-Base64\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{xmlParser_8h_a990c86ec1cdbf675604a1a321d852063}{X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} \\*
+\hyperlink{structXMLParserBase64Tool}{X\-M\-L\-Parser\-Base64\-Tool} \hyperlink{group__XMLParserBase64Tool_ga90d0646ff4a054f9d8ea0d29fb86f3a9}{X\-M\-L\-Parser\-Base64\-Tool}
+\begin{DoxyCompactList}\small\item\em Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{group__XMLParserBase64Tool_ga90d0646ff4a054f9d8ea0d29fb86f3a9}{\index{Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}.@{Helper class to include binary data inside X\-M\-L strings using ""Base64 encoding"".}!X\-M\-L\-Parser\-Base64\-Tool@{X\-M\-L\-Parser\-Base64\-Tool}}
+\index{X\-M\-L\-Parser\-Base64\-Tool@{X\-M\-L\-Parser\-Base64\-Tool}!Helper class to include binary data inside XML strings using "Base64 encoding".@{Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}.}}
+\subsubsection[{X\-M\-L\-Parser\-Base64\-Tool}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf X\-M\-L\-D\-L\-L\-E\-N\-T\-R\-Y} {\bf X\-M\-L\-Parser\-Base64\-Tool} {\bf X\-M\-L\-Parser\-Base64\-Tool}}}\label{group__XMLParserBase64Tool_ga90d0646ff4a054f9d8ea0d29fb86f3a9}
+
+
+Helper class to include binary data inside X\-M\-L strings using \char`\"{}\-Base64 encoding\char`\"{}. 
+
+The \char`\"{}\-X\-M\-L\-Parser\-Base64\-Tool\char`\"{} class allows you to include any binary data (images, sounds,...) into an X\-M\-L document using \char`\"{}\-Base64 encoding\char`\"{}. This class is completely separated from the rest of the xml\-Parser library and can be removed without any problem. To include some binary data into an X\-M\-L file, you must convert the binary data into standard text (using \char`\"{}encode\char`\"{}). To retrieve the original binary data from the b64-\/encoded text included inside the X\-M\-L file, use \char`\"{}decode\char`\"{}. Alternatively, these functions can also be used to \char`\"{}encrypt/decrypt\char`\"{} some critical data contained inside the X\-M\-L (it's not a strong encryption at all, but sometimes it can be useful). 

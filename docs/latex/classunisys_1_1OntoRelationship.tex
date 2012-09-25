@@ -1,0 +1,163 @@
+\hypertarget{classunisys_1_1OntoRelationship}{\section{unisys\-:\-:Onto\-Relationship Class Reference}
+\label{classunisys_1_1OntoRelationship}\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}}
+}
+
+
+The C++ representative class for relationship data class.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Onto\-Relationship\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1OntoRelationship__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Onto\-Relationship\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1OntoRelationship__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1OntoRelationship_a96dc6a8db059c27c326a04a25197424b}{Onto\-Relationship} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1OntoRelationship_a18626370d6eb593993b5f6a85af94a7f}{Onto\-Relationship} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1OntoRelationship_aecd635465a76a463c56346e428d61141}{Onto\-Relationship} (std\-::string const \&relation\-Type, std\-::string const \&relation\-With)
+\item 
+\hyperlink{classunisys_1_1OntoRelationship_a3d44115a6e96fcc5765faabc10179406}{Onto\-Relationship} (std\-::string const \&relation\-Type, std\-::string const \&relation\-With, \hyperlink{classunisys_1_1Evidence}{Evidence} evidence)
+\item 
+void \hyperlink{classunisys_1_1OntoRelationship_afbd810a2b739f0349839e0ff6cff5a6e}{set\-Onto\-Relationship} (std\-::string const \&relation\-Type\-Onto\-Id, std\-::string const \&relation\-With\-Id, std\-::string const \&target\-Obj\-Type=\char`\"{}physicalentity\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1OntoRelationship_a2bb8c857ed003f208696315a8170084e}{set\-Relation\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1OntoRelationship_a3dbfa574d2f1d6d8e9fcf744d0ef7319}{set\-Relation\-With} (\hyperlink{classunisys_1_1IdRef}{Id\-Ref} \hyperlink{classunisys_1_1IdRef}{Id\-Ref})
+\item 
+void \hyperlink{classunisys_1_1OntoRelationship_aaa203202398fff77c1c93e6d7786c6fb}{set\-Evidence} (\hyperlink{classunisys_1_1Evidence}{Evidence} \&evidence)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1OntoRelationship_a14ed8b86b0cdc55c63e5ea5443e830a3}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The C++ representative class for relationship data class. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            relationType: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            relationWith: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            evidence: <EvidenceBSONStructure>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1OntoRelationship_a96dc6a8db059c27c326a04a25197424b}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!Onto\-Relationship@{Onto\-Relationship}}
+\index{Onto\-Relationship@{Onto\-Relationship}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{Onto\-Relationship}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Onto\-Relationship\-::\-Onto\-Relationship (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_a96dc6a8db059c27c326a04a25197424b}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1OntoRelationship_a18626370d6eb593993b5f6a85af94a7f}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!Onto\-Relationship@{Onto\-Relationship}}
+\index{Onto\-Relationship@{Onto\-Relationship}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{Onto\-Relationship}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Onto\-Relationship\-::\-Onto\-Relationship (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_a18626370d6eb593993b5f6a85af94a7f}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+\hypertarget{classunisys_1_1OntoRelationship_aecd635465a76a463c56346e428d61141}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!Onto\-Relationship@{Onto\-Relationship}}
+\index{Onto\-Relationship@{Onto\-Relationship}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{Onto\-Relationship}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Onto\-Relationship\-::\-Onto\-Relationship (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{relation\-Type, }
+\item[{std\-::string const \&}]{relation\-With}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_aecd635465a76a463c56346e428d61141}
+\hypertarget{classunisys_1_1OntoRelationship_a3d44115a6e96fcc5765faabc10179406}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!Onto\-Relationship@{Onto\-Relationship}}
+\index{Onto\-Relationship@{Onto\-Relationship}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{Onto\-Relationship}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Onto\-Relationship\-::\-Onto\-Relationship (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{relation\-Type, }
+\item[{std\-::string const \&}]{relation\-With, }
+\item[{{\bf Evidence}}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_a3d44115a6e96fcc5765faabc10179406}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1OntoRelationship_a14ed8b86b0cdc55c63e5ea5443e830a3}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Onto\-Relationship\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classunisys_1_1OntoRelationship_a14ed8b86b0cdc55c63e5ea5443e830a3}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1OntoRelationship_aaa203202398fff77c1c93e6d7786c6fb}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!set\-Evidence@{set\-Evidence}}
+\index{set\-Evidence@{set\-Evidence}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{set\-Evidence}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Onto\-Relationship\-::set\-Evidence (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence} \&}]{evidence}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_aaa203202398fff77c1c93e6d7786c6fb}
+\hypertarget{classunisys_1_1OntoRelationship_afbd810a2b739f0349839e0ff6cff5a6e}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!set\-Onto\-Relationship@{set\-Onto\-Relationship}}
+\index{set\-Onto\-Relationship@{set\-Onto\-Relationship}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{set\-Onto\-Relationship}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Onto\-Relationship\-::set\-Onto\-Relationship (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{relation\-Type\-Onto\-Id, }
+\item[{std\-::string const \&}]{relation\-With\-Id, }
+\item[{std\-::string const \&}]{target\-Obj\-Type = {\ttfamily \char`\"{}physicalentity\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_afbd810a2b739f0349839e0ff6cff5a6e}
+\hypertarget{classunisys_1_1OntoRelationship_a2bb8c857ed003f208696315a8170084e}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!set\-Relation\-Type@{set\-Relation\-Type}}
+\index{set\-Relation\-Type@{set\-Relation\-Type}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{set\-Relation\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Onto\-Relationship\-::set\-Relation\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref}}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_a2bb8c857ed003f208696315a8170084e}
+\hypertarget{classunisys_1_1OntoRelationship_a3dbfa574d2f1d6d8e9fcf744d0ef7319}{\index{unisys\-::\-Onto\-Relationship@{unisys\-::\-Onto\-Relationship}!set\-Relation\-With@{set\-Relation\-With}}
+\index{set\-Relation\-With@{set\-Relation\-With}!unisys::OntoRelationship@{unisys\-::\-Onto\-Relationship}}
+\subsubsection[{set\-Relation\-With}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Onto\-Relationship\-::set\-Relation\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Id\-Ref}}]{Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1OntoRelationship_a3dbfa574d2f1d6d8e9fcf744d0ef7319}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

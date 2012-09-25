@@ -1,0 +1,1978 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {$\sim $\discretionary {-}{}{}To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+  \item {$\sim $\discretionary {-}{}{}Uni\discretionary {-}{}{}Sys\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Uni\discretionary {-}{}{}Sys\discretionary {-}{}{}Error}, \hyperpage{247}
+  \item {$\sim $\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {$\sim $\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+  \item {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{32}
+    \subitem {add\discretionary {-}{}{}Attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{33}
+    \subitem {add\discretionary {-}{}{}Child\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{33}
+    \subitem {add\discretionary {-}{}{}Clear\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{33}
+    \subitem {add\discretionary {-}{}{}Text\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{33}
+    \subitem {create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Top\discretionary {-}{}{}Node\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{33}
+    \subitem {update\discretionary {-}{}{}Attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{33, 34}
+    \subitem {update\discretionary {-}{}{}Clear\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{34}
+    \subitem {update\discretionary {-}{}{}Name\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{34}
+    \subitem {update\discretionary {-}{}{}Text\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}, \hyperpage{34}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+
+  \indexspace
+
+  \item {access\discretionary {-}{}{}Date}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{210}
+  \item {accessed\discretionary {-}{}{}Resource}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{210}
+  \item {add\discretionary {-}{}{}Annotation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+  \item {add\discretionary {-}{}{}Attribute}
+    \subitem {Creating from scratch a X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{26}
+  \item {add\discretionary {-}{}{}Attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{33}
+  \item {add\discretionary {-}{}{}Attribute\discretionary {-}{}{}\_\discretionary {-}{}{}priv}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {add\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Physical\discretionary {-}{}{}Entity}, \hyperpage{174}
+  \item {add\discretionary {-}{}{}Child}
+    \subitem {Creating from scratch a X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{26}
+  \item {add\discretionary {-}{}{}Child\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{33}
+  \item {add\discretionary {-}{}{}Child\discretionary {-}{}{}\_\discretionary {-}{}{}priv}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {add\discretionary {-}{}{}Clear}
+    \subitem {Creating from scratch a X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{26}
+  \item {add\discretionary {-}{}{}Clear\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{33}
+  \item {add\discretionary {-}{}{}Clear\discretionary {-}{}{}\_\discretionary {-}{}{}priv}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {add\discretionary {-}{}{}Complex\discretionary {-}{}{}Member}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Complex}, \hyperpage{88}
+  \item {add\discretionary {-}{}{}Control\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{93}
+  \item {add\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{110}
+  \item {add\discretionary {-}{}{}Data\discretionary {-}{}{}Xref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+  \item {add\discretionary {-}{}{}Evidence}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+  \item {add\discretionary {-}{}{}Export}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{58}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Transport}, \hyperpage{245}
+  \item {add\discretionary {-}{}{}Field\discretionary {-}{}{}Set}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {add\discretionary {-}{}{}Import}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{58}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Transport}, \hyperpage{245}
+  \item {add\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Law}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Conversion}, \hyperpage{97}
+  \item {add\discretionary {-}{}{}Left}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{54}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Molecular\discretionary {-}{}{}Interaction}, \hyperpage{150}
+  \item {add\discretionary {-}{}{}Left\discretionary {-}{}{}In}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{58}
+  \item {add\discretionary {-}{}{}Left\discretionary {-}{}{}Out}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{58}
+  \item {add\discretionary {-}{}{}Modification\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{93}
+  \item {add\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {add\discretionary {-}{}{}Phenotype}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{93}
+  \item {add\discretionary {-}{}{}Position}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{225}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{237}
+  \item {add\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Protein}, \hyperpage{177}
+  \item {add\discretionary {-}{}{}Relation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {add\discretionary {-}{}{}Right}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{54}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Molecular\discretionary {-}{}{}Interaction}, \hyperpage{150}
+  \item {add\discretionary {-}{}{}Right\discretionary {-}{}{}In}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{59}
+  \item {add\discretionary {-}{}{}Right\discretionary {-}{}{}Out}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{59}
+  \item {add\discretionary {-}{}{}Specific\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Complex}, \hyperpage{88}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Protein}, \hyperpage{177}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+  \item {add\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Physical\discretionary {-}{}{}Entity}, \hyperpage{174}
+  \item {add\discretionary {-}{}{}Synonyms}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+  \item {add\discretionary {-}{}{}Text}
+    \subitem {Creating from scratch a X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{27}
+  \item {add\discretionary {-}{}{}Text\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{33}
+  \item {add\discretionary {-}{}{}Text\discretionary {-}{}{}\_\discretionary {-}{}{}priv}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {add\discretionary {-}{}{}To\discretionary {-}{}{}Order}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {add\discretionary {-}{}{}Transcription\discretionary {-}{}{}Product}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{113}
+  \item {add\discretionary {-}{}{}Translation\discretionary {-}{}{}Product}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{225}
+  \item {add\discretionary {-}{}{}With\discretionary {-}{}{}Check}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {add\discretionary {-}{}{}With\discretionary {-}{}{}Out\discretionary {-}{}{}Check}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {alloc}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+  \item {Annotation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Annotation}, \hyperpage{48}
+  \item {Annotation\discretionary {-}{}{}Properties}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {append}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Array}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}As}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}As\discretionary {-}{}{}Number}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Code}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Ref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Elements}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Elements\discretionary {-}{}{}Unique}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Null}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Regex}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Time\discretionary {-}{}{}Stamp}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {append\discretionary {-}{}{}Time\discretionary {-}{}{}T}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {ato? like functions}, \hyperpage{38}
+    \subitem {xmltoa}, \hyperpage{38}
+    \subitem {xmltob}, \hyperpage{38}
+    \subitem {xmltoc}, \hyperpage{38}
+    \subitem {xmltof}, \hyperpage{38}
+    \subitem {xmltoi}, \hyperpage{38}
+    \subitem {xmltol}, \hyperpage{38}
+  \item {attrib}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{266}
+  \item {attribute\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {availability\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+
+  \indexspace
+
+  \item {B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}V\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}
+    \subitem {rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart.\discretionary {-}{}{}h}, \hyperpage{293}
+  \item {B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+  \item {B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}To\discretionary {-}{}{}Set}
+    \subitem {unisys}, \hyperpage{44}
+  \item {B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}To\discretionary {-}{}{}Vector}
+    \subitem {unisys}, \hyperpage{44}
+  \item {base\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{206}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Miriam}, \hyperpage{219}
+  \item {Batch\discretionary {-}{}{}Insert}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Batch\discretionary {-}{}{}Insert}, \hyperpage{51}
+  \item {begin}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Version}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{202}
+  \item {Bio\discretionary {-}{}{}Object}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+  \item {Bio\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{71}
+  \item {Biochemical\discretionary {-}{}{}Reaction}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{54}
+  \item {Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{58}
+  \item {biopax}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {biopax.\discretionary {-}{}{}h}, \hyperpage{277}
+  \item {biopax\discretionary {-}{}{}Obj\discretionary {-}{}{}Map}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {buf}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{271}
+  \item {buffer}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{197}
+  \item {buflen}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{271}
+
+  \indexspace
+
+  \item {cal\discretionary {-}{}{}Interaction\discretionary {-}{}{}Key}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+  \item {callback}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {Cellular\discretionary {-}{}{}Location}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}, \hyperpage{75}
+  \item {Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+  \item {Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {char\-\_\-encoding\-\_\-\-Big5}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {char\-\_\-encoding\-\_\-\-G\-B2312}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {char\-\_\-encoding\-\_\-\-G\-B\-K}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {char\-\_\-encoding\-\_\-\-U\-T\-F8}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {char\-\_\-encoding\-\_\-error}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {char\-\_\-encoding\-\_\-legacy}
+    \subitem {X\-M\-L\-Node}, \hyperpage{263}
+  \item {chebi\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {chebiowl.\discretionary {-}{}{}h}, \hyperpage{278}
+  \item {check\discretionary {-}{}{}Id\discretionary {-}{}{}Pair}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{251}
+  \item {child}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{266}
+  \item {Class\discretionary {-}{}{}Bean}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {class\discretionary {-}{}{}Bean}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Term\discretionary {-}{}{}Result}, \hyperpage{216}
+  \item {class\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+  \item {clean\discretionary {-}{}{}String}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {clear}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{266}
+  \item {Complex}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Complex}, \hyperpage{88}
+  \item {connect}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+  \item {Control}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{93}
+  \item {Conversion}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Conversion}, \hyperpage{97}
+  \item {count}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean\discretionary {-}{}{}::relation\discretionary {-}{}{}Data\discretionary {-}{}{}Structure}, \hyperpage{192}
+  \item {Create or Update the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{25}
+  \item {create\discretionary {-}{}{}Id\discretionary {-}{}{}Pair}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+  \item {create\discretionary {-}{}{}Relation\discretionary {-}{}{}Insert}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {create\discretionary {-}{}{}Relation\discretionary {-}{}{}Remove}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {create\discretionary {-}{}{}Track}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{17}
+  \item {Create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}R}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+  \item {create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Top\discretionary {-}{}{}Node}
+    \subitem {Creating from scratch a X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{27}
+  \item {create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Top\discretionary {-}{}{}Node\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{33}
+  \item {Creating from scratch a X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{26}
+    \subitem {add\discretionary {-}{}{}Attribute}, \hyperpage{26}
+    \subitem {add\discretionary {-}{}{}Child}, \hyperpage{26}
+    \subitem {add\discretionary {-}{}{}Clear}, \hyperpage{26}
+    \subitem {add\discretionary {-}{}{}Text}, \hyperpage{27}
+    \subitem {create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Top\discretionary {-}{}{}Node}, \hyperpage{27}
+  \item {curl\discretionary {-}{}{}Handle}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{197}
+  \item {curl\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{197}
+
+  \indexspace
+
+  \item {d}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {D\-B\-\_\-\-C\-A\-N\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T}
+    \subitem {unisys}, \hyperpage{44}
+  \item {D\-B\-\_\-\-C\-A\-N\-N\-O\-T\-\_\-\-I\-N\-S\-E\-R\-T}
+    \subitem {unisys}, \hyperpage{44}
+  \item {D\-B\-\_\-\-O\-K}
+    \subitem {unisys}, \hyperpage{44}
+  \item {D\discretionary {-}{}{}B\discretionary {-}{}{}Class.\discretionary {-}{}{}h}, \hyperpage{281}
+  \item {D\discretionary {-}{}{}N\discretionary {-}{}{}A}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{110}
+  \item {D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{113}
+  \item {data}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{107}
+  \item {Data\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Error}, \hyperpage{101}
+  \item {Data\discretionary {-}{}{}Obj}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {Database}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+  \item {database.\discretionary {-}{}{}h}, \hyperpage{279}
+  \item {database\discretionary {-}{}{}Handle}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{254}
+  \item {db\discretionary {-}{}{}Status}
+    \subitem {unisys}, \hyperpage{44}
+  \item {dbname}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+  \item {decode}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+  \item {decode\discretionary {-}{}{}Size}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+  \item {deep\discretionary {-}{}{}Copy}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{22}
+  \item {definitions}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {delete\discretionary {-}{}{}Attribute}
+    \subitem {Deleting Nodes or Attributes}, \hyperpage{30}
+  \item {delete\discretionary {-}{}{}Clear}
+    \subitem {Deleting Nodes or Attributes}, \hyperpage{31}
+  \item {delete\discretionary {-}{}{}Node\discretionary {-}{}{}Content}
+    \subitem {Deleting Nodes or Attributes}, \hyperpage{31}
+  \item {delete\discretionary {-}{}{}Text}
+    \subitem {Deleting Nodes or Attributes}, \hyperpage{31}
+  \item {Deleting Nodes or Attributes}, \hyperpage{30}
+    \subitem {delete\discretionary {-}{}{}Attribute}, \hyperpage{30}
+    \subitem {delete\discretionary {-}{}{}Clear}, \hyperpage{31}
+    \subitem {delete\discretionary {-}{}{}Node\discretionary {-}{}{}Content}, \hyperpage{31}
+    \subitem {delete\discretionary {-}{}{}Text}, \hyperpage{31}
+  \item {detach\discretionary {-}{}{}From\discretionary {-}{}{}Parent}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+
+  \indexspace
+
+  \item {e\-Node\-Attribute}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-Node\-Child}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-Node\-Clear}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-Node\-N\-U\-L\-L}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-Node\-Text}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Cannot\-Write\-File}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Char\-Conversion\-Error}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Character\-Code\-Above255}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Empty}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-File\-Not\-Found}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Missing\-End\-Tag}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Missing\-Tag\-Name}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-No\-Elements}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-None}
+    \subitem {xml\-Parser.\-h}, \hyperpage{300}
+  \item {e\-X\-M\-L\-Error\-Unexpected\-Token}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Unknown\-Character\-Entity}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {e\-X\-M\-L\-Error\-Unmatched\-End\-Tag}
+    \subitem {xml\-Parser.\-h}, \hyperpage{301}
+  \item {empty\discretionary {-}{}{}Node}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{22}
+  \item {empty\discretionary {-}{}{}The\discretionary {-}{}{}Node}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {empty\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Attribute}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {empty\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {empty\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {encode}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+  \item {encode\discretionary {-}{}{}Length}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{271}
+  \item {end}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {enum\discretionary {-}{}{}Contents}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{22}
+  \item {error}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Results}, \hyperpage{272}
+  \item {error\discretionary {-}{}{}Code}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{210}
+  \item {error\discretionary {-}{}{}Long\discretionary {-}{}{}Message}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{210}
+  \item {error\discretionary {-}{}{}Msg}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Uni\discretionary {-}{}{}Sys\discretionary {-}{}{}Error}, \hyperpage{247}
+  \item {etype}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{266}
+  \item {Evidence}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{116}
+  \item {exact\discretionary {-}{}{}Memory}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {exception.\discretionary {-}{}{}h}, \hyperpage{283}
+  \item {experiment\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {explain}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+
+  \indexspace
+
+  \item {F\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}S\discretionary {-}{}{}E}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {fetch\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Ref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+  \item {field\discretionary {-}{}{}Set}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{107}
+  \item {find\discretionary {-}{}{}Position}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {free\discretionary {-}{}{}Buffer}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{271}
+  \item {free\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String}
+    \subitem {String Allocation/\discretionary {-}{}{}Free functions}, \hyperpage{37}
+  \item {full\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+
+  \indexspace
+
+  \item {gen\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+  \item {Genetic\discretionary {-}{}{}Interaction}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Genetic\discretionary {-}{}{}Interaction}, \hyperpage{120}
+  \item {get\discretionary {-}{}{}Access\discretionary {-}{}{}Date}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {get\discretionary {-}{}{}Accessed\discretionary {-}{}{}Resource}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {get\discretionary {-}{}{}Annotation\discretionary {-}{}{}Properties}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Attribute}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{22}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+  \item {get\discretionary {-}{}{}Attribute\discretionary {-}{}{}Name}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+  \item {get\discretionary {-}{}{}Attribute\discretionary {-}{}{}Value}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+  \item {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+  \item {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node\discretionary {-}{}{}By\discretionary {-}{}{}Path}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+  \item {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node\discretionary {-}{}{}By\discretionary {-}{}{}Path\discretionary {-}{}{}Non\discretionary {-}{}{}Const}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+  \item {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node\discretionary {-}{}{}With\discretionary {-}{}{}Attribute}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+  \item {get\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Term\discretionary {-}{}{}Result}, \hyperpage{216}
+  \item {get\discretionary {-}{}{}Class\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+  \item {get\discretionary {-}{}{}Clear}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+  \item {get\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Name}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+  \item {get\discretionary {-}{}{}Definition}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {get\discretionary {-}{}{}Definitions}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {get\discretionary {-}{}{}Error}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{18}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {get\discretionary {-}{}{}Field}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {get\discretionary {-}{}{}File\discretionary {-}{}{}Annotation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+  \item {get\discretionary {-}{}{}Formula}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Full\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {get\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{123}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {get\discretionary {-}{}{}Id\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean\discretionary {-}{}{}::relation\discretionary {-}{}{}Data\discretionary {-}{}{}Structure}, \hyperpage{192}
+  \item {get\discretionary {-}{}{}In\discretionary {-}{}{}Chi}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}In\discretionary {-}{}{}Chi\discretionary {-}{}{}Key}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Label}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {get\discretionary {-}{}{}N\discretionary {-}{}{}S}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{123}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {get\discretionary {-}{}{}Name}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {get\discretionary {-}{}{}Node\discretionary {-}{}{}Attribute\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+  \item {get\discretionary {-}{}{}Node\discretionary {-}{}{}Availability\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+  \item {get\discretionary {-}{}{}Node\discretionary {-}{}{}Experiment\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+  \item {get\discretionary {-}{}{}Node\discretionary {-}{}{}Interaction\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {get\discretionary {-}{}{}Node\discretionary {-}{}{}Interactor\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {get\discretionary {-}{}{}Node\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {get\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Node}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {get\discretionary {-}{}{}Ontology\discretionary {-}{}{}Hit\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+  \item {get\discretionary {-}{}{}Parent\discretionary {-}{}{}Node}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{23}
+  \item {get\discretionary {-}{}{}Participant}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+  \item {get\discretionary {-}{}{}Property\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Property\discretionary {-}{}{}Value}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+  \item {get\discretionary {-}{}{}Relation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {get\discretionary {-}{}{}Relations}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {get\discretionary {-}{}{}Relationship}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {get\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {get\discretionary {-}{}{}Result\discretionary {-}{}{}In\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {get\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Search\discretionary {-}{}{}Result\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+  \item {get\discretionary {-}{}{}Service\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+  \item {get\discretionary {-}{}{}Sp\discretionary {-}{}{}Annotation\discretionary {-}{}{}Property}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Sp\discretionary {-}{}{}Sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Specific\discretionary {-}{}{}Ontology}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{205}
+  \item {get\discretionary {-}{}{}Sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {get\discretionary {-}{}{}Synonyms}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {get\discretionary {-}{}{}Text}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+  \item {get\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+  \item {get\discretionary {-}{}{}Version}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {global\discretionary {-}{}{}Clean}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {global\discretionary {-}{}{}Init}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {guess\discretionary {-}{}{}Char\discretionary {-}{}{}Encoding}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{18}
+
+  \indexspace
+
+  \item {has\discretionary {-}{}{}Field}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {header}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{202}
+  \item {Helper class to create X\discretionary {-}{}{}M\discretionary {-}{}{}L files using "printf", "fprintf", "cout",... functions.}, \hyperpage{39}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{39}
+  \item {Helper class to include binary data inside X\discretionary {-}{}{}M\discretionary {-}{}{}L strings using "Base64 encoding".}, \hyperpage{40}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{40}
+
+  \indexspace
+
+  \item {id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{147}
+  \item {id\discretionary {-}{}{}Converter}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{252}
+  \item {Id\discretionary {-}{}{}Ref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{123}
+  \item {inchi}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {inchi\discretionary {-}{}{}Key}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {increase\discretionary {-}{}{}Ver}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {index\discretionary {-}{}{}Clear}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {index\discretionary {-}{}{}Text}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {init\discretionary {-}{}{}Field}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Annotation}, \hyperpage{48}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{54}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{59}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{71}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}, \hyperpage{75}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Complex}, \hyperpage{88}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{93}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Conversion}, \hyperpage{97}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{110}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{113}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{116}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Genetic\discretionary {-}{}{}Interaction}, \hyperpage{120}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{123}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{133}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Literal}, \hyperpage{136}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{140}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Metadata}, \hyperpage{143}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Molecular\discretionary {-}{}{}Interaction}, \hyperpage{150}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ontology}, \hyperpage{162}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Physical\discretionary {-}{}{}Entity}, \hyperpage{174}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Protein}, \hyperpage{177}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{225}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Score}, \hyperpage{228}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{237}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Tracking}, \hyperpage{242}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Transport}, \hyperpage{245}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{275}
+  \item {init\discretionary {-}{}{}Member}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{123}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Int\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{130}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{159}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{171}
+  \item {insert}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Batch\discretionary {-}{}{}Insert}, \hyperpage{51}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{252}
+  \item {insert\discretionary {-}{}{}Publication\discretionary {-}{}{}Support}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{116}
+  \item {Int\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Int\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{130}
+  \item {Interaction}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+  \item {interaction\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {interactor\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {is\discretionary {-}{}{}Attribute\discretionary {-}{}{}Set}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+  \item {is\discretionary {-}{}{}Declaration}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {is\discretionary {-}{}{}Empty}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+  \item {is\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {is\discretionary {-}{}{}Obsolete}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {is\discretionary {-}{}{}Owned}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {is\discretionary {-}{}{}Response\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {is\discretionary {-}{}{}Valid}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{124}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+
+  \indexspace
+
+  \item {Kinetic\discretionary {-}{}{}Parameter}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{133}
+
+  \indexspace
+
+  \item {label}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{81}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{85}
+  \item {length\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+  \item {list}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean\discretionary {-}{}{}::relation\discretionary {-}{}{}Data\discretionary {-}{}{}Structure}, \hyperpage{192}
+  \item {list\discretionary {-}{}{}All\discretionary {-}{}{}Lastest\discretionary {-}{}{}Ontologies}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{205}
+  \item {Lit\discretionary {-}{}{}Class.\discretionary {-}{}{}h}, \hyperpage{284}
+  \item {Literal}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Literal}, \hyperpage{136}
+  \item {Literal\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Literal\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N}, \hyperpage{137}
+  \item {lpsz\discretionary {-}{}{}Close\discretionary {-}{}{}Tag}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}, \hyperpage{256}
+  \item {lpsz\discretionary {-}{}{}Name}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Attribute}, \hyperpage{255}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {lpsz\discretionary {-}{}{}Open\discretionary {-}{}{}Tag}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}, \hyperpage{256}
+  \item {lpsz\discretionary {-}{}{}Value}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Attribute}, \hyperpage{255}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}, \hyperpage{256}
+
+  \indexspace
+
+  \item {map\discretionary {-}{}{}Of\discretionary {-}{}{}String\discretionary {-}{}{}String}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+  \item {map\discretionary {-}{}{}Of\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+  \item {Math\discretionary {-}{}{}M\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{140}
+  \item {maybe\discretionary {-}{}{}Add\discretionary {-}{}{}Tx\discretionary {-}{}{}T}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {md5}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {Metadata}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Metadata}, \hyperpage{143}
+  \item {Miriam}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{145}
+  \item {Molecular\discretionary {-}{}{}Interaction}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Molecular\discretionary {-}{}{}Interaction}, \hyperpage{150}
+
+  \indexspace
+
+  \item {n\discretionary {-}{}{}Attribute}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{68}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {n\discretionary {-}{}{}Child}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {n\discretionary {-}{}{}Child\discretionary {-}{}{}Node}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{68}
+  \item {n\discretionary {-}{}{}Clear}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {n\discretionary {-}{}{}Column}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Results}, \hyperpage{272}
+  \item {n\discretionary {-}{}{}Element}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+  \item {n\discretionary {-}{}{}Line}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Results}, \hyperpage{272}
+  \item {n\discretionary {-}{}{}Search\discretionary {-}{}{}Results}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+  \item {n\discretionary {-}{}{}Text}
+    \subitem {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{24}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {Navigate the X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure}, \hyperpage{21}
+    \subitem {deep\discretionary {-}{}{}Copy}, \hyperpage{22}
+    \subitem {empty\discretionary {-}{}{}Node}, \hyperpage{22}
+    \subitem {enum\discretionary {-}{}{}Contents}, \hyperpage{22}
+    \subitem {get\discretionary {-}{}{}Attribute}, \hyperpage{22}
+    \subitem {get\discretionary {-}{}{}Attribute\discretionary {-}{}{}Name}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Attribute\discretionary {-}{}{}Value}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node\discretionary {-}{}{}By\discretionary {-}{}{}Path}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node\discretionary {-}{}{}By\discretionary {-}{}{}Path\discretionary {-}{}{}Non\discretionary {-}{}{}Const}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node\discretionary {-}{}{}With\discretionary {-}{}{}Attribute}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Clear}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Name}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Parent\discretionary {-}{}{}Node}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Text}, \hyperpage{24}
+    \subitem {is\discretionary {-}{}{}Attribute\discretionary {-}{}{}Set}, \hyperpage{24}
+    \subitem {is\discretionary {-}{}{}Declaration}, \hyperpage{24}
+    \subitem {is\discretionary {-}{}{}Empty}, \hyperpage{24}
+    \subitem {n\discretionary {-}{}{}Attribute}, \hyperpage{24}
+    \subitem {n\discretionary {-}{}{}Child\discretionary {-}{}{}Node}, \hyperpage{24}
+    \subitem {n\discretionary {-}{}{}Clear}, \hyperpage{24}
+    \subitem {n\discretionary {-}{}{}Element}, \hyperpage{24}
+    \subitem {n\discretionary {-}{}{}Text}, \hyperpage{24}
+  \item {ns}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{147}
+
+  \indexspace
+
+  \item {O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+  \item {Obj\discretionary {-}{}{}Class.\discretionary {-}{}{}h}, \hyperpage{286}
+  \item {obj\discretionary {-}{}{}Element.\discretionary {-}{}{}h}, \hyperpage{288}
+  \item {Object}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{153}
+  \item {object}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{68}
+  \item {objects}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+  \item {obo\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L.\discretionary {-}{}{}h}, \hyperpage{288}
+  \item {Onto\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{159}
+  \item {Onto\discretionary {-}{}{}Relationship}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+  \item {Ontology}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ontology}, \hyperpage{162}
+  \item {ontology\discretionary {-}{}{}Hit\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+  \item {open\discretionary {-}{}{}File\discretionary {-}{}{}Helper}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{18}
+  \item {operator$<$}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{133}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{275}
+  \item {operator$<$=}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {operator$>$}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {operator$>$=}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {operator++}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {operator=}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {operator==}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {owl\discretionary {-}{}{}Ontology}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+
+  \indexspace
+
+  \item {p\discretionary {-}{}{}Attribute}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {p\discretionary {-}{}{}Child}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {p\discretionary {-}{}{}Clear}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {P\discretionary {-}{}{}E\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{171}
+  \item {p\discretionary {-}{}{}Order}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {p\discretionary {-}{}{}Parent}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+  \item {p\discretionary {-}{}{}Text}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {parse}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {parse\discretionary {-}{}{}Annotation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {parse\discretionary {-}{}{}Clear\discretionary {-}{}{}Tag}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {parse\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {parse\discretionary {-}{}{}File}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{18}
+  \item {parse\discretionary {-}{}{}String}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{19}
+  \item {parse\discretionary {-}{}{}Sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+  \item {Parse\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Element}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {parser.\discretionary {-}{}{}h}, \hyperpage{289}
+  \item {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{17}
+    \subitem {create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String}, \hyperpage{17}
+    \subitem {get\discretionary {-}{}{}Error}, \hyperpage{18}
+    \subitem {guess\discretionary {-}{}{}Char\discretionary {-}{}{}Encoding}, \hyperpage{18}
+    \subitem {open\discretionary {-}{}{}File\discretionary {-}{}{}Helper}, \hyperpage{18}
+    \subitem {parse\discretionary {-}{}{}File}, \hyperpage{18}
+    \subitem {parse\discretionary {-}{}{}String}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Global\discretionary {-}{}{}Options}, \hyperpage{19}
+    \subitem {write\discretionary {-}{}{}To\discretionary {-}{}{}File}, \hyperpage{20}
+  \item {Parsing\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Parsing\discretionary {-}{}{}Error}, \hyperpage{167}
+  \item {perform}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {perform\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}G\discretionary {-}{}{}E\discretionary {-}{}{}T}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {perform\discretionary {-}{}{}One}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+  \item {perform\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {Physical\discretionary {-}{}{}Entity}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Physical\discretionary {-}{}{}Entity}, \hyperpage{174}
+  \item {Position helper functions (use in conjunction with the update\&add functions}, \hyperpage{35}
+    \subitem {position\discretionary {-}{}{}Of\discretionary {-}{}{}Child\discretionary {-}{}{}Node}, \hyperpage{35}
+    \subitem {position\discretionary {-}{}{}Of\discretionary {-}{}{}Clear}, \hyperpage{35}
+    \subitem {position\discretionary {-}{}{}Of\discretionary {-}{}{}Text}, \hyperpage{35}
+  \item {position\discretionary {-}{}{}Of\discretionary {-}{}{}Child\discretionary {-}{}{}Node}
+    \subitem {Position helper functions (use in conjunction with the update\&add functions}, \hyperpage{35}
+  \item {position\discretionary {-}{}{}Of\discretionary {-}{}{}Clear}
+    \subitem {Position helper functions (use in conjunction with the update\&add functions}, \hyperpage{35}
+  \item {position\discretionary {-}{}{}Of\discretionary {-}{}{}Text}
+    \subitem {Position helper functions (use in conjunction with the update\&add functions}, \hyperpage{35}
+  \item {print}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {Protein}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Protein}, \hyperpage{177}
+  \item {psimi.\discretionary {-}{}{}h}, \hyperpage{289}
+
+  \indexspace
+
+  \item {Query}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+  \item {query}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+  \item {query.\discretionary {-}{}{}h}, \hyperpage{290}
+  \item {query\discretionary {-}{}{}By\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+  \item {Query\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query\discretionary {-}{}{}Error}, \hyperpage{186}
+
+  \indexspace
+
+  \item {R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+  \item {R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}Service\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}Service\discretionary {-}{}{}Error}, \hyperpage{221}
+  \item {R\discretionary {-}{}{}N\discretionary {-}{}{}A}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{225}
+  \item {ref\discretionary {-}{}{}\_\discretionary {-}{}{}count}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{268}
+  \item {Relation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+  \item {relation\discretionary {-}{}{}Map}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{154}
+  \item {relation\discretionary {-}{}{}Struct}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{83}
+  \item {relations}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{85}
+  \item {remove}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{252, 253}
+  \item {remove\discretionary {-}{}{}Field}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+  \item {remove\discretionary {-}{}{}Order\discretionary {-}{}{}Element}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+  \item {require\discretionary {-}{}{}Field}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{107}
+  \item {resolve}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Miriam}, \hyperpage{219}
+  \item {response\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{202}
+  \item {rest.\discretionary {-}{}{}h}, \hyperpage{291}
+  \item {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{202}
+  \item {rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart.\discretionary {-}{}{}h}, \hyperpage{293}
+    \subitem {B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}V\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}, \hyperpage{293}
+  \item {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{202}
+  \item {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{205}
+  \item {rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal.\discretionary {-}{}{}h}, \hyperpage{293}
+  \item {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+  \item {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Term\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Term\discretionary {-}{}{}Result}, \hyperpage{216}
+  \item {Rest\discretionary {-}{}{}Miriam}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Miriam}, \hyperpage{219}
+  \item {rest\discretionary {-}{}{}Miriam.\discretionary {-}{}{}h}, \hyperpage{294}
+  \item {result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{197}
+
+  \indexspace
+
+  \item {Score}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Score}, \hyperpage{228}
+  \item {search}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{205}
+  \item {search\discretionary {-}{}{}Result\discretionary {-}{}{}List}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+  \item {service\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+  \item {set}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {set\discretionary {-}{}{}Annotation}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{237}
+  \item {set\discretionary {-}{}{}Biological\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{116}
+  \item {set\discretionary {-}{}{}Cell\discretionary {-}{}{}State}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{71, 72}
+  \item {set\discretionary {-}{}{}Cell\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{72}
+  \item {set\discretionary {-}{}{}Coefficient}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+  \item {set\discretionary {-}{}{}Comment}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Literal}, \hyperpage{136}
+  \item {set\discretionary {-}{}{}Confidence}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{116}
+  \item {set\discretionary {-}{}{}Controlled}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{93}
+  \item {set\discretionary {-}{}{}Controller}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{94}
+  \item {set\discretionary {-}{}{}Conversion\discretionary {-}{}{}Direction}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{55}
+  \item {set\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Name}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+  \item {set\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{225}
+  \item {set\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{113}
+  \item {set\discretionary {-}{}{}Data\discretionary {-}{}{}Primary\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{63}
+  \item {set\discretionary {-}{}{}Db\discretionary {-}{}{}Handle}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{253}
+  \item {set\discretionary {-}{}{}Definition}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Annotation}, \hyperpage{48}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ontology}, \hyperpage{162}
+  \item {set\discretionary {-}{}{}Detail}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Metadata}, \hyperpage{143}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{276}
+  \item {set\discretionary {-}{}{}Evidence}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Annotation}, \hyperpage{48}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}, \hyperpage{75}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{133}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{140}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+  \item {set\discretionary {-}{}{}Evidence\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{117}
+  \item {set\discretionary {-}{}{}Experiment\discretionary {-}{}{}Method}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{117}
+  \item {set\discretionary {-}{}{}Formula}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+  \item {set\discretionary {-}{}{}Functional}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Conversion}, \hyperpage{97}
+  \item {set\discretionary {-}{}{}Global\discretionary {-}{}{}Options}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Int\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{130}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{154}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{159}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{171}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{276}
+  \item {set\discretionary {-}{}{}In\discretionary {-}{}{}Chi}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+  \item {set\discretionary {-}{}{}In\discretionary {-}{}{}Chi\discretionary {-}{}{}Key}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+  \item {set\discretionary {-}{}{}Interaction\discretionary {-}{}{}Key}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{59}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+  \item {set\discretionary {-}{}{}Interaction\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Genetic\discretionary {-}{}{}Interaction}, \hyperpage{120}
+  \item {set\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Law}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Molecular\discretionary {-}{}{}Interaction}, \hyperpage{150}
+  \item {set\discretionary {-}{}{}Length}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{110}
+  \item {set\discretionary {-}{}{}Location}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}, \hyperpage{75}
+  \item {set\discretionary {-}{}{}Main\discretionary {-}{}{}Name}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{63}
+  \item {set\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Detail}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{140}
+  \item {set\discretionary {-}{}{}Miriam\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}N}
+    \subitem {unisys}, \hyperpage{44}
+  \item {set\discretionary {-}{}{}N\discretionary {-}{}{}S}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ontology}, \hyperpage{162}
+  \item {set\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+  \item {set\discretionary {-}{}{}Participant}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+  \item {set\discretionary {-}{}{}Phenotype}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Genetic\discretionary {-}{}{}Interaction}, \hyperpage{120}
+  \item {set\discretionary {-}{}{}Position}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{113}
+  \item {set\discretionary {-}{}{}Query}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+  \item {set\discretionary {-}{}{}Relation\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+  \item {set\discretionary {-}{}{}Relation\discretionary {-}{}{}With}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+  \item {set\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{232}
+  \item {set\discretionary {-}{}{}Sci\discretionary {-}{}{}Name}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{72}
+  \item {set\discretionary {-}{}{}Score\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Score}, \hyperpage{228}
+  \item {set\discretionary {-}{}{}Service\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+  \item {set\discretionary {-}{}{}Source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{110}
+  \item {set\discretionary {-}{}{}Spontaneous}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Conversion}, \hyperpage{97}
+  \item {set\discretionary {-}{}{}Stain}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{72}
+  \item {set\discretionary {-}{}{}Strand}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{237}
+  \item {set\discretionary {-}{}{}Taxonomic\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{72}
+  \item {set\discretionary {-}{}{}Term}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{134}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ontology}, \hyperpage{162}
+  \item {set\discretionary {-}{}{}Tissue\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{72}
+  \item {set\discretionary {-}{}{}Type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{63}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{276}
+  \item {set\discretionary {-}{}{}Unit}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{134}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Score}, \hyperpage{228}
+  \item {set\discretionary {-}{}{}Uri}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {set\discretionary {-}{}{}Value}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{134}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Score}, \hyperpage{228}
+  \item {Small\discretionary {-}{}{}Molecule}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+  \item {smiles}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{81}
+  \item {sort}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+  \item {source}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{181}
+  \item {Stanza}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {stanzas}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+  \item {stanzas\discretionary {-}{}{}Begin}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+  \item {stanzas\discretionary {-}{}{}End}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+  \item {String Allocation/\discretionary {-}{}{}Free functions}, \hyperpage{37}
+    \subitem {free\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String}, \hyperpage{37}
+    \subitem {string\discretionary {-}{}{}Dup}, \hyperpage{37}
+  \item {string\discretionary {-}{}{}Dup}
+    \subitem {String Allocation/\discretionary {-}{}{}Free functions}, \hyperpage{37}
+  \item {sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{81}
+  \item {Sub\discretionary {-}{}{}Region}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{237}
+  \item {synonyms}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{85}
+
+  \indexspace
+
+  \item {T\discretionary {-}{}{}R\discretionary {-}{}{}U\discretionary {-}{}{}E}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {term}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{206}
+  \item {text}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{266}
+  \item {The X\discretionary {-}{}{}M\discretionary {-}{}{}L parser}, \hyperpage{15}
+  \item {to\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}Array}
+    \subitem {unisys}, \hyperpage{44}
+  \item {to\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}Obj}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{127}
+  \item {to\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {to\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Id\discretionary {-}{}{}With\discretionary {-}{}{}Ver}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {to\discretionary {-}{}{}Id}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {to\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}N\discretionary {-}{}{}String}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{55}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{59}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{190}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Transport}, \hyperpage{245}
+  \item {to\discretionary {-}{}{}String}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Tracking}, \hyperpage{242}
+  \item {to\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}I}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {to\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}With\discretionary {-}{}{}Ver}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{146}
+  \item {to\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{238}
+    \subitem {$\sim $\discretionary {-}{}{}To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+    \subitem {buf}, \hyperpage{239}
+    \subitem {buflen}, \hyperpage{239}
+    \subitem {free\discretionary {-}{}{}Buffer}, \hyperpage{239}
+    \subitem {Helper class to create X\discretionary {-}{}{}M\discretionary {-}{}{}L files using \char `\"{}printf\char `\"{}, \char `\"{}fprintf\char `\"{}, \char `\"{}cout\char `\"{},... functions.}, \hyperpage{39}
+    \subitem {length\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String}, \hyperpage{239}
+    \subitem {to\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{239}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+    \subitem {to\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Un\discretionary {-}{}{}Safe}, \hyperpage{239}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+  \item {to\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Un\discretionary {-}{}{}Safe}
+    \subitem {To\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}Tool}, \hyperpage{239}
+  \item {Tracking}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Tracking}, \hyperpage{242}
+  \item {Transport}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Transport}, \hyperpage{245}
+  \item {type}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{85}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean\discretionary {-}{}{}::relation\discretionary {-}{}{}Data\discretionary {-}{}{}Structure}, \hyperpage{192}
+
+  \indexspace
+
+  \item {unisys}, \hyperpage{41}
+    \subitem {B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}To\discretionary {-}{}{}Set}, \hyperpage{44}
+    \subitem {B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}To\discretionary {-}{}{}Vector}, \hyperpage{44}
+    \subitem {D\-B\-\_\-\-C\-A\-N\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T}, \hyperpage{44}
+    \subitem {D\-B\-\_\-\-C\-A\-N\-N\-O\-T\-\_\-\-I\-N\-S\-E\-R\-T}, \hyperpage{44}
+    \subitem {D\-B\-\_\-\-O\-K}, \hyperpage{44}
+    \subitem {db\discretionary {-}{}{}Status}, \hyperpage{44}
+    \subitem {set\discretionary {-}{}{}Miriam\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}N}, \hyperpage{44}
+    \subitem {to\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}Array}, \hyperpage{44}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Annotation}, \hyperpage{45}
+    \subitem {Annotation}, \hyperpage{48}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{48}
+    \subitem {set\discretionary {-}{}{}Definition}, \hyperpage{48}
+    \subitem {set\discretionary {-}{}{}Evidence}, \hyperpage{48}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{63}
+    \subitem {B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X2}, \hyperpage{65}
+    \subitem {begin}, \hyperpage{65}
+    \subitem {biopax}, \hyperpage{65}
+    \subitem {biopax\discretionary {-}{}{}Obj\discretionary {-}{}{}Map}, \hyperpage{65}
+    \subitem {end}, \hyperpage{65}
+    \subitem {get\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{65}
+    \subitem {objects}, \hyperpage{65}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{66}
+    \subitem {B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}obj}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Attribute}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Attribute\discretionary {-}{}{}Name}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Attribute\discretionary {-}{}{}Value}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Child\discretionary {-}{}{}Node}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Id}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Property\discretionary {-}{}{}Value}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Type}, \hyperpage{67}
+    \subitem {n\discretionary {-}{}{}Attribute}, \hyperpage{68}
+    \subitem {n\discretionary {-}{}{}Child\discretionary {-}{}{}Node}, \hyperpage{68}
+    \subitem {object}, \hyperpage{68}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Batch\discretionary {-}{}{}Insert}, \hyperpage{49}
+    \subitem {Batch\discretionary {-}{}{}Insert}, \hyperpage{51}
+    \subitem {insert}, \hyperpage{51}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Object}, \hyperpage{59}
+    \subitem {add\discretionary {-}{}{}Annotation}, \hyperpage{62}
+    \subitem {add\discretionary {-}{}{}Data\discretionary {-}{}{}Xref}, \hyperpage{62}
+    \subitem {add\discretionary {-}{}{}Evidence}, \hyperpage{62}
+    \subitem {add\discretionary {-}{}{}Synonyms}, \hyperpage{62}
+    \subitem {Bio\discretionary {-}{}{}Object}, \hyperpage{62}
+    \subitem {create\discretionary {-}{}{}Id\discretionary {-}{}{}Pair}, \hyperpage{62}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{62}
+    \subitem {set\discretionary {-}{}{}Comment}, \hyperpage{62}
+    \subitem {set\discretionary {-}{}{}Data\discretionary {-}{}{}Primary\discretionary {-}{}{}Source}, \hyperpage{63}
+    \subitem {set\discretionary {-}{}{}Main\discretionary {-}{}{}Name}, \hyperpage{63}
+    \subitem {set\discretionary {-}{}{}Type}, \hyperpage{63}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Bio\discretionary {-}{}{}Source}, \hyperpage{68}
+    \subitem {Bio\discretionary {-}{}{}Source}, \hyperpage{71}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{71}
+    \subitem {set\discretionary {-}{}{}Cell\discretionary {-}{}{}State}, \hyperpage{71, 72}
+    \subitem {set\discretionary {-}{}{}Cell\discretionary {-}{}{}Type}, \hyperpage{72}
+    \subitem {set\discretionary {-}{}{}Sci\discretionary {-}{}{}Name}, \hyperpage{72}
+    \subitem {set\discretionary {-}{}{}Stain}, \hyperpage{72}
+    \subitem {set\discretionary {-}{}{}Taxonomic\discretionary {-}{}{}Id}, \hyperpage{72}
+    \subitem {set\discretionary {-}{}{}Tissue\discretionary {-}{}{}Type}, \hyperpage{72}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{51}
+    \subitem {add\discretionary {-}{}{}Left}, \hyperpage{54}
+    \subitem {add\discretionary {-}{}{}Right}, \hyperpage{54}
+    \subitem {Biochemical\discretionary {-}{}{}Reaction}, \hyperpage{54}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{54}
+    \subitem {set\discretionary {-}{}{}Conversion\discretionary {-}{}{}Direction}, \hyperpage{55}
+    \subitem {to\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}N\discretionary {-}{}{}String}, \hyperpage{55}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{55}
+    \subitem {add\discretionary {-}{}{}Export}, \hyperpage{58}
+    \subitem {add\discretionary {-}{}{}Import}, \hyperpage{58}
+    \subitem {add\discretionary {-}{}{}Left\discretionary {-}{}{}In}, \hyperpage{58}
+    \subitem {add\discretionary {-}{}{}Left\discretionary {-}{}{}Out}, \hyperpage{58}
+    \subitem {add\discretionary {-}{}{}Right\discretionary {-}{}{}In}, \hyperpage{59}
+    \subitem {add\discretionary {-}{}{}Right\discretionary {-}{}{}Out}, \hyperpage{59}
+    \subitem {Biochemical\discretionary {-}{}{}Reaction\discretionary {-}{}{}With\discretionary {-}{}{}Transport}, \hyperpage{58}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Interaction\discretionary {-}{}{}Key}, \hyperpage{59}
+    \subitem {to\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}N\discretionary {-}{}{}String}, \hyperpage{59}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}, \hyperpage{72}
+    \subitem {Cellular\discretionary {-}{}{}Location}, \hyperpage{75}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{75}
+    \subitem {set\discretionary {-}{}{}Evidence}, \hyperpage{75}
+    \subitem {set\discretionary {-}{}{}Location}, \hyperpage{75}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{76}
+    \subitem {Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L}, \hyperpage{77}
+    \subitem {class\discretionary {-}{}{}List}, \hyperpage{77}
+    \subitem {get\discretionary {-}{}{}Class\discretionary {-}{}{}List}, \hyperpage{77}
+    \subitem {get\discretionary {-}{}{}File\discretionary {-}{}{}Annotation}, \hyperpage{77}
+    \subitem {get\discretionary {-}{}{}Version}, \hyperpage{77}
+    \subitem {owl\discretionary {-}{}{}Ontology}, \hyperpage{77}
+    \subitem {parse}, \hyperpage{77}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{78}
+    \subitem {Annotation\discretionary {-}{}{}Properties}, \hyperpage{80}
+    \subitem {Ch\discretionary {-}{}{}E\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}W\discretionary {-}{}{}L\discretionary {-}{}{}Class}, \hyperpage{80}
+    \subitem {chebi\discretionary {-}{}{}Id}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Annotation\discretionary {-}{}{}Properties}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Formula}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Id}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}In\discretionary {-}{}{}Chi}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}In\discretionary {-}{}{}Chi\discretionary {-}{}{}Key}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Label}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Property\discretionary {-}{}{}List}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Sp\discretionary {-}{}{}Annotation\discretionary {-}{}{}Property}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Sp\discretionary {-}{}{}Sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}, \hyperpage{80}
+    \subitem {inchi}, \hyperpage{80}
+    \subitem {inchi\discretionary {-}{}{}Key}, \hyperpage{80}
+    \subitem {label}, \hyperpage{81}
+    \subitem {parse}, \hyperpage{80}
+    \subitem {parse\discretionary {-}{}{}Annotation}, \hyperpage{80}
+    \subitem {parse\discretionary {-}{}{}Sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}, \hyperpage{80}
+    \subitem {smiles}, \hyperpage{81}
+    \subitem {sub\discretionary {-}{}{}Class\discretionary {-}{}{}Of}, \hyperpage{81}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{81}
+    \subitem {Class\discretionary {-}{}{}Bean}, \hyperpage{84}
+    \subitem {definitions}, \hyperpage{84}
+    \subitem {full\discretionary {-}{}{}Id}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Definitions}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Full\discretionary {-}{}{}Id}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Id}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Label}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Relations}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Synonyms}, \hyperpage{84}
+    \subitem {get\discretionary {-}{}{}Type}, \hyperpage{84}
+    \subitem {id}, \hyperpage{84}
+    \subitem {label}, \hyperpage{85}
+    \subitem {relation\discretionary {-}{}{}Struct}, \hyperpage{83}
+    \subitem {relations}, \hyperpage{85}
+    \subitem {synonyms}, \hyperpage{85}
+    \subitem {type}, \hyperpage{85}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Class\discretionary {-}{}{}Bean\discretionary {-}{}{}::relation\discretionary {-}{}{}Data\discretionary {-}{}{}Structure}, \hyperpage{191}
+    \subitem {count}, \hyperpage{192}
+    \subitem {get\discretionary {-}{}{}Id\discretionary {-}{}{}List}, \hyperpage{192}
+    \subitem {list}, \hyperpage{192}
+    \subitem {type}, \hyperpage{192}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Complex}, \hyperpage{85}
+    \subitem {add\discretionary {-}{}{}Complex\discretionary {-}{}{}Member}, \hyperpage{88}
+    \subitem {add\discretionary {-}{}{}Specific\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{88}
+    \subitem {Complex}, \hyperpage{88}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{88}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Connection\discretionary {-}{}{}Error}, \hyperpage{88}
+    \subitem {what}, \hyperpage{90}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Control}, \hyperpage{91}
+    \subitem {add\discretionary {-}{}{}Control\discretionary {-}{}{}Type}, \hyperpage{93}
+    \subitem {add\discretionary {-}{}{}Modification\discretionary {-}{}{}Type}, \hyperpage{93}
+    \subitem {add\discretionary {-}{}{}Phenotype}, \hyperpage{93}
+    \subitem {Control}, \hyperpage{93}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{93}
+    \subitem {set\discretionary {-}{}{}Controlled}, \hyperpage{93}
+    \subitem {set\discretionary {-}{}{}Controller}, \hyperpage{94}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Conversion}, \hyperpage{94}
+    \subitem {add\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Law}, \hyperpage{97}
+    \subitem {Conversion}, \hyperpage{97}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{97}
+    \subitem {set\discretionary {-}{}{}Functional}, \hyperpage{97}
+    \subitem {set\discretionary {-}{}{}Spontaneous}, \hyperpage{97}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{107}
+    \subitem {add\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{110}
+    \subitem {D\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{110}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{110}
+    \subitem {set\discretionary {-}{}{}Length}, \hyperpage{110}
+    \subitem {set\discretionary {-}{}{}Source}, \hyperpage{110}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{111}
+    \subitem {add\discretionary {-}{}{}Transcription\discretionary {-}{}{}Product}, \hyperpage{113}
+    \subitem {D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region}, \hyperpage{113}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{113}
+    \subitem {set\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Source}, \hyperpage{113}
+    \subitem {set\discretionary {-}{}{}Position}, \hyperpage{113}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Error}, \hyperpage{100}
+    \subitem {Data\discretionary {-}{}{}Error}, \hyperpage{101}
+    \subitem {what}, \hyperpage{101}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{102}
+    \subitem {add\discretionary {-}{}{}Field\discretionary {-}{}{}Set}, \hyperpage{105}
+    \subitem {add\discretionary {-}{}{}With\discretionary {-}{}{}Check}, \hyperpage{105}
+    \subitem {add\discretionary {-}{}{}With\discretionary {-}{}{}Out\discretionary {-}{}{}Check}, \hyperpage{105}
+    \subitem {append}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Array}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}As}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}As\discretionary {-}{}{}Number}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Code}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Ref}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Elements}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Elements\discretionary {-}{}{}Unique}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Null}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Regex}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Time\discretionary {-}{}{}Stamp}, \hyperpage{105}
+    \subitem {append\discretionary {-}{}{}Time\discretionary {-}{}{}T}, \hyperpage{105}
+    \subitem {data}, \hyperpage{107}
+    \subitem {Data\discretionary {-}{}{}Obj}, \hyperpage{105}
+    \subitem {field\discretionary {-}{}{}Set}, \hyperpage{107}
+    \subitem {gen\discretionary {-}{}{}O\discretionary {-}{}{}I\discretionary {-}{}{}D}, \hyperpage{105}
+    \subitem {get\discretionary {-}{}{}Field}, \hyperpage{106}
+    \subitem {has\discretionary {-}{}{}Field}, \hyperpage{106}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{106}
+    \subitem {is\discretionary {-}{}{}Owned}, \hyperpage{106}
+    \subitem {is\discretionary {-}{}{}Valid}, \hyperpage{106}
+    \subitem {md5}, \hyperpage{106}
+    \subitem {operator$<$}, \hyperpage{106}
+    \subitem {operator$<$=}, \hyperpage{106}
+    \subitem {operator$>$}, \hyperpage{106}
+    \subitem {operator$>$=}, \hyperpage{106}
+    \subitem {operator==}, \hyperpage{106}
+    \subitem {remove\discretionary {-}{}{}Field}, \hyperpage{106}
+    \subitem {require\discretionary {-}{}{}Field}, \hyperpage{107}
+    \subitem {set}, \hyperpage{106}
+    \subitem {sort}, \hyperpage{106}
+    \subitem {to\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}Obj}, \hyperpage{106}
+    \subitem {to\discretionary {-}{}{}String}, \hyperpage{106}
+    \subitem {valid}, \hyperpage{107}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{97}
+    \subitem {connect}, \hyperpage{99}
+    \subitem {Database}, \hyperpage{99}
+    \subitem {dbname}, \hyperpage{99}
+    \subitem {fetch\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Ref}, \hyperpage{99}
+    \subitem {get\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Name}, \hyperpage{99}
+    \subitem {set\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Name}, \hyperpage{99}
+    \subitem {Updater}, \hyperpage{99}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Evidence}, \hyperpage{114}
+    \subitem {Evidence}, \hyperpage{116}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{116}
+    \subitem {insert\discretionary {-}{}{}Publication\discretionary {-}{}{}Support}, \hyperpage{116}
+    \subitem {set\discretionary {-}{}{}Biological\discretionary {-}{}{}Source}, \hyperpage{116}
+    \subitem {set\discretionary {-}{}{}Confidence}, \hyperpage{116}
+    \subitem {set\discretionary {-}{}{}Evidence\discretionary {-}{}{}Source}, \hyperpage{117}
+    \subitem {set\discretionary {-}{}{}Experiment\discretionary {-}{}{}Method}, \hyperpage{117}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Genetic\discretionary {-}{}{}Interaction}, \hyperpage{117}
+    \subitem {Genetic\discretionary {-}{}{}Interaction}, \hyperpage{120}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{120}
+    \subitem {set\discretionary {-}{}{}Interaction\discretionary {-}{}{}Type}, \hyperpage{120}
+    \subitem {set\discretionary {-}{}{}Phenotype}, \hyperpage{120}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{121}
+    \subitem {get\discretionary {-}{}{}Id}, \hyperpage{123}
+    \subitem {get\discretionary {-}{}{}N\discretionary {-}{}{}S}, \hyperpage{123}
+    \subitem {Id\discretionary {-}{}{}Ref}, \hyperpage{123}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{123}
+    \subitem {init\discretionary {-}{}{}Member}, \hyperpage{123}
+    \subitem {is\discretionary {-}{}{}Valid}, \hyperpage{124}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Int\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{128}
+    \subitem {init\discretionary {-}{}{}Member}, \hyperpage{130}
+    \subitem {Int\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{130}
+    \subitem {set\discretionary {-}{}{}Id}, \hyperpage{130}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Interaction}, \hyperpage{124}
+    \subitem {cal\discretionary {-}{}{}Interaction\discretionary {-}{}{}Key}, \hyperpage{127}
+    \subitem {get\discretionary {-}{}{}Participant}, \hyperpage{127}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{127}
+    \subitem {Interaction}, \hyperpage{127}
+    \subitem {set\discretionary {-}{}{}Interaction\discretionary {-}{}{}Key}, \hyperpage{127}
+    \subitem {set\discretionary {-}{}{}Participant}, \hyperpage{127}
+    \subitem {to\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}Obj}, \hyperpage{127}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{130}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{133}
+    \subitem {Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{133}
+    \subitem {operator$<$}, \hyperpage{133}
+    \subitem {set\discretionary {-}{}{}Evidence}, \hyperpage{133}
+    \subitem {set\discretionary {-}{}{}Term}, \hyperpage{134}
+    \subitem {set\discretionary {-}{}{}Unit}, \hyperpage{134}
+    \subitem {set\discretionary {-}{}{}Value}, \hyperpage{134}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Literal}, \hyperpage{134}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{136}
+    \subitem {Literal}, \hyperpage{136}
+    \subitem {set\discretionary {-}{}{}Comment}, \hyperpage{136}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Literal\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N}, \hyperpage{136}
+    \subitem {Literal\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}N}, \hyperpage{137}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{137}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{140}
+    \subitem {Math\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{140}
+    \subitem {set\discretionary {-}{}{}Evidence}, \hyperpage{140}
+    \subitem {set\discretionary {-}{}{}Math\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Detail}, \hyperpage{140}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Metadata}, \hyperpage{140}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{143}
+    \subitem {Metadata}, \hyperpage{143}
+    \subitem {set\discretionary {-}{}{}Detail}, \hyperpage{143}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{143}
+    \subitem {id}, \hyperpage{147}
+    \subitem {increase\discretionary {-}{}{}Ver}, \hyperpage{146}
+    \subitem {is\discretionary {-}{}{}Valid}, \hyperpage{146}
+    \subitem {Miriam}, \hyperpage{145}
+    \subitem {ns}, \hyperpage{147}
+    \subitem {operator$<$}, \hyperpage{146}
+    \subitem {operator++}, \hyperpage{146}
+    \subitem {operator==}, \hyperpage{146}
+    \subitem {set}, \hyperpage{146}
+    \subitem {set\discretionary {-}{}{}Uri}, \hyperpage{146}
+    \subitem {to\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Id}, \hyperpage{146}
+    \subitem {to\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Id\discretionary {-}{}{}With\discretionary {-}{}{}Ver}, \hyperpage{146}
+    \subitem {to\discretionary {-}{}{}Id}, \hyperpage{146}
+    \subitem {to\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}I}, \hyperpage{146}
+    \subitem {to\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}With\discretionary {-}{}{}Ver}, \hyperpage{146}
+    \subitem {version}, \hyperpage{147}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Molecular\discretionary {-}{}{}Interaction}, \hyperpage{147}
+    \subitem {add\discretionary {-}{}{}Left}, \hyperpage{150}
+    \subitem {add\discretionary {-}{}{}Right}, \hyperpage{150}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{150}
+    \subitem {Molecular\discretionary {-}{}{}Interaction}, \hyperpage{150}
+    \subitem {set\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Law}, \hyperpage{150}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{154}
+    \subitem {header}, \hyperpage{156}
+    \subitem {O\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{156}
+    \subitem {source}, \hyperpage{156}
+    \subitem {stanzas}, \hyperpage{156}
+    \subitem {stanzas\discretionary {-}{}{}Begin}, \hyperpage{156}
+    \subitem {stanzas\discretionary {-}{}{}End}, \hyperpage{156}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Object}, \hyperpage{151}
+    \subitem {add\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{153}
+    \subitem {add\discretionary {-}{}{}Relation}, \hyperpage{153}
+    \subitem {create\discretionary {-}{}{}Relation\discretionary {-}{}{}Insert}, \hyperpage{153}
+    \subitem {create\discretionary {-}{}{}Relation\discretionary {-}{}{}Remove}, \hyperpage{153}
+    \subitem {create\discretionary {-}{}{}Track}, \hyperpage{153}
+    \subitem {get\discretionary {-}{}{}Relation}, \hyperpage{153}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{153}
+    \subitem {Object}, \hyperpage{153}
+    \subitem {relation\discretionary {-}{}{}Map}, \hyperpage{154}
+    \subitem {set\discretionary {-}{}{}Id}, \hyperpage{154}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{156}
+    \subitem {init\discretionary {-}{}{}Member}, \hyperpage{159}
+    \subitem {Onto\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{159}
+    \subitem {set\discretionary {-}{}{}Id}, \hyperpage{159}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{162}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{165}
+    \subitem {Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+    \subitem {set\discretionary {-}{}{}Evidence}, \hyperpage{165}
+    \subitem {set\discretionary {-}{}{}Onto\discretionary {-}{}{}Relationship}, \hyperpage{165}
+    \subitem {set\discretionary {-}{}{}Relation\discretionary {-}{}{}Type}, \hyperpage{165}
+    \subitem {set\discretionary {-}{}{}Relation\discretionary {-}{}{}With}, \hyperpage{165}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Ontology}, \hyperpage{159}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{162}
+    \subitem {Ontology}, \hyperpage{162}
+    \subitem {set\discretionary {-}{}{}Definition}, \hyperpage{162}
+    \subitem {set\discretionary {-}{}{}N\discretionary {-}{}{}S}, \hyperpage{162}
+    \subitem {set\discretionary {-}{}{}Term}, \hyperpage{162}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{168}
+    \subitem {init\discretionary {-}{}{}Member}, \hyperpage{171}
+    \subitem {P\discretionary {-}{}{}E\discretionary {-}{}{}Id\discretionary {-}{}{}Ref}, \hyperpage{171}
+    \subitem {set\discretionary {-}{}{}Id}, \hyperpage{171}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{177}
+    \subitem {attribute\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {availability\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {experiment\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {get\discretionary {-}{}{}Node\discretionary {-}{}{}Attribute\discretionary {-}{}{}List}, \hyperpage{180}
+    \subitem {get\discretionary {-}{}{}Node\discretionary {-}{}{}Availability\discretionary {-}{}{}List}, \hyperpage{180}
+    \subitem {get\discretionary {-}{}{}Node\discretionary {-}{}{}Experiment\discretionary {-}{}{}List}, \hyperpage{180}
+    \subitem {get\discretionary {-}{}{}Node\discretionary {-}{}{}Interaction\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {get\discretionary {-}{}{}Node\discretionary {-}{}{}Interactor\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {get\discretionary {-}{}{}Node\discretionary {-}{}{}Source}, \hyperpage{181}
+    \subitem {interaction\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {interactor\discretionary {-}{}{}List}, \hyperpage{181}
+    \subitem {map\discretionary {-}{}{}Of\discretionary {-}{}{}String\discretionary {-}{}{}String}, \hyperpage{180}
+    \subitem {map\discretionary {-}{}{}Of\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{180}
+    \subitem {P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}I}, \hyperpage{180}
+    \subitem {parse}, \hyperpage{181}
+    \subitem {source}, \hyperpage{181}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Parsing\discretionary {-}{}{}Error}, \hyperpage{166}
+    \subitem {Parsing\discretionary {-}{}{}Error}, \hyperpage{167}
+    \subitem {what}, \hyperpage{167}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Physical\discretionary {-}{}{}Entity}, \hyperpage{171}
+    \subitem {add\discretionary {-}{}{}Cellular\discretionary {-}{}{}Location}, \hyperpage{174}
+    \subitem {add\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{174}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{174}
+    \subitem {Physical\discretionary {-}{}{}Entity}, \hyperpage{174}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Protein}, \hyperpage{174}
+    \subitem {add\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Source}, \hyperpage{177}
+    \subitem {add\discretionary {-}{}{}Specific\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{177}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{177}
+    \subitem {Protein}, \hyperpage{177}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{182}
+    \subitem {database\discretionary {-}{}{}Handle}, \hyperpage{184}
+    \subitem {explain}, \hyperpage{184}
+    \subitem {perform}, \hyperpage{184}
+    \subitem {perform\discretionary {-}{}{}One}, \hyperpage{184}
+    \subitem {Query}, \hyperpage{184}
+    \subitem {query}, \hyperpage{184}
+    \subitem {query\discretionary {-}{}{}By\discretionary {-}{}{}Id}, \hyperpage{184}
+    \subitem {set\discretionary {-}{}{}Db\discretionary {-}{}{}Handle}, \hyperpage{184}
+    \subitem {set\discretionary {-}{}{}Query}, \hyperpage{184}
+    \subitem {sort}, \hyperpage{184}
+    \subitem {to\discretionary {-}{}{}String}, \hyperpage{184}
+    \subitem {where}, \hyperpage{184}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query\discretionary {-}{}{}Error}, \hyperpage{185}
+    \subitem {Query\discretionary {-}{}{}Error}, \hyperpage{186}
+    \subitem {what}, \hyperpage{186}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{192}
+    \subitem {$\sim $\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+    \subitem {buffer}, \hyperpage{197}
+    \subitem {callback}, \hyperpage{196}
+    \subitem {clean\discretionary {-}{}{}String}, \hyperpage{196}
+    \subitem {curl\discretionary {-}{}{}Handle}, \hyperpage{197}
+    \subitem {curl\discretionary {-}{}{}Result}, \hyperpage{197}
+    \subitem {get\discretionary {-}{}{}Result}, \hyperpage{196}
+    \subitem {get\discretionary {-}{}{}Result\discretionary {-}{}{}In\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{196}
+    \subitem {global\discretionary {-}{}{}Clean}, \hyperpage{196}
+    \subitem {global\discretionary {-}{}{}Init}, \hyperpage{196}
+    \subitem {is\discretionary {-}{}{}Response\discretionary {-}{}{}Error}, \hyperpage{196}
+    \subitem {perform}, \hyperpage{196}
+    \subitem {perform\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}G\discretionary {-}{}{}E\discretionary {-}{}{}T}, \hyperpage{196}
+    \subitem {perform\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+    \subitem {print}, \hyperpage{196}
+    \subitem {R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{196}
+    \subitem {result}, \hyperpage{197}
+    \subitem {xml\discretionary {-}{}{}Result}, \hyperpage{197}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}Service\discretionary {-}{}{}Error}, \hyperpage{219}
+    \subitem {R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}Service\discretionary {-}{}{}Error}, \hyperpage{221}
+    \subitem {what}, \hyperpage{221}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{222}
+    \subitem {add\discretionary {-}{}{}Position}, \hyperpage{225}
+    \subitem {add\discretionary {-}{}{}Translation\discretionary {-}{}{}Product}, \hyperpage{225}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{225}
+    \subitem {R\discretionary {-}{}{}N\discretionary {-}{}{}A}, \hyperpage{225}
+    \subitem {set\discretionary {-}{}{}D\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}Region\discretionary {-}{}{}Source}, \hyperpage{225}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Relation}, \hyperpage{187}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{190}
+    \subitem {is\discretionary {-}{}{}Valid}, \hyperpage{190}
+    \subitem {Relation}, \hyperpage{190}
+    \subitem {set\discretionary {-}{}{}Coefficient}, \hyperpage{190}
+    \subitem {set\discretionary {-}{}{}Evidence}, \hyperpage{190}
+    \subitem {set\discretionary {-}{}{}Relation\discretionary {-}{}{}With}, \hyperpage{190}
+    \subitem {set\discretionary {-}{}{}Type}, \hyperpage{190}
+    \subitem {to\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}N\discretionary {-}{}{}String}, \hyperpage{190}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{197}
+    \subitem {bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Version}, \hyperpage{200}
+    \subitem {get\discretionary {-}{}{}Service\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}, \hyperpage{200}
+    \subitem {query}, \hyperpage{200}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{200}
+    \subitem {service\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}, \hyperpage{200}
+    \subitem {set\discretionary {-}{}{}Service\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}, \hyperpage{200}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{200}
+    \subitem {bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Version}, \hyperpage{202}
+    \subitem {header}, \hyperpage{202}
+    \subitem {response\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{202}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart}, \hyperpage{202}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Mart\discretionary {-}{}{}Result}, \hyperpage{202}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{202}
+    \subitem {base\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}, \hyperpage{206}
+    \subitem {get\discretionary {-}{}{}Specific\discretionary {-}{}{}Ontology}, \hyperpage{205}
+    \subitem {list\discretionary {-}{}{}All\discretionary {-}{}{}Lastest\discretionary {-}{}{}Ontologies}, \hyperpage{205}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal}, \hyperpage{205}
+    \subitem {search}, \hyperpage{205}
+    \subitem {term}, \hyperpage{206}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{206}
+    \subitem {access\discretionary {-}{}{}Date}, \hyperpage{210}
+    \subitem {accessed\discretionary {-}{}{}Resource}, \hyperpage{210}
+    \subitem {error\discretionary {-}{}{}Code}, \hyperpage{210}
+    \subitem {error\discretionary {-}{}{}Long\discretionary {-}{}{}Message}, \hyperpage{210}
+    \subitem {get\discretionary {-}{}{}Access\discretionary {-}{}{}Date}, \hyperpage{209}
+    \subitem {get\discretionary {-}{}{}Accessed\discretionary {-}{}{}Resource}, \hyperpage{209}
+    \subitem {get\discretionary {-}{}{}Error}, \hyperpage{209}
+    \subitem {is\discretionary {-}{}{}Error}, \hyperpage{209}
+    \subitem {parse\discretionary {-}{}{}Error}, \hyperpage{209}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Result}, \hyperpage{209}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{210}
+    \subitem {get\discretionary {-}{}{}Ontology\discretionary {-}{}{}Hit\discretionary {-}{}{}List}, \hyperpage{213}
+    \subitem {get\discretionary {-}{}{}Search\discretionary {-}{}{}Result\discretionary {-}{}{}List}, \hyperpage{213}
+    \subitem {n\discretionary {-}{}{}Search\discretionary {-}{}{}Results}, \hyperpage{213}
+    \subitem {ontology\discretionary {-}{}{}Hit\discretionary {-}{}{}List}, \hyperpage{213}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Search\discretionary {-}{}{}Result}, \hyperpage{213}
+    \subitem {search\discretionary {-}{}{}Result\discretionary {-}{}{}List}, \hyperpage{213}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Term\discretionary {-}{}{}Result}, \hyperpage{214}
+    \subitem {class\discretionary {-}{}{}Bean}, \hyperpage{216}
+    \subitem {get\discretionary {-}{}{}Class\discretionary {-}{}{}Bean}, \hyperpage{216}
+    \subitem {Rest\discretionary {-}{}{}Bio\discretionary {-}{}{}Portal\discretionary {-}{}{}Term\discretionary {-}{}{}Result}, \hyperpage{216}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Rest\discretionary {-}{}{}Miriam}, \hyperpage{216}
+    \subitem {base\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}L}, \hyperpage{219}
+    \subitem {resolve}, \hyperpage{219}
+    \subitem {Rest\discretionary {-}{}{}Miriam}, \hyperpage{219}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Score}, \hyperpage{226}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{228}
+    \subitem {Score}, \hyperpage{228}
+    \subitem {set\discretionary {-}{}{}Score\discretionary {-}{}{}Type}, \hyperpage{228}
+    \subitem {set\discretionary {-}{}{}Unit}, \hyperpage{228}
+    \subitem {set\discretionary {-}{}{}Value}, \hyperpage{228}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Small\discretionary {-}{}{}Molecule}, \hyperpage{229}
+    \subitem {add\discretionary {-}{}{}Specific\discretionary {-}{}{}Kinetic\discretionary {-}{}{}Parameter}, \hyperpage{231}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{231}
+    \subitem {set\discretionary {-}{}{}Formula}, \hyperpage{231}
+    \subitem {set\discretionary {-}{}{}In\discretionary {-}{}{}Chi}, \hyperpage{231}
+    \subitem {set\discretionary {-}{}{}In\discretionary {-}{}{}Chi\discretionary {-}{}{}Key}, \hyperpage{231}
+    \subitem {set\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S}, \hyperpage{232}
+    \subitem {Small\discretionary {-}{}{}Molecule}, \hyperpage{231}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{232}
+    \subitem {get\discretionary {-}{}{}Definition}, \hyperpage{234}
+    \subitem {get\discretionary {-}{}{}Id}, \hyperpage{234}
+    \subitem {get\discretionary {-}{}{}N\discretionary {-}{}{}S}, \hyperpage{234}
+    \subitem {get\discretionary {-}{}{}Name}, \hyperpage{234}
+    \subitem {get\discretionary {-}{}{}Relationship}, \hyperpage{234}
+    \subitem {is\discretionary {-}{}{}Obsolete}, \hyperpage{234}
+    \subitem {Stanza}, \hyperpage{234}
+    \subitem {to\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{234}
+    \subitem {xml}, \hyperpage{234}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Sub\discretionary {-}{}{}Region}, \hyperpage{234}
+    \subitem {add\discretionary {-}{}{}Position}, \hyperpage{237}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{237}
+    \subitem {set\discretionary {-}{}{}Annotation}, \hyperpage{237}
+    \subitem {set\discretionary {-}{}{}Strand}, \hyperpage{237}
+    \subitem {Sub\discretionary {-}{}{}Region}, \hyperpage{237}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Tracking}, \hyperpage{239}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{242}
+    \subitem {to\discretionary {-}{}{}String}, \hyperpage{242}
+    \subitem {Tracking}, \hyperpage{242}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Transport}, \hyperpage{242}
+    \subitem {add\discretionary {-}{}{}Export}, \hyperpage{245}
+    \subitem {add\discretionary {-}{}{}Import}, \hyperpage{245}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{245}
+    \subitem {to\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}N\discretionary {-}{}{}String}, \hyperpage{245}
+    \subitem {Transport}, \hyperpage{245}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Uni\discretionary {-}{}{}Sys\discretionary {-}{}{}Error}, \hyperpage{246}
+    \subitem {$\sim $\discretionary {-}{}{}Uni\discretionary {-}{}{}Sys\discretionary {-}{}{}Error}, \hyperpage{247}
+    \subitem {error\discretionary {-}{}{}Msg}, \hyperpage{247}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Update\discretionary {-}{}{}Error}, \hyperpage{247}
+    \subitem {Update\discretionary {-}{}{}Error}, \hyperpage{248}
+    \subitem {what}, \hyperpage{248}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{249}
+    \subitem {check\discretionary {-}{}{}Id\discretionary {-}{}{}Pair}, \hyperpage{251}
+    \subitem {database\discretionary {-}{}{}Handle}, \hyperpage{254}
+    \subitem {id\discretionary {-}{}{}Converter}, \hyperpage{252}
+    \subitem {insert}, \hyperpage{252}
+    \subitem {remove}, \hyperpage{252, 253}
+    \subitem {set\discretionary {-}{}{}Db\discretionary {-}{}{}Handle}, \hyperpage{253}
+    \subitem {update}, \hyperpage{253}
+    \subitem {update\discretionary {-}{}{}Id\discretionary {-}{}{}Pair}, \hyperpage{254}
+    \subitem {update\discretionary {-}{}{}Relation\discretionary {-}{}{}Add}, \hyperpage{254}
+    \subitem {update\discretionary {-}{}{}Relation\discretionary {-}{}{}Del}, \hyperpage{254}
+    \subitem {Updater}, \hyperpage{251}
+  \item {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{272}
+    \subitem {init\discretionary {-}{}{}Field}, \hyperpage{275}
+    \subitem {operator$<$}, \hyperpage{275}
+    \subitem {set\discretionary {-}{}{}Detail}, \hyperpage{276}
+    \subitem {set\discretionary {-}{}{}Id}, \hyperpage{276}
+    \subitem {set\discretionary {-}{}{}Type}, \hyperpage{276}
+    \subitem {Xref}, \hyperpage{275}
+  \item {unisysdb.\discretionary {-}{}{}h}, \hyperpage{295}
+  \item {update}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{253}
+  \item {update\discretionary {-}{}{}Attribute}
+    \subitem {Updating Nodes}, \hyperpage{28}
+  \item {update\discretionary {-}{}{}Attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{33, 34}
+  \item {update\discretionary {-}{}{}Clear}
+    \subitem {Updating Nodes}, \hyperpage{29}
+  \item {update\discretionary {-}{}{}Clear\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{34}
+  \item {Update\discretionary {-}{}{}Error}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Update\discretionary {-}{}{}Error}, \hyperpage{248}
+  \item {update\discretionary {-}{}{}Id\discretionary {-}{}{}Pair}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{254}
+  \item {update\discretionary {-}{}{}Name}
+    \subitem {Updating Nodes}, \hyperpage{29}
+  \item {update\discretionary {-}{}{}Name\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{34}
+  \item {update\discretionary {-}{}{}Relation\discretionary {-}{}{}Add}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{254}
+  \item {update\discretionary {-}{}{}Relation\discretionary {-}{}{}Del}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{254}
+  \item {update\discretionary {-}{}{}Text}
+    \subitem {Updating Nodes}, \hyperpage{29}
+  \item {update\discretionary {-}{}{}Text\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D}
+    \subitem {???\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}D functions.}, \hyperpage{34}
+  \item {Updater}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Database}, \hyperpage{99}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Updater}, \hyperpage{251}
+  \item {updater.\discretionary {-}{}{}h}, \hyperpage{295}
+  \item {Updating Nodes}, \hyperpage{28}
+    \subitem {update\discretionary {-}{}{}Attribute}, \hyperpage{28}
+    \subitem {update\discretionary {-}{}{}Clear}, \hyperpage{29}
+    \subitem {update\discretionary {-}{}{}Name}, \hyperpage{29}
+    \subitem {update\discretionary {-}{}{}Text}, \hyperpage{29}
+
+  \indexspace
+
+  \item {valid}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Obj}, \hyperpage{107}
+  \item {version}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Miriam}, \hyperpage{147}
+
+  \indexspace
+
+  \item {what}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Connection\discretionary {-}{}{}Error}, \hyperpage{90}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Data\discretionary {-}{}{}Error}, \hyperpage{101}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Parsing\discretionary {-}{}{}Error}, \hyperpage{167}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query\discretionary {-}{}{}Error}, \hyperpage{186}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}Service\discretionary {-}{}{}Error}, \hyperpage{221}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Update\discretionary {-}{}{}Error}, \hyperpage{248}
+  \item {where}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Query}, \hyperpage{184}
+  \item {write\discretionary {-}{}{}To\discretionary {-}{}{}File}
+    \subitem {Parsing X\discretionary {-}{}{}M\discretionary {-}{}{}L files/strings to an X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node structure and Rendering X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node's to files/string.}, \hyperpage{20}
+
+  \indexspace
+
+  \item {X\-M\-L\-Node}
+    \subitem {char\-\_\-encoding\-\_\-\-Big5}, \hyperpage{263}
+    \subitem {char\-\_\-encoding\-\_\-\-G\-B2312}, \hyperpage{263}
+    \subitem {char\-\_\-encoding\-\_\-\-G\-B\-K}, \hyperpage{263}
+    \subitem {char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S}, \hyperpage{263}
+    \subitem {char\-\_\-encoding\-\_\-\-U\-T\-F8}, \hyperpage{263}
+    \subitem {char\-\_\-encoding\-\_\-error}, \hyperpage{263}
+    \subitem {char\-\_\-encoding\-\_\-legacy}, \hyperpage{263}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Attribute}, \hyperpage{255}
+    \subitem {lpsz\discretionary {-}{}{}Name}, \hyperpage{255}
+    \subitem {lpsz\discretionary {-}{}{}Value}, \hyperpage{255}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}R}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}R}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Char\discretionary {-}{}{}Encoding}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{262, 263}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}, \hyperpage{255}
+    \subitem {lpsz\discretionary {-}{}{}Close\discretionary {-}{}{}Tag}, \hyperpage{256}
+    \subitem {lpsz\discretionary {-}{}{}Open\discretionary {-}{}{}Tag}, \hyperpage{256}
+    \subitem {lpsz\discretionary {-}{}{}Value}, \hyperpage{256}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}Y}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Element\discretionary {-}{}{}Position}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Element\discretionary {-}{}{}Type}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299, 300}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Error}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{300}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{256}
+    \subitem {$\sim $\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+    \subitem {add\discretionary {-}{}{}Attribute\discretionary {-}{}{}\_\discretionary {-}{}{}priv}, \hyperpage{263}
+    \subitem {add\discretionary {-}{}{}Child\discretionary {-}{}{}\_\discretionary {-}{}{}priv}, \hyperpage{263}
+    \subitem {add\discretionary {-}{}{}Clear\discretionary {-}{}{}\_\discretionary {-}{}{}priv}, \hyperpage{263}
+    \subitem {add\discretionary {-}{}{}Text\discretionary {-}{}{}\_\discretionary {-}{}{}priv}, \hyperpage{263}
+    \subitem {add\discretionary {-}{}{}To\discretionary {-}{}{}Order}, \hyperpage{263}
+    \subitem {Create\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}String\discretionary {-}{}{}R}, \hyperpage{263}
+    \subitem {d}, \hyperpage{264}
+    \subitem {detach\discretionary {-}{}{}From\discretionary {-}{}{}Parent}, \hyperpage{264}
+    \subitem {empty\discretionary {-}{}{}The\discretionary {-}{}{}Node}, \hyperpage{264}
+    \subitem {empty\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Attribute}, \hyperpage{264}
+    \subitem {empty\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}, \hyperpage{264}
+    \subitem {empty\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{264}
+    \subitem {exact\discretionary {-}{}{}Memory}, \hyperpage{264}
+    \subitem {find\discretionary {-}{}{}Position}, \hyperpage{264}
+    \subitem {get\discretionary {-}{}{}Version}, \hyperpage{264}
+    \subitem {index\discretionary {-}{}{}Clear}, \hyperpage{264}
+    \subitem {index\discretionary {-}{}{}Text}, \hyperpage{264}
+    \subitem {maybe\discretionary {-}{}{}Add\discretionary {-}{}{}Tx\discretionary {-}{}{}T}, \hyperpage{264}
+    \subitem {operator=}, \hyperpage{264}
+    \subitem {parse\discretionary {-}{}{}Clear\discretionary {-}{}{}Tag}, \hyperpage{264}
+    \subitem {Parse\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Element}, \hyperpage{264}
+    \subitem {remove\discretionary {-}{}{}Order\discretionary {-}{}{}Element}, \hyperpage{264}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Char\discretionary {-}{}{}Encoding}, \hyperpage{262, 263}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data}, \hyperpage{262}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{263}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{300}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data\discretionary {-}{}{}Tag}, \hyperpage{267}
+    \subitem {is\discretionary {-}{}{}Declaration}, \hyperpage{268}
+    \subitem {lpsz\discretionary {-}{}{}Name}, \hyperpage{268}
+    \subitem {n\discretionary {-}{}{}Attribute}, \hyperpage{268}
+    \subitem {n\discretionary {-}{}{}Child}, \hyperpage{268}
+    \subitem {n\discretionary {-}{}{}Clear}, \hyperpage{268}
+    \subitem {n\discretionary {-}{}{}Text}, \hyperpage{268}
+    \subitem {p\discretionary {-}{}{}Attribute}, \hyperpage{268}
+    \subitem {p\discretionary {-}{}{}Child}, \hyperpage{268}
+    \subitem {p\discretionary {-}{}{}Clear}, \hyperpage{268}
+    \subitem {p\discretionary {-}{}{}Order}, \hyperpage{268}
+    \subitem {p\discretionary {-}{}{}Parent}, \hyperpage{268}
+    \subitem {p\discretionary {-}{}{}Text}, \hyperpage{268}
+    \subitem {ref\discretionary {-}{}{}\_\discretionary {-}{}{}count}, \hyperpage{268}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{264}
+    \subitem {attrib}, \hyperpage{266}
+    \subitem {child}, \hyperpage{266}
+    \subitem {clear}, \hyperpage{266}
+    \subitem {etype}, \hyperpage{266}
+    \subitem {text}, \hyperpage{266}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{300}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Data}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{262}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{268}
+    \subitem {$\sim $\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+    \subitem {alloc}, \hyperpage{270}
+    \subitem {buf}, \hyperpage{271}
+    \subitem {buflen}, \hyperpage{271}
+    \subitem {decode}, \hyperpage{270}
+    \subitem {decode\discretionary {-}{}{}Size}, \hyperpage{270}
+    \subitem {encode}, \hyperpage{270}
+    \subitem {encode\discretionary {-}{}{}Length}, \hyperpage{271}
+    \subitem {free\discretionary {-}{}{}Buffer}, \hyperpage{271}
+    \subitem {Helper class to include binary data inside X\discretionary {-}{}{}M\discretionary {-}{}{}L strings using \char `\"{}\discretionary {-}{}{}Base64 encoding\char `\"{}.}, \hyperpage{40}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Parser\discretionary {-}{}{}Base64\discretionary {-}{}{}Tool}, \hyperpage{270}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Results}, \hyperpage{271}
+    \subitem {error}, \hyperpage{272}
+    \subitem {n\discretionary {-}{}{}Column}, \hyperpage{272}
+    \subitem {n\discretionary {-}{}{}Line}, \hyperpage{272}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{300}
+  \item {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}R}
+    \subitem {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{299}
+  \item {xml}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Stanza}, \hyperpage{234}
+  \item {xml\-Parser.\-h}
+    \subitem {e\-Node\-Attribute}, \hyperpage{300}
+    \subitem {e\-Node\-Child}, \hyperpage{300}
+    \subitem {e\-Node\-Clear}, \hyperpage{300}
+    \subitem {e\-Node\-N\-U\-L\-L}, \hyperpage{300}
+    \subitem {e\-Node\-Text}, \hyperpage{300}
+    \subitem {e\-X\-M\-L\-Error\-Base64\-Data\-Size\-Is\-Not\-Multiple\-Of4}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Base64\-Decode\-Buffer\-Too\-Small}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Base64\-Decode\-Illegal\-Character}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Base64\-Decode\-Truncated\-Data}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Cannot\-Open\-Write\-File}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Cannot\-Write\-File}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Char\-Conversion\-Error}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Character\-Code\-Above255}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Empty}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-File\-Not\-Found}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-First\-Tag\-Not\-Found}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Missing\-End\-Tag}, \hyperpage{300}
+    \subitem {e\-X\-M\-L\-Error\-Missing\-End\-Tag\-Name}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Missing\-Tag\-Name}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-No\-Elements}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-No\-X\-M\-L\-Tag\-Found}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-None}, \hyperpage{300}
+    \subitem {e\-X\-M\-L\-Error\-Unexpected\-Token}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Unknown\-Character\-Entity}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Unmatched\-End\-Clear\-Tag}, \hyperpage{301}
+    \subitem {e\-X\-M\-L\-Error\-Unmatched\-End\-Tag}, \hyperpage{301}
+  \item {xml\discretionary {-}{}{}Parser.\discretionary {-}{}{}h}, \hyperpage{297}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}L}, \hyperpage{299}
+    \subitem {F\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}S\discretionary {-}{}{}E}, \hyperpage{299}
+    \subitem {T\discretionary {-}{}{}R\discretionary {-}{}{}U\discretionary {-}{}{}E}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Attribute}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}R}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}R}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Clear}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}D\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}Y}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Element\discretionary {-}{}{}Position}, \hyperpage{299}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Element\discretionary {-}{}{}Type}, \hyperpage{299, 300}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Error}, \hyperpage{300}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node}, \hyperpage{300}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Node\discretionary {-}{}{}Contents}, \hyperpage{300}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}Results}, \hyperpage{300}
+    \subitem {X\discretionary {-}{}{}M\discretionary {-}{}{}L\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}R}, \hyperpage{299}
+  \item {xml\discretionary {-}{}{}Result}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T}, \hyperpage{197}
+  \item {xmltoa}
+    \subitem {ato? like functions}, \hyperpage{38}
+  \item {xmltob}
+    \subitem {ato? like functions}, \hyperpage{38}
+  \item {xmltoc}
+    \subitem {ato? like functions}, \hyperpage{38}
+  \item {xmltof}
+    \subitem {ato? like functions}, \hyperpage{38}
+  \item {xmltoi}
+    \subitem {ato? like functions}, \hyperpage{38}
+  \item {xmltol}
+    \subitem {ato? like functions}, \hyperpage{38}
+  \item {Xref}
+    \subitem {unisys\discretionary {-}{}{}::\discretionary {-}{}{}Xref}, \hyperpage{275}
+
+\end{theindex}

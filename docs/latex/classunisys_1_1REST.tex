@@ -1,0 +1,272 @@
+\hypertarget{classunisys_1_1REST}{\section{unisys\-:\-:R\-E\-S\-T Class Reference}
+\label{classunisys_1_1REST}\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}}
+}
+
+
+Used for managing the request and response of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service.  
+
+
+
+
+{\ttfamily \#include $<$rest.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:R\-E\-S\-T\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classunisys_1_1REST__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:R\-E\-S\-T\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1REST__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1REST_a789221598cae94679e76a0dca113f674}{R\-E\-S\-T} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Do the curl\-\_\-easy\-\_\-init and set some option to c\-U\-R\-L library handler. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1REST_ad3dcca4cf53d89805b8321b9bd133398}{$\sim$\-R\-E\-S\-T} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. Do the curl\-\_\-easy\-\_\-clean and release the memory of c\-U\-R\-L library handler. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1REST_a1c2c3acc8f68cb4b31ead307902e82ff}{get\-Result} ()
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1REST_a3056a56b223a8dd7839976237fa41173}{get\-Result\-In\-X\-M\-L} ()  throw (\-Parsing\-Error)
+\item 
+void \hyperlink{classunisys_1_1REST_ab6e0f9040de9b531a442baec762719c3}{perform} (std\-::string const \&url)  throw (\-R\-E\-S\-T\-Service\-Error)
+\begin{DoxyCompactList}\small\item\em Perform the request with H\-E\-A\-D method to the service and take the response back. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1REST_a30a933ea373cd52be4d67939ea574cfe}{perform\-P\-O\-S\-T} (std\-::string const \&url, std\-::string const \&post\-Fields)  throw (\-R\-E\-S\-T\-Service\-Error)
+\begin{DoxyCompactList}\small\item\em Perform the request with P\-O\-S\-T method to the service and take the response back. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1REST_a44bbc3a0354f7fc82cfd912ea964de48}{perform\-H\-T\-T\-P\-G\-E\-T} (std\-::string const \&url)  throw (\-R\-E\-S\-T\-Service\-Error)
+\begin{DoxyCompactList}\small\item\em Perform the request with H\-T\-T\-P\-G\-E\-T method to the service and take the response back. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1REST_a5b8cc98e1e23f41415a8c43fe33d317b}{print} ()
+\begin{DoxyCompactList}\small\item\em Print out the value in \hyperlink{classunisys_1_1REST_a8ad94e0f4cde502eafef44da193bdad0}{R\-E\-S\-T\-::xml\-Result}. (Just for debugging) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classunisys_1_1REST_af24c50c601b07b367ef85b00f433b3d8}{global\-Init} ()
+\begin{DoxyCompactList}\small\item\em Init function of c\-U\-R\-L library. Just do it on time in one program. \end{DoxyCompactList}\item 
+static void \hyperlink{classunisys_1_1REST_a4830ca7fe8c71189ec8e2ad64ebf44c6}{global\-Clean} ()
+\begin{DoxyCompactList}\small\item\em Setting destructor of c\-U\-R\-L library. Just do it on time in one program. \end{DoxyCompactList}\item 
+static std\-::string \hyperlink{classunisys_1_1REST_a2cec5087a4a1fd5eefe7b9b114f24233}{clean\-String} (std\-::string const \&str)
+\begin{DoxyCompactList}\small\item\em Used for clean the restrict charactors in string; like space, \&, \$, \% etc. \end{DoxyCompactList}\item 
+static size\-\_\-t \hyperlink{classunisys_1_1REST_a1d7f7cd7bd55ad084fb7c512e9569adf}{callback} (void $\ast$ptr, size\-\_\-t size, size\-\_\-t count, F\-I\-L\-E $\ast$data)
+\begin{DoxyCompactList}\small\item\em static member function for processing results from libcurl \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classunisys_1_1REST_a5ea35991beea9eb0f3cefb69e47b85fa}{is\-Response\-Error} ()  throw (\-R\-E\-S\-T\-Service\-Error)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\-U\-R\-L $\ast$ \hyperlink{classunisys_1_1REST_a0883a12f6ff081295982f74bd6d1aa46}{curl\-Handle}
+\begin{DoxyCompactList}\small\item\em c\-U\-R\-L library handler \end{DoxyCompactList}\item 
+C\-U\-R\-Lcode \hyperlink{classunisys_1_1REST_ab8e5c6e4ee484f86d09ce6caaf6ee08f}{curl\-Result}
+\begin{DoxyCompactList}\small\item\em c\-U\-R\-L library response handler \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1REST_a4bb59e07505ee0bcb138fc662d4bcb68}{result}
+\begin{DoxyCompactList}\small\item\em The results of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service in string. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1REST_a8ad94e0f4cde502eafef44da193bdad0}{xml\-Result}
+\begin{DoxyCompactList}\small\item\em The results of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service in string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::string \hyperlink{classunisys_1_1REST_a473b61d2f981b478377b6c4f3ec6784b}{buffer}
+\begin{DoxyCompactList}\small\item\em Static member function for getting results from static callback member function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used for managing the request and response of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. 
+
+This class connects to \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service through the c\-U\-R\-L library, but it has very limit capability when comparing with c\-U\-R\-L library. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1REST_a789221598cae94679e76a0dca113f674}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!R\-E\-S\-T@{R\-E\-S\-T}}
+\index{R\-E\-S\-T@{R\-E\-S\-T}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{R\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-R\-E\-S\-T\-::\-R\-E\-S\-T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1REST_a789221598cae94679e76a0dca113f674}
+
+
+Default constructor. Do the curl\-\_\-easy\-\_\-init and set some option to c\-U\-R\-L library handler. 
+
+\hypertarget{classunisys_1_1REST_ad3dcca4cf53d89805b8321b9bd133398}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!$\sim$\-R\-E\-S\-T@{$\sim$\-R\-E\-S\-T}}
+\index{$\sim$\-R\-E\-S\-T@{$\sim$\-R\-E\-S\-T}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{$\sim$\-R\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-R\-E\-S\-T\-::$\sim$\-R\-E\-S\-T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1REST_ad3dcca4cf53d89805b8321b9bd133398}
+
+
+Default destructor. Do the curl\-\_\-easy\-\_\-clean and release the memory of c\-U\-R\-L library handler. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1REST_a1d7f7cd7bd55ad084fb7c512e9569adf}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!callback@{callback}}
+\index{callback@{callback}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}static size\-\_\-t unisys\-::\-R\-E\-S\-T\-::callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr, }
+\item[{size\-\_\-t}]{size, }
+\item[{size\-\_\-t}]{count, }
+\item[{F\-I\-L\-E $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classunisys_1_1REST_a1d7f7cd7bd55ad084fb7c512e9569adf}
+
+
+static member function for processing results from libcurl 
+
+\hypertarget{classunisys_1_1REST_a2cec5087a4a1fd5eefe7b9b114f24233}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!clean\-String@{clean\-String}}
+\index{clean\-String@{clean\-String}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{clean\-String}]{\setlength{\rightskip}{0pt plus 5cm}static std\-::string unisys\-::\-R\-E\-S\-T\-::clean\-String (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classunisys_1_1REST_a2cec5087a4a1fd5eefe7b9b114f24233}
+
+
+Used for clean the restrict charactors in string; like space, \&, \$, \% etc. 
+
+\hypertarget{classunisys_1_1REST_a1c2c3acc8f68cb4b31ead307902e82ff}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!get\-Result@{get\-Result}}
+\index{get\-Result@{get\-Result}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{get\-Result}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-R\-E\-S\-T\-::get\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1REST_a1c2c3acc8f68cb4b31ead307902e82ff}
+\hypertarget{classunisys_1_1REST_a3056a56b223a8dd7839976237fa41173}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!get\-Result\-In\-X\-M\-L@{get\-Result\-In\-X\-M\-L}}
+\index{get\-Result\-In\-X\-M\-L@{get\-Result\-In\-X\-M\-L}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{get\-Result\-In\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-R\-E\-S\-T\-::get\-Result\-In\-X\-M\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Parsing\-Error})}}\label{classunisys_1_1REST_a3056a56b223a8dd7839976237fa41173}
+\hypertarget{classunisys_1_1REST_a4830ca7fe8c71189ec8e2ad64ebf44c6}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!global\-Clean@{global\-Clean}}
+\index{global\-Clean@{global\-Clean}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{global\-Clean}]{\setlength{\rightskip}{0pt plus 5cm}static void unisys\-::\-R\-E\-S\-T\-::global\-Clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classunisys_1_1REST_a4830ca7fe8c71189ec8e2ad64ebf44c6}
+
+
+Setting destructor of c\-U\-R\-L library. Just do it on time in one program. 
+
+\hypertarget{classunisys_1_1REST_af24c50c601b07b367ef85b00f433b3d8}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!global\-Init@{global\-Init}}
+\index{global\-Init@{global\-Init}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{global\-Init}]{\setlength{\rightskip}{0pt plus 5cm}static void unisys\-::\-R\-E\-S\-T\-::global\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classunisys_1_1REST_af24c50c601b07b367ef85b00f433b3d8}
+
+
+Init function of c\-U\-R\-L library. Just do it on time in one program. 
+
+\hypertarget{classunisys_1_1REST_a5ea35991beea9eb0f3cefb69e47b85fa}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!is\-Response\-Error@{is\-Response\-Error}}
+\index{is\-Response\-Error@{is\-Response\-Error}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{is\-Response\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-R\-E\-S\-T\-::is\-Response\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf R\-E\-S\-T\-Service\-Error})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1REST_a5ea35991beea9eb0f3cefb69e47b85fa}
+\hypertarget{classunisys_1_1REST_ab6e0f9040de9b531a442baec762719c3}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!perform@{perform}}
+\index{perform@{perform}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{perform}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-E\-S\-T\-::perform (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{url}
+\end{DoxyParamCaption}
+)  throw ({\bf R\-E\-S\-T\-Service\-Error})}}\label{classunisys_1_1REST_ab6e0f9040de9b531a442baec762719c3}
+
+
+Perform the request with H\-E\-A\-D method to the service and take the response back. 
+
+\hypertarget{classunisys_1_1REST_a44bbc3a0354f7fc82cfd912ea964de48}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!perform\-H\-T\-T\-P\-G\-E\-T@{perform\-H\-T\-T\-P\-G\-E\-T}}
+\index{perform\-H\-T\-T\-P\-G\-E\-T@{perform\-H\-T\-T\-P\-G\-E\-T}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{perform\-H\-T\-T\-P\-G\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-E\-S\-T\-::perform\-H\-T\-T\-P\-G\-E\-T (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{url}
+\end{DoxyParamCaption}
+)  throw ({\bf R\-E\-S\-T\-Service\-Error})}}\label{classunisys_1_1REST_a44bbc3a0354f7fc82cfd912ea964de48}
+
+
+Perform the request with H\-T\-T\-P\-G\-E\-T method to the service and take the response back. 
+
+\hypertarget{classunisys_1_1REST_a30a933ea373cd52be4d67939ea574cfe}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!perform\-P\-O\-S\-T@{perform\-P\-O\-S\-T}}
+\index{perform\-P\-O\-S\-T@{perform\-P\-O\-S\-T}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{perform\-P\-O\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-E\-S\-T\-::perform\-P\-O\-S\-T (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{url, }
+\item[{std\-::string const \&}]{post\-Fields}
+\end{DoxyParamCaption}
+)  throw ({\bf R\-E\-S\-T\-Service\-Error})}}\label{classunisys_1_1REST_a30a933ea373cd52be4d67939ea574cfe}
+
+
+Perform the request with P\-O\-S\-T method to the service and take the response back. 
+
+\hypertarget{classunisys_1_1REST_a5b8cc98e1e23f41415a8c43fe33d317b}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!print@{print}}
+\index{print@{print}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-R\-E\-S\-T\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1REST_a5b8cc98e1e23f41415a8c43fe33d317b}
+
+
+Print out the value in \hyperlink{classunisys_1_1REST_a8ad94e0f4cde502eafef44da193bdad0}{R\-E\-S\-T\-::xml\-Result}. (Just for debugging) 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1REST_a473b61d2f981b478377b6c4f3ec6784b}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!buffer@{buffer}}
+\index{buffer@{buffer}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-R\-E\-S\-T\-::buffer\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classunisys_1_1REST_a473b61d2f981b478377b6c4f3ec6784b}
+
+
+Static member function for getting results from static callback member function. 
+
+\hypertarget{classunisys_1_1REST_a0883a12f6ff081295982f74bd6d1aa46}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!curl\-Handle@{curl\-Handle}}
+\index{curl\-Handle@{curl\-Handle}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{curl\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}C\-U\-R\-L$\ast$ unisys\-::\-R\-E\-S\-T\-::curl\-Handle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1REST_a0883a12f6ff081295982f74bd6d1aa46}
+
+
+c\-U\-R\-L library handler 
+
+\hypertarget{classunisys_1_1REST_ab8e5c6e4ee484f86d09ce6caaf6ee08f}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!curl\-Result@{curl\-Result}}
+\index{curl\-Result@{curl\-Result}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{curl\-Result}]{\setlength{\rightskip}{0pt plus 5cm}C\-U\-R\-Lcode unisys\-::\-R\-E\-S\-T\-::curl\-Result\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1REST_ab8e5c6e4ee484f86d09ce6caaf6ee08f}
+
+
+c\-U\-R\-L library response handler 
+
+\hypertarget{classunisys_1_1REST_a4bb59e07505ee0bcb138fc662d4bcb68}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!result@{result}}
+\index{result@{result}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-R\-E\-S\-T\-::result\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1REST_a4bb59e07505ee0bcb138fc662d4bcb68}
+
+
+The results of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service in string. 
+
+\hypertarget{classunisys_1_1REST_a8ad94e0f4cde502eafef44da193bdad0}{\index{unisys\-::\-R\-E\-S\-T@{unisys\-::\-R\-E\-S\-T}!xml\-Result@{xml\-Result}}
+\index{xml\-Result@{xml\-Result}!unisys::REST@{unisys\-::\-R\-E\-S\-T}}
+\subsubsection[{xml\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-R\-E\-S\-T\-::xml\-Result\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1REST_a8ad94e0f4cde502eafef44da193bdad0}
+
+
+The results of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service in string. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rest_8h}{rest.\-h}\end{DoxyCompactItemize}

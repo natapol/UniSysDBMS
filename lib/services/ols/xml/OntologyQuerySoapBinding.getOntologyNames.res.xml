@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns2="http://xml.apache.org/xml-soap"
+ xmlns:ns3="http://model.web.ook.ebi.ac.uk"
+ xmlns:ns1="http://www.ebi.ac.uk/ontology-lookup/OntologyQuery">
+ <SOAP-ENV:Body>
+  <ns1:getOntologyNamesResponse>
+   <ns1:getOntologyNamesReturn>
+    <ns2:item>
+     <ns2:key></ns2:key>
+     <ns2:value></ns2:value>
+    </ns2:item>
+    <ns2:item>
+     <ns2:key></ns2:key>
+     <ns2:value></ns2:value>
+    </ns2:item>
+   </ns1:getOntologyNamesReturn>
+  </ns1:getOntologyNamesResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

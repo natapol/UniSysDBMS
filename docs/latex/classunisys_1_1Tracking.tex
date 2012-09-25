@@ -1,0 +1,106 @@
+\hypertarget{classunisys_1_1Tracking}{\section{unisys\-:\-:Tracking Class Reference}
+\label{classunisys_1_1Tracking}\index{unisys\-::\-Tracking@{unisys\-::\-Tracking}}
+}
+
+
+Data updating history class.  
+
+
+
+
+{\ttfamily \#include $<$D\-B\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Tracking\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classunisys_1_1Tracking__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Tracking\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Tracking__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Tracking_a1a75885a5535cffe27ff891f836e8fdd}{Tracking} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\item 
+\hyperlink{classunisys_1_1Tracking_aa189c069eca6579f5e25396df9644e43}{Tracking} (std\-::string const \&object\-I\-D, std\-::string const \&activity)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor to build class instance. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Tracking_abc1a887f92c931657e1f68cf0ab74821}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Return the string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Tracking_ae8e471c1d4effb3c746e654ba1c970ba}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Data updating history class. 
+
+This class makes a editing time stamp of each data documents. Structure of \hyperlink{classunisys_1_1Tracking}{Tracking} class in boson document is \{oid\-: \char`\"{}\-Updated object id\char`\"{}, activity\-: \char`\"{}activity of the update; such as, new object or change detail in abc field\char`\"{}, time\-Stamp\-: \char`\"{}time stamp\char`\"{}\}.
+
+B\-S\-O\-N structure\-: \{ oid\-: $<$idvalue$>$, activity\-: \char`\"{}xxx\char`\"{}, time\-Stamp\-: $<$date\-Time\-Value$>$, \} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Tracking_a1a75885a5535cffe27ff891f836e8fdd}{\index{unisys\-::\-Tracking@{unisys\-::\-Tracking}!Tracking@{Tracking}}
+\index{Tracking@{Tracking}!unisys::Tracking@{unisys\-::\-Tracking}}
+\subsubsection[{Tracking}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Tracking\-::\-Tracking (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Tracking_a1a75885a5535cffe27ff891f836e8fdd}
+\hypertarget{classunisys_1_1Tracking_aa189c069eca6579f5e25396df9644e43}{\index{unisys\-::\-Tracking@{unisys\-::\-Tracking}!Tracking@{Tracking}}
+\index{Tracking@{Tracking}!unisys::Tracking@{unisys\-::\-Tracking}}
+\subsubsection[{Tracking}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Tracking\-::\-Tracking (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{object\-I\-D, }
+\item[{std\-::string const \&}]{activity}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Tracking_aa189c069eca6579f5e25396df9644e43}
+
+
+Overloaded constructor to build class instance. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Tracking_ae8e471c1d4effb3c746e654ba1c970ba}{\index{unisys\-::\-Tracking@{unisys\-::\-Tracking}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Tracking@{unisys\-::\-Tracking}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Tracking\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Tracking_ae8e471c1d4effb3c746e654ba1c970ba}
+
+
+Implements \hyperlink{classunisys_1_1DataObj_acdc1989300995834a6c8ff03dc2f1268}{unisys\-::\-Data\-Obj}.
+
+\hypertarget{classunisys_1_1Tracking_abc1a887f92c931657e1f68cf0ab74821}{\index{unisys\-::\-Tracking@{unisys\-::\-Tracking}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!unisys::Tracking@{unisys\-::\-Tracking}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Tracking\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Tracking_abc1a887f92c931657e1f68cf0ab74821}
+
+
+Return the string. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DBClass_8h}{D\-B\-Class.\-h}\end{DoxyCompactItemize}

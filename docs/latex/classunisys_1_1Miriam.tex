@@ -1,0 +1,255 @@
+\hypertarget{classunisys_1_1Miriam}{\section{unisys\-:\-:Miriam Class Reference}
+\label{classunisys_1_1Miriam}\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$D\-B\-Class.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:Miriam\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classunisys_1_1Miriam__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Miriam_af805ea42b5093cb6f11f9c0e62bd448e}{Miriam} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1Miriam_a1b881748690196866d48d3f221d20364}{Miriam} (std\-::string const \&\hyperlink{classunisys_1_1Miriam_a0f6c60a2c904d9e5b28653464f5867f1}{id}, std\-::string const \&\hyperlink{classunisys_1_1Miriam_a03b5f4f8523b5910504f6587fbd9cb0a}{ns}=\char`\"{}\char`\"{}, unsigned int \hyperlink{classunisys_1_1Miriam_a5dcb23fc55cc7643245087a941321a72}{version}=0)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classunisys_1_1Miriam_a9c3ed7115b580c3f242b256a2e2a50b9}{operator$<$} (\hyperlink{classunisys_1_1Miriam}{Miriam} const \&other) const 
+\begin{DoxyCompactList}\small\item\em Less than operator overload. \end{DoxyCompactList}\item 
+bool \hyperlink{classunisys_1_1Miriam_af67d441a13cbe7ecc1d8898254f1709e}{operator==} (\hyperlink{classunisys_1_1Miriam}{Miriam} const \&other) const 
+\begin{DoxyCompactList}\small\item\em Equal operator overload. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Miriam_ade6975ff1e7ded3be3a2962acc8469fe}{set} (std\-::string const \&\hyperlink{classunisys_1_1Miriam_a0f6c60a2c904d9e5b28653464f5867f1}{id}, std\-::string const \&\hyperlink{classunisys_1_1Miriam_a03b5f4f8523b5910504f6587fbd9cb0a}{ns}=\char`\"{}\char`\"{}, unsigned int \hyperlink{classunisys_1_1Miriam_a5dcb23fc55cc7643245087a941321a72}{version}=0)
+\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_ab08dc9375fadf0127c16024a93c9498f}{to\-U\-R\-I} () const 
+\begin{DoxyCompactList}\small\item\em return U\-R\-I string \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_ad44b570433a4e5ec797a6299b2546dc4}{to\-Id} () const 
+\begin{DoxyCompactList}\small\item\em return Id string \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_a8ae73a002b63b953f75240ffbbfabd31}{to\-D\-B\-Id} () const 
+\begin{DoxyCompactList}\small\item\em return \hyperlink{classunisys_1_1Database}{Database} system I\-D string (domain.\-sub-\/domain namespace\-:Identifier) \end{DoxyCompactList}\item 
+bool \hyperlink{classunisys_1_1Miriam_a853dadae3c31160585e0cc0482825305}{is\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em Check validity of data. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Miriam_acc3826ec210a5b031a070eb95e9caa7a}{operator++} (int number=1)
+\begin{DoxyCompactList}\small\item\em Increase the number of version with 1. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_a3af5a3b8f029f0ac520ed2f9e277d06e}{to\-U\-R\-I\-With\-Ver} () const 
+\begin{DoxyCompactList}\small\item\em return U\-R\-I string appended with version number(super-\/domain\-:domain.\-sub-\/domain namespace\-:Identifier.\-Version) \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_a28dcd3c0e6dbba1ae13cada7bb9fcb64}{to\-D\-B\-Id\-With\-Ver} () const 
+\begin{DoxyCompactList}\small\item\em return \hyperlink{classunisys_1_1Database}{Database} system I\-D string appended with version number(domain.\-sub-\/domain namespace\-:Identifier.\-Version) \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Miriam_a1edce6273cd71ec7289016008ffe9c67}{increase\-Ver} (int number=1)
+\begin{DoxyCompactList}\small\item\em Increase the number of version with 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1Miriam_ae5c770e671ddebdf17f1095656c1644e}{set\-Uri} (std\-::string const \&uri)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_a03b5f4f8523b5910504f6587fbd9cb0a}{ns}
+\begin{DoxyCompactList}\small\item\em domain.\-sub-\/domain namespace \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1Miriam_a0f6c60a2c904d9e5b28653464f5867f1}{id}
+\begin{DoxyCompactList}\small\item\em Identifier. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classunisys_1_1Miriam_a5dcb23fc55cc7643245087a941321a72}{version}
+\begin{DoxyCompactList}\small\item\em Version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+This Mirium object is a part of standard guidelines in the controlled annotation of model components, based on Uniform Resource Identifiers (U\-R\-I). The U\-R\-I format comprise of two parts U\-R\-N\-:identifier. U\-R\-N or Uniform Resource Name is in format \char`\"{}urn\-:miriam\-:domain\mbox{[}.\-sub-\/domain\mbox{]}\char`\"{}; such as urn\-:miriam\-:kegg.\-compound. In this class structure, only domain and sub-\/domain are stored in class data member. Identifier is the id of object reference to its own U\-R\-N. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Miriam_af805ea42b5093cb6f11f9c0e62bd448e}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!Miriam@{Miriam}}
+\index{Miriam@{Miriam}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{Miriam}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Miriam\-::\-Miriam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Miriam_af805ea42b5093cb6f11f9c0e62bd448e}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1Miriam_a1b881748690196866d48d3f221d20364}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!Miriam@{Miriam}}
+\index{Miriam@{Miriam}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{Miriam}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Miriam\-::\-Miriam (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{id, }
+\item[{std\-::string const \&}]{ns = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{version = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Miriam_a1b881748690196866d48d3f221d20364}
+
+
+Overloaded constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Miriam_a1edce6273cd71ec7289016008ffe9c67}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!increase\-Ver@{increase\-Ver}}
+\index{increase\-Ver@{increase\-Ver}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{increase\-Ver}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Miriam\-::increase\-Ver (
+\begin{DoxyParamCaption}
+\item[{int}]{number = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Miriam_a1edce6273cd71ec7289016008ffe9c67}
+
+
+Increase the number of version with 1. 
+
+\hypertarget{classunisys_1_1Miriam_a853dadae3c31160585e0cc0482825305}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Miriam\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_a853dadae3c31160585e0cc0482825305}
+
+
+Check validity of data. 
+
+\hypertarget{classunisys_1_1Miriam_acc3826ec210a5b031a070eb95e9caa7a}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!operator++@{operator++}}
+\index{operator++@{operator++}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Miriam\-::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{number = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Miriam_acc3826ec210a5b031a070eb95e9caa7a}
+
+
+Increase the number of version with 1. 
+
+\hypertarget{classunisys_1_1Miriam_a9c3ed7115b580c3f242b256a2e2a50b9}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Miriam\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Miriam} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_a9c3ed7115b580c3f242b256a2e2a50b9}
+
+
+Less than operator overload. 
+
+\hypertarget{classunisys_1_1Miriam_af67d441a13cbe7ecc1d8898254f1709e}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!operator==@{operator==}}
+\index{operator==@{operator==}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Miriam\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Miriam} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_af67d441a13cbe7ecc1d8898254f1709e}
+
+
+Equal operator overload. 
+
+\hypertarget{classunisys_1_1Miriam_ade6975ff1e7ded3be3a2962acc8469fe}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!set@{set}}
+\index{set@{set}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Miriam\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{id, }
+\item[{std\-::string const \&}]{ns = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{version = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Miriam_ade6975ff1e7ded3be3a2962acc8469fe}
+\hypertarget{classunisys_1_1Miriam_ae5c770e671ddebdf17f1095656c1644e}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!set\-Uri@{set\-Uri}}
+\index{set\-Uri@{set\-Uri}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{set\-Uri}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Miriam\-::set\-Uri (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{uri}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Miriam_ae5c770e671ddebdf17f1095656c1644e}
+\hypertarget{classunisys_1_1Miriam_a8ae73a002b63b953f75240ffbbfabd31}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!to\-D\-B\-Id@{to\-D\-B\-Id}}
+\index{to\-D\-B\-Id@{to\-D\-B\-Id}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{to\-D\-B\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::to\-D\-B\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_a8ae73a002b63b953f75240ffbbfabd31}
+
+
+return \hyperlink{classunisys_1_1Database}{Database} system I\-D string (domain.\-sub-\/domain namespace\-:Identifier) 
+
+\hypertarget{classunisys_1_1Miriam_a28dcd3c0e6dbba1ae13cada7bb9fcb64}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!to\-D\-B\-Id\-With\-Ver@{to\-D\-B\-Id\-With\-Ver}}
+\index{to\-D\-B\-Id\-With\-Ver@{to\-D\-B\-Id\-With\-Ver}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{to\-D\-B\-Id\-With\-Ver}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::to\-D\-B\-Id\-With\-Ver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_a28dcd3c0e6dbba1ae13cada7bb9fcb64}
+
+
+return \hyperlink{classunisys_1_1Database}{Database} system I\-D string appended with version number(domain.\-sub-\/domain namespace\-:Identifier.\-Version) 
+
+\hypertarget{classunisys_1_1Miriam_ad44b570433a4e5ec797a6299b2546dc4}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!to\-Id@{to\-Id}}
+\index{to\-Id@{to\-Id}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{to\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::to\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_ad44b570433a4e5ec797a6299b2546dc4}
+
+
+return Id string 
+
+\hypertarget{classunisys_1_1Miriam_ab08dc9375fadf0127c16024a93c9498f}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!to\-U\-R\-I@{to\-U\-R\-I}}
+\index{to\-U\-R\-I@{to\-U\-R\-I}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{to\-U\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::to\-U\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_ab08dc9375fadf0127c16024a93c9498f}
+
+
+return U\-R\-I string 
+
+\hypertarget{classunisys_1_1Miriam_a3af5a3b8f029f0ac520ed2f9e277d06e}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!to\-U\-R\-I\-With\-Ver@{to\-U\-R\-I\-With\-Ver}}
+\index{to\-U\-R\-I\-With\-Ver@{to\-U\-R\-I\-With\-Ver}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{to\-U\-R\-I\-With\-Ver}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::to\-U\-R\-I\-With\-Ver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Miriam_a3af5a3b8f029f0ac520ed2f9e277d06e}
+
+
+return U\-R\-I string appended with version number(super-\/domain\-:domain.\-sub-\/domain namespace\-:Identifier.\-Version) 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1Miriam_a0f6c60a2c904d9e5b28653464f5867f1}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!id@{id}}
+\index{id@{id}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::id\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Miriam_a0f6c60a2c904d9e5b28653464f5867f1}
+
+
+Identifier. 
+
+\hypertarget{classunisys_1_1Miriam_a03b5f4f8523b5910504f6587fbd9cb0a}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!ns@{ns}}
+\index{ns@{ns}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{ns}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Miriam\-::ns\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Miriam_a03b5f4f8523b5910504f6587fbd9cb0a}
+
+
+domain.\-sub-\/domain namespace 
+
+\hypertarget{classunisys_1_1Miriam_a5dcb23fc55cc7643245087a941321a72}{\index{unisys\-::\-Miriam@{unisys\-::\-Miriam}!version@{version}}
+\index{version@{version}!unisys::Miriam@{unisys\-::\-Miriam}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int unisys\-::\-Miriam\-::version\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1Miriam_a5dcb23fc55cc7643245087a941321a72}
+
+
+Version. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DBClass_8h}{D\-B\-Class.\-h}\end{DoxyCompactItemize}

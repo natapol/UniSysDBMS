@@ -1,0 +1,257 @@
+\hypertarget{classunisys_1_1ChEBIOWLClass}{\section{unisys\-:\-:Ch\-E\-B\-I\-O\-W\-L\-Class Class Reference}
+\label{classunisys_1_1ChEBIOWLClass}\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+}
+
+
+To handle owl\-:class tag of Ch\-E\-B\-I O\-W\-L format.  
+
+
+
+
+{\ttfamily \#include $<$chebiowl.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:Ch\-E\-B\-I\-O\-W\-L\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1ChEBIOWLClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1ChEBIOWLClass_a2399546f521a8944c9d2d684d34cffbb}{Ch\-E\-B\-I\-O\-W\-L\-Class} ()
+\item 
+\hyperlink{classunisys_1_1ChEBIOWLClass_a286dbb327267e654ac903076ace09ebf}{Ch\-E\-B\-I\-O\-W\-L\-Class} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)
+\item 
+void \hyperlink{classunisys_1_1ChEBIOWLClass_a923d1d7e6c6db3cf16f6fa0d361354e6}{parse} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)  throw (\-Parsing\-Error)
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_a065642342c1d6128eed047eb0ac2cc86}{get\-Id} () const 
+\item 
+std\-::map$<$ std\-::string, \\*
+std\-::set$<$ std\-::string $>$ $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_aee6d27a23c8d37f32e615c092b21bc6f}{get\-Sub\-Class\-Of} () const 
+\item 
+std\-::map$<$ std\-::string, \\*
+std\-::set$<$ std\-::string $>$ $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_a4f26e034a7e67b315b849214d339d518}{get\-Annotation\-Properties} () const 
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_af58a3d6397491f2ca151ddde60fc87b3}{get\-Property\-List} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_aca905897ba7ec051f58d8678c0212443}{get\-Formula} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_a99a66fa3cfd603164048154e6c69d81a}{get\-In\-Chi} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_acaae86d1b5cf33a684d7ffbdc0bd32d8}{get\-In\-Chi\-Key} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_a43fe054e370a5d6e451c85826b089eb1}{get\-S\-M\-I\-L\-E\-S} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_a50cb32b74994a3a8313bd3a8ed1f0f6d}{get\-Label} () const 
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_af0bcc628140659b151e773eba2a9c1fb}{get\-Sp\-Sub\-Class\-Of} (std\-::string const \&sub\-Class\-Type) const 
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_a7673a9020ac603b41004bcb4a743d568}{get\-Sp\-Annotation\-Property} (std\-::string const \&properties\-Name) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1ChEBIOWLClass_ae682fc16d656c5970f82a66f061950dc}{parse\-Sub\-Class\-Of} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)  throw (\-Parsing\-Error)
+\begin{DoxyCompactList}\small\item\em Parsing Sub\-Class\-Of tag. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1ChEBIOWLClass_af23bf20388d5b25b4312fe2bedf6c3d6}{parse\-Annotation} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)  throw (\-Parsing\-Error)
+\begin{DoxyCompactList}\small\item\em Parsing \hyperlink{classunisys_1_1Annotation}{Annotation} tag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_ab117174852af50b086c9baf28647be85}{chebi\-Id}
+\begin{DoxyCompactList}\small\item\em Ch\-E\-B\-I I\-D in /\-C\-H\-E\-B\-I\-:+/ format. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_a5069859deb537ea460525e98d277397c}{label}
+\begin{DoxyCompactList}\small\item\em Name of Ch\-E\-B\-I entity. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_a46b2c202643987ce0d4e3a105e117822}{inchi}
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_af64b976dc7f141a4935898fcb470cefb}{inchi\-Key}
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWLClass_ad36fc8f28f36623552de31e77095e570}{smiles}
+\item 
+std\-::map$<$ std\-::string, \\*
+std\-::set$<$ std\-::string $>$ $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_afac1eca0e61d1adcebd6d1feda765a63}{sub\-Class\-Of}
+\begin{DoxyCompactList}\small\item\em Relationship tag. \end{DoxyCompactList}\item 
+std\-::map$<$ std\-::string, \\*
+std\-::set$<$ std\-::string $>$ $>$ \hyperlink{classunisys_1_1ChEBIOWLClass_a4f4fec0580d988965e1ab42c8aecbb59}{Annotation\-Properties}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classunisys_1_1Annotation}{Annotation} tag except In\-Chi, In\-Chi\-Key and S\-M\-I\-L\-E\-S. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+To handle owl\-:class tag of Ch\-E\-B\-I O\-W\-L format. 
+
+some description. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a2399546f521a8944c9d2d684d34cffbb}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!Ch\-E\-B\-I\-O\-W\-L\-Class@{Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\index{Ch\-E\-B\-I\-O\-W\-L\-Class@{Ch\-E\-B\-I\-O\-W\-L\-Class}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{Ch\-E\-B\-I\-O\-W\-L\-Class}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ChEBIOWLClass_a2399546f521a8944c9d2d684d34cffbb}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a286dbb327267e654ac903076ace09ebf}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!Ch\-E\-B\-I\-O\-W\-L\-Class@{Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\index{Ch\-E\-B\-I\-O\-W\-L\-Class@{Ch\-E\-B\-I\-O\-W\-L\-Class}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{Ch\-E\-B\-I\-O\-W\-L\-Class}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ChEBIOWLClass_a286dbb327267e654ac903076ace09ebf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a4f26e034a7e67b315b849214d339d518}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Annotation\-Properties@{get\-Annotation\-Properties}}
+\index{get\-Annotation\-Properties@{get\-Annotation\-Properties}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Annotation\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, std\-::set$<$std\-::string$>$ $>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Annotation\-Properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_a4f26e034a7e67b315b849214d339d518}
+\hypertarget{classunisys_1_1ChEBIOWLClass_aca905897ba7ec051f58d8678c0212443}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Formula@{get\-Formula}}
+\index{get\-Formula@{get\-Formula}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Formula}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Formula (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_aca905897ba7ec051f58d8678c0212443}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a065642342c1d6128eed047eb0ac2cc86}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_a065642342c1d6128eed047eb0ac2cc86}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a99a66fa3cfd603164048154e6c69d81a}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-In\-Chi@{get\-In\-Chi}}
+\index{get\-In\-Chi@{get\-In\-Chi}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-In\-Chi}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-In\-Chi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_a99a66fa3cfd603164048154e6c69d81a}
+\hypertarget{classunisys_1_1ChEBIOWLClass_acaae86d1b5cf33a684d7ffbdc0bd32d8}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-In\-Chi\-Key@{get\-In\-Chi\-Key}}
+\index{get\-In\-Chi\-Key@{get\-In\-Chi\-Key}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-In\-Chi\-Key}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-In\-Chi\-Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_acaae86d1b5cf33a684d7ffbdc0bd32d8}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a50cb32b74994a3a8313bd3a8ed1f0f6d}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Label@{get\-Label}}
+\index{get\-Label@{get\-Label}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Label}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_a50cb32b74994a3a8313bd3a8ed1f0f6d}
+\hypertarget{classunisys_1_1ChEBIOWLClass_af58a3d6397491f2ca151ddde60fc87b3}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Property\-List@{get\-Property\-List}}
+\index{get\-Property\-List@{get\-Property\-List}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Property\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Property\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_af58a3d6397491f2ca151ddde60fc87b3}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a43fe054e370a5d6e451c85826b089eb1}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-S\-M\-I\-L\-E\-S@{get\-S\-M\-I\-L\-E\-S}}
+\index{get\-S\-M\-I\-L\-E\-S@{get\-S\-M\-I\-L\-E\-S}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-S\-M\-I\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-S\-M\-I\-L\-E\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_a43fe054e370a5d6e451c85826b089eb1}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a7673a9020ac603b41004bcb4a743d568}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Sp\-Annotation\-Property@{get\-Sp\-Annotation\-Property}}
+\index{get\-Sp\-Annotation\-Property@{get\-Sp\-Annotation\-Property}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Sp\-Annotation\-Property}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Sp\-Annotation\-Property (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{properties\-Name}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_a7673a9020ac603b41004bcb4a743d568}
+\hypertarget{classunisys_1_1ChEBIOWLClass_af0bcc628140659b151e773eba2a9c1fb}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Sp\-Sub\-Class\-Of@{get\-Sp\-Sub\-Class\-Of}}
+\index{get\-Sp\-Sub\-Class\-Of@{get\-Sp\-Sub\-Class\-Of}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Sp\-Sub\-Class\-Of}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Sp\-Sub\-Class\-Of (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{sub\-Class\-Type}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_af0bcc628140659b151e773eba2a9c1fb}
+\hypertarget{classunisys_1_1ChEBIOWLClass_aee6d27a23c8d37f32e615c092b21bc6f}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!get\-Sub\-Class\-Of@{get\-Sub\-Class\-Of}}
+\index{get\-Sub\-Class\-Of@{get\-Sub\-Class\-Of}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{get\-Sub\-Class\-Of}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, std\-::set$<$std\-::string$>$ $>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::get\-Sub\-Class\-Of (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWLClass_aee6d27a23c8d37f32e615c092b21bc6f}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a923d1d7e6c6db3cf16f6fa0d361354e6}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!parse@{parse}}
+\index{parse@{parse}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::parse (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)  throw ({\bf Parsing\-Error})}}\label{classunisys_1_1ChEBIOWLClass_a923d1d7e6c6db3cf16f6fa0d361354e6}
+\hypertarget{classunisys_1_1ChEBIOWLClass_af23bf20388d5b25b4312fe2bedf6c3d6}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!parse\-Annotation@{parse\-Annotation}}
+\index{parse\-Annotation@{parse\-Annotation}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{parse\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::parse\-Annotation (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)  throw ({\bf Parsing\-Error})\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_af23bf20388d5b25b4312fe2bedf6c3d6}
+
+
+Parsing \hyperlink{classunisys_1_1Annotation}{Annotation} tag. 
+
+\hypertarget{classunisys_1_1ChEBIOWLClass_ae682fc16d656c5970f82a66f061950dc}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!parse\-Sub\-Class\-Of@{parse\-Sub\-Class\-Of}}
+\index{parse\-Sub\-Class\-Of@{parse\-Sub\-Class\-Of}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{parse\-Sub\-Class\-Of}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::parse\-Sub\-Class\-Of (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)  throw ({\bf Parsing\-Error})\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_ae682fc16d656c5970f82a66f061950dc}
+
+
+Parsing Sub\-Class\-Of tag. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a4f4fec0580d988965e1ab42c8aecbb59}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!Annotation\-Properties@{Annotation\-Properties}}
+\index{Annotation\-Properties@{Annotation\-Properties}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{Annotation\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, std\-::set$<$std\-::string$>$ $>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::\-Annotation\-Properties\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_a4f4fec0580d988965e1ab42c8aecbb59}
+
+
+\hyperlink{classunisys_1_1Annotation}{Annotation} tag except In\-Chi, In\-Chi\-Key and S\-M\-I\-L\-E\-S. 
+
+\hypertarget{classunisys_1_1ChEBIOWLClass_ab117174852af50b086c9baf28647be85}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!chebi\-Id@{chebi\-Id}}
+\index{chebi\-Id@{chebi\-Id}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{chebi\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::chebi\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_ab117174852af50b086c9baf28647be85}
+
+
+Ch\-E\-B\-I I\-D in /\-C\-H\-E\-B\-I\-:+/ format. 
+
+\hypertarget{classunisys_1_1ChEBIOWLClass_a46b2c202643987ce0d4e3a105e117822}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!inchi@{inchi}}
+\index{inchi@{inchi}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{inchi}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::inchi\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_a46b2c202643987ce0d4e3a105e117822}
+\hypertarget{classunisys_1_1ChEBIOWLClass_af64b976dc7f141a4935898fcb470cefb}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!inchi\-Key@{inchi\-Key}}
+\index{inchi\-Key@{inchi\-Key}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{inchi\-Key}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::inchi\-Key\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_af64b976dc7f141a4935898fcb470cefb}
+\hypertarget{classunisys_1_1ChEBIOWLClass_a5069859deb537ea460525e98d277397c}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!label@{label}}
+\index{label@{label}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::label\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_a5069859deb537ea460525e98d277397c}
+
+
+Name of Ch\-E\-B\-I entity. 
+
+\hypertarget{classunisys_1_1ChEBIOWLClass_ad36fc8f28f36623552de31e77095e570}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!smiles@{smiles}}
+\index{smiles@{smiles}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{smiles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::smiles\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_ad36fc8f28f36623552de31e77095e570}
+\hypertarget{classunisys_1_1ChEBIOWLClass_afac1eca0e61d1adcebd6d1feda765a63}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}!sub\-Class\-Of@{sub\-Class\-Of}}
+\index{sub\-Class\-Of@{sub\-Class\-Of}!unisys::ChEBIOWLClass@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class}}
+\subsubsection[{sub\-Class\-Of}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, std\-::set$<$std\-::string$>$ $>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-Class\-::sub\-Class\-Of\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWLClass_afac1eca0e61d1adcebd6d1feda765a63}
+
+
+Relationship tag. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{chebiowl_8h}{chebiowl.\-h}\end{DoxyCompactItemize}

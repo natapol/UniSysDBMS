@@ -1,0 +1,119 @@
+\hypertarget{classunisys_1_1ChEBIOWL}{\section{unisys\-:\-:Ch\-E\-B\-I\-O\-W\-L Class Reference}
+\label{classunisys_1_1ChEBIOWL}\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+}
+
+
+Used to parse Ch\-E\-B\-I O\-W\-L format.  
+
+
+
+
+{\ttfamily \#include $<$chebiowl.\-h$>$}
+
+
+
+Collaboration diagram for unisys\-:\-:Ch\-E\-B\-I\-O\-W\-L\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1ChEBIOWL__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1ChEBIOWL_a27532c1116f67a40537697be2fd43677}{Ch\-E\-B\-I\-O\-W\-L} ()
+\item 
+\hyperlink{classunisys_1_1ChEBIOWL_aa1f70f82dbb1b9657e32d6864bfb5f97}{Ch\-E\-B\-I\-O\-W\-L} (std\-::string const \&filename)
+\item 
+void \hyperlink{classunisys_1_1ChEBIOWL_a83d26bbca0b2c067cbc27f919da5a6a7}{parse} (std\-::string const \&filename)
+\item 
+std\-::vector$<$ \hyperlink{classunisys_1_1ChEBIOWLClass}{Ch\-E\-B\-I\-O\-W\-L\-Class} $>$ \hyperlink{classunisys_1_1ChEBIOWL_abed6a43a962a98659d28fb9a46232254}{get\-Class\-List} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1ChEBIOWL_a381f8bd0263b190157dd586c481083d0}{get\-Version} () const 
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1ChEBIOWL_a59e06150bc5b433fdb14e55b1ca95e16}{get\-File\-Annotation} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{classunisys_1_1ChEBIOWL_af8b35beb7f297b7314a82c011bbb5af8}{owl\-Ontology}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classunisys_1_1Ontology}{Ontology} tag with file information. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{classunisys_1_1ChEBIOWLClass}{Ch\-E\-B\-I\-O\-W\-L\-Class} $>$ \hyperlink{classunisys_1_1ChEBIOWL_a86e75569a9a2110ca09bda3c9e2bcb37}{class\-List}
+\begin{DoxyCompactList}\small\item\em vector of \hyperlink{classunisys_1_1ChEBIOWLClass}{Ch\-E\-B\-I\-O\-W\-L\-Class} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to parse Ch\-E\-B\-I O\-W\-L format. 
+
+some description. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1ChEBIOWL_a27532c1116f67a40537697be2fd43677}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!Ch\-E\-B\-I\-O\-W\-L@{Ch\-E\-B\-I\-O\-W\-L}}
+\index{Ch\-E\-B\-I\-O\-W\-L@{Ch\-E\-B\-I\-O\-W\-L}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{Ch\-E\-B\-I\-O\-W\-L}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::\-Ch\-E\-B\-I\-O\-W\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ChEBIOWL_a27532c1116f67a40537697be2fd43677}
+\hypertarget{classunisys_1_1ChEBIOWL_aa1f70f82dbb1b9657e32d6864bfb5f97}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!Ch\-E\-B\-I\-O\-W\-L@{Ch\-E\-B\-I\-O\-W\-L}}
+\index{Ch\-E\-B\-I\-O\-W\-L@{Ch\-E\-B\-I\-O\-W\-L}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{Ch\-E\-B\-I\-O\-W\-L}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::\-Ch\-E\-B\-I\-O\-W\-L (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ChEBIOWL_aa1f70f82dbb1b9657e32d6864bfb5f97}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1ChEBIOWL_abed6a43a962a98659d28fb9a46232254}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!get\-Class\-List@{get\-Class\-List}}
+\index{get\-Class\-List@{get\-Class\-List}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{get\-Class\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Ch\-E\-B\-I\-O\-W\-L\-Class}$>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::get\-Class\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWL_abed6a43a962a98659d28fb9a46232254}
+\hypertarget{classunisys_1_1ChEBIOWL_a59e06150bc5b433fdb14e55b1ca95e16}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!get\-File\-Annotation@{get\-File\-Annotation}}
+\index{get\-File\-Annotation@{get\-File\-Annotation}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{get\-File\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::get\-File\-Annotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWL_a59e06150bc5b433fdb14e55b1ca95e16}
+\hypertarget{classunisys_1_1ChEBIOWL_a381f8bd0263b190157dd586c481083d0}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!get\-Version@{get\-Version}}
+\index{get\-Version@{get\-Version}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{get\-Version}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::get\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1ChEBIOWL_a381f8bd0263b190157dd586c481083d0}
+\hypertarget{classunisys_1_1ChEBIOWL_a83d26bbca0b2c067cbc27f919da5a6a7}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!parse@{parse}}
+\index{parse@{parse}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::parse (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1ChEBIOWL_a83d26bbca0b2c067cbc27f919da5a6a7}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1ChEBIOWL_a86e75569a9a2110ca09bda3c9e2bcb37}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!class\-List@{class\-List}}
+\index{class\-List@{class\-List}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{class\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Ch\-E\-B\-I\-O\-W\-L\-Class}$>$ unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::class\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWL_a86e75569a9a2110ca09bda3c9e2bcb37}
+
+
+vector of \hyperlink{classunisys_1_1ChEBIOWLClass}{Ch\-E\-B\-I\-O\-W\-L\-Class} 
+
+\hypertarget{classunisys_1_1ChEBIOWL_af8b35beb7f297b7314a82c011bbb5af8}{\index{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}!owl\-Ontology@{owl\-Ontology}}
+\index{owl\-Ontology@{owl\-Ontology}!unisys::ChEBIOWL@{unisys\-::\-Ch\-E\-B\-I\-O\-W\-L}}
+\subsubsection[{owl\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} unisys\-::\-Ch\-E\-B\-I\-O\-W\-L\-::owl\-Ontology\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1ChEBIOWL_af8b35beb7f297b7314a82c011bbb5af8}
+
+
+\hyperlink{classunisys_1_1Ontology}{Ontology} tag with file information. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{chebiowl_8h}{chebiowl.\-h}\end{DoxyCompactItemize}

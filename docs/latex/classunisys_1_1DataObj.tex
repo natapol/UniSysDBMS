@@ -1,0 +1,508 @@
+\hypertarget{classunisys_1_1DataObj}{\section{unisys\-:\-:Data\-Obj Class Reference}
+\label{classunisys_1_1DataObj}\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}}
+}
+
+
+{\ttfamily \#include $<$D\-B\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Data\-Obj\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classunisys_1_1DataObj__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Data\-Obj\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1DataObj__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1DataObj_a4d237aaadda27adda13c026e0fdc944e}{Data\-Obj} ()
+\item 
+\hyperlink{classunisys_1_1DataObj_ab6c5ea140ad5abe24f6dfcbf40176b25}{Data\-Obj} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a3b0243f24755d8ce190486e1c552c6ac}{add\-With\-Check} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a53cfd20ae94853de0407d8328e0eb4fb}{add\-With\-Out\-Check} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\item 
+bool \hyperlink{classunisys_1_1DataObj_adcbef6f39839328f235674bf10d4309c}{operator$<$} (\hyperlink{classunisys_1_1DataObj}{Data\-Obj} const \&other) const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_ab9a18d2b433bff7b1e5bea4bd5fb6090}{operator$<$=} (\hyperlink{classunisys_1_1DataObj}{Data\-Obj} const \&other) const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_a13b1c6af9106e32172c7fb3099bd627f}{operator$>$} (\hyperlink{classunisys_1_1DataObj}{Data\-Obj} const \&other) const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_acbe081c6f2b2d5531df234619880c090}{operator$>$=} (\hyperlink{classunisys_1_1DataObj}{Data\-Obj} const \&other) const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_ad737e7dd24ebf6fd2d77bd42183ab528}{operator==} (\hyperlink{classunisys_1_1DataObj}{Data\-Obj} const \&other) const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_a6e4042307576dc0ac8281819402bc250}{valid} () const 
+\item 
+std\-::string \hyperlink{classunisys_1_1DataObj_aa328fe2b63c53f761529723ad2e45406}{md5} ()
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1DataObj_ad79e34931486ad2a44b735243e8556d7}{to\-B\-S\-O\-N\-Obj} ()
+\item 
+std\-::string \hyperlink{classunisys_1_1DataObj_a7c1d7c36a04fdf4d0de279dc57868b0d}{to\-String} (bool is\-Array=false, bool full=false)
+\item 
+mongo\-::\-B\-S\-O\-N\-Element \hyperlink{classunisys_1_1DataObj_af1e6244874e9120be943641ab566fb14}{get\-Field} (std\-::string const \&field\-Name) const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_afd18419bac2fddc4832c24e9e064d7df}{has\-Field} (std\-::string const \&field\-Name) const 
+\item 
+void \hyperlink{classunisys_1_1DataObj_ab7fdf0a4684987c6e08c82c495065e28}{remove\-Field} (std\-::string const \&field\-Name)
+\item 
+bool \hyperlink{classunisys_1_1DataObj_ad453f6c376abd5c49fdc05e43def437b}{is\-Owned} () const 
+\item 
+bool \hyperlink{classunisys_1_1DataObj_af0522a53b0cbc2399c82140da8808212}{is\-Valid} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classunisys_1_1DataObj_acdc1989300995834a6c8ff03dc2f1268}{init\-Field} ()=0
+\item 
+void \hyperlink{classunisys_1_1DataObj_a9a6de9a55343929343fcbba6ac0cbd7f}{add\-Field\-Set} (std\-::string const \&\hyperlink{classunisys_1_1DataObj_a821fe7b1d5c081703b92bba388f8de6f}{field\-Set}, bool is\-Require=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_aeae53e9f475d1d5baeacfb17f76d4daf}{append\-Elements} (mongo\-::\-B\-S\-O\-N\-Obj x)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a6ea78a908761eedba5f944d644c951b3}{append\-Elements\-Unique} (mongo\-::\-B\-S\-O\-N\-Obj x)
+\item 
+void \hyperlink{classunisys_1_1DataObj_ab1170cf2eb665d6caa1da03ee3cb16bd}{append\-As} (mongo\-::\-B\-S\-O\-N\-Element const \&e, std\-::string const \&field\-Name, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a674e261874099b4a1d1a8ec3204010da}{append\-Array} (std\-::string const \&field\-Name, mongo\-::\-B\-S\-O\-N\-Obj const \&sub\-Obj)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a7f66c4be5b17528ebab7025c5ad05895}{append\-Array} (std\-::string const \&field\-Name, int start, int stop)
+\item 
+{\footnotesize template$<$class type $>$ }\\void \hyperlink{classunisys_1_1DataObj_ab14bb36e1a267ea1cfc70eef456995e6}{append\-Array} (std\-::string const \&field\-Name, type const \&sub\-Obj)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a26834076eef0ce5f207c9b8378fabe3b}{append} (std\-::string const \&field\-Name, const char $\ast$str, int sz, bool substitute=false)
+\item 
+{\footnotesize template$<$class my\-Type $>$ }\\void \hyperlink{classunisys_1_1DataObj_a2e03be1975e5773b3cecb2dfff81c041}{append} (std\-::string const \&field\-Name, my\-Type value, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_ab3952fdef2b7b3311d697e0308da79e0}{set} (std\-::string const \&field\-Name, std\-::string const \&value)
+\item 
+{\footnotesize template$<$class my\-Type $>$ }\\void \hyperlink{classunisys_1_1DataObj_ab41848078c60f0b343f5edc979d12039}{set} (std\-::string const \&field\-Name, my\-Type value)
+\item 
+void \hyperlink{classunisys_1_1DataObj_ae93e8390d583c6d3588fa8daf56e0b9e}{set} (std\-::string const \&field\-Name, int value)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a8c21679bf7fb8575279ceb2f7a921976}{set} (std\-::string const \&field\-Name, double value)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a3c4a277d0e90de7d13b88c7c14d0a99f}{set} (std\-::string const \&field\-Name, const char $\ast$value)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a853d760d10b49243b7c83b1692d12dbc}{set} (std\-::string const \&field\-Name, bool value)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a7c2d6a896ed5cdbf5c31aff3691a14a0}{set} (std\-::string const \&field\-Name, int start, int stop)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a85ef5bce61421b55f16054dc0d8e3ccc}{append\-Time\-T} (std\-::string const \&field\-Name, time\-\_\-t dt, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a66a85f06432cb3b5079bc4dc867ffd47}{append\-Regex} (std\-::string const \&field\-Name, std\-::string const \&regex, std\-::string const \&options=\char`\"{}\char`\"{}, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_aee9b67bba224472d199c0327306bffaa}{append\-Time\-Stamp} (std\-::string const \&field\-Name, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a92854b00b01ce8ccdbc2e4b272d2977b}{append\-As\-Number} (std\-::string const \&field\-Name, std\-::string const \&\hyperlink{classunisys_1_1DataObj_a1c5410a047ff8cf88f810a6e3a1a7c29}{data}, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a1ab8b5a73b228a328bbf032d13af43ab}{append\-Null} (std\-::string const \&field\-Name, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a0c23d2edaffd7262391e58251d772f15}{append\-Code} (std\-::string const \&field\-Name, std\-::string const \&code, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_ab7582c0c47c4e2d8dbbe8bfcbe9b27c8}{append\-D\-B\-Ref} (std\-::string const \&field\-Name, std\-::string const \&ns, mongo\-::\-O\-I\-D const \&oid, bool substitute=false)
+\item 
+void \hyperlink{classunisys_1_1DataObj_a0e00b9d4961b2b11eba162a8d2636002}{gen\-O\-I\-D} ()
+\item 
+void \hyperlink{classunisys_1_1DataObj_aeeae93641245fa30a55aa07d24d44afd}{sort} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1DataObj_a1c5410a047ff8cf88f810a6e3a1a7c29}{data}
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{classunisys_1_1DataObj_a821fe7b1d5c081703b92bba388f8de6f}{field\-Set}
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classunisys_1_1DataObj_a0edcaa1c3d03422dca7171c32fcf1951}{require\-Field}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1DataObj_a4d237aaadda27adda13c026e0fdc944e}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!Data\-Obj@{Data\-Obj}}
+\index{Data\-Obj@{Data\-Obj}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{Data\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Data\-Obj\-::\-Data\-Obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_a4d237aaadda27adda13c026e0fdc944e}
+\hypertarget{classunisys_1_1DataObj_ab6c5ea140ad5abe24f6dfcbf40176b25}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!Data\-Obj@{Data\-Obj}}
+\index{Data\-Obj@{Data\-Obj}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{Data\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Data\-Obj\-::\-Data\-Obj (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_ab6c5ea140ad5abe24f6dfcbf40176b25}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1DataObj_a9a6de9a55343929343fcbba6ac0cbd7f}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!add\-Field\-Set@{add\-Field\-Set}}
+\index{add\-Field\-Set@{add\-Field\-Set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{add\-Field\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::add\-Field\-Set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Set, }
+\item[{bool}]{is\-Require = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a9a6de9a55343929343fcbba6ac0cbd7f}
+\hypertarget{classunisys_1_1DataObj_a3b0243f24755d8ce190486e1c552c6ac}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!add\-With\-Check@{add\-With\-Check}}
+\index{add\-With\-Check@{add\-With\-Check}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{add\-With\-Check}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::add\-With\-Check (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_a3b0243f24755d8ce190486e1c552c6ac}
+\hypertarget{classunisys_1_1DataObj_a53cfd20ae94853de0407d8328e0eb4fb}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!add\-With\-Out\-Check@{add\-With\-Out\-Check}}
+\index{add\-With\-Out\-Check@{add\-With\-Out\-Check}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{add\-With\-Out\-Check}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::add\-With\-Out\-Check (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_a53cfd20ae94853de0407d8328e0eb4fb}
+\hypertarget{classunisys_1_1DataObj_a26834076eef0ce5f207c9b8378fabe3b}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append@{append}}
+\index{append@{append}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{const char $\ast$}]{str, }
+\item[{int}]{sz, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a26834076eef0ce5f207c9b8378fabe3b}
+\hypertarget{classunisys_1_1DataObj_a2e03be1975e5773b3cecb2dfff81c041}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append@{append}}
+\index{append@{append}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class my\-Type $>$ void unisys\-::\-Data\-Obj\-::append (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{my\-Type}]{value, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a2e03be1975e5773b3cecb2dfff81c041}
+\hypertarget{classunisys_1_1DataObj_a674e261874099b4a1d1a8ec3204010da}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Array@{append\-Array}}
+\index{append\-Array@{append\-Array}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Array (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{sub\-Obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a674e261874099b4a1d1a8ec3204010da}
+\hypertarget{classunisys_1_1DataObj_a7f66c4be5b17528ebab7025c5ad05895}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Array@{append\-Array}}
+\index{append\-Array@{append\-Array}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Array (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{int}]{start, }
+\item[{int}]{stop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a7f66c4be5b17528ebab7025c5ad05895}
+\hypertarget{classunisys_1_1DataObj_ab14bb36e1a267ea1cfc70eef456995e6}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Array@{append\-Array}}
+\index{append\-Array@{append\-Array}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class type $>$ void unisys\-::\-Data\-Obj\-::append\-Array (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{type const \&}]{sub\-Obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classunisys_1_1DataObj_ab14bb36e1a267ea1cfc70eef456995e6}
+\hypertarget{classunisys_1_1DataObj_ab1170cf2eb665d6caa1da03ee3cb16bd}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-As@{append\-As}}
+\index{append\-As@{append\-As}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-As}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-As (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Element const \&}]{e, }
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_ab1170cf2eb665d6caa1da03ee3cb16bd}
+\hypertarget{classunisys_1_1DataObj_a92854b00b01ce8ccdbc2e4b272d2977b}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-As\-Number@{append\-As\-Number}}
+\index{append\-As\-Number@{append\-As\-Number}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-As\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-As\-Number (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{std\-::string const \&}]{data, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a92854b00b01ce8ccdbc2e4b272d2977b}
+\hypertarget{classunisys_1_1DataObj_a0c23d2edaffd7262391e58251d772f15}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Code@{append\-Code}}
+\index{append\-Code@{append\-Code}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Code}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Code (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{std\-::string const \&}]{code, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a0c23d2edaffd7262391e58251d772f15}
+\hypertarget{classunisys_1_1DataObj_ab7582c0c47c4e2d8dbbe8bfcbe9b27c8}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-D\-B\-Ref@{append\-D\-B\-Ref}}
+\index{append\-D\-B\-Ref@{append\-D\-B\-Ref}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-D\-B\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-D\-B\-Ref (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{std\-::string const \&}]{ns, }
+\item[{mongo\-::\-O\-I\-D const \&}]{oid, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_ab7582c0c47c4e2d8dbbe8bfcbe9b27c8}
+\hypertarget{classunisys_1_1DataObj_aeae53e9f475d1d5baeacfb17f76d4daf}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Elements@{append\-Elements}}
+\index{append\-Elements@{append\-Elements}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Elements (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_aeae53e9f475d1d5baeacfb17f76d4daf}
+\hypertarget{classunisys_1_1DataObj_a6ea78a908761eedba5f944d644c951b3}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Elements\-Unique@{append\-Elements\-Unique}}
+\index{append\-Elements\-Unique@{append\-Elements\-Unique}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Elements\-Unique}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Elements\-Unique (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a6ea78a908761eedba5f944d644c951b3}
+\hypertarget{classunisys_1_1DataObj_a1ab8b5a73b228a328bbf032d13af43ab}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Null@{append\-Null}}
+\index{append\-Null@{append\-Null}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Null}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Null (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a1ab8b5a73b228a328bbf032d13af43ab}
+\hypertarget{classunisys_1_1DataObj_a66a85f06432cb3b5079bc4dc867ffd47}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Regex@{append\-Regex}}
+\index{append\-Regex@{append\-Regex}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Regex}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Regex (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{std\-::string const \&}]{regex, }
+\item[{std\-::string const \&}]{options = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a66a85f06432cb3b5079bc4dc867ffd47}
+\hypertarget{classunisys_1_1DataObj_aee9b67bba224472d199c0327306bffaa}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Time\-Stamp@{append\-Time\-Stamp}}
+\index{append\-Time\-Stamp@{append\-Time\-Stamp}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Time\-Stamp}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Time\-Stamp (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_aee9b67bba224472d199c0327306bffaa}
+\hypertarget{classunisys_1_1DataObj_a85ef5bce61421b55f16054dc0d8e3ccc}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!append\-Time\-T@{append\-Time\-T}}
+\index{append\-Time\-T@{append\-Time\-T}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{append\-Time\-T}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::append\-Time\-T (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{time\-\_\-t}]{dt, }
+\item[{bool}]{substitute = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a85ef5bce61421b55f16054dc0d8e3ccc}
+\hypertarget{classunisys_1_1DataObj_a0e00b9d4961b2b11eba162a8d2636002}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!gen\-O\-I\-D@{gen\-O\-I\-D}}
+\index{gen\-O\-I\-D@{gen\-O\-I\-D}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{gen\-O\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::gen\-O\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a0e00b9d4961b2b11eba162a8d2636002}
+\hypertarget{classunisys_1_1DataObj_af1e6244874e9120be943641ab566fb14}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!get\-Field@{get\-Field}}
+\index{get\-Field@{get\-Field}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{get\-Field}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Element unisys\-::\-Data\-Obj\-::get\-Field (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_af1e6244874e9120be943641ab566fb14}
+\hypertarget{classunisys_1_1DataObj_afd18419bac2fddc4832c24e9e064d7df}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!has\-Field@{has\-Field}}
+\index{has\-Field@{has\-Field}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{has\-Field}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::has\-Field (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_afd18419bac2fddc4832c24e9e064d7df}
+\hypertarget{classunisys_1_1DataObj_acdc1989300995834a6c8ff03dc2f1268}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}virtual void unisys\-::\-Data\-Obj\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classunisys_1_1DataObj_acdc1989300995834a6c8ff03dc2f1268}
+
+
+Implemented in \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a9999c6a5353e9b62056691cf0187f04f}{unisys\-::\-Biochemical\-Reaction\-With\-Transport}, \hyperlink{classunisys_1_1Transport_a04f17e27ff568c45688cde1a95265dea}{unisys\-::\-Transport}, \hyperlink{classunisys_1_1BiochemicalReaction_a61d5cb519be2ac672ae8e243abdc7489}{unisys\-::\-Biochemical\-Reaction}, \hyperlink{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{unisys\-::\-Conversion}, \hyperlink{classunisys_1_1GeneticInteraction_a946b8270db467290f49a050bd29f55d2}{unisys\-::\-Genetic\-Interaction}, \hyperlink{classunisys_1_1MolecularInteraction_a6bae8353e2734eae8345228f7895665e}{unisys\-::\-Molecular\-Interaction}, \hyperlink{classunisys_1_1Control_ab5bd5022b73b81e3fd18af06027213b1}{unisys\-::\-Control}, \hyperlink{classunisys_1_1Interaction_a84c6c3e09f83ec8dd8dec7485f97e02b}{unisys\-::\-Interaction}, \hyperlink{classunisys_1_1Metadata_a5c3596b451d9539846f8f6ed7bfceaf9}{unisys\-::\-Metadata}, \hyperlink{classunisys_1_1Complex_a63e019fcca3e2d919937694678d9ee1f}{unisys\-::\-Complex}, \hyperlink{classunisys_1_1SubRegion_abaff0ecac757200f5e4173a86054927e}{unisys\-::\-Sub\-Region}, \hyperlink{classunisys_1_1Protein_a41d52894afce9bd0f7f047ac560f38cf}{unisys\-::\-Protein}, \hyperlink{classunisys_1_1KineticParameter_a433dff8934423dc18efda6bb44b2f477}{unisys\-::\-Kinetic\-Parameter}, \hyperlink{classunisys_1_1Tracking_ae8e471c1d4effb3c746e654ba1c970ba}{unisys\-::\-Tracking}, \hyperlink{classunisys_1_1MathML_a51e1fc565fb5ad24ca6557a8db6551d0}{unisys\-::\-Math\-M\-L}, \hyperlink{classunisys_1_1RNA_abeb5db8942c0d2ecac49086d50d6e7ab}{unisys\-::\-R\-N\-A}, \hyperlink{classunisys_1_1CellularLocation_a3aa4c3ebf735ecf9672d0986a63b1dfe}{unisys\-::\-Cellular\-Location}, \hyperlink{classunisys_1_1DNARegion_a213d2340cc8f4172e3f220f1fe9883f1}{unisys\-::\-D\-N\-A\-Region}, \hyperlink{classunisys_1_1Relation_a2793345e5ca711cf0f6f8229a4c652ab}{unisys\-::\-Relation}, \hyperlink{classunisys_1_1IdRef_a2f8143648ba349f8a910ee64b10c0829}{unisys\-::\-Id\-Ref}, \hyperlink{classunisys_1_1DNA_aa33eff29fbf57aa7c626999ade40910d}{unisys\-::\-D\-N\-A}, \hyperlink{classunisys_1_1OntoRelationship_a14ed8b86b0cdc55c63e5ea5443e830a3}{unisys\-::\-Onto\-Relationship}, \hyperlink{classunisys_1_1Annotation_a56a0503bd22b05cae674b8d4df046d9e}{unisys\-::\-Annotation}, \hyperlink{classunisys_1_1SmallMolecule_a0f0da371544569163782603ace820d0a}{unisys\-::\-Small\-Molecule}, \hyperlink{classunisys_1_1Evidence_a8ce7e3da30295b98aa095031ef8491bc}{unisys\-::\-Evidence}, \hyperlink{classunisys_1_1PhysicalEntity_ad445727cb6b1c12e954819d8207104e8}{unisys\-::\-Physical\-Entity}, \hyperlink{classunisys_1_1BioSource_a7a4188b6ce6f969d62c6d903d3e27f09}{unisys\-::\-Bio\-Source}, \hyperlink{classunisys_1_1BioObject_a0437fcc7976ff9e8dc5ce77246c06f71}{unisys\-::\-Bio\-Object}, \hyperlink{classunisys_1_1Score_a3fece7415530d4b577fffcb284535c05}{unisys\-::\-Score}, \hyperlink{classunisys_1_1Ontology_a42f1c4257f60144420b1bc9ac128b5cc}{unisys\-::\-Ontology}, \hyperlink{classunisys_1_1Xref_afc94c9013bfe5cec8a474610212cb941}{unisys\-::\-Xref}, \hyperlink{classunisys_1_1Object_ad0a4afaf978d2cca8a6a27506f06138c}{unisys\-::\-Object}, and \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1DataObj_ad453f6c376abd5c49fdc05e43def437b}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!is\-Owned@{is\-Owned}}
+\index{is\-Owned@{is\-Owned}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{is\-Owned}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::is\-Owned (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_ad453f6c376abd5c49fdc05e43def437b}
+\hypertarget{classunisys_1_1DataObj_af0522a53b0cbc2399c82140da8808212}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_af0522a53b0cbc2399c82140da8808212}
+
+
+Reimplemented in \hyperlink{classunisys_1_1IdRef_a4ab596023020171bceeb2aed8bd529ce}{unisys\-::\-Id\-Ref}.
+
+\hypertarget{classunisys_1_1DataObj_aa328fe2b63c53f761529723ad2e45406}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!md5@{md5}}
+\index{md5@{md5}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{md5}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Data\-Obj\-::md5 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_aa328fe2b63c53f761529723ad2e45406}
+\hypertarget{classunisys_1_1DataObj_adcbef6f39839328f235674bf10d4309c}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\-Obj} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_adcbef6f39839328f235674bf10d4309c}
+\hypertarget{classunisys_1_1DataObj_ab9a18d2b433bff7b1e5bea4bd5fb6090}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\-Obj} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_ab9a18d2b433bff7b1e5bea4bd5fb6090}
+\hypertarget{classunisys_1_1DataObj_ad737e7dd24ebf6fd2d77bd42183ab528}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!operator==@{operator==}}
+\index{operator==@{operator==}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\-Obj} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_ad737e7dd24ebf6fd2d77bd42183ab528}
+\hypertarget{classunisys_1_1DataObj_a13b1c6af9106e32172c7fb3099bd627f}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\-Obj} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_a13b1c6af9106e32172c7fb3099bd627f}
+\hypertarget{classunisys_1_1DataObj_acbe081c6f2b2d5531df234619880c090}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\-Obj} const \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_acbe081c6f2b2d5531df234619880c090}
+\hypertarget{classunisys_1_1DataObj_ab7fdf0a4684987c6e08c82c495065e28}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!remove\-Field@{remove\-Field}}
+\index{remove\-Field@{remove\-Field}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{remove\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::remove\-Field (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_ab7fdf0a4684987c6e08c82c495065e28}
+\hypertarget{classunisys_1_1DataObj_ab3952fdef2b7b3311d697e0308da79e0}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{std\-::string const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_ab3952fdef2b7b3311d697e0308da79e0}
+\hypertarget{classunisys_1_1DataObj_ab41848078c60f0b343f5edc979d12039}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class my\-Type $>$ void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{my\-Type}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classunisys_1_1DataObj_ab41848078c60f0b343f5edc979d12039}
+\hypertarget{classunisys_1_1DataObj_ae93e8390d583c6d3588fa8daf56e0b9e}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_ae93e8390d583c6d3588fa8daf56e0b9e}
+\hypertarget{classunisys_1_1DataObj_a8c21679bf7fb8575279ceb2f7a921976}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a8c21679bf7fb8575279ceb2f7a921976}
+\hypertarget{classunisys_1_1DataObj_a3c4a277d0e90de7d13b88c7c14d0a99f}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a3c4a277d0e90de7d13b88c7c14d0a99f}
+\hypertarget{classunisys_1_1DataObj_a853d760d10b49243b7c83b1692d12dbc}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a853d760d10b49243b7c83b1692d12dbc}
+\hypertarget{classunisys_1_1DataObj_a7c2d6a896ed5cdbf5c31aff3691a14a0}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!set@{set}}
+\index{set@{set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{field\-Name, }
+\item[{int}]{start, }
+\item[{int}]{stop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a7c2d6a896ed5cdbf5c31aff3691a14a0}
+\hypertarget{classunisys_1_1DataObj_aeeae93641245fa30a55aa07d24d44afd}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!sort@{sort}}
+\index{sort@{sort}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Data\-Obj\-::sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_aeeae93641245fa30a55aa07d24d44afd}
+\hypertarget{classunisys_1_1DataObj_ad79e34931486ad2a44b735243e8556d7}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!to\-B\-S\-O\-N\-Obj@{to\-B\-S\-O\-N\-Obj}}
+\index{to\-B\-S\-O\-N\-Obj@{to\-B\-S\-O\-N\-Obj}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{to\-B\-S\-O\-N\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Data\-Obj\-::to\-B\-S\-O\-N\-Obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_ad79e34931486ad2a44b735243e8556d7}
+
+
+Reimplemented in \hyperlink{classunisys_1_1Interaction_a1105bf288d37acc3079146d1c5d4335c}{unisys\-::\-Interaction}.
+
+\hypertarget{classunisys_1_1DataObj_a7c1d7c36a04fdf4d0de279dc57868b0d}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Data\-Obj\-::to\-String (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Array = {\ttfamily false}, }
+\item[{bool}]{full = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1DataObj_a7c1d7c36a04fdf4d0de279dc57868b0d}
+\hypertarget{classunisys_1_1DataObj_a6e4042307576dc0ac8281819402bc250}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!valid@{valid}}
+\index{valid@{valid}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Data\-Obj\-::valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1DataObj_a6e4042307576dc0ac8281819402bc250}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1DataObj_a1c5410a047ff8cf88f810a6e3a1a7c29}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!data@{data}}
+\index{data@{data}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Data\-Obj\-::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a1c5410a047ff8cf88f810a6e3a1a7c29}
+\hypertarget{classunisys_1_1DataObj_a821fe7b1d5c081703b92bba388f8de6f}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!field\-Set@{field\-Set}}
+\index{field\-Set@{field\-Set}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{field\-Set}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ unisys\-::\-Data\-Obj\-::field\-Set\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a821fe7b1d5c081703b92bba388f8de6f}
+\hypertarget{classunisys_1_1DataObj_a0edcaa1c3d03422dca7171c32fcf1951}{\index{unisys\-::\-Data\-Obj@{unisys\-::\-Data\-Obj}!require\-Field@{require\-Field}}
+\index{require\-Field@{require\-Field}!unisys::DataObj@{unisys\-::\-Data\-Obj}}
+\subsubsection[{require\-Field}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$std\-::string$>$ unisys\-::\-Data\-Obj\-::require\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1DataObj_a0edcaa1c3d03422dca7171c32fcf1951}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DBClass_8h}{D\-B\-Class.\-h}\end{DoxyCompactItemize}

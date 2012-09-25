@@ -1,0 +1,158 @@
+\hypertarget{classunisys_1_1BiochemicalReaction}{\section{unisys\-:\-:Biochemical\-Reaction Class Reference}
+\label{classunisys_1_1BiochemicalReaction}\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Biochemical\-Reaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BiochemicalReaction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Biochemical\-Reaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BiochemicalReaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1BiochemicalReaction_a1058034c07346ef992ba78c3260b1ac6}{Biochemical\-Reaction} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1BiochemicalReaction_a50d32f8995cb279b41c37a731f48bfe1}{Biochemical\-Reaction} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1BiochemicalReaction_a33073d1e349bdcb5cf5c95fda55e2ede}{set\-Conversion\-Direction} (std\-::string const \&direction=\char`\"{}=\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReaction_a5f80d7411cbfa867c583d8137d9c4db5}{add\-Left} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\begin{DoxyCompactList}\small\item\em Add left participants of reaction. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1BiochemicalReaction_a62c77e5e197b9a89c7d2d3a9555ff14d}{add\-Right} (\hyperlink{classunisys_1_1PEIdRef}{P\-E\-Id\-Ref} \&pe\-Id\-Ref, double coefficient)
+\begin{DoxyCompactList}\small\item\em Add right participants of reaction. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1BiochemicalReaction_ac0ae394fe6271ab66a88ec8fe36a68ae}{to\-R\-X\-N\-String} (std\-::string const \&compartment) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1BiochemicalReaction_a61d5cb519be2ac672ae8e243abdc7489}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            type: <string>,
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            name: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            relation: {<StoichiometryBOSON>, <StoichiometryBOSON>, ...},
+            interactionKey: <string>,
+            conversionDirection: <DbRef>,
+            kineticLaw: {<MathMLBOSON>, <MathMLBOSON>, ...}
+            spontaneous: <string>,
+            functional: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1BiochemicalReaction_a1058034c07346ef992ba78c3260b1ac6}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!Biochemical\-Reaction@{Biochemical\-Reaction}}
+\index{Biochemical\-Reaction@{Biochemical\-Reaction}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{Biochemical\-Reaction}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Biochemical\-Reaction\-::\-Biochemical\-Reaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReaction_a1058034c07346ef992ba78c3260b1ac6}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1BiochemicalReaction_a50d32f8995cb279b41c37a731f48bfe1}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!Biochemical\-Reaction@{Biochemical\-Reaction}}
+\index{Biochemical\-Reaction@{Biochemical\-Reaction}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{Biochemical\-Reaction}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Biochemical\-Reaction\-::\-Biochemical\-Reaction (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReaction_a50d32f8995cb279b41c37a731f48bfe1}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1BiochemicalReaction_a5f80d7411cbfa867c583d8137d9c4db5}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!add\-Left@{add\-Left}}
+\index{add\-Left@{add\-Left}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{add\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-::add\-Left (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReaction_a5f80d7411cbfa867c583d8137d9c4db5}
+
+
+Add left participants of reaction. 
+
+\hypertarget{classunisys_1_1BiochemicalReaction_a62c77e5e197b9a89c7d2d3a9555ff14d}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!add\-Right@{add\-Right}}
+\index{add\-Right@{add\-Right}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{add\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-::add\-Right (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-E\-Id\-Ref} \&}]{pe\-Id\-Ref, }
+\item[{double}]{coefficient}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReaction_a62c77e5e197b9a89c7d2d3a9555ff14d}
+
+
+Add right participants of reaction. 
+
+\hypertarget{classunisys_1_1BiochemicalReaction_a61d5cb519be2ac672ae8e243abdc7489}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1BiochemicalReaction_a61d5cb519be2ac672ae8e243abdc7489}
+
+
+Reimplemented from \hyperlink{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{unisys\-::\-Conversion}.
+
+\hypertarget{classunisys_1_1BiochemicalReaction_a33073d1e349bdcb5cf5c95fda55e2ede}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!set\-Conversion\-Direction@{set\-Conversion\-Direction}}
+\index{set\-Conversion\-Direction@{set\-Conversion\-Direction}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{set\-Conversion\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Biochemical\-Reaction\-::set\-Conversion\-Direction (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{direction = {\ttfamily \char`\"{}=\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BiochemicalReaction_a33073d1e349bdcb5cf5c95fda55e2ede}
+\hypertarget{classunisys_1_1BiochemicalReaction_ac0ae394fe6271ab66a88ec8fe36a68ae}{\index{unisys\-::\-Biochemical\-Reaction@{unisys\-::\-Biochemical\-Reaction}!to\-R\-X\-N\-String@{to\-R\-X\-N\-String}}
+\index{to\-R\-X\-N\-String@{to\-R\-X\-N\-String}!unisys::BiochemicalReaction@{unisys\-::\-Biochemical\-Reaction}}
+\subsubsection[{to\-R\-X\-N\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Biochemical\-Reaction\-::to\-R\-X\-N\-String (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{compartment}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1BiochemicalReaction_ac0ae394fe6271ab66a88ec8fe36a68ae}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

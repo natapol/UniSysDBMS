@@ -1,0 +1,199 @@
+\hypertarget{classunisys_1_1Object}{\section{unisys\-:\-:Object Class Reference}
+\label{classunisys_1_1Object}\index{unisys\-::\-Object@{unisys\-::\-Object}}
+}
+
+
+Root of all object classes This class does not have any interfaces.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Object\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classunisys_1_1Object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Object\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1Object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Object_a566e4bbdf791d288e5483e646c3fadae}{Object} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1Object_a5af1b3d185e94dbcbc62c34d7dc5516f}{add\-Onto\-Relationship} (\hyperlink{classunisys_1_1OntoRelationship}{Onto\-Relationship} \&ontorelationship)
+\item 
+void \hyperlink{classunisys_1_1Object_ac29c9fc5b7114526d02d33d44a8dd1c9}{set\-Id} (\hyperlink{classunisys_1_1Miriam}{Miriam} const \&miriam, bool with\-Ver=true)
+\item 
+void \hyperlink{classunisys_1_1Object_af00397d8ada6998226a3bd1bfdbd7e9c}{set\-Id} (std\-::string const \&id, std\-::string const \&ns=\char`\"{}\char`\"{}, unsigned int version=0, bool with\-Ver=true)
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1Object_ace7445c1a361ffecc3e8947ee4ed91cf}{create\-Relation\-Insert} () const 
+\item 
+mongo\-::\-B\-S\-O\-N\-Obj \hyperlink{classunisys_1_1Object_a49b902ac376cdf8837c188dac46b17d4}{create\-Relation\-Remove} () const 
+\item 
+\hyperlink{classunisys_1_1Tracking}{Tracking} \hyperlink{classunisys_1_1Object_a0ebbb54b1f9fd33ee57ae86abef3ec4f}{create\-Track} (std\-::string activity=\char`\"{}\char`\"{}) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1Object_a9df6b35da942f0dbade9832aef618f2e}{Object} ()
+\item 
+void \hyperlink{classunisys_1_1Object_ad0a4afaf978d2cca8a6a27506f06138c}{init\-Field} ()
+\item 
+std\-::set$<$ \hyperlink{classunisys_1_1Relation}{Relation} $>$ \hyperlink{classunisys_1_1Object_aeec299bc2de7dac9f5d61a96ca46cdf0}{get\-Relation} (std\-::string const \&type) const 
+\item 
+void \hyperlink{classunisys_1_1Object_a1b9e2f4225e0fb73ddea29b12c59068b}{add\-Relation} (\hyperlink{classunisys_1_1Relation}{Relation} \&relation)
+\item 
+void \hyperlink{classunisys_1_1Object_a9e3cfeb96f792a992d53eddcaef7d699}{add\-Relation} (std\-::string const \&type, \hyperlink{classunisys_1_1IdRef}{Id\-Ref} \&id\-Ref, double coefficient=0, bool can\-Duplicate=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ std\-::string, \\*
+std\-::string $>$ \hyperlink{classunisys_1_1Object_afd5b0dec3d2aa63c061f3edded1c320a}{relation\-Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Root of all object classes This class does not have any interfaces. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            relation: {<RelationBOSON>, <RelationBOSON>, ...}
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1Object_a9df6b35da942f0dbade9832aef618f2e}{\index{unisys\-::\-Object@{unisys\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Object\-::\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Object_a9df6b35da942f0dbade9832aef618f2e}
+\hypertarget{classunisys_1_1Object_a566e4bbdf791d288e5483e646c3fadae}{\index{unisys\-::\-Object@{unisys\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Object\-::\-Object (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Object_a566e4bbdf791d288e5483e646c3fadae}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1Object_a5af1b3d185e94dbcbc62c34d7dc5516f}{\index{unisys\-::\-Object@{unisys\-::\-Object}!add\-Onto\-Relationship@{add\-Onto\-Relationship}}
+\index{add\-Onto\-Relationship@{add\-Onto\-Relationship}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{add\-Onto\-Relationship}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Object\-::add\-Onto\-Relationship (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Relationship} \&}]{ontorelationship}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Object_a5af1b3d185e94dbcbc62c34d7dc5516f}
+\hypertarget{classunisys_1_1Object_a1b9e2f4225e0fb73ddea29b12c59068b}{\index{unisys\-::\-Object@{unisys\-::\-Object}!add\-Relation@{add\-Relation}}
+\index{add\-Relation@{add\-Relation}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{add\-Relation}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Object\-::add\-Relation (
+\begin{DoxyParamCaption}
+\item[{{\bf Relation} \&}]{relation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Object_a1b9e2f4225e0fb73ddea29b12c59068b}
+\hypertarget{classunisys_1_1Object_a9e3cfeb96f792a992d53eddcaef7d699}{\index{unisys\-::\-Object@{unisys\-::\-Object}!add\-Relation@{add\-Relation}}
+\index{add\-Relation@{add\-Relation}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{add\-Relation}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Object\-::add\-Relation (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{type, }
+\item[{{\bf Id\-Ref} \&}]{id\-Ref, }
+\item[{double}]{coefficient = {\ttfamily 0}, }
+\item[{bool}]{can\-Duplicate = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Object_a9e3cfeb96f792a992d53eddcaef7d699}
+\hypertarget{classunisys_1_1Object_ace7445c1a361ffecc3e8947ee4ed91cf}{\index{unisys\-::\-Object@{unisys\-::\-Object}!create\-Relation\-Insert@{create\-Relation\-Insert}}
+\index{create\-Relation\-Insert@{create\-Relation\-Insert}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{create\-Relation\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Object\-::create\-Relation\-Insert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Object_ace7445c1a361ffecc3e8947ee4ed91cf}
+\hypertarget{classunisys_1_1Object_a49b902ac376cdf8837c188dac46b17d4}{\index{unisys\-::\-Object@{unisys\-::\-Object}!create\-Relation\-Remove@{create\-Relation\-Remove}}
+\index{create\-Relation\-Remove@{create\-Relation\-Remove}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{create\-Relation\-Remove}]{\setlength{\rightskip}{0pt plus 5cm}mongo\-::\-B\-S\-O\-N\-Obj unisys\-::\-Object\-::create\-Relation\-Remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Object_a49b902ac376cdf8837c188dac46b17d4}
+\hypertarget{classunisys_1_1Object_a0ebbb54b1f9fd33ee57ae86abef3ec4f}{\index{unisys\-::\-Object@{unisys\-::\-Object}!create\-Track@{create\-Track}}
+\index{create\-Track@{create\-Track}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{create\-Track}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tracking} unisys\-::\-Object\-::create\-Track (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{activity = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1Object_a0ebbb54b1f9fd33ee57ae86abef3ec4f}
+\hypertarget{classunisys_1_1Object_aeec299bc2de7dac9f5d61a96ca46cdf0}{\index{unisys\-::\-Object@{unisys\-::\-Object}!get\-Relation@{get\-Relation}}
+\index{get\-Relation@{get\-Relation}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{get\-Relation}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<${\bf Relation}$>$ unisys\-::\-Object\-::get\-Relation (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{type}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Object_aeec299bc2de7dac9f5d61a96ca46cdf0}
+\hypertarget{classunisys_1_1Object_ad0a4afaf978d2cca8a6a27506f06138c}{\index{unisys\-::\-Object@{unisys\-::\-Object}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Object\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classunisys_1_1Object_ad0a4afaf978d2cca8a6a27506f06138c}
+
+
+Implements \hyperlink{classunisys_1_1DataObj_acdc1989300995834a6c8ff03dc2f1268}{unisys\-::\-Data\-Obj}.
+
+
+
+Reimplemented in \hyperlink{classunisys_1_1BiochemicalReactionWithTransport_a9999c6a5353e9b62056691cf0187f04f}{unisys\-::\-Biochemical\-Reaction\-With\-Transport}, \hyperlink{classunisys_1_1Transport_a04f17e27ff568c45688cde1a95265dea}{unisys\-::\-Transport}, \hyperlink{classunisys_1_1BiochemicalReaction_a61d5cb519be2ac672ae8e243abdc7489}{unisys\-::\-Biochemical\-Reaction}, \hyperlink{classunisys_1_1Conversion_adafab2a857d6b15d5e07a0d59f4f6596}{unisys\-::\-Conversion}, \hyperlink{classunisys_1_1GeneticInteraction_a946b8270db467290f49a050bd29f55d2}{unisys\-::\-Genetic\-Interaction}, \hyperlink{classunisys_1_1MolecularInteraction_a6bae8353e2734eae8345228f7895665e}{unisys\-::\-Molecular\-Interaction}, \hyperlink{classunisys_1_1Control_ab5bd5022b73b81e3fd18af06027213b1}{unisys\-::\-Control}, \hyperlink{classunisys_1_1Interaction_a84c6c3e09f83ec8dd8dec7485f97e02b}{unisys\-::\-Interaction}, \hyperlink{classunisys_1_1Complex_a63e019fcca3e2d919937694678d9ee1f}{unisys\-::\-Complex}, \hyperlink{classunisys_1_1Protein_a41d52894afce9bd0f7f047ac560f38cf}{unisys\-::\-Protein}, \hyperlink{classunisys_1_1RNA_abeb5db8942c0d2ecac49086d50d6e7ab}{unisys\-::\-R\-N\-A}, \hyperlink{classunisys_1_1DNARegion_a213d2340cc8f4172e3f220f1fe9883f1}{unisys\-::\-D\-N\-A\-Region}, \hyperlink{classunisys_1_1DNA_aa33eff29fbf57aa7c626999ade40910d}{unisys\-::\-D\-N\-A}, \hyperlink{classunisys_1_1SmallMolecule_a0f0da371544569163782603ace820d0a}{unisys\-::\-Small\-Molecule}, \hyperlink{classunisys_1_1PhysicalEntity_ad445727cb6b1c12e954819d8207104e8}{unisys\-::\-Physical\-Entity}, \hyperlink{classunisys_1_1BioObject_a0437fcc7976ff9e8dc5ce77246c06f71}{unisys\-::\-Bio\-Object}, and \hyperlink{classunisys_1_1Ontology_a42f1c4257f60144420b1bc9ac128b5cc}{unisys\-::\-Ontology}.
+
+\hypertarget{classunisys_1_1Object_ac29c9fc5b7114526d02d33d44a8dd1c9}{\index{unisys\-::\-Object@{unisys\-::\-Object}!set\-Id@{set\-Id}}
+\index{set\-Id@{set\-Id}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Object\-::set\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Miriam} const \&}]{miriam, }
+\item[{bool}]{with\-Ver = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Object_ac29c9fc5b7114526d02d33d44a8dd1c9}
+\hypertarget{classunisys_1_1Object_af00397d8ada6998226a3bd1bfdbd7e9c}{\index{unisys\-::\-Object@{unisys\-::\-Object}!set\-Id@{set\-Id}}
+\index{set\-Id@{set\-Id}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Object\-::set\-Id (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{id, }
+\item[{std\-::string const \&}]{ns = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{version = {\ttfamily 0}, }
+\item[{bool}]{with\-Ver = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1Object_af00397d8ada6998226a3bd1bfdbd7e9c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1Object_afd5b0dec3d2aa63c061f3edded1c320a}{\index{unisys\-::\-Object@{unisys\-::\-Object}!relation\-Map@{relation\-Map}}
+\index{relation\-Map@{relation\-Map}!unisys::Object@{unisys\-::\-Object}}
+\subsubsection[{relation\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, std\-::string$>$ unisys\-::\-Object\-::relation\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1Object_afd5b0dec3d2aa63c061f3edded1c320a}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\hypertarget{classunisys_1_1BioSource}{\section{unisys\-:\-:Bio\-Source Class Reference}
+\label{classunisys_1_1BioSource}\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}}
+}
+
+
+The C++ representative class for Biological Source data class. This class is designed to manage the biological data of source organism.  
+
+
+
+
+{\ttfamily \#include $<$Lit\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Bio\-Source\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BioSource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Bio\-Source\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1BioSource__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1BioSource_afaab055566a306abfb6ed62a81804114}{Bio\-Source} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1BioSource_a5735f4886634f91d10529995582ea5aa}{Bio\-Source} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1BioSource_adee19e8a8a7030c47126dc2f2187ef6a}{Bio\-Source} (std\-::string const \&genus, std\-::string const \&species=\char`\"{}.sp\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1BioSource_a612eb3d5e537c1c91353d0534c099856}{set\-Sci\-Name} (std\-::string const \&genus, std\-::string const \&species=\char`\"{}.sp\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1BioSource_a804bf9b002185e4becd02314621fb9d5}{set\-Stain} (std\-::string const \&strain)
+\item 
+void \hyperlink{classunisys_1_1BioSource_a331ad3e04f991ee9cbff05563c52d06f}{set\-Taxonomic\-Id} (\hyperlink{classunisys_1_1Xref}{Xref} \&taxonomic\-Id)
+\item 
+void \hyperlink{classunisys_1_1BioSource_a4024f5f1324dbb54cc17a449a7a865aa}{set\-Taxonomic\-Id} (std\-::string const \&taxonomic\-Id, std\-::string const \&detail=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classunisys_1_1BioSource_afcee59fdda1ffa6ba6123bffaf4bca30}{set\-Cell\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1BioSource_ab66aa67148963a6a37b987ec8ca38cf4}{set\-Cell\-Type} (std\-::string const \&onto\-Id)
+\item 
+void \hyperlink{classunisys_1_1BioSource_a62c834b403fe514557c99c7cd2a0fe94}{set\-Tissue\-Type} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1BioSource_a310667660d177c71b465bcc5f7e967db}{set\-Tissue\-Type} (std\-::string const \&onto\-Id)
+\item 
+void \hyperlink{classunisys_1_1BioSource_a902f6c3164f677a204e3bbb828f3dde4}{set\-Cell\-State} (\hyperlink{classunisys_1_1OntoIdRef}{Onto\-Id\-Ref} \&onto\-Id\-Ref)
+\item 
+void \hyperlink{classunisys_1_1BioSource_ac4545f8b833415e88fa734ab0f7e3034}{set\-Cell\-State} (std\-::string const \&onto\-Id)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1BioSource_a7a4188b6ce6f969d62c6d903d3e27f09}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em function for init field in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The C++ representative class for Biological Source data class. This class is designed to manage the biological data of source organism. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            comment: <string>,
+            genus: <string>,
+            species: <string>,
+            strain: <string>,
+            taxonomicId: <XRefBSONStructure>
+            cellType: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            tissueType: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+            cellState: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1BioSource_afaab055566a306abfb6ed62a81804114}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!Bio\-Source@{Bio\-Source}}
+\index{Bio\-Source@{Bio\-Source}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{Bio\-Source}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Bio\-Source\-::\-Bio\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_afaab055566a306abfb6ed62a81804114}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1BioSource_a5735f4886634f91d10529995582ea5aa}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!Bio\-Source@{Bio\-Source}}
+\index{Bio\-Source@{Bio\-Source}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{Bio\-Source}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Bio\-Source\-::\-Bio\-Source (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a5735f4886634f91d10529995582ea5aa}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+\hypertarget{classunisys_1_1BioSource_adee19e8a8a7030c47126dc2f2187ef6a}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!Bio\-Source@{Bio\-Source}}
+\index{Bio\-Source@{Bio\-Source}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{Bio\-Source}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Bio\-Source\-::\-Bio\-Source (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{genus, }
+\item[{std\-::string const \&}]{species = {\ttfamily \char`\"{}.sp\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_adee19e8a8a7030c47126dc2f2187ef6a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1BioSource_a7a4188b6ce6f969d62c6d903d3e27f09}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1BioSource_a7a4188b6ce6f969d62c6d903d3e27f09}
+
+
+function for init field in the object 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1Literal_a769b8f41e99619d8635f83d18a02bc1f}{unisys\-::\-Literal}.
+
+\hypertarget{classunisys_1_1BioSource_a902f6c3164f677a204e3bbb828f3dde4}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Cell\-State@{set\-Cell\-State}}
+\index{set\-Cell\-State@{set\-Cell\-State}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Cell\-State}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Cell\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a902f6c3164f677a204e3bbb828f3dde4}
+\hypertarget{classunisys_1_1BioSource_ac4545f8b833415e88fa734ab0f7e3034}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Cell\-State@{set\-Cell\-State}}
+\index{set\-Cell\-State@{set\-Cell\-State}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Cell\-State}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Cell\-State (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_ac4545f8b833415e88fa734ab0f7e3034}
+\hypertarget{classunisys_1_1BioSource_afcee59fdda1ffa6ba6123bffaf4bca30}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Cell\-Type@{set\-Cell\-Type}}
+\index{set\-Cell\-Type@{set\-Cell\-Type}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Cell\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_afcee59fdda1ffa6ba6123bffaf4bca30}
+\hypertarget{classunisys_1_1BioSource_ab66aa67148963a6a37b987ec8ca38cf4}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Cell\-Type@{set\-Cell\-Type}}
+\index{set\-Cell\-Type@{set\-Cell\-Type}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Cell\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_ab66aa67148963a6a37b987ec8ca38cf4}
+\hypertarget{classunisys_1_1BioSource_a612eb3d5e537c1c91353d0534c099856}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Sci\-Name@{set\-Sci\-Name}}
+\index{set\-Sci\-Name@{set\-Sci\-Name}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Sci\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Sci\-Name (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{genus, }
+\item[{std\-::string const \&}]{species = {\ttfamily \char`\"{}.sp\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a612eb3d5e537c1c91353d0534c099856}
+\hypertarget{classunisys_1_1BioSource_a804bf9b002185e4becd02314621fb9d5}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Stain@{set\-Stain}}
+\index{set\-Stain@{set\-Stain}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Stain}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Stain (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{strain}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a804bf9b002185e4becd02314621fb9d5}
+\hypertarget{classunisys_1_1BioSource_a331ad3e04f991ee9cbff05563c52d06f}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Taxonomic\-Id@{set\-Taxonomic\-Id}}
+\index{set\-Taxonomic\-Id@{set\-Taxonomic\-Id}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Taxonomic\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Taxonomic\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Xref} \&}]{taxonomic\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a331ad3e04f991ee9cbff05563c52d06f}
+\hypertarget{classunisys_1_1BioSource_a4024f5f1324dbb54cc17a449a7a865aa}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Taxonomic\-Id@{set\-Taxonomic\-Id}}
+\index{set\-Taxonomic\-Id@{set\-Taxonomic\-Id}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Taxonomic\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Taxonomic\-Id (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{taxonomic\-Id, }
+\item[{std\-::string const \&}]{detail = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a4024f5f1324dbb54cc17a449a7a865aa}
+\hypertarget{classunisys_1_1BioSource_a62c834b403fe514557c99c7cd2a0fe94}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Tissue\-Type@{set\-Tissue\-Type}}
+\index{set\-Tissue\-Type@{set\-Tissue\-Type}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Tissue\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Tissue\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Onto\-Id\-Ref} \&}]{onto\-Id\-Ref}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a62c834b403fe514557c99c7cd2a0fe94}
+\hypertarget{classunisys_1_1BioSource_a310667660d177c71b465bcc5f7e967db}{\index{unisys\-::\-Bio\-Source@{unisys\-::\-Bio\-Source}!set\-Tissue\-Type@{set\-Tissue\-Type}}
+\index{set\-Tissue\-Type@{set\-Tissue\-Type}!unisys::BioSource@{unisys\-::\-Bio\-Source}}
+\subsubsection[{set\-Tissue\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Bio\-Source\-::set\-Tissue\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{onto\-Id}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1BioSource_a310667660d177c71b465bcc5f7e967db}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LitClass_8h}{Lit\-Class.\-h}\end{DoxyCompactItemize}

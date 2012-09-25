@@ -1,0 +1,158 @@
+\hypertarget{classunisys_1_1SmallMolecule}{\section{unisys\-:\-:Small\-Molecule Class Reference}
+\label{classunisys_1_1SmallMolecule}\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}}
+}
+
+
+This class is for miriam cross reference annotation.  
+
+
+
+
+{\ttfamily \#include $<$Obj\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Small\-Molecule\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1SmallMolecule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Small\-Molecule\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1SmallMolecule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1SmallMolecule_af34d41b9aa45a534637f191410b08f16}{Small\-Molecule} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1SmallMolecule_a83a5145dce173f6f9e7a8f4de6cad535}{Small\-Molecule} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1SmallMolecule_a6e2b4b37f35d57eeb23dec89a8f5f56a}{set\-Formula} (std\-::string const \&formula)
+\item 
+void \hyperlink{classunisys_1_1SmallMolecule_a0f8844ca6f7366c9b980c505b76740f6}{set\-In\-Chi} (std\-::string const \&inchi, bool is\-Parse\-Formula=true)
+\item 
+void \hyperlink{classunisys_1_1SmallMolecule_a99bcb02a50269eda30f44ad997311dd0}{set\-S\-M\-I\-L\-E\-S} (std\-::string const \&smiles)
+\item 
+void \hyperlink{classunisys_1_1SmallMolecule_a5ebecf5cb6e2afd628647aeaefb08791}{set\-In\-Chi\-Key} (std\-::string const \&inchi\-Key)
+\item 
+void \hyperlink{classunisys_1_1SmallMolecule_ab73c0c7b1e2f35b0675539e39bce7193}{add\-Specific\-Kinetic\-Parameter} (\hyperlink{classunisys_1_1KineticParameter}{Kinetic\-Parameter} \&kinetic\-Parameter)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1SmallMolecule_a0f0da371544569163782603ace820d0a}{init\-Field} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is for miriam cross reference annotation. 
+
+\begin{DoxyVerb}        BSON structure:
+        {   
+            _id: <string>, #madatory
+            ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...},
+            names: {<string>,<string>, ...}
+            comment: <string>,
+            dataPrimarySource: <XrefBOSON>,
+            functionAnnotation: {<AnnotationBOSON>, <AnnotationBOSON>, ...},
+            evidence: {<EvidenceBOSON>, <EvidenceBOSON>, ...},
+            dataxref: {<XrefBOSON>, <XrefBOSON>, ...},
+            interaction: {<DbRef>, <DbRef>, ...},
+            complex: {<DbRef>, <DbRef>, ...},
+            subRegion: {<SubRegionBOSON>, <SubRegionBOSON>, ...},
+            formular: <string>,
+            InChi: <string>,
+            smiles: <string>,
+            InChiKey: <string>
+        }\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1SmallMolecule_af34d41b9aa45a534637f191410b08f16}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!Small\-Molecule@{Small\-Molecule}}
+\index{Small\-Molecule@{Small\-Molecule}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{Small\-Molecule}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Small\-Molecule\-::\-Small\-Molecule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_af34d41b9aa45a534637f191410b08f16}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1SmallMolecule_a83a5145dce173f6f9e7a8f4de6cad535}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!Small\-Molecule@{Small\-Molecule}}
+\index{Small\-Molecule@{Small\-Molecule}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{Small\-Molecule}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Small\-Molecule\-::\-Small\-Molecule (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_a83a5145dce173f6f9e7a8f4de6cad535}
+
+
+Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1SmallMolecule_ab73c0c7b1e2f35b0675539e39bce7193}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!add\-Specific\-Kinetic\-Parameter@{add\-Specific\-Kinetic\-Parameter}}
+\index{add\-Specific\-Kinetic\-Parameter@{add\-Specific\-Kinetic\-Parameter}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{add\-Specific\-Kinetic\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Small\-Molecule\-::add\-Specific\-Kinetic\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf Kinetic\-Parameter} \&}]{kinetic\-Parameter}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_ab73c0c7b1e2f35b0675539e39bce7193}
+\hypertarget{classunisys_1_1SmallMolecule_a0f0da371544569163782603ace820d0a}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Small\-Molecule\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classunisys_1_1SmallMolecule_a0f0da371544569163782603ace820d0a}
+
+
+Reimplemented from \hyperlink{classunisys_1_1PhysicalEntity_ad445727cb6b1c12e954819d8207104e8}{unisys\-::\-Physical\-Entity}.
+
+\hypertarget{classunisys_1_1SmallMolecule_a6e2b4b37f35d57eeb23dec89a8f5f56a}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!set\-Formula@{set\-Formula}}
+\index{set\-Formula@{set\-Formula}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{set\-Formula}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Small\-Molecule\-::set\-Formula (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{formula}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_a6e2b4b37f35d57eeb23dec89a8f5f56a}
+\hypertarget{classunisys_1_1SmallMolecule_a0f8844ca6f7366c9b980c505b76740f6}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!set\-In\-Chi@{set\-In\-Chi}}
+\index{set\-In\-Chi@{set\-In\-Chi}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{set\-In\-Chi}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Small\-Molecule\-::set\-In\-Chi (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{inchi, }
+\item[{bool}]{is\-Parse\-Formula = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_a0f8844ca6f7366c9b980c505b76740f6}
+\hypertarget{classunisys_1_1SmallMolecule_a5ebecf5cb6e2afd628647aeaefb08791}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!set\-In\-Chi\-Key@{set\-In\-Chi\-Key}}
+\index{set\-In\-Chi\-Key@{set\-In\-Chi\-Key}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{set\-In\-Chi\-Key}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Small\-Molecule\-::set\-In\-Chi\-Key (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{inchi\-Key}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_a5ebecf5cb6e2afd628647aeaefb08791}
+\hypertarget{classunisys_1_1SmallMolecule_a99bcb02a50269eda30f44ad997311dd0}{\index{unisys\-::\-Small\-Molecule@{unisys\-::\-Small\-Molecule}!set\-S\-M\-I\-L\-E\-S@{set\-S\-M\-I\-L\-E\-S}}
+\index{set\-S\-M\-I\-L\-E\-S@{set\-S\-M\-I\-L\-E\-S}!unisys::SmallMolecule@{unisys\-::\-Small\-Molecule}}
+\subsubsection[{set\-S\-M\-I\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Small\-Molecule\-::set\-S\-M\-I\-L\-E\-S (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{smiles}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1SmallMolecule_a99bcb02a50269eda30f44ad997311dd0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObjClass_8h}{Obj\-Class.\-h}\end{DoxyCompactItemize}

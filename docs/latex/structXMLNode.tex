@@ -1,0 +1,574 @@
+\hypertarget{structXMLNode}{\section{X\-M\-L\-Node Struct Reference}
+\label{structXMLNode}\index{X\-M\-L\-Node@{X\-M\-L\-Node}}
+}
+
+
+Main Class representing a X\-M\-L node.  
+
+
+
+
+{\ttfamily \#include $<$xml\-Parser.\-h$>$}
+
+
+
+Collaboration diagram for X\-M\-L\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structXMLNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structXMLNode_1_1XMLNodeDataTag}{X\-M\-L\-Node\-Data\-Tag}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2}{X\-M\-L\-Char\-Encoding} \{ \\*
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a901e3af8a5e1308d1a198398c2b3da76}{char\-\_\-encoding\-\_\-error} = 0, 
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a}{char\-\_\-encoding\-\_\-\-U\-T\-F8} = 1, 
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2afcce4646efba5d15cc00d958a075c1ed}{char\-\_\-encoding\-\_\-legacy} = 2, 
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2afa21f31e866cedff460f7e907d2339cc}{char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S} = 3, 
+\\*
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a6f2ed679397fa246d1e5062371ba3776}{char\-\_\-encoding\-\_\-\-G\-B2312} = 4, 
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2abf8658aa97c3bcb0d714cce6bb77a0b8}{char\-\_\-encoding\-\_\-\-Big5} = 5, 
+\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a5f55b2ae64719235ea4ea4aae651264c}{char\-\_\-encoding\-\_\-\-G\-B\-K} = 6
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for X\-M\-L character encoding. \end{DoxyCompactList}\item 
+typedef enum \\*
+X\-M\-L\-Node\-::\-X\-M\-L\-Char\-Encoding \hyperlink{structXMLNode_a81cfd85cde37d43408069f45205e3c8d}{X\-M\-L\-Char\-Encoding}
+\begin{DoxyCompactList}\small\item\em Enumeration for X\-M\-L character encoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} \hyperlink{group__conversions_gac8710ba5e7ff6e62a222445501ef9972}{create\-X\-M\-L\-String} (int n\-Format=1, int $\ast$pn\-Size=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em Create an X\-M\-L string starting from the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{X\-M\-L\-Error} \hyperlink{group__conversions_gab8d92d057c0072cc195b1935b2f53d80}{write\-To\-File} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} filename, const char $\ast$encoding=N\-U\-L\-L, char n\-Format=1) const 
+\begin{DoxyCompactList}\small\item\em Save the content of an xml\-Node inside a file. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga7e07715aa0ed894da96bd66c90d423f0}{get\-Name} () const 
+\begin{DoxyCompactList}\small\item\em name of the node \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_gaeb607292b18d4615b7c169c7c08c0a8b}{get\-Text} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith text field \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga22e7e7cf8f173a1ec3ec3d6ff60819d9}{n\-Text} () const 
+\begin{DoxyCompactList}\small\item\em nbr of text field \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gad30a8420556e220742c681e353a875d8}{get\-Parent\-Node} () const 
+\begin{DoxyCompactList}\small\item\em return the parent node \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga77a21438b6d48a52cf8a1270f82f4475}{get\-Child\-Node} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith child node \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gaf46d002a855acb46c18e47b70e686808}{get\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int i) const 
+\begin{DoxyCompactList}\small\item\em return ith child node with specific name (return an empty node if failing). If i==-\/1, this returns the last \hyperlink{structXMLNode}{X\-M\-L\-Node} with the given name. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gac2e8c96fc51b59b6667ee02785cb6943}{get\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int $\ast$i=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em return next child node with specific name (return an empty node if failing) \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga5d2775ee0704a2c028d76d267db7960a}{get\-Child\-Node\-With\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} attribute\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} attribute\-Value=N\-U\-L\-L, int $\ast$i=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em return child node with specific name/attribute (return an empty node if failing) \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga18176d2a9e4830dcb1bca62f9c664b15}{get\-Child\-Node\-By\-Path} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} path, char create\-Node\-If\-Missing=0, \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R} sep='/')
+\begin{DoxyCompactList}\small\item\em return the first child node with specific path \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga0f3b175875c5d35a0dd88b4ed836079d}{get\-Child\-Node\-By\-Path\-Non\-Const} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} path, char create\-Node\-If\-Missing=0, \hyperlink{xmlParser_8h_a9f587fbd233e721e8818a3bf8102838f}{X\-M\-L\-C\-H\-A\-R} sep='/')
+\begin{DoxyCompactList}\small\item\em return the first child node with specific path. \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga8e52198f258167cd796dae21f1ffc352}{n\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name) const 
+\begin{DoxyCompactList}\small\item\em return the number of child node with specific name \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga65aad0220b231b1bf5cd5c69d7c5de41}{n\-Child\-Node} () const 
+\begin{DoxyCompactList}\small\item\em nbr of child node \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} \hyperlink{group__navigate_gaa07572a057ce7ffc8843e468d952f490}{get\-Attribute} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga67cf7717fa32175d8c6daa8f3f03ce7a}{get\-Attribute\-Name} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute name \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga4abc0c5a3eec14e2f67518b625431541}{get\-Attribute\-Value} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute value \end{DoxyCompactList}\item 
+char \hyperlink{group__navigate_ga8059888e8dd5d9caf04f765059c1b934}{is\-Attribute\-Set} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name) const 
+\begin{DoxyCompactList}\small\item\em test if an attribute with a specific name is given \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_gaba897c342d3c55d71f4d987332789f69}{get\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int i) const 
+\begin{DoxyCompactList}\small\item\em return ith attribute content with specific name (return a N\-U\-L\-L if failing) \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__navigate_ga23af0b5c771a9a5e7503a7dd2de72fc8}{get\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int $\ast$i=N\-U\-L\-L) const 
+\begin{DoxyCompactList}\small\item\em return next attribute content with specific name (return a N\-U\-L\-L if failing) \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga9561f62b9ed1fa653fe9135c4f16a41d}{n\-Attribute} () const 
+\begin{DoxyCompactList}\small\item\em nbr of attribute \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} \hyperlink{group__navigate_gab99fbcb5534ab2194889c4802e290354}{get\-Clear} (int i=0) const 
+\begin{DoxyCompactList}\small\item\em return ith clear field (comments) \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga87d34f1ba1ba7d49e8aeacc63548dead}{n\-Clear} () const 
+\begin{DoxyCompactList}\small\item\em nbr of clear field \end{DoxyCompactList}\item 
+\hyperlink{structXMLNodeContents}{X\-M\-L\-Node\-Contents} \hyperlink{group__navigate_gaf56414ef38a13892afc4f22177a7760a}{enum\-Contents} (\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} i) const 
+\begin{DoxyCompactList}\small\item\em enumerate all the different contents (attribute,child,text, clear) of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. The order is reflecting the order of the original file/string. N\-O\-T\-E\-: 0 $<$= i $<$ \hyperlink{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}{n\-Element()}; \end{DoxyCompactList}\item 
+int \hyperlink{group__navigate_ga8e9538deb9144dcab39b3a510a8202f1}{n\-Element} () const 
+\begin{DoxyCompactList}\small\item\em nbr of different contents for current node \end{DoxyCompactList}\item 
+char \hyperlink{group__navigate_ga764ce0ff117af3e30ab0959114d36f9c}{is\-Empty} () const 
+\begin{DoxyCompactList}\small\item\em is this node Empty? \end{DoxyCompactList}\item 
+char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{is\-Declaration} () const 
+\begin{DoxyCompactList}\small\item\em is this node a declaration $<$? .... ?$>$ \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_gadb69f8d2db5997d84590ce3380e210f1}{deep\-Copy} () const 
+\begin{DoxyCompactList}\small\item\em deep copy (duplicate/clone) a \hyperlink{structXMLNode}{X\-M\-L\-Node} \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode_ae652023d7f98430de2027471ef9d9065}{$\sim$\-X\-M\-L\-Node} ()
+\item 
+\hyperlink{structXMLNode_a138099a1355b9d4103c239d9042adad3}{X\-M\-L\-Node} (const \hyperlink{structXMLNode}{X\-M\-L\-Node} \&A)
+\begin{DoxyCompactList}\small\item\em to allow shallow/fast copy\-: \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \& \hyperlink{structXMLNode_a8154edc759dc934043803de2521c056c}{operator=} (const \hyperlink{structXMLNode}{X\-M\-L\-Node} \&A)
+\begin{DoxyCompactList}\small\item\em to allow shallow/fast copy\-: \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode_a719b115adfb642594107854189559ff2}{X\-M\-L\-Node} ()
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__creation_ga51baa56a48f69cdea6f41ed38a2cbadd}{add\-Child} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name, char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{is\-Declaration}=\hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new child node. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__creation_ga37c862f1d4a86f95417f97ceaa40d0fa}{add\-Child} (\hyperlink{structXMLNode}{X\-M\-L\-Node} node\-To\-Add, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em If the \char`\"{}node\-To\-Add\char`\"{} has some parents, it will be detached from it's parents before being attached to the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__creation_ga4f0e996a36cdda88b76bdf49d0d2e50c}{add\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Valuev)
+\begin{DoxyCompactList}\small\item\em Add a new attribute. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__creation_ga1de718e237befa215381d294fc644f11}{add\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new text content. \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__creation_gafb513cd0d881bcb153d702a885aebc44}{add\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Open=N\-U\-L\-L, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Close=N\-U\-L\-L, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlUpdate_gae08b643a2b87a77bad3c70eb57ea3043}{update\-Name} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name)
+\begin{DoxyCompactList}\small\item\em change node's name \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlUpdate_ga49449139e44ef214d0c861e0b84f3757}{update\-Attribute} (\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$new\-Attribute, \hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$old\-Attribute)
+\begin{DoxyCompactList}\small\item\em if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlUpdate_ga43e30a2630824996f5eb74ffcfa54adf}{update\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Name=N\-U\-L\-L, int i=0)
+\begin{DoxyCompactList}\small\item\em if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlUpdate_gad334b0726cb7075a16aaca98aaff6372}{update\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Name)
+\begin{DoxyCompactList}\small\item\em set lpsz\-New\-Name=N\-U\-L\-L if you don't want to change the name of the attribute if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlUpdate_gaad04ffd86ca67253bbc81f941608f8d2}{update\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, int i=0)
+\begin{DoxyCompactList}\small\item\em if the text to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlUpdate_ga476a872fa595ea8416d2991ce3bea7a6}{update\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Value)
+\begin{DoxyCompactList}\small\item\em if the text to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlUpdate_gafe78ceff29e1853fdef9f9c3ac2605eb}{update\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Content, int i=0)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlUpdate_ga1279bfaade1376d25342440bd14dbb74}{update\-Clear} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$new\-P, \hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$old\-P)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlUpdate_ga49ad66755cd9b69fc1ec7a78cd162c70}{update\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Value)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_gaa4d133999da220e916bdf3a969d493c4}{delete\-Node\-Content} ()
+\begin{DoxyCompactList}\small\item\em The \char`\"{}delete\-Node\-Content\char`\"{} function forces the deletion of the content of this \hyperlink{structXMLNode}{X\-M\-L\-Node} and the subtree. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga61b2405305063594b35b309cc2e22c01}{delete\-Attribute} (int i=0)
+\begin{DoxyCompactList}\small\item\em Delete the ith attribute of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga2b21339e5b370f1d7ebde2dc51217eed}{delete\-Attribute} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name)
+\begin{DoxyCompactList}\small\item\em Delete the attribute with the given name (the \char`\"{}strcmp\char`\"{} function is used to find the right attribute) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga6f00d7c1b4eaa29cfdd9d4a709495aca}{delete\-Attribute} (\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$an\-Attribute)
+\begin{DoxyCompactList}\small\item\em Delete the attribute with the name \char`\"{}an\-Attribute-\/$>$lpsz\-Name\char`\"{} (the \char`\"{}strcmp\char`\"{} function is used to find the right attribute) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga14a49a23735ea10a44864cb6b4302250}{delete\-Text} (int i=0)
+\begin{DoxyCompactList}\small\item\em Delete the Ith text content of the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga21ee499630d71ab6026753a85f02f582}{delete\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value)
+\begin{DoxyCompactList}\small\item\em Delete the text content \char`\"{}lpsz\-Value\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison is used to find the right text) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga44b72c82310eb4319dba46eb9cc9f6e9}{delete\-Clear} (int i=0)
+\begin{DoxyCompactList}\small\item\em Delete the Ith clear tag inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node}. \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_ga8fff4baa9a8000f8662ee302438fff64}{delete\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value)
+\begin{DoxyCompactList}\small\item\em Delete the clear tag \char`\"{}lpsz\-Value\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison is used to find the clear tag) \end{DoxyCompactList}\item 
+void \hyperlink{group__xmlDelete_gae92182823d3d5b40893103ad222ec4a8}{delete\-Clear} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Delete the clear tag \char`\"{}p\char`\"{} inside the current \hyperlink{structXMLNode}{X\-M\-L\-Node} (direct \char`\"{}pointer-\/to-\/pointer\char`\"{} comparison on the lpsz\-Name of the clear tag is used to find the clear tag) \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__xmlWOSD_ga24b13602fdff0194b087df4eaf28e703}{add\-Child\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Name, char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{is\-Declaration}=\hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new child node. \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlWOSD_ga653039c9f5fb22076a00b258284c65ee}{add\-Attribute\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Name, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Value)
+\begin{DoxyCompactList}\small\item\em Add a new attribute. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlWOSD_ga90944eacfeb994486e3ca83a68c35b6a}{add\-Text\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Value, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new text content. \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlWOSD_ga6d3ed8368db156df576e0c54f5f45d30}{add\-Clear\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Open=N\-U\-L\-L, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Close=N\-U\-L\-L, \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} pos=-\/1)
+\begin{DoxyCompactList}\small\item\em Add a new clear Tag. \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlWOSD_ga5f35571651c6b629f5c8e5d02942a1c7}{update\-Name\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Name)
+\begin{DoxyCompactList}\small\item\em change node's name \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlWOSD_gaeb6533f46c1dd1843e33653612483a0c}{update\-Attribute\-\_\-\-W\-O\-S\-D} (\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$new\-Attribute, \hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$old\-Attribute)
+\begin{DoxyCompactList}\small\item\em if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlWOSD_ga695e7ac29591363833575782243eff1b}{update\-Attribute\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Name=N\-U\-L\-L, int i=0)
+\begin{DoxyCompactList}\small\item\em if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{group__xmlWOSD_gababf6cef26796c45b88eb5772a9cafc4}{update\-Attribute\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Name, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Name)
+\begin{DoxyCompactList}\small\item\em set lpsz\-New\-Name=N\-U\-L\-L if you don't want to change the name of the attribute if the attribute to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlWOSD_ga8809eddad474e8bd7ad5f57aea7c77ac}{update\-Text\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Value, int i=0)
+\begin{DoxyCompactList}\small\item\em if the text to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__xmlWOSD_gae2c448a74bf74bcd502d4ba27c63eabc}{update\-Text\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Value)
+\begin{DoxyCompactList}\small\item\em if the text to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlWOSD_gac977a2e6b885ff4df3895deca771c363}{update\-Clear\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Content, int i=0)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlWOSD_ga4863cd3e05ad9fac028321fffe8433b9}{update\-Clear\-\_\-\-W\-O\-S\-D} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$new\-P, \hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$old\-P)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{group__xmlWOSD_gafd4fd40229c3c4ff67f019882f213cd4}{update\-Clear\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-New\-Value, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Old\-Value)
+\begin{DoxyCompactList}\small\item\em if the clear\-Tag to update is missing, a new one will be added \end{DoxyCompactList}\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga4376524698201e37c805bfa37945a600}{position\-Of\-Text} (int i=0) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga3a590db071ce9f3fdc6e82405ab8507d}{position\-Of\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gafbeb4c6fcb5f164a4e5501d048c0f714}{position\-Of\-Clear} (int i=0) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gaae9a760878f7e2d8e392b17edb00ea19}{position\-Of\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga917818941aa305d3829472d49f33a4b5}{position\-Of\-Clear} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$a) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gac98af1de6ed1218e5d26f7e509b8678f}{position\-Of\-Child\-Node} (int i=0) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gaf8457366bc393a57e33896e46592cb3e}{position\-Of\-Child\-Node} (\hyperlink{structXMLNode}{X\-M\-L\-Node} x) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga102dcd93d13144e2a87b664e6f810725}{position\-Of\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int i=0) const 
+\begin{DoxyCompactList}\small\item\em return the position of the ith child\-Node with the specified name if (name==N\-U\-L\-L) return the position of the ith child\-Node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{structXMLNode_a288584f591421a189727d19cdc9fc430}{get\-Version} ()
+\begin{DoxyCompactList}\small\item\em Return the X\-M\-L\-Parser library version number. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{parse\-String} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lp\-X\-M\-L\-String, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag=N\-U\-L\-L, \hyperlink{structXMLResults}{X\-M\-L\-Results} $\ast$p\-Results=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Parse an X\-M\-L string and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the string. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{parse\-File} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} filename, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag=N\-U\-L\-L, \hyperlink{structXMLResults}{X\-M\-L\-Results} $\ast$p\-Results=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the file. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{open\-File\-Helper} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} filename, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} tag=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Parse an X\-M\-L file and return the root of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree representing the file. A very crude error checking is made. An attempt to guess the Char Encoding used in the file is made. \end{DoxyCompactList}\item 
+static \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{group__conversions_ga615a6ca792929132043d1de511023772}{get\-Error} (\hyperlink{xmlParser_8h_ac39bd07b1461aaa70afffe2d7162b4f5}{X\-M\-L\-Error} error)
+\begin{DoxyCompactList}\small\item\em this gives you a user-\/friendly explanation of the parsing error \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__navigate_ga47c8238226a693d0aaf1111f1fa44ea0}{empty\-Node} ()
+\begin{DoxyCompactList}\small\item\em return \hyperlink{structXMLNode_a90565bdb240d2f14f6a3d43f15100b63}{X\-M\-L\-Node\-::empty\-X\-M\-L\-Node}; \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{create\-X\-M\-L\-Top\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Name, char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{is\-Declaration}=\hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em Create the top node of an \hyperlink{structXMLNode}{X\-M\-L\-Node} structure. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{group__xmlWOSD_ga9c8b3bfa9671cb2a0a977ef30bab364a}{create\-X\-M\-L\-Top\-Node\-\_\-\-W\-O\-S\-D} (\hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Name, char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{is\-Declaration}=\hyperlink{xmlParser_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em Create the top node of an \hyperlink{structXMLNode}{X\-M\-L\-Node} structure. \end{DoxyCompactList}\item 
+static char \hyperlink{group__conversions_ga2e3943ac932bf3e786810234e7c295b9}{set\-Global\-Options} (\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2}{X\-M\-L\-Char\-Encoding} character\-Encoding=\hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a}{X\-M\-L\-Node\-::char\-\_\-encoding\-\_\-\-U\-T\-F8}, char guess\-Wide\-Char\-Chars=1, char drop\-White\-Space=1, char remove\-Comments\-In\-Middle\-Of\-Text=1)
+\begin{DoxyCompactList}\small\item\em Sets the global options for the conversions. \end{DoxyCompactList}\item 
+static \hyperlink{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2}{X\-M\-L\-Char\-Encoding} \hyperlink{group__conversions_ga2fb8e9b250d669776e5e1962a70a4196}{guess\-Char\-Encoding} (void $\ast$buffer, int buf\-Len, char use\-X\-M\-L\-Encoding\-Attribute=1)
+\begin{DoxyCompactList}\small\item\em Guess the character encoding of the string (ascii, utf8 or shift-\/\-J\-I\-S) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{structXMLNode_a90565bdb240d2f14f6a3d43f15100b63}{empty\-X\-M\-L\-Node}
+\item 
+static \hyperlink{structXMLClear}{X\-M\-L\-Clear} \hyperlink{structXMLNode_ad32786123d26b281bfafd9325b22f47e}{empty\-X\-M\-L\-Clear}
+\item 
+static \hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} \hyperlink{structXMLNode_afc0ee94f7b16fa825e9d06197292244d}{empty\-X\-M\-L\-Attribute}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \\*
+X\-M\-L\-Node\-::\-X\-M\-L\-Node\-Data\-Tag \hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structXMLNode_aa4a98957921a25716fd2936642d47967}{X\-M\-L\-Node} (struct \hyperlink{structXMLNode_1_1XMLNodeDataTag}{X\-M\-L\-Node\-Data\-Tag} $\ast$p\-Parent, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Name, char \hyperlink{group__navigate_ga71df27d54a2dc09b0a456406a7e8c6d3}{is\-Declaration})
+\begin{DoxyCompactList}\small\item\em Constructors are protected, so use instead one of\-: \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String}, \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File}, \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper}, \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node}. \end{DoxyCompactList}\item 
+\hyperlink{structXMLNode_a459bf6af13ca13472db5991050abd9dc}{X\-M\-L\-Node} (struct \hyperlink{structXMLNode_1_1XMLNodeDataTag}{X\-M\-L\-Node\-Data\-Tag} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Constructors are protected, so use instead one of\-: \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String}, \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File}, \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper}, \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node}. \end{DoxyCompactList}\item 
+char \hyperlink{structXMLNode_a9ab5c0e463d037ebb9aa45c67f7cdc15}{parse\-Clear\-Tag} (void $\ast$px, void $\ast$pa)
+\item 
+char \hyperlink{structXMLNode_a271745140fedc83bef816bea25d7c84e}{maybe\-Add\-Tx\-T} (void $\ast$pa, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} token\-P\-Str)
+\item 
+int \hyperlink{structXMLNode_a79f4910d7336078e4f923e8c187252f8}{Parse\-X\-M\-L\-Element} (void $\ast$p\-X\-M\-L)
+\item 
+void $\ast$ \hyperlink{structXMLNode_a5094fc1ded22a0999eae8fc9395543d4}{add\-To\-Order} (int mem\-Inc, int $\ast$\-\_\-pos, int nc, void $\ast$p, int size, \hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}{X\-M\-L\-Element\-Type} xtype)
+\item 
+int \hyperlink{structXMLNode_a982dcacb4020b634d5c8c08a2e2eb917}{index\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value) const 
+\item 
+int \hyperlink{structXMLNode_ae71e1a7a5e02842a28678d6d12dbab31}{index\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value) const 
+\item 
+\hyperlink{structXMLNode}{X\-M\-L\-Node} \hyperlink{structXMLNode_ae6d79fd7b2860409d5e3ba6bc40dd0cf}{add\-Child\-\_\-priv} (int, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R}, char, int)
+\item 
+\hyperlink{structXMLAttribute}{X\-M\-L\-Attribute} $\ast$ \hyperlink{structXMLNode_aae2660e9e0b5dde280a38a210f4f8b39}{add\-Attribute\-\_\-priv} (int, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R}, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R})
+\item 
+\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} \hyperlink{structXMLNode_a2a73c243d97fbc8e80687ade10b67a07}{add\-Text\-\_\-priv} (int, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R}, int)
+\item 
+\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$ \hyperlink{structXMLNode_a76a66a211f07f3bef740375e57a4825a}{add\-Clear\-\_\-priv} (int, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R}, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R}, \hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R}, int)
+\item 
+void \hyperlink{structXMLNode_ad93b2b89fb5df65851b3f6714c3ddc44}{empty\-The\-Node} (char force)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{structXMLNode_a94896a0cde53b522c9c08b0008dc0821}{find\-Position} (\hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data} $\ast$\hyperlink{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}{d}, int index, \hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}{X\-M\-L\-Element\-Type} xtype)
+\item 
+static int \hyperlink{structXMLNode_adb78f95c5ab86bed125d6dc98f6e76e7}{Create\-X\-M\-L\-String\-R} (\hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data} $\ast$p\-Entry, \hyperlink{xmlParser_8h_a849d96105aa0c8f64b5c10d9151a3cdc}{X\-M\-L\-S\-T\-R} lpsz\-Marker, int n\-Format)
+\item 
+static int \hyperlink{structXMLNode_ab46101e00b853c30dc1403ced134f187}{remove\-Order\-Element} (\hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data} $\ast$\hyperlink{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}{d}, \hyperlink{xmlParser_8h_a100a496e2b573b37eb4e75f00a316851}{X\-M\-L\-Element\-Type} t, int index)
+\item 
+static void \hyperlink{structXMLNode_af71c7d4b7b886ce4aefe99f2ec8863ac}{exact\-Memory} (\hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data} $\ast$\hyperlink{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}{d})
+\item 
+static int \hyperlink{structXMLNode_a4b2900ce22afa1ada19df957ad7dfafc}{detach\-From\-Parent} (\hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data} $\ast$\hyperlink{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}{d})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{X\-M\-L\-Node\-Data} $\ast$ \hyperlink{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}{d}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main Class representing a X\-M\-L node. 
+
+All operations are performed using this class. \begin{DoxyNote}{Note}
+The constructors of the \hyperlink{structXMLNode}{X\-M\-L\-Node} class are protected, so use instead one of these four methods to get your first instance of \hyperlink{structXMLNode}{X\-M\-L\-Node}\-: 
+\begin{DoxyItemize}
+\item \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String}  
+\item \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File}  
+\item \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper}  
+\item \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node} (or \hyperlink{group__xmlWOSD_ga9c8b3bfa9671cb2a0a977ef30bab364a}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node\-\_\-\-W\-O\-S\-D}) 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structXMLNode_a81cfd85cde37d43408069f45205e3c8d}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Char\-Encoding@{X\-M\-L\-Char\-Encoding}}
+\index{X\-M\-L\-Char\-Encoding@{X\-M\-L\-Char\-Encoding}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Char\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum X\-M\-L\-Node\-::\-X\-M\-L\-Char\-Encoding  X\-M\-L\-Node\-::\-X\-M\-L\-Char\-Encoding}}\label{structXMLNode_a81cfd85cde37d43408069f45205e3c8d}
+
+
+Enumeration for X\-M\-L character encoding. 
+
+\hypertarget{structXMLNode_a28beb729b21b81d2a59238fa755ba700}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Node\-Data@{X\-M\-L\-Node\-Data}}
+\index{X\-M\-L\-Node\-Data@{X\-M\-L\-Node\-Data}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Node\-Data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct X\-M\-L\-Node\-::\-X\-M\-L\-Node\-Data\-Tag  X\-M\-L\-Node\-::\-X\-M\-L\-Node\-Data\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a28beb729b21b81d2a59238fa755ba700}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Char\-Encoding@{X\-M\-L\-Char\-Encoding}}
+\index{X\-M\-L\-Char\-Encoding@{X\-M\-L\-Char\-Encoding}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Char\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}enum X\-M\-L\-Node\-::\-X\-M\-L\-Char\-Encoding}}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2}
+
+
+Enumeration for X\-M\-L character encoding. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{char\-\_\-encoding\-\_\-error@{char\-\_\-encoding\-\_\-error}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-error@{char\-\_\-encoding\-\_\-error}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a901e3af8a5e1308d1a198398c2b3da76}{char\-\_\-encoding\-\_\-error}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a901e3af8a5e1308d1a198398c2b3da76}
+}]\index{char\-\_\-encoding\-\_\-\-U\-T\-F8@{char\-\_\-encoding\-\_\-\-U\-T\-F8}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-\-U\-T\-F8@{char\-\_\-encoding\-\_\-\-U\-T\-F8}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a}{char\-\_\-encoding\-\_\-\-U\-T\-F8}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a}
+}]\index{char\-\_\-encoding\-\_\-legacy@{char\-\_\-encoding\-\_\-legacy}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-legacy@{char\-\_\-encoding\-\_\-legacy}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2afcce4646efba5d15cc00d958a075c1ed}{char\-\_\-encoding\-\_\-legacy}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2afcce4646efba5d15cc00d958a075c1ed}
+}]\index{char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S@{char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S@{char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2afa21f31e866cedff460f7e907d2339cc}{char\-\_\-encoding\-\_\-\-Shift\-J\-I\-S}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2afa21f31e866cedff460f7e907d2339cc}
+}]\index{char\-\_\-encoding\-\_\-\-G\-B2312@{char\-\_\-encoding\-\_\-\-G\-B2312}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-\-G\-B2312@{char\-\_\-encoding\-\_\-\-G\-B2312}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a6f2ed679397fa246d1e5062371ba3776}{char\-\_\-encoding\-\_\-\-G\-B2312}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a6f2ed679397fa246d1e5062371ba3776}
+}]\index{char\-\_\-encoding\-\_\-\-Big5@{char\-\_\-encoding\-\_\-\-Big5}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-\-Big5@{char\-\_\-encoding\-\_\-\-Big5}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2abf8658aa97c3bcb0d714cce6bb77a0b8}{char\-\_\-encoding\-\_\-\-Big5}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2abf8658aa97c3bcb0d714cce6bb77a0b8}
+}]\index{char\-\_\-encoding\-\_\-\-G\-B\-K@{char\-\_\-encoding\-\_\-\-G\-B\-K}!X\-M\-L\-Node@{X\-M\-L\-Node}}\index{X\-M\-L\-Node@{X\-M\-L\-Node}!char\-\_\-encoding\-\_\-\-G\-B\-K@{char\-\_\-encoding\-\_\-\-G\-B\-K}}\item[{\em 
+\hypertarget{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a5f55b2ae64719235ea4ea4aae651264c}{char\-\_\-encoding\-\_\-\-G\-B\-K}\label{structXMLNode_a81bcd09f9c752b65633c1ca28ea025f2a5f55b2ae64719235ea4ea4aae651264c}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structXMLNode_aa4a98957921a25716fd2936642d47967}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Node@{X\-M\-L\-Node}}
+\index{X\-M\-L\-Node@{X\-M\-L\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}X\-M\-L\-Node\-::\-X\-M\-L\-Node (
+\begin{DoxyParamCaption}
+\item[{struct {\bf X\-M\-L\-Node\-Data\-Tag} $\ast$}]{p\-Parent, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{lpsz\-Name, }
+\item[{char}]{is\-Declaration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_aa4a98957921a25716fd2936642d47967}
+
+
+Constructors are protected, so use instead one of\-: \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String}, \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File}, \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper}, \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node}. 
+
+\hypertarget{structXMLNode_a459bf6af13ca13472db5991050abd9dc}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Node@{X\-M\-L\-Node}}
+\index{X\-M\-L\-Node@{X\-M\-L\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}X\-M\-L\-Node\-::\-X\-M\-L\-Node (
+\begin{DoxyParamCaption}
+\item[{struct {\bf X\-M\-L\-Node\-Data\-Tag} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a459bf6af13ca13472db5991050abd9dc}
+
+
+Constructors are protected, so use instead one of\-: \hyperlink{group__conversions_ga72125a4ccfae9b39bafab768346bbc7e}{X\-M\-L\-Node\-::parse\-String}, \hyperlink{group__conversions_gae984d7ebce97fad429b2b786439815fb}{X\-M\-L\-Node\-::parse\-File}, \hyperlink{group__conversions_ga46f99cf406604471e15d4378f74ecc63}{X\-M\-L\-Node\-::open\-File\-Helper}, \hyperlink{group__creation_ga1e2d0403450db891eedc76b6bfdba452}{X\-M\-L\-Node\-::create\-X\-M\-L\-Top\-Node}. 
+
+\hypertarget{structXMLNode_ae652023d7f98430de2027471ef9d9065}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!$\sim$\-X\-M\-L\-Node@{$\sim$\-X\-M\-L\-Node}}
+\index{$\sim$\-X\-M\-L\-Node@{$\sim$\-X\-M\-L\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{$\sim$\-X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}X\-M\-L\-Node\-::$\sim$\-X\-M\-L\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structXMLNode_ae652023d7f98430de2027471ef9d9065}
+\hypertarget{structXMLNode_a138099a1355b9d4103c239d9042adad3}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Node@{X\-M\-L\-Node}}
+\index{X\-M\-L\-Node@{X\-M\-L\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}X\-M\-L\-Node\-::\-X\-M\-L\-Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf X\-M\-L\-Node} \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{structXMLNode_a138099a1355b9d4103c239d9042adad3}
+
+
+to allow shallow/fast copy\-: 
+
+\hypertarget{structXMLNode_a719b115adfb642594107854189559ff2}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!X\-M\-L\-Node@{X\-M\-L\-Node}}
+\index{X\-M\-L\-Node@{X\-M\-L\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}X\-M\-L\-Node\-::\-X\-M\-L\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structXMLNode_a719b115adfb642594107854189559ff2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structXMLNode_aae2660e9e0b5dde280a38a210f4f8b39}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!add\-Attribute\-\_\-priv@{add\-Attribute\-\_\-priv}}
+\index{add\-Attribute\-\_\-priv@{add\-Attribute\-\_\-priv}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{add\-Attribute\-\_\-priv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute}$\ast$ X\-M\-L\-Node\-::add\-Attribute\-\_\-priv (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_aae2660e9e0b5dde280a38a210f4f8b39}
+\hypertarget{structXMLNode_ae6d79fd7b2860409d5e3ba6bc40dd0cf}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!add\-Child\-\_\-priv@{add\-Child\-\_\-priv}}
+\index{add\-Child\-\_\-priv@{add\-Child\-\_\-priv}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{add\-Child\-\_\-priv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::add\-Child\-\_\-priv (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{, }
+\item[{char}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_ae6d79fd7b2860409d5e3ba6bc40dd0cf}
+\hypertarget{structXMLNode_a76a66a211f07f3bef740375e57a4825a}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!add\-Clear\-\_\-priv@{add\-Clear\-\_\-priv}}
+\index{add\-Clear\-\_\-priv@{add\-Clear\-\_\-priv}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{add\-Clear\-\_\-priv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear}$\ast$ X\-M\-L\-Node\-::add\-Clear\-\_\-priv (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a76a66a211f07f3bef740375e57a4825a}
+\hypertarget{structXMLNode_a2a73c243d97fbc8e80687ade10b67a07}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!add\-Text\-\_\-priv@{add\-Text\-\_\-priv}}
+\index{add\-Text\-\_\-priv@{add\-Text\-\_\-priv}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{add\-Text\-\_\-priv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::add\-Text\-\_\-priv (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a2a73c243d97fbc8e80687ade10b67a07}
+\hypertarget{structXMLNode_a5094fc1ded22a0999eae8fc9395543d4}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!add\-To\-Order@{add\-To\-Order}}
+\index{add\-To\-Order@{add\-To\-Order}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{add\-To\-Order}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ X\-M\-L\-Node\-::add\-To\-Order (
+\begin{DoxyParamCaption}
+\item[{int}]{mem\-Inc, }
+\item[{int $\ast$}]{\-\_\-pos, }
+\item[{int}]{nc, }
+\item[{void $\ast$}]{p, }
+\item[{int}]{size, }
+\item[{{\bf X\-M\-L\-Element\-Type}}]{xtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a5094fc1ded22a0999eae8fc9395543d4}
+\hypertarget{structXMLNode_adb78f95c5ab86bed125d6dc98f6e76e7}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!Create\-X\-M\-L\-String\-R@{Create\-X\-M\-L\-String\-R}}
+\index{Create\-X\-M\-L\-String\-R@{Create\-X\-M\-L\-String\-R}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{Create\-X\-M\-L\-String\-R}]{\setlength{\rightskip}{0pt plus 5cm}static int X\-M\-L\-Node\-::\-Create\-X\-M\-L\-String\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node\-Data} $\ast$}]{p\-Entry, }
+\item[{{\bf X\-M\-L\-S\-T\-R}}]{lpsz\-Marker, }
+\item[{int}]{n\-Format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{structXMLNode_adb78f95c5ab86bed125d6dc98f6e76e7}
+\hypertarget{structXMLNode_a4b2900ce22afa1ada19df957ad7dfafc}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!detach\-From\-Parent@{detach\-From\-Parent}}
+\index{detach\-From\-Parent@{detach\-From\-Parent}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{detach\-From\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}static int X\-M\-L\-Node\-::detach\-From\-Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node\-Data} $\ast$}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{structXMLNode_a4b2900ce22afa1ada19df957ad7dfafc}
+\hypertarget{structXMLNode_ad93b2b89fb5df65851b3f6714c3ddc44}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!empty\-The\-Node@{empty\-The\-Node}}
+\index{empty\-The\-Node@{empty\-The\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{empty\-The\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void X\-M\-L\-Node\-::empty\-The\-Node (
+\begin{DoxyParamCaption}
+\item[{char}]{force}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_ad93b2b89fb5df65851b3f6714c3ddc44}
+\hypertarget{structXMLNode_af71c7d4b7b886ce4aefe99f2ec8863ac}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!exact\-Memory@{exact\-Memory}}
+\index{exact\-Memory@{exact\-Memory}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{exact\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}static void X\-M\-L\-Node\-::exact\-Memory (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node\-Data} $\ast$}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{structXMLNode_af71c7d4b7b886ce4aefe99f2ec8863ac}
+\hypertarget{structXMLNode_a94896a0cde53b522c9c08b0008dc0821}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!find\-Position@{find\-Position}}
+\index{find\-Position@{find\-Position}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{find\-Position}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::find\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node\-Data} $\ast$}]{d, }
+\item[{int}]{index, }
+\item[{{\bf X\-M\-L\-Element\-Type}}]{xtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}}\label{structXMLNode_a94896a0cde53b522c9c08b0008dc0821}
+\hypertarget{structXMLNode_a288584f591421a189727d19cdc9fc430}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!get\-Version@{get\-Version}}
+\index{get\-Version@{get\-Version}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{get\-Version}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf X\-M\-L\-C\-S\-T\-R} X\-M\-L\-Node\-::get\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structXMLNode_a288584f591421a189727d19cdc9fc430}
+
+
+Return the X\-M\-L\-Parser library version number. 
+
+\hypertarget{structXMLNode_ae71e1a7a5e02842a28678d6d12dbab31}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!index\-Clear@{index\-Clear}}
+\index{index\-Clear@{index\-Clear}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{index\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::index\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_ae71e1a7a5e02842a28678d6d12dbab31}
+\hypertarget{structXMLNode_a982dcacb4020b634d5c8c08a2e2eb917}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!index\-Text@{index\-Text}}
+\index{index\-Text@{index\-Text}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{index\-Text}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::index\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a982dcacb4020b634d5c8c08a2e2eb917}
+\hypertarget{structXMLNode_a271745140fedc83bef816bea25d7c84e}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!maybe\-Add\-Tx\-T@{maybe\-Add\-Tx\-T}}
+\index{maybe\-Add\-Tx\-T@{maybe\-Add\-Tx\-T}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{maybe\-Add\-Tx\-T}]{\setlength{\rightskip}{0pt plus 5cm}char X\-M\-L\-Node\-::maybe\-Add\-Tx\-T (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pa, }
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{token\-P\-Str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a271745140fedc83bef816bea25d7c84e}
+\hypertarget{structXMLNode_a8154edc759dc934043803de2521c056c}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!operator=@{operator=}}
+\index{operator=@{operator=}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node}\& X\-M\-L\-Node\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf X\-M\-L\-Node} \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{structXMLNode_a8154edc759dc934043803de2521c056c}
+
+
+to allow shallow/fast copy\-: 
+
+\hypertarget{structXMLNode_a9ab5c0e463d037ebb9aa45c67f7cdc15}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!parse\-Clear\-Tag@{parse\-Clear\-Tag}}
+\index{parse\-Clear\-Tag@{parse\-Clear\-Tag}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{parse\-Clear\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}char X\-M\-L\-Node\-::parse\-Clear\-Tag (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{px, }
+\item[{void $\ast$}]{pa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a9ab5c0e463d037ebb9aa45c67f7cdc15}
+\hypertarget{structXMLNode_a79f4910d7336078e4f923e8c187252f8}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!Parse\-X\-M\-L\-Element@{Parse\-X\-M\-L\-Element}}
+\index{Parse\-X\-M\-L\-Element@{Parse\-X\-M\-L\-Element}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{Parse\-X\-M\-L\-Element}]{\setlength{\rightskip}{0pt plus 5cm}int X\-M\-L\-Node\-::\-Parse\-X\-M\-L\-Element (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p\-X\-M\-L}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_a79f4910d7336078e4f923e8c187252f8}
+\hypertarget{structXMLNode_ab46101e00b853c30dc1403ced134f187}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!remove\-Order\-Element@{remove\-Order\-Element}}
+\index{remove\-Order\-Element@{remove\-Order\-Element}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{remove\-Order\-Element}]{\setlength{\rightskip}{0pt plus 5cm}static int X\-M\-L\-Node\-::remove\-Order\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node\-Data} $\ast$}]{d, }
+\item[{{\bf X\-M\-L\-Element\-Type}}]{t, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{structXMLNode_ab46101e00b853c30dc1403ced134f187}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!d@{d}}
+\index{d@{d}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node\-Data}$\ast$ X\-M\-L\-Node\-::d\hspace{0.3cm}{\ttfamily [private]}}}\label{structXMLNode_adf30070dcb8b64a31a64e29fc44b682d}
+\hypertarget{structXMLNode_afc0ee94f7b16fa825e9d06197292244d}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!empty\-X\-M\-L\-Attribute@{empty\-X\-M\-L\-Attribute}}
+\index{empty\-X\-M\-L\-Attribute@{empty\-X\-M\-L\-Attribute}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{empty\-X\-M\-L\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Attribute} X\-M\-L\-Node\-::empty\-X\-M\-L\-Attribute\hspace{0.3cm}{\ttfamily [static]}}}\label{structXMLNode_afc0ee94f7b16fa825e9d06197292244d}
+\hypertarget{structXMLNode_ad32786123d26b281bfafd9325b22f47e}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!empty\-X\-M\-L\-Clear@{empty\-X\-M\-L\-Clear}}
+\index{empty\-X\-M\-L\-Clear@{empty\-X\-M\-L\-Clear}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{empty\-X\-M\-L\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Clear} X\-M\-L\-Node\-::empty\-X\-M\-L\-Clear\hspace{0.3cm}{\ttfamily [static]}}}\label{structXMLNode_ad32786123d26b281bfafd9325b22f47e}
+\hypertarget{structXMLNode_a90565bdb240d2f14f6a3d43f15100b63}{\index{X\-M\-L\-Node@{X\-M\-L\-Node}!empty\-X\-M\-L\-Node@{empty\-X\-M\-L\-Node}}
+\index{empty\-X\-M\-L\-Node@{empty\-X\-M\-L\-Node}!XMLNode@{X\-M\-L\-Node}}
+\subsubsection[{empty\-X\-M\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Node} X\-M\-L\-Node\-::empty\-X\-M\-L\-Node\hspace{0.3cm}{\ttfamily [static]}}}\label{structXMLNode_a90565bdb240d2f14f6a3d43f15100b63}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h}{xml\-Parser.\-h}\end{DoxyCompactItemize}

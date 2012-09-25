@@ -1,0 +1,172 @@
+\hypertarget{classunisys_1_1RestBioPortalResult}{\section{unisys\-:\-:Rest\-Bio\-Portal\-Result Class Reference}
+\label{classunisys_1_1RestBioPortalResult}\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+}
+
+
+General class for taking care the response from Bio\-Portal's \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service.  
+
+
+
+
+{\ttfamily \#include $<$rest\-Bio\-Portal.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Rest\-Bio\-Portal\-Result\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classunisys_1_1RestBioPortalResult__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Rest\-Bio\-Portal\-Result\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classunisys_1_1RestBioPortalResult__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1RestBioPortalResult_a90536eac402591f2800dc911ceee8524}{Rest\-Bio\-Portal\-Result} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classunisys_1_1RestBioPortalResult_adb2db4afa53b07a9232809f1ee37fd26}{is\-Error} () const 
+\begin{DoxyCompactList}\small\item\em To check the response, is it error or not? \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_ad878273301c306e15db63010c079d7cb}{get\-Error} (bool code\-Only=false) const 
+\begin{DoxyCompactList}\small\item\em Return the error message. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_aaf00d6f0a5fa7a2a4a17442537e08fb5}{get\-Accessed\-Resource} () const 
+\begin{DoxyCompactList}\small\item\em Return accessed\-Resource. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_ae1eb5f81dc666f1177afead335cb4e61}{get\-Access\-Date} () const 
+\begin{DoxyCompactList}\small\item\em Return access\-Date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1RestBioPortalResult_a79edbadd0f6bc46ca2806e83b12ca922}{parse\-Error} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)
+\begin{DoxyCompactList}\small\item\em The protected member function is that for parsing the error response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_a05d2659a4f59d8e2e590cae364e8d8a3}{error\-Code}
+\begin{DoxyCompactList}\small\item\em Store an error code from \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} response. This value will be presented only when \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} response the error back. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_acf0c58c40a61e51d925a12cd1d363706}{error\-Long\-Message}
+\begin{DoxyCompactList}\small\item\em Store an error message from \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} response, same as error\-Code. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_a38a4f0567088f5ab6dc61d0943a7c4ed}{accessed\-Resource}
+\begin{DoxyCompactList}\small\item\em Store The resource name that the library has accessed. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1RestBioPortalResult_a67d51545778745539af85cb77d53b621}{access\-Date}
+\begin{DoxyCompactList}\small\item\em Store The time that the \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service taking response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General class for taking care the response from Bio\-Portal's \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1RestBioPortalResult_a90536eac402591f2800dc911ceee8524}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!Rest\-Bio\-Portal\-Result@{Rest\-Bio\-Portal\-Result}}
+\index{Rest\-Bio\-Portal\-Result@{Rest\-Bio\-Portal\-Result}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{Rest\-Bio\-Portal\-Result}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Rest\-Bio\-Portal\-Result\-::\-Rest\-Bio\-Portal\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortalResult_a90536eac402591f2800dc911ceee8524}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1RestBioPortalResult_ae1eb5f81dc666f1177afead335cb4e61}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!get\-Access\-Date@{get\-Access\-Date}}
+\index{get\-Access\-Date@{get\-Access\-Date}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{get\-Access\-Date}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::get\-Access\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalResult_ae1eb5f81dc666f1177afead335cb4e61}
+
+
+Return access\-Date. 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_aaf00d6f0a5fa7a2a4a17442537e08fb5}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!get\-Accessed\-Resource@{get\-Accessed\-Resource}}
+\index{get\-Accessed\-Resource@{get\-Accessed\-Resource}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{get\-Accessed\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::get\-Accessed\-Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalResult_aaf00d6f0a5fa7a2a4a17442537e08fb5}
+
+
+Return accessed\-Resource. 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_ad878273301c306e15db63010c079d7cb}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!get\-Error@{get\-Error}}
+\index{get\-Error@{get\-Error}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{get\-Error}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::get\-Error (
+\begin{DoxyParamCaption}
+\item[{bool}]{code\-Only = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalResult_ad878273301c306e15db63010c079d7cb}
+
+
+Return the error message. 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_adb2db4afa53b07a9232809f1ee37fd26}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!is\-Error@{is\-Error}}
+\index{is\-Error@{is\-Error}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{is\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Rest\-Bio\-Portal\-Result\-::is\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalResult_adb2db4afa53b07a9232809f1ee37fd26}
+
+
+To check the response, is it error or not? 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_a79edbadd0f6bc46ca2806e83b12ca922}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!parse\-Error@{parse\-Error}}
+\index{parse\-Error@{parse\-Error}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{parse\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Rest\-Bio\-Portal\-Result\-::parse\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1RestBioPortalResult_a79edbadd0f6bc46ca2806e83b12ca922}
+
+
+The protected member function is that for parsing the error response. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1RestBioPortalResult_a67d51545778745539af85cb77d53b621}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!access\-Date@{access\-Date}}
+\index{access\-Date@{access\-Date}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{access\-Date}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::access\-Date\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1RestBioPortalResult_a67d51545778745539af85cb77d53b621}
+
+
+Store The time that the \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service taking response. 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_a38a4f0567088f5ab6dc61d0943a7c4ed}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!accessed\-Resource@{accessed\-Resource}}
+\index{accessed\-Resource@{accessed\-Resource}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{accessed\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::accessed\-Resource\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1RestBioPortalResult_a38a4f0567088f5ab6dc61d0943a7c4ed}
+
+
+Store The resource name that the library has accessed. 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_a05d2659a4f59d8e2e590cae364e8d8a3}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!error\-Code@{error\-Code}}
+\index{error\-Code@{error\-Code}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{error\-Code}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::error\-Code\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1RestBioPortalResult_a05d2659a4f59d8e2e590cae364e8d8a3}
+
+
+Store an error code from \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} response. This value will be presented only when \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} response the error back. 
+
+\hypertarget{classunisys_1_1RestBioPortalResult_acf0c58c40a61e51d925a12cd1d363706}{\index{unisys\-::\-Rest\-Bio\-Portal\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Result}!error\-Long\-Message@{error\-Long\-Message}}
+\index{error\-Long\-Message@{error\-Long\-Message}!unisys::RestBioPortalResult@{unisys\-::\-Rest\-Bio\-Portal\-Result}}
+\subsubsection[{error\-Long\-Message}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Rest\-Bio\-Portal\-Result\-::error\-Long\-Message\hspace{0.3cm}{\ttfamily [protected]}}}\label{classunisys_1_1RestBioPortalResult_acf0c58c40a61e51d925a12cd1d363706}
+
+
+Store an error message from \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} response, same as error\-Code. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{restBioPortal_8h}{rest\-Bio\-Portal.\-h}\end{DoxyCompactItemize}

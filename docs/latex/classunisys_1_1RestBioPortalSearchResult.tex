@@ -1,0 +1,141 @@
+\hypertarget{classunisys_1_1RestBioPortalSearchResult}{\section{unisys\-:\-:Rest\-Bio\-Portal\-Search\-Result Class Reference}
+\label{classunisys_1_1RestBioPortalSearchResult}\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+}
+
+
+General class for taking care the response from Bio\-Portal's search command of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service.  
+
+
+
+
+{\ttfamily \#include $<$rest\-Bio\-Portal.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Rest\-Bio\-Portal\-Search\-Result\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classunisys_1_1RestBioPortalSearchResult__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Rest\-Bio\-Portal\-Search\-Result\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1RestBioPortalSearchResult__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1RestBioPortalSearchResult_a699d1ca362420f57e8ffcb9e482c7161}{Rest\-Bio\-Portal\-Search\-Result} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1RestBioPortalSearchResult_a35338e4bfae96a197434b2d4bcbc5b39}{Rest\-Bio\-Portal\-Search\-Result} (\hyperlink{structXMLNode}{X\-M\-L\-Node} xml)
+\begin{DoxyCompactList}\small\item\em Overload constructor for parsing X\-M\-L response. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classunisys_1_1RestBioPortalSearchResult_ae4b10ce1cc6ba2404885174faab498ed}{n\-Search\-Results} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of result. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{structXMLNode}{X\-M\-L\-Node} $>$ \hyperlink{classunisys_1_1RestBioPortalSearchResult_aab3a0932b5c7a5ad408ba878960aeebe}{get\-Search\-Result\-List} () const 
+\begin{DoxyCompactList}\small\item\em Return the list of result. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{structXMLNode}{X\-M\-L\-Node} $>$ \hyperlink{classunisys_1_1RestBioPortalSearchResult_af4af03700d9c2b479ed23bc9eca7d014}{get\-Ontology\-Hit\-List} () const 
+\begin{DoxyCompactList}\small\item\em Return the ontology details of result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{structXMLNode}{X\-M\-L\-Node} $>$ \hyperlink{classunisys_1_1RestBioPortalSearchResult_a82669936c321352e9ef89a347ac0b581}{search\-Result\-List}
+\begin{DoxyCompactList}\small\item\em Store the ontology terms and their information which are match with the query. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{structXMLNode}{X\-M\-L\-Node} $>$ \hyperlink{classunisys_1_1RestBioPortalSearchResult_aab15ccfaff151070ef048bca6d93d6ad}{ontology\-Hit\-List}
+\begin{DoxyCompactList}\small\item\em Store the detail of ontology class which the result come from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+General class for taking care the response from Bio\-Portal's search command of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. 
+
+This class is derived from rest\-Bio\-Portal\-Result class with the specific contructor to parse the response X\-M\-L document from the Bio\-Portal's search command. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_a699d1ca362420f57e8ffcb9e482c7161}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!Rest\-Bio\-Portal\-Search\-Result@{Rest\-Bio\-Portal\-Search\-Result}}
+\index{Rest\-Bio\-Portal\-Search\-Result@{Rest\-Bio\-Portal\-Search\-Result}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{Rest\-Bio\-Portal\-Search\-Result}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::\-Rest\-Bio\-Portal\-Search\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortalSearchResult_a699d1ca362420f57e8ffcb9e482c7161}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_a35338e4bfae96a197434b2d4bcbc5b39}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!Rest\-Bio\-Portal\-Search\-Result@{Rest\-Bio\-Portal\-Search\-Result}}
+\index{Rest\-Bio\-Portal\-Search\-Result@{Rest\-Bio\-Portal\-Search\-Result}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{Rest\-Bio\-Portal\-Search\-Result}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::\-Rest\-Bio\-Portal\-Search\-Result (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{xml}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1RestBioPortalSearchResult_a35338e4bfae96a197434b2d4bcbc5b39}
+
+
+Overload constructor for parsing X\-M\-L response. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_af4af03700d9c2b479ed23bc9eca7d014}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!get\-Ontology\-Hit\-List@{get\-Ontology\-Hit\-List}}
+\index{get\-Ontology\-Hit\-List@{get\-Ontology\-Hit\-List}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{get\-Ontology\-Hit\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf X\-M\-L\-Node}$>$ unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::get\-Ontology\-Hit\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalSearchResult_af4af03700d9c2b479ed23bc9eca7d014}
+
+
+Return the ontology details of result. 
+
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_aab3a0932b5c7a5ad408ba878960aeebe}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!get\-Search\-Result\-List@{get\-Search\-Result\-List}}
+\index{get\-Search\-Result\-List@{get\-Search\-Result\-List}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{get\-Search\-Result\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf X\-M\-L\-Node}$>$ unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::get\-Search\-Result\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalSearchResult_aab3a0932b5c7a5ad408ba878960aeebe}
+
+
+Return the list of result. 
+
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_ae4b10ce1cc6ba2404885174faab498ed}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!n\-Search\-Results@{n\-Search\-Results}}
+\index{n\-Search\-Results@{n\-Search\-Results}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{n\-Search\-Results}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::n\-Search\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1RestBioPortalSearchResult_ae4b10ce1cc6ba2404885174faab498ed}
+
+
+Return the number of result. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_aab15ccfaff151070ef048bca6d93d6ad}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!ontology\-Hit\-List@{ontology\-Hit\-List}}
+\index{ontology\-Hit\-List@{ontology\-Hit\-List}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{ontology\-Hit\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf X\-M\-L\-Node}$>$ unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::ontology\-Hit\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1RestBioPortalSearchResult_aab15ccfaff151070ef048bca6d93d6ad}
+
+
+Store the detail of ontology class which the result come from. 
+
+\hypertarget{classunisys_1_1RestBioPortalSearchResult_a82669936c321352e9ef89a347ac0b581}{\index{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}!search\-Result\-List@{search\-Result\-List}}
+\index{search\-Result\-List@{search\-Result\-List}!unisys::RestBioPortalSearchResult@{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}}
+\subsubsection[{search\-Result\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf X\-M\-L\-Node}$>$ unisys\-::\-Rest\-Bio\-Portal\-Search\-Result\-::search\-Result\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classunisys_1_1RestBioPortalSearchResult_a82669936c321352e9ef89a347ac0b581}
+
+
+Store the ontology terms and their information which are match with the query. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{restBioPortal_8h}{rest\-Bio\-Portal.\-h}\end{DoxyCompactItemize}

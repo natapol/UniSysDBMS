@@ -1,0 +1,44 @@
+\hypertarget{restBioPortal_8h}{\section{rest\-Bio\-Portal.\-h File Reference}
+\label{restBioPortal_8h}\index{rest\-Bio\-Portal.\-h@{rest\-Bio\-Portal.\-h}}
+}
+
+
+Bio\-Portal's R\-E\-S\-T service library.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include \char`\"{}services/rest/rest.\-h\char`\"{}}\\*
+Include dependency graph for rest\-Bio\-Portal.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{restBioPortal_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classunisys_1_1RestBioPortalResult}{unisys\-::\-Rest\-Bio\-Portal\-Result}
+\begin{DoxyCompactList}\small\item\em General class for taking care the response from Bio\-Portal's \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1RestBioPortalSearchResult}{unisys\-::\-Rest\-Bio\-Portal\-Search\-Result}
+\begin{DoxyCompactList}\small\item\em General class for taking care the response from Bio\-Portal's search command of \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1ClassBean}{unisys\-::\-Class\-Bean}
+\begin{DoxyCompactList}\small\item\em This class is for taking care of the specific structure of response data call class\-Bean. \end{DoxyCompactList}\item 
+struct \hyperlink{structunisys_1_1ClassBean_1_1relationDataStructure}{unisys\-::\-Class\-Bean\-::relation\-Data\-Structure}
+\item 
+class \hyperlink{classunisys_1_1RestBioPortalTermResult}{unisys\-::\-Rest\-Bio\-Portal\-Term\-Result}
+\begin{DoxyCompactList}\small\item\em This class is for parsing the response of term command. \end{DoxyCompactList}\item 
+class \hyperlink{classunisys_1_1RestBioPortal}{unisys\-::\-Rest\-Bio\-Portal}
+\begin{DoxyCompactList}\small\item\em The main class of Bio\-Portal \hyperlink{classunisys_1_1REST}{R\-E\-S\-T} service library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceunisys}{unisys}
+\begin{DoxyCompactList}\small\item\em This namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bio\-Portal's R\-E\-S\-T service library. This library contains search and term command. The serach command is used for retrieving the ontology that related with the query word from specific or non-\/specific ontology class. The term command is difference. This command is used for retrieving the information from Bio\-Portal of exact I\-D from the specific ontology class 

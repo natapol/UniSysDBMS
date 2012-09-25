@@ -1,0 +1,97 @@
+\hypertarget{group__xmlPosition}{\section{Position helper functions (use in conjunction with the update\&add functions}
+\label{group__xmlPosition}\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+}
+Collaboration diagram for Position helper functions (use in conjunction with the update\&add functions\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__xmlPosition}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga4376524698201e37c805bfa37945a600}{X\-M\-L\-Node\-::position\-Of\-Text} (int i=0) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga3a590db071ce9f3fdc6e82405ab8507d}{X\-M\-L\-Node\-::position\-Of\-Text} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gafbeb4c6fcb5f164a4e5501d048c0f714}{X\-M\-L\-Node\-::position\-Of\-Clear} (int i=0) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gaae9a760878f7e2d8e392b17edb00ea19}{X\-M\-L\-Node\-::position\-Of\-Clear} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} lpsz\-Value) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga917818941aa305d3829472d49f33a4b5}{X\-M\-L\-Node\-::position\-Of\-Clear} (\hyperlink{structXMLClear}{X\-M\-L\-Clear} $\ast$a) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gac98af1de6ed1218e5d26f7e509b8678f}{X\-M\-L\-Node\-::position\-Of\-Child\-Node} (int i=0) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_gaf8457366bc393a57e33896e46592cb3e}{X\-M\-L\-Node\-::position\-Of\-Child\-Node} (\hyperlink{structXMLNode}{X\-M\-L\-Node} x) const 
+\item 
+\hyperlink{xmlParser_8h_aab10d65aadeca1f026f6416becde7432}{X\-M\-L\-Element\-Position} \hyperlink{group__xmlPosition_ga102dcd93d13144e2a87b664e6f810725}{X\-M\-L\-Node\-::position\-Of\-Child\-Node} (\hyperlink{xmlParser_8h_acdb0d6fd8dd596384b438d86cfb2b182}{X\-M\-L\-C\-S\-T\-R} name, int i=0) const 
+\begin{DoxyCompactList}\small\item\em return the position of the ith child\-Node with the specified name if (name==N\-U\-L\-L) return the position of the ith child\-Node \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These are some useful functions when you want to insert a child\-Node, a text or a X\-M\-L\-Clear\-Tag in the middle (at a specified position) of a \hyperlink{structXMLNode}{X\-M\-L\-Node} tree already constructed. The value returned by these methods is to be used as last parameter (parameter 'pos') of add\-Child, add\-Text or add\-Clear. 
+
+\subsection{Function Documentation}
+\hypertarget{group__xmlPosition_gac98af1de6ed1218e5d26f7e509b8678f}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Child\-Node@{position\-Of\-Child\-Node}}
+\index{position\-Of\-Child\-Node@{position\-Of\-Child\-Node}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_gac98af1de6ed1218e5d26f7e509b8678f}
+\hypertarget{group__xmlPosition_gaf8457366bc393a57e33896e46592cb3e}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Child\-Node@{position\-Of\-Child\-Node}}
+\index{position\-Of\-Child\-Node@{position\-Of\-Child\-Node}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Node}}]{x}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_gaf8457366bc393a57e33896e46592cb3e}
+\hypertarget{group__xmlPosition_ga102dcd93d13144e2a87b664e6f810725}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Child\-Node@{position\-Of\-Child\-Node}}
+\index{position\-Of\-Child\-Node@{position\-Of\-Child\-Node}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Child\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Child\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{name, }
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_ga102dcd93d13144e2a87b664e6f810725}
+
+
+return the position of the ith child\-Node with the specified name if (name==N\-U\-L\-L) return the position of the ith child\-Node 
+
+\hypertarget{group__xmlPosition_gafbeb4c6fcb5f164a4e5501d048c0f714}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Clear@{position\-Of\-Clear}}
+\index{position\-Of\-Clear@{position\-Of\-Clear}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Clear (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_gafbeb4c6fcb5f164a4e5501d048c0f714}
+\hypertarget{group__xmlPosition_gaae9a760878f7e2d8e392b17edb00ea19}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Clear@{position\-Of\-Clear}}
+\index{position\-Of\-Clear@{position\-Of\-Clear}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_gaae9a760878f7e2d8e392b17edb00ea19}
+\hypertarget{group__xmlPosition_ga917818941aa305d3829472d49f33a4b5}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Clear@{position\-Of\-Clear}}
+\index{position\-Of\-Clear@{position\-Of\-Clear}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-Clear} $\ast$}]{a}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_ga917818941aa305d3829472d49f33a4b5}
+\hypertarget{group__xmlPosition_ga4376524698201e37c805bfa37945a600}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Text@{position\-Of\-Text}}
+\index{position\-Of\-Text@{position\-Of\-Text}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Text (
+\begin{DoxyParamCaption}
+\item[{int}]{i = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_ga4376524698201e37c805bfa37945a600}
+\hypertarget{group__xmlPosition_ga3a590db071ce9f3fdc6e82405ab8507d}{\index{Position helper functions (use in conjunction with the update\&add functions@{Position helper functions (use in conjunction with the update\&add functions}!position\-Of\-Text@{position\-Of\-Text}}
+\index{position\-Of\-Text@{position\-Of\-Text}!Position helper functions (use in conjunction with the update&add functions@{Position helper functions (use in conjunction with the update\&add functions}}
+\subsubsection[{position\-Of\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Element\-Position} X\-M\-L\-Node\-::position\-Of\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-M\-L\-C\-S\-T\-R}}]{lpsz\-Value}
+\end{DoxyParamCaption}
+) const}}\label{group__xmlPosition_ga3a590db071ce9f3fdc6e82405ab8507d}

@@ -1,0 +1,163 @@
+\hypertarget{classunisys_1_1IdRef}{\section{unisys\-:\-:Id\-Ref Class Reference}
+\label{classunisys_1_1IdRef}\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}}
+}
+
+
+Identifier reference class.  
+
+
+
+
+{\ttfamily \#include $<$D\-B\-Class.\-h$>$}
+
+
+
+Inheritance diagram for unisys\-:\-:Id\-Ref\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1IdRef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for unisys\-:\-:Id\-Ref\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classunisys_1_1IdRef__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classunisys_1_1IdRef_ac1f80a3c9603e25bf73ea649b571c628}{Id\-Ref} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1IdRef_a02027d11b26a6e4131525c346186976d}{Id\-Ref} (mongo\-::\-B\-S\-O\-N\-Obj const \&bson\-Obj)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor get a B\-S\-O\-N\-Obj as parameters. \end{DoxyCompactList}\item 
+\hyperlink{classunisys_1_1IdRef_afdfaf736d758f9ee321557e63a2257de}{Id\-Ref} (std\-::string const \&D\-B\-Id, std\-::string const \&collection\-N\-S)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor get a id string and collection\-N\-S as parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classunisys_1_1IdRef_a797643add7a57839526d8561156631fe}{init\-Member} (std\-::string const \&D\-B\-Id, std\-::string const \&collection\-N\-S)
+\item 
+std\-::string \hyperlink{classunisys_1_1IdRef_a9e002479bf85ca26d965018108036151}{get\-Id} () const 
+\begin{DoxyCompactList}\small\item\em Return Id string. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classunisys_1_1IdRef_aa4430b934e5305c1bdeae7bd15adeb70}{get\-N\-S} () const 
+\item 
+bool \hyperlink{classunisys_1_1IdRef_a4ab596023020171bceeb2aed8bd529ce}{is\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em Check validity of class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classunisys_1_1IdRef_a2f8143648ba349f8a910ee64b10c0829}{init\-Field} ()
+\begin{DoxyCompactList}\small\item\em set the field names \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Identifier reference class. 
+
+This class is used for storing database reference (D\-B\-Ref) under Mongo\-Db D\-B\-Ref format, which is \{\char`\"{}\$ref\char`\"{}\-: \char`\"{}collection\-N\-S\char`\"{}, \char`\"{}\$id\char`\"{}\-: \char`\"{}id\char`\"{}\}, but it support only reference between objects in the same database. This class provides the member functions to manage, converse to another class and to dereference the data from specific database handler.
+
+B\-S\-O\-N structure\-: \{ \$ref\-: $<$collname$>$, \$id\-: $<$idvalue$>$, \} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classunisys_1_1IdRef_ac1f80a3c9603e25bf73ea649b571c628}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!Id\-Ref@{Id\-Ref}}
+\index{Id\-Ref@{Id\-Ref}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{Id\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Id\-Ref\-::\-Id\-Ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1IdRef_ac1f80a3c9603e25bf73ea649b571c628}
+
+
+Default constructor. 
+
+\hypertarget{classunisys_1_1IdRef_a02027d11b26a6e4131525c346186976d}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!Id\-Ref@{Id\-Ref}}
+\index{Id\-Ref@{Id\-Ref}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{Id\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Id\-Ref\-::\-Id\-Ref (
+\begin{DoxyParamCaption}
+\item[{mongo\-::\-B\-S\-O\-N\-Obj const \&}]{bson\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1IdRef_a02027d11b26a6e4131525c346186976d}
+
+
+Overloaded constructor get a B\-S\-O\-N\-Obj as parameters. 
+
+\hypertarget{classunisys_1_1IdRef_afdfaf736d758f9ee321557e63a2257de}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!Id\-Ref@{Id\-Ref}}
+\index{Id\-Ref@{Id\-Ref}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{Id\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}unisys\-::\-Id\-Ref\-::\-Id\-Ref (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{D\-B\-Id, }
+\item[{std\-::string const \&}]{collection\-N\-S}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1IdRef_afdfaf736d758f9ee321557e63a2257de}
+
+
+Overloaded constructor get a id string and collection\-N\-S as parameters. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classunisys_1_1IdRef_a9e002479bf85ca26d965018108036151}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Id\-Ref\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1IdRef_a9e002479bf85ca26d965018108036151}
+
+
+Return Id string. 
+
+\hypertarget{classunisys_1_1IdRef_aa4430b934e5305c1bdeae7bd15adeb70}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!get\-N\-S@{get\-N\-S}}
+\index{get\-N\-S@{get\-N\-S}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{get\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string unisys\-::\-Id\-Ref\-::get\-N\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1IdRef_aa4430b934e5305c1bdeae7bd15adeb70}
+\hypertarget{classunisys_1_1IdRef_a2f8143648ba349f8a910ee64b10c0829}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!init\-Field@{init\-Field}}
+\index{init\-Field@{init\-Field}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{init\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Id\-Ref\-::init\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classunisys_1_1IdRef_a2f8143648ba349f8a910ee64b10c0829}
+
+
+set the field names 
+
+
+
+Implements \hyperlink{classunisys_1_1DataObj_acdc1989300995834a6c8ff03dc2f1268}{unisys\-::\-Data\-Obj}.
+
+\hypertarget{classunisys_1_1IdRef_a797643add7a57839526d8561156631fe}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!init\-Member@{init\-Member}}
+\index{init\-Member@{init\-Member}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{init\-Member}]{\setlength{\rightskip}{0pt plus 5cm}void unisys\-::\-Id\-Ref\-::init\-Member (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{D\-B\-Id, }
+\item[{std\-::string const \&}]{collection\-N\-S}
+\end{DoxyParamCaption}
+)}}\label{classunisys_1_1IdRef_a797643add7a57839526d8561156631fe}
+\hypertarget{classunisys_1_1IdRef_a4ab596023020171bceeb2aed8bd529ce}{\index{unisys\-::\-Id\-Ref@{unisys\-::\-Id\-Ref}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!unisys::IdRef@{unisys\-::\-Id\-Ref}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool unisys\-::\-Id\-Ref\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classunisys_1_1IdRef_a4ab596023020171bceeb2aed8bd529ce}
+
+
+Check validity of class. 
+
+
+
+Reimplemented from \hyperlink{classunisys_1_1DataObj_af0522a53b0cbc2399c82140da8808212}{unisys\-::\-Data\-Obj}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DBClass_8h}{D\-B\-Class.\-h}\end{DoxyCompactItemize}
