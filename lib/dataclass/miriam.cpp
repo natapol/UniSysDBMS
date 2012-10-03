@@ -50,9 +50,9 @@ namespace unisys {
 		
 	}
 
-	Miriam::Miriam(std::string const& id, std::string const& ns, unsigned int version)
+	Miriam::Miriam(std::string const& uri)
 	{
-		Miriam::set(id, ns, version);
+		Miriam::set(uri);
 	
 	}
 
@@ -66,82 +66,42 @@ namespace unisys {
 		return Miriam::toURI().compare(other.toURI()) == 0;
 	}
 	
-	void Miriam::setUri(std::string const& uri)
+	void Miriam::set(std::string const& uri)
 	{
-		size_t colon1 = uri.find(":");
-		size_t colon2 = uri.find(":", colon1 + 1);
-		size_t colon3 = uri.find(":", colon2 + 1);
-		size_t colon4 = uri.find(":", colon3 + 1);
+		using namespace boost::xpressive;
+		using namespace regex_constants;
 		
-		std::string tmpId;
+		//pattern = urn:miriam:domain.subdomain:id
 		
-		if (colon2 == std::string::npos) {
-			Miriam::ns = uri.substr(0, colon1);
-			tmpId = uri.substr(colon1 + 1, uri.length() - colon1 - 1);
-		} else if (colon3 == std::string::npos) {
-			Miriam::ns = uri.substr(0, colon1);
-			tmpId = uri.substr(colon1 + 1, uri.length() - colon1 - 1);
-		} else if (colon4 == std::string::npos) {
-			Miriam::ns = uri.substr(colon2 + 1, colon3 - colon2 - 1);
-			tmpId = uri.substr(colon3 + 1, uri.length() - colon3 - 1);
-		} else {
-			Miriam::ns = uri.substr(colon2 + 1, colon3 - colon2 - 1);
-			tmpId = uri.substr(colon3 + 1, uri.length() - colon3 - 1);
+		boost::xpressive::sregex ns_regex, domain_regex, subdomain_regex, id_regex, dn_regex, urn_regex;
+		{
+			domain_regex = +boost::xpressive::lower;
+			subdomain_regex = +boost::xpressive::lower;
+			ns_regex = domain_regex | ( domain_regex >> '.' >> subdomain_regex );
+			id_regex = ( +boost::xpressive::set[ _w | '%' ] | 
+				( +boost::xpressive::upper >> ':' >> +boost::xpressive::set[ _w ]) ) 
+				>> boost::xpressive::repeat<0,1>( '.' >> +boost::xpressive::range('0','9'));
+			urn_regex = (
+							boost::xpressive::bos >> "urn:miriam:" 
+							>> (s1= ns_regex)
+							>> ':' >> (s2= id_regex) >> boost::xpressive::eos
+						)
+						|
+						(
+							boost::xpressive::bos >> (s1= ns_regex)
+							>> ':' >> (s2= id_regex) >> boost::xpressive::eos
+						);
 		}
-		
-		size_t punkt = tmpId.find('.');
-		
-		if (punkt == std::string::npos) {
-			Miriam::version = 0;
-			Miriam::id = tmpId;
-		} else {
-			Miriam::version = atoi(tmpId.substr(punkt + 1, tmpId.size() - punkt - 1).c_str());
-			Miriam::id = tmpId.substr(0, punkt);
-		}
-		
-		size_t percentPos = Miriam::id.find('%');
-		
-		if (percentPos != std::string::npos) {
-			if (Miriam::id.substr(percentPos, 3).compare("%3A") == 0)
-				Miriam::id.replace(percentPos, 3, ":");
-			else if (Miriam::id.substr(percentPos, 3).compare("%3a") == 0)
-				Miriam::id.replace(percentPos, 3, ":");
-		}
-	}
 
-	void Miriam::set(std::string const& id, std::string const& ns, unsigned int version)
-	{
-		if (ns.compare("") == 0) {
-			if (boost::algorithm::starts_with(id, "urn:miriam:")) {
-				Miriam::setUri(id);
-				
-				if (version > 0) {
-					Miriam::version = version;
-				}
-				
-			} else {
-				Miriam::id = id;
-				Miriam::ns = "unknown";
-				Miriam::version = version;
-			}
-		} else {
-			Miriam::id = id;
-			Miriam::version = version;
-			if (boost::algorithm::starts_with(ns, "urn:miriam:")) {
-				Miriam::ns = ns;
-				Miriam::ns.replace(0, 11, "");
-			} else {
-				Miriam::ns = ns;
-			}
-		}
-		
-		size_t percentPos = Miriam::id.find('%');
-		
-		if (percentPos != std::string::npos) {
-			if (Miriam::id.substr(percentPos, 3).compare("%3A") == 0)
-				Miriam::id.replace(percentPos, 3, ":");
-			else if (Miriam::id.substr(percentPos, 3).compare("%3a") == 0)
-				Miriam::id.replace(percentPos, 3, ":");
+		smatch what;
+
+		if(regex_search(uri, what, urn_regex))
+		{
+			 Miriam::ns = what[s1];
+			 Miriam::id = what[s2];
+			 
+		}else{
+			throw (ParsingError("MIRIAM parsing error!"));
 		}
 	}
 	
@@ -180,34 +140,6 @@ namespace unisys {
 	}
 	
 	
-	// Miriam annotation with version code
-	void Miriam::operator++(int number)
-	{
-		Miriam::version += number;
-	}
-	
-	std::string Miriam::toURIWithVer() const
-	{
-		if (Miriam::id.compare("") == 0) {
-			return "";
-		} else {
-			char buffer [10];
-			sprintf(buffer, "%03d", Miriam::version);
-			return "urn:miriam:" + Miriam::ns + ":" + Miriam::id + "." + buffer;
-		}
-	}
-	
-	std::string Miriam::toDBIdWithVer() const
-	{
-		char buffer [10];
-		sprintf(buffer, "%03d", Miriam::version);
-		return Miriam::ns + ":" + Miriam::id + "." + buffer;
-	}
-	
-	void Miriam::increaseVer(int number)
-	{
-		Miriam::version += 1;
-	}
 	
 }
 ////////////g++ miriam.cpp ../uni/uniString.cpp -lmongoclient -lboost_thread -lboost_system -lboost_filesystem -lboost_program_options -I/usr/include/mongo -I/data/Projects/UniSysDBLib/trunk -o test

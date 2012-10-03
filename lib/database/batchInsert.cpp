@@ -60,29 +60,29 @@ namespace unisys {
 			}
 		}
 		
-		for (bsonCit = dataList.begin(); bsonCit != dataList.end(); bsonCit++) {
-			std::vector< mongo::BSONElement > beVector = (*bsonCit).getField("ontologyRelationship").Array();
-			std::vector< mongo::BSONElement >::iterator beVectorIt;
+		//for (bsonCit = dataList.begin(); bsonCit != dataList.end(); bsonCit++) {
+			//std::vector< mongo::BSONElement > beVector = (*bsonCit).getField("ontologyRelationship").Array();
+			//std::vector< mongo::BSONElement >::iterator beVectorIt;
 			
-			(*bsonCit).removeField("ontologyRelationship");
+			//(*bsonCit).removeField("ontologyRelationship");
 			
-			for (beVectorIt = beVector.begin(); beVectorIt != beVector.end(); beVectorIt++) {
-				OntoRelationship tmpOnto((*beVectorIt).Obj());
-				std::string relateId = tmpOnto.getField("relationWith").Obj().getStringField("$id");
-				std::string relateRef = tmpOnto.getField("relationWith").Obj().getStringField("$ref");
-				if (idMap.find(relateId) != idMap.end()) {
-					tmpOnto.setRelationWith(IdRef(relateId, relateRef));
-				}
+			//for (beVectorIt = beVector.begin(); beVectorIt != beVector.end(); beVectorIt++) {
+				//OntoRelationship tmpOnto((*beVectorIt).Obj());
+				//std::string relateId = tmpOnto.getField("relationWith").Obj().getStringField("$id");
+				//std::string relateRef = tmpOnto.getField("relationWith").Obj().getStringField("$ref");
+				//if (idMap.find(relateId) != idMap.end()) {
+					//tmpOnto.setRelationWith(IdRef(relateId, relateRef));
+				//}
 				
-				(*bsonCit).addOntoRelationship(tmpOnto);
-			}
+				//(*bsonCit).addOntoRelationship(tmpOnto);
+			//}
 			
-			if (dryrun) {
-				std::cout << (*bsonCit).toString() << std::endl;
-			} else {
-				Updater::insert((*bsonCit));
-			}
-		}
+			//if (dryrun) {
+				//std::cout << (*bsonCit).toString() << std::endl;
+			//} else {
+				//Updater::insert((*bsonCit));
+			//}
+		//}
 		
 		return tmpBSONArray;
 	}

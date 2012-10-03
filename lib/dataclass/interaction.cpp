@@ -73,32 +73,29 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Control::setController(PEIdRef & peIdRef)
+	void Control::setController(std::string const& peIdRef)
 	{
-		Object::addRelation("controller", peIdRef);
+		Object::addRelation("controller", Miriam(peIdRef).toDBId());
 	}
 	
-	void Control::setControlled(PEIdRef & peIdRef)
+	void Control::setControlled(std::string const& peIdRef)
 	{
-		Object::addRelation("controlled", peIdRef);
+		Object::addRelation("controlled", Miriam(peIdRef).toDBId());
 	}
 	
-	void Control::addControlType(OntoIdRef & ontoIdRef)
+	void Control::addControlType(std::string const& ontoIdRef)
 	{
-		if (ontoIdRef.isValid())
-			DataObj::appendArray("controlType", ontoIdRef.toBSONObj());
+		DataObj::appendArray("controlType", Miriam(ontoIdRef).toDBId());
 	}
 	
-	void Control::addPhenotype(OntoIdRef & ontoIdRef)
+	void Control::addPhenotype(std::string const& ontoIdRef)
 	{
-		if (ontoIdRef.isValid())
-			DataObj::appendArray("phenotype", ontoIdRef.toBSONObj());
+		DataObj::appendArray("phenotype", Miriam(ontoIdRef).toDBId());
 	}
 	
-	void Control::addModificationType(OntoIdRef & ontoIdRef)
+	void Control::addModificationType(std::string const& ontoIdRef)
 	{
-		if (ontoIdRef.isValid())
-			DataObj::appendArray("modificationType", ontoIdRef.toBSONObj());
+		DataObj::appendArray("modificationType", Miriam(ontoIdRef).toDBId());
 	}
 	
 	
@@ -126,14 +123,14 @@ namespace unisys {
 		DataObj::set("kineticLaw", kineticLaw.toBSONObj());
 	}
 	
-	void MolecularInteraction::addLeft(PEIdRef & peIdRef, double coefficient)
+	void MolecularInteraction::addLeft(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("left", peIdRef);
+		Object::addRelation("left", Miriam(peIdRef).toDBId());
 	}
 	
-	void MolecularInteraction::addRight(PEIdRef & peIdRef, double coefficient)
+	void MolecularInteraction::addRight(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("right", peIdRef);
+		Object::addRelation("right", Miriam(peIdRef).toDBId());
 	}
 	
 	
@@ -156,14 +153,14 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void GeneticInteraction::setInteractionType(OntoIdRef & ontoIdRef)
+	void GeneticInteraction::setInteractionType(std::string const& ontoIdRef)
 	{
-		DataObj::set("interactionType", ontoIdRef.toBSONObj());
+		DataObj::set("interactionType", Miriam(ontoIdRef).toDBId());
 	}
 	
-	void GeneticInteraction::setPhenotype(OntoIdRef & ontoIdRef)
+	void GeneticInteraction::setPhenotype(std::string const& ontoIdRef)
 	{
-		DataObj::set("phenotype", ontoIdRef.toBSONObj());
+		DataObj::set("phenotype", Miriam(ontoIdRef).toDBId());
 	}
 	
 	// Conversion //
@@ -181,9 +178,9 @@ namespace unisys {
 		Conversion::initField();
 	}
 	
-	void Conversion::addEnzyme(PEIdRef & peIdRef)
+	void Conversion::addEnzyme(std::string const& peIdRef)
 	{
-		Object::addRelation("enzyme", peIdRef);
+		Object::addRelation("enzyme", Miriam(peIdRef).toDBId());
 	}
 	
 	void Conversion::addKineticLaw(MathML & kineticLaw)
@@ -228,14 +225,14 @@ namespace unisys {
 			DataObj::set("conversionDirection", "=");
 	}
 	
-	void BiochemicalReaction::addLeft(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReaction::addLeft(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("left", peIdRef, coefficient);
+		Object::addRelation("left", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
-	void BiochemicalReaction::addRight(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReaction::addRight(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("right", peIdRef, coefficient);
+		Object::addRelation("right", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
 	std::string BiochemicalReaction::toRXNString(std::string const& compartment) const
@@ -284,14 +281,14 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Transport::addImport(PEIdRef & peIdRef, double coefficient)
+	void Transport::addImport(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("import", peIdRef, coefficient);
+		Object::addRelation("import", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
-	void Transport::addExport(PEIdRef & peIdRef, double coefficient)
+	void Transport::addExport(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("export", peIdRef, coefficient);
+		Object::addRelation("export", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
 	std::string Transport::toRXNString(std::string const& outside, std::string const& inside) const
@@ -342,35 +339,35 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void BiochemicalReactionWithTransport::addLeftIn(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReactionWithTransport::addLeftIn(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("leftin", peIdRef, coefficient);
+		Object::addRelation("leftin", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
-	void BiochemicalReactionWithTransport::addLeftOut(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReactionWithTransport::addLeftOut(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("leftout", peIdRef, coefficient);
+		Object::addRelation("leftout", Miriam(peIdRef).toDBId(), coefficient);
 	}
-	void BiochemicalReactionWithTransport::addRightIn(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReactionWithTransport::addRightIn(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("rightin", peIdRef, coefficient);
-	}
-	
-	void BiochemicalReactionWithTransport::addRightOut(PEIdRef & peIdRef, double coefficient)
-	{
-		Object::addRelation("rightout", peIdRef, coefficient);
+		Object::addRelation("rightin", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
-	void BiochemicalReactionWithTransport::addImport(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReactionWithTransport::addRightOut(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("leftout", peIdRef, coefficient);
-		Object::addRelation("rightin", peIdRef, coefficient);
+		Object::addRelation("rightout", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
-	void BiochemicalReactionWithTransport::addExport(PEIdRef & peIdRef, double coefficient)
+	void BiochemicalReactionWithTransport::addImport(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("leftin", peIdRef, coefficient);
-		Object::addRelation("rightout", peIdRef, coefficient);
+		Object::addRelation("leftout", Miriam(peIdRef).toDBId(), coefficient);
+		Object::addRelation("rightin", Miriam(peIdRef).toDBId(), coefficient);
+	}
+	
+	void BiochemicalReactionWithTransport::addExport(std::string const& peIdRef, double coefficient)
+	{
+		Object::addRelation("leftin", Miriam(peIdRef).toDBId(), coefficient);
+		Object::addRelation("rightout", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
 	std::string BiochemicalReactionWithTransport::toRXNString(std::string const& outside, std::string const& inside) const

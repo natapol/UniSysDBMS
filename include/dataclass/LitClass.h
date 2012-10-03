@@ -74,9 +74,9 @@ namespace unisys {
 			
 			void setType(bool isDatabase = true); ///< Less than operator overload
 			
-			void setId(Miriam const& miriam, bool withVer = true); ///< Define cross reference ID with Miriam object
+			void setId(Miriam const& miriam); ///< Define cross reference ID with Miriam object
 			
-			void setId(std::string const& uri, std::string const& ns = "", unsigned int version = 0, bool withVer = true); ///< Define cross reference ID
+			void setId(std::string const& uri); ///< Define cross reference ID
 			
 			void setDetail(std::string const& detail); ///< define some detail of this cross reference
 		
@@ -107,11 +107,11 @@ namespace unisys {
 			
 			Score(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void setScoreType(OntoIdRef & ontoIdRef);
+			void setScoreType(std::string & ontoIdRef);
 			
 			void setValue(double value);
 			
-			void setUnit(OntoIdRef & ontoIdRef);
+			void setUnit(std::string & ontoIdRef);
 			
 		
 
@@ -156,17 +156,12 @@ namespace unisys {
 			
 			void setTaxonomicId(std::string const& taxonomicId, std::string const& detail = "");
 			
-			void setCellType(OntoIdRef & ontoIdRef);
+			void setCellType(std::string & ontoIdRef);
 			
-			void setCellType(std::string const& ontoId);
+			void setTissueType(std::string & ontoIdRef);
 			
-			void setTissueType(OntoIdRef & ontoIdRef);
+			void setCellState(std::string & ontoIdRef);
 			
-			void setTissueType(std::string const& ontoId);
-			
-			void setCellState(OntoIdRef & ontoIdRef);
-			
-			void setCellState(std::string const& ontoId);
 	};
 	
 	/** 
@@ -194,9 +189,7 @@ namespace unisys {
 			
 			Evidence(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void setExperimentMethod(OntoIdRef & ontoIdRef);
-			
-			void setExperimentMethod(std::string const& ontoId);
+			void setExperimentMethod(std::string & ontoIdRef);
 			
 			void setConfidence(Score & score);
 			
@@ -219,7 +212,7 @@ namespace unisys {
 		BSON structure:
 		{	
 			comment: <string>,
-			definition: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+			definition: <string>, #format by idref class
 			evidence: <EvidenceBSONStructure>
 		}
 		\endverbatim
@@ -235,52 +228,12 @@ namespace unisys {
 			
 			Annotation(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void setDefinition(OntoIdRef & ontoIdRef);
-			
 			void setDefinition(std::string const& ontoId);
 			
 			void setEvidence(Evidence & evidence);
 			
 	};
 
-	/** 
-		\brief The C++ representative class for relationship data class.
-		
-		\verbatim
-		BSON structure:
-		{	
-			comment: <string>,
-			relationType: {$ref: <collname>, $id: <idvalue>}, #format by idref class
-			relationWith: {$ref: <collname>, $id: <idvalue>}, #format by idref class
-			evidence: <EvidenceBSONStructure>
-		}
-		\endverbatim
-	*/
-	class OntoRelationship: public Literal {
-
-		protected:
-		
-			void initField();
-			
-		public:
-		
-			OntoRelationship(); ///< Default constructor
-			
-			OntoRelationship(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
-			
-			OntoRelationship(std::string const& relationType, std::string const& relationWith);
-			
-			OntoRelationship(std::string const& relationType, std::string const& relationWith, Evidence evidence);
-			
-			void setOntoRelationship(std::string const& relationTypeOntoId, std::string const& relationWithId, bool const& isPhysicalEntity = true);
-			
-			void setRelationType(OntoIdRef ontoIdRef);
-			
-			void setRelationWith(IdRef IdRef);
-			
-			void setEvidence(Evidence & evidence);
-			
-	};
 	/** 
 		\brief The C++ representative class for relationship data class.
 		
@@ -307,9 +260,9 @@ namespace unisys {
 			
 			void setType(std::string const& string);
 			
-			void setRelationWith(IdRef & IdRef);
+			void setSource(std::string const& IdRefId);
 			
-			void setRelationWith(std::string const& IdRefId, std::string const& targetObjType = "physicalentity");
+			void setRelationWith(std::string const& IdRefId);
 			
 			void setCoefficient(double coefficient);
 			
@@ -346,7 +299,7 @@ namespace unisys {
 			
 			CellularLocation(std::string const& ontoId, Evidence & evidence);
 			
-			void setLocation(OntoIdRef & ontoIdRef);
+			void setLocation(std::string & ontoIdRef);
 			
 			void setLocation(std::string const& ontoId);
 			
@@ -412,13 +365,13 @@ namespace unisys {
 			
 			bool operator<(KineticParameter const& other) const; ///< Less than operator overload
 			
-			void setTerm(OntoIdRef & ontoIdRef);
+			void setTerm(std::string & ontoIdRef);
 			
 			void setTerm(std::string const& ontoId);
 			
 			void setValue(double value);
 			
-			void setUnit(OntoIdRef & ontoIdRef);
+			void setUnit(std::string & ontoIdRef);
 			
 			void setEvidence(Evidence & evidence);
 			

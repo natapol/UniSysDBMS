@@ -70,23 +70,23 @@ SET( unisys_header
 
 SET( unisys_source
 	${unisys_header}
-	lib/database/batchInsert.cpp
-	lib/database/updaterRemove.cpp
+#	lib/database/batchInsert.cpp
+	#lib/database/updaterRemove.cpp
 #	lib/database/batchUpdater.cpp
-	lib/database/updaterUpdate.cpp
-	lib/database/database.cpp
-	lib/database/query.cpp
-	lib/database/updater.cpp
-	lib/database/updaterInsert.cpp
+	#lib/database/updaterUpdate.cpp
+	#lib/database/database.cpp
+	#lib/database/query.cpp
+	#lib/database/updater.cpp
+	#lib/database/updaterInsert.cpp
 	lib/dataclass/literalbson.cpp
 	lib/dataclass/tracking.cpp
 	lib/dataclass/miriam.cpp
 	lib/dataclass/dataobject.cpp
 	lib/dataclass/object.cpp
-	lib/dataclass/idref.cpp
+#	lib/dataclass/idref.cpp
 #	lib/dataclass/objElement.cpp
 	lib/dataclass/interaction.cpp
-	lib/dataclass/ontology.cpp
+	#lib/dataclass/ontology.cpp
 	lib/dataclass/LitClass.cpp
 	lib/dataclass/physicalEntity.cpp
 	lib/parser/oboXML.cpp

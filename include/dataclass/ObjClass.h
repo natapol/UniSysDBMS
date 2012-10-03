@@ -44,70 +44,29 @@ namespace unisys {
 	class Object: public DataObj {
 	
 		protected:
-		
-			std::map<std::string, std::string> relationMap;
+			
+			std::set<Relation> relations;
 			
 			Object();
 			
 			void initField();
 			
-			std::set<Relation> getRelation(std::string const& type) const;
-			
 			void addRelation(Relation & relation);
 			
-			void addRelation(std::string const& type, IdRef & idRef, double coefficient = 0, bool canDuplicate = false);
+			void addRelation(std::string const& type, std::string const& idRef, double coefficient = 0, bool canDuplicate = false);
 			
 		public:
+			
 			Object(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void addOntoRelationship(OntoRelationship & ontorelationship);
+			void setId(Miriam const& miriam);
 			
-			void setId(Miriam const& miriam, bool withVer = true);
+			void setId(std::string const& uri);
 			
-			void setId(std::string const& id, std::string const& ns = "", unsigned int version = 0, bool withVer = true);
-			
-			mongo::BSONObj createRelationInsert() const;
-			
-			mongo::BSONObj createRelationRemove() const;
+			std::set<Relation> getRelation(std::string const& type = "") const;
 			
 			Tracking createTrack(std::string activity = "") const;
 	};
-
-	/** 
-		\brief Ontology data class
-
-		\verbatim
-		BSON structure:
-		{	
-			_id: <string>, #madatory
-			ontologyRelationship: {<RelationshipBOSON>, <RelationshipBOSON>, ...}
-			term: <string>,
-			definition: <string>
-		}
-		\endverbatim
-		
-	*/
-	class Ontology: public Object {
-
-		private:
-	
-			void initField();
-		
-		public:
-	
-			Ontology(); ///< Default constructor
-		
-			Ontology(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
-			
-			void setTerm(std::string const& term);
-			
-			void setDefinition(std::string const& definition);
-			
-			void setNS(std::string const& ns);
-			
-
-	};
-
 
 	/** 
 		\brief This class is for miriam cross reference annotation
@@ -286,7 +245,7 @@ namespace unisys {
 			
 			void setSource(BioSource & source);
 		
-			void addDNARegion(PEIdRef & dnaRegion);
+			void addDNARegion(std::string const& dnaRegion);
 			
 	};
 
@@ -328,9 +287,9 @@ namespace unisys {
 			
 			void setPosition(unsigned int start,unsigned int stop);
 			
-			void setDNASource(PEIdRef & peIdRef);
+			void setDNASource(std::string const& peIdRef);
 			
-			void addTranscriptionProduct(PEIdRef & trans);
+			void addTranscriptionProduct(std::string const& trans);
 			
 			
 	};
@@ -372,9 +331,9 @@ namespace unisys {
 			
 			void addPosition(unsigned int start, unsigned int stop);
 			
-			void setDNARegionSource(PEIdRef & peIdRef);
+			void setDNARegionSource(std::string const& peIdRef);
 			
-			void addTranslationProduct(PEIdRef & trans);
+			void addTranslationProduct(std::string const& trans);
 			
 
 	};
@@ -414,7 +373,7 @@ namespace unisys {
 		
 			Protein(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void addRNASource(PEIdRef & peIdRef);
+			void addRNASource(std::string const& peIdRef);
 			
 			void addSpecificKineticParameter(KineticParameter & kineticParameter);
 			
@@ -455,7 +414,7 @@ namespace unisys {
 		
 			Complex(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void addComplexMember(PEIdRef & peIdRef);
+			void addComplexMember(std::string const& peIdRef);
 			
 			void addSpecificKineticParameter(KineticParameter & kineticParameter);
 			
@@ -493,7 +452,7 @@ namespace unisys {
 			
 		public:
 			
-			std::set<PEIdRef> getParticipant() const;
+			std::set<std::string> getParticipant() const;
 			
 			void setInteractionKey();
 			
@@ -538,15 +497,15 @@ namespace unisys {
 		
 			Control(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void addControlType(OntoIdRef & ontoIdRef);
+			void addControlType(std::string const& ontoIdRef);
 			
-			void addPhenotype(OntoIdRef & ontoIdRef);
+			void addPhenotype(std::string const& ontoIdRef);
 			
-			void addModificationType(OntoIdRef & ontoIdRef);
+			void addModificationType(std::string const& ontoIdRef);
 			
-			void setController(PEIdRef & peIdRef);
+			void setController(std::string const& peIdRef);
 			
-			void setControlled(PEIdRef & peIdRef);
+			void setControlled(std::string const& peIdRef);
 			
 
 	};
@@ -587,9 +546,9 @@ namespace unisys {
 			
 			void setKineticLaw(MathML & kineticLaw);
 			
-			void addLeft(PEIdRef & peIdRef, double coefficient);
+			void addLeft(std::string const& peIdRef, double coefficient);
 			
-			void addRight(PEIdRef & peIdRef, double coefficient);
+			void addRight(std::string const& peIdRef, double coefficient);
 			
 	};
 
@@ -628,9 +587,9 @@ namespace unisys {
 			
 			GeneticInteraction(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void setInteractionType(OntoIdRef & ontoIdRef);
+			void setInteractionType(std::string const& ontoIdRef);
 			
-			void setPhenotype(OntoIdRef & ontoIdRef);
+			void setPhenotype(std::string const& ontoIdRef);
 			
 			
 	};
@@ -671,7 +630,7 @@ namespace unisys {
 			
 			void addKineticLaw(MathML & kineticLaw);
 			
-			void addEnzyme(PEIdRef & peIdRef);
+			void addEnzyme(std::string const& peIdRef);
 			
 			void setSpontaneous(bool value = true);
 			
@@ -717,9 +676,9 @@ namespace unisys {
 			
 			void setConversionDirection(std::string const& direction = "=");
 			
-			void addLeft(PEIdRef & peIdRef, double coefficient); ///< Add left participants of reaction
+			void addLeft(std::string const& peIdRef, double coefficient); ///< Add left participants of reaction
 			
-			void addRight(PEIdRef & peIdRef, double coefficient); ///< Add right participants of reaction
+			void addRight(std::string const& peIdRef, double coefficient); ///< Add right participants of reaction
 			
 			std::string toRXNString(std::string const& compartment) const;
 	};
@@ -761,9 +720,9 @@ namespace unisys {
 		
 			Transport(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void addImport(PEIdRef & peIdRef, double coefficient);
+			void addImport(std::string const& peIdRef, double coefficient);
 			
-			void addExport(PEIdRef & peIdRef, double coefficient);
+			void addExport(std::string const& peIdRef, double coefficient);
 			
 			std::string toRXNString(std::string const& outside, std::string const& inside) const;
 	};
@@ -805,17 +764,17 @@ namespace unisys {
 		
 			BiochemicalReactionWithTransport(mongo::BSONObj const& bsonObj); ///< Overloaded constructor is used when retriving data in boson object from database and tranform to C++ object
 			
-			void addLeftIn(PEIdRef & peIdRef, double coefficient);
+			void addLeftIn(std::string const& peIdRef, double coefficient);
 			
-			void addLeftOut(PEIdRef & peIdRef, double coefficient);
+			void addLeftOut(std::string const& peIdRef, double coefficient);
 			
-			void addRightIn(PEIdRef & peIdRef, double coefficient);
+			void addRightIn(std::string const& peIdRef, double coefficient);
 			
-			void addRightOut(PEIdRef & peIdRef, double coefficient);
+			void addRightOut(std::string const& peIdRef, double coefficient);
 			
-			void addImport(PEIdRef & peIdRef, double coefficient);
+			void addImport(std::string const& peIdRef, double coefficient);
 			
-			void addExport(PEIdRef & peIdRef, double coefficient);
+			void addExport(std::string const& peIdRef, double coefficient);
 			
 			void setInteractionKey();
 			

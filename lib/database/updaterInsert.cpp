@@ -28,73 +28,26 @@ namespace unisys {
 		Updater::insert("tracking", tracking.toBSONObj());
 	}
 	
-	void Updater::insert(Ontology & ontology) throw (UpdateError, DataError)
+	void Updater::insert(BioObject & object, bool strict) throw (UpdateError, DataError)
 	{
-		Updater::updateRelationAdd(ontology);
-		if (ontology.isValid()) {
-			Updater::insert("ontology", ontology.toBSONObj());
-			Updater::insert(ontology.createTrack());
-		} else {
-			throw DataError("Inserted data not valid");
-		}
-	}
-	
-	void Updater::insert(PhysicalEntity & pedata, bool strict) throw (UpdateError, DataError)
-	{
-		if (Updater::checkIdPair(pedata, strict)) {
-			if (strict) {
-				throw UpdateError("Strictly cross reference found.");
-			}else {
-				throw UpdateError("Cross refernce found.");
-			}
-		}
-		
-		// compare external id with id pair data
-		try {
-			Updater::updateRelationAdd(pedata);
-		}
-		catch (UpdateError &e) {
-			throw DataError("Relation error");
-		}
-		
 		if (pedata.isValid()) {
-			Updater::insert("physicalentity", pedata.toBSONObj());
-			Updater::insert(pedata.createTrack());
-			Updater::updateIdPair(pedata.createIdPair(strict));
+			Updater::insert("node", object.toBSONObj());
+			Updater::insert(object.createTrack());
+			
+			std::set<Relation> relation = Object::getRelation();
+			std::set<Relation>::iterator it;
+			
+			for (it = relation.begin(); it != relation.end(); it++) {
+				*it.setSource(object.getField('_id').toString(false))
+				Updater::insert("relation", (*it).toBSONObj());
+			}
+			
 		} else {
 			throw DataError("Inserted data not valid");
 		}
 		
-		std::cout << "insert" << std::endl;
 	}
 	
-	void Updater::insert(Interaction & intdata, bool strict) throw (UpdateError, DataError)
-	{
-		if (Updater::checkIdPair(intdata, strict)) {
-			if (strict) {
-				throw UpdateError("Strictly cross reference found.");
-			}else {
-				throw UpdateError("Cross refernce found.");
-			}
-		}
-		
-		try {
-			Updater::updateRelationAdd(intdata);
-		}
-		catch (UpdateError &e) {
-			throw DataError("Relation error");
-		}
-		
-		intdata.setInteractionKey();
-		
-		if (intdata.isValid()) {
-			Updater::insert("interaction", intdata.toBSONObj());
-			Updater::insert(intdata.createTrack());
-			Updater::updateIdPair(intdata.createIdPair(strict));
-		} else {
-			throw DataError("Inserted data not valid");
-		}
-	}
 }
 
 /////////////////g++ updaterInsert.cpp database.cpp updater.cpp updaterUpdate.cpp updaterRemove.cpp query.cpp ../dataclass/*.cpp ../uni/uniString.cpp -lmongoclient -lboost_thread -lboost_filesystem -lboost_date_time -lboost_system -lboost_program_options -I/usr/include/mongo -I/data/Projects/UniSysDBLib/trunk -o test

@@ -66,18 +66,15 @@ namespace unisys {
 		return strcmp(DataObj::data.getStringField("id"), other.data.getStringField("id")) == -1;
 	}
 	
-	void Xref::setId(Miriam const& miriam, bool withVer)
+	void Xref::setId(Miriam const& miriam)
 	{
-		if (withVer)
-			Xref::set("id", miriam.toDBIdWithVer());
-		else
-			Xref::set("id", miriam.toDBId());
+		Xref::set("id", miriam.toURI());
 	}
 	
-	void Xref::setId(std::string const& id, std::string const& ns, unsigned int version, bool withVer)
+	void Xref::setId(std::string const& uri)
 	{
-		Miriam tmpMiriam(id, ns, version);
-		Xref::setId(tmpMiriam, withVer);
+		Miriam tmpMiriam(uri);
+		Xref::setId(tmpMiriam);
 	}
 	
 	void Xref::setDetail(std::string const& detail)
@@ -111,9 +108,9 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Score::setScoreType(OntoIdRef & ontoIdRef)
+	void Score::setScoreType(std::string & ontoIdRef)
 	{
-		DataObj::set("scoreType", ontoIdRef.toBSONObj());
+		DataObj::set("scoreType", Miriam(ontoIdRef).toURI());
 	}
 	
 	void Score::setValue(double value)
@@ -121,9 +118,9 @@ namespace unisys {
 		DataObj::set("value", value);
 	}
 	
-	void Score::setUnit(OntoIdRef & ontoIdRef)
+	void Score::setUnit(std::string & ontoIdRef)
 	{
-		DataObj::set("unit", ontoIdRef.toBSONObj());
+		DataObj::set("unit", Miriam(ontoIdRef).toURI());
 	}
 	
 	///////////////
@@ -176,38 +173,21 @@ namespace unisys {
 		DataObj::set("taxonomicId", tmp.toBSONObj());
 	}
 	
-	void BioSource::setCellType(OntoIdRef & ontoIdRef)
+	void BioSource::setCellType(std::string & ontoIdRef)
 	{
-		DataObj::set("cellType", ontoIdRef.toBSONObj());
+		DataObj::set("cellType", Miriam(ontoIdRef).toURI());
 	}
 	
-	void BioSource::setCellType(std::string const& ontoId)
+	void BioSource::setTissueType(std::string & ontoIdRef)
 	{
-		OntoIdRef tmp(ontoId);
-		DataObj::set("cellType", tmp.toBSONObj());
+		DataObj::set("tissueType", Miriam(ontoIdRef).toURI());
 	}
 	
-	void BioSource::setTissueType(OntoIdRef & ontoIdRef)
+	void BioSource::setCellState(std::string & ontoIdRef)
 	{
-		DataObj::set("tissueType", ontoIdRef.toBSONObj());
+		DataObj::set("cellState", Miriam(ontoIdRef).toURI());
 	}
 	
-	void BioSource::setTissueType(std::string const& ontoId)
-	{
-		OntoIdRef tmp(ontoId);
-		DataObj::set("tissueType", tmp.toBSONObj());
-	}
-	
-	void BioSource::setCellState(OntoIdRef & ontoIdRef)
-	{
-		DataObj::set("cellState", ontoIdRef.toBSONObj());
-	}
-	
-	void BioSource::setCellState(std::string const& ontoId)
-	{
-		OntoIdRef tmp(ontoId);
-		DataObj::set("cellState", tmp.toBSONObj());
-	}
 
 	//////////////
 	// Evidence //
@@ -230,15 +210,10 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Evidence::setExperimentMethod(OntoIdRef & experimentMethod)
+	void Evidence::setExperimentMethod(std::string & experimentMethod)
 	{
-		DataObj::set("experimentMethod", experimentMethod.toBSONObj());
-	}
-	
-	void Evidence::setExperimentMethod(std::string const& experimentMethod)
-	{
-		OntoIdRef tmp(experimentMethod);
-		DataObj::set("experimentMethod", tmp.toBSONObj());
+		Miriam tmp(experimentMethod);
+		DataObj::set("experimentMethod", tmp.toURI());
 	}
 	
 	void Evidence::setConfidence(Score & score)
@@ -291,14 +266,9 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Annotation::setDefinition(OntoIdRef & ontoIdRef)
+	void Annotation::setDefinition(std::string const& ontoIdRef)
 	{
-		DataObj::set("definition", ontoIdRef.toBSONObj());
-	}
-	
-	void Annotation::setDefinition(std::string const& ontoId)
-	{
-		DataObj::set("definition", OntoIdRef(ontoId).toBSONObj());
+		DataObj::set("definition", Miriam(ontoIdRef).toURI());
 	}
 	
 	void Annotation::setEvidence(Evidence & evidence)
@@ -306,59 +276,6 @@ namespace unisys {
 		DataObj::set("evidence", evidence.toBSONObj());
 	}
 	
-	
-	//////////////////////
-	// OntoRelationship //
-	//////////////////////
-	void OntoRelationship::initField()
-	{
-		DataObj::addFieldSet("relationType", true);
-		DataObj::addFieldSet("relationWith", true);
-		DataObj::addFieldSet("evidence");
-	}
-	
-	OntoRelationship::OntoRelationship(): Literal() { OntoRelationship::initField(); }
-	
-	OntoRelationship::OntoRelationship(mongo::BSONObj const& bsonObj): Literal()
-	{
-		OntoRelationship::initField();
-		DataObj::addWithCheck(bsonObj);
-	}
-	
-	OntoRelationship::OntoRelationship(std::string const& relationType, std::string const& relationWith)
-	{
-		setOntoRelationship(relationType, relationWith);
-	}
-	
-	OntoRelationship::OntoRelationship(std::string const& relationType, std::string const& relationWith, Evidence evidence)
-	{
-		setOntoRelationship(relationType, relationWith);
-		setEvidence(evidence);
-	}
-	
-	void OntoRelationship::setOntoRelationship(std::string const& relationTypeOntoId, std::string const& relationWithId, bool const& isPhysicalEntity)
-	{
-		DataObj::set("relationType", OntoIdRef(relationTypeOntoId).toBSONObj());
-		if (isPhysicalEntity)
-			DataObj::set("relationWith", IdRef(relationWithId, "physicalentity").toBSONObj());
-		else
-			DataObj::set("relationWith", IdRef(relationWithId, "interaction").toBSONObj());
-	}
-	
-	void OntoRelationship::setRelationType(OntoIdRef ontoIdRef)
-	{
-		DataObj::set("relationType", ontoIdRef.toBSONObj());
-	}
-	
-	void OntoRelationship::setRelationWith(IdRef IdRef)
-	{
-		DataObj::set("relationWith", IdRef.toBSONObj());
-	}
-	
-	void OntoRelationship::setEvidence(Evidence & evidence)
-	{
-		DataObj::set("evidence", evidence.toBSONObj());
-	}
 	
 	//////////////
 	// Relation //
@@ -368,6 +285,7 @@ namespace unisys {
 	{
 		DataObj::addFieldSet("comment");
 		DataObj::addFieldSet("type", true);
+		DataObj::addFieldSet("source", true);
 		DataObj::addFieldSet("coefficient");
 		DataObj::addFieldSet("relationWith", true);
 		DataObj::addFieldSet("evidence");
@@ -391,14 +309,14 @@ namespace unisys {
 		DataObj::set("type", type);
 	}
 	
-	void Relation::setRelationWith(IdRef & IdRef)
+	void Relation::setSource(std::string const& IdRefId)
 	{
-		DataObj::set("relationWith", IdRef.toBSONObj());
+		DataObj::set("source", Miriam(IdRefId).toURI());
 	}
 	
-	void Relation::setRelationWith(std::string const& IdRefId, std::string const& targetObjType)
+	void Relation::setRelationWith(std::string const& IdRefId)
 	{
-		DataObj::set("relationWith", IdRef(IdRefId, targetObjType).toBSONObj());
+		DataObj::set("relationWith", Miriam(IdRefId).toURI());
 	}
 	
 	void Relation::setEvidence(Evidence & evidence)
@@ -446,24 +364,24 @@ namespace unisys {
 	CellularLocation::CellularLocation(std::string const& ontoId)
 	{
 		CellularLocation::initField();
-		DataObj::set("location", OntoIdRef(ontoId).toBSONObj());
+		DataObj::set("location", Miriam(ontoId).toURI());
 	}
 	
 	CellularLocation::CellularLocation(std::string const& ontoId, Evidence & evidence)
 	{
 		CellularLocation::initField();
-		DataObj::set("location", OntoIdRef(ontoId).toBSONObj());
+		DataObj::set("location", Miriam(ontoId).toURI());
 		DataObj::set("evidence", evidence.toBSONObj());
 	}
 	
-	void CellularLocation::setLocation(OntoIdRef & ontoIdRef)
+	void CellularLocation::setLocation(std::string & ontoIdRef)
 	{
-		DataObj::set("location", ontoIdRef.toBSONObj());
+		DataObj::set("location", Miriam(ontoIdRef).toURI());
 	}
 	
 	void CellularLocation::setLocation(std::string const& ontoId)
 	{
-	 	DataObj::set("location", OntoIdRef(ontoId).toBSONObj());
+	 	DataObj::set("location", Miriam(ontoId).toURI());
 	}
 	
 	void CellularLocation::setEvidence(Evidence & evidence)
@@ -519,15 +437,9 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void KineticParameter::setTerm(OntoIdRef & ontoIdRef)
+	void KineticParameter::setTerm(std::string & ontoIdRef)
 	{
-		DataObj::set("term", ontoIdRef.toBSONObj());
-	}
-	
-	void KineticParameter::setTerm(std::string const& ontoId)
-	{
-		OntoIdRef tmp(ontoId);
-		DataObj::set("term", tmp.toBSONObj());
+		DataObj::set("term", Miriam(ontoIdRef).toURI());
 	}
 	
 	void KineticParameter::setValue(double value)
@@ -535,9 +447,9 @@ namespace unisys {
 		DataObj::set("value", value);
 	}
 	
-	void KineticParameter::setUnit(OntoIdRef & ontoIdRef)
+	void KineticParameter::setUnit(std::string & ontoIdRef)
 	{
-		DataObj::set("unit", ontoIdRef.toBSONObj());
+		DataObj::set("unit", Miriam(ontoIdRef).toURI());
 	}
 	
 	void KineticParameter::setEvidence(Evidence & evidence)

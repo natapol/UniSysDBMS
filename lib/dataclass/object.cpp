@@ -27,34 +27,25 @@ namespace unisys {
 	}
 	
 	
-	void Object::setId(Miriam const& miriam, bool withVer)
+	void Object::setId(Miriam const& miriam)
 	{
-		if (withVer)
-			DataObj::set("_id", miriam.toDBIdWithVer());
-		else
-			DataObj::set("_id", miriam.toDBId());
+		DataObj::set("_id", miriam.toDBId());
 	}
 	
-	void Object::setId(std::string const& id, std::string const& ns, unsigned int version, bool withVer)
+	void Object::setId(std::string const& uri)
 	{
-		Miriam tmpMiriam(id, ns, version);
-		Object::setId(tmpMiriam, withVer);
-	}
-	
-	void Object::addOntoRelationship(OntoRelationship & ontorelationship)
-	{
-		if (ontorelationship.isValid())
-			DataObj::appendArray("ontologyRelationship", ontorelationship.toBSONObj());
+		Miriam tmpMiriam(uri);
+		Object::setId(tmpMiriam);
 	}
 	
 	void Object::addRelation(Relation & relation)
 	{
 		if (relation.isValid())
-			DataObj::appendArray("relation", relation.toBSONObj());
+			Object::relations.insert(relation);
 	}
 	
 	// add some code to check duplicate
-	void Object::addRelation(std::string const& type, IdRef & idRef, double coefficient, bool canDuplicate)
+	void Object::addRelation(std::string const& type, std::string const& idRef, double coefficient, bool canDuplicate)
 	{
 		Relation tmprelation;
 		tmprelation.setType(type);
@@ -69,78 +60,19 @@ namespace unisys {
 	
 	std::set<Relation> Object::getRelation(std::string const& type) const
 	{
-		std::vector<mongo::BSONElement> tmpVec = DataObj::data.getField("relation").Array();
-		std::set<Relation> relation;
-		for (int i = 0; i < tmpVec.size(); i++) {
-			mongo::BSONObj obj = tmpVec[i].Obj();
-			if ( strcmp(obj.getStringField("type"), type.c_str()) == 0 ) {
-				relation.insert(Relation(obj));
+		if (type.compare("") == 0) {
+			return Object::relations;
+		} else {
+			std::set<Relation>::iterator it;
+			std::set<Relation> result;
+			for (it = Object::relations.begin(); it != Object::relations.end(); it++) {
+				if ( strcmp( (*it).getField("type").toString(false).c_str(), type.c_str() ) ) {
+					result.insert(*it);
+				}
 			}
+			
+			return result;
 		}
-		return relation;
-	}
-	
-	mongo::BSONObj Object::createRelationInsert() const
-	{
-		mongo::BSONArrayBuilder arrayInj;
-		
-		std::string idTmp = DataObj::data.getStringField("_id");
-		mongo::BSONObj beTmp = DataObj::data.getObjectField("relation");
-		
-		mongo::BSONObjIterator i(beTmp);
-		
-		while ( i.more() ) {
-			
-			mongo::BSONObj e = i.next().Obj();
-			mongo::BSONObj query = BSON("_id" << e.getFieldDotted("relationWith.$id").String());
-						
-			std::string targetNS = e.getFieldDotted("relationWith.$ref").String();
-						
-			std::string type = e.getStringField("type");
-						
-			mongo::BSONObjBuilder tmpRela;
-			
-			tmpRela.append("type", type.append("-from"));
-			
-			tmpRela.append("relationWith", BSON("$ref" << "physicalentity" << "$id" << idTmp));
-			mongo::BSONObj relation = tmpRela.obj();
-			
-			// query {_id: <id>}
-			// inject {$addToSet: {relation: <RelationBSONStruct>}}
-			arrayInj.append(BSON("ns" << targetNS << "query" << query << "inject" << BSON("$addToSet" << BSON("relation" << relation))));
-		}
-		mongo::BSONObj test = arrayInj.arr();
-		std::cout << test.toString() << std::endl;
-		
-		return test;
-	}
-	
-	mongo::BSONObj Object::createRelationRemove() const
-	{
-		mongo::BSONArrayBuilder arrayInj;
-		mongo::BSONArrayBuilder arrayRem;
-		
-		std::string idTmp = DataObj::data.getStringField("_id");
-		mongo::BSONObj beTmp = DataObj::data.getField("relation").Obj();
-		
-		mongo::BSONObjIterator i(beTmp);
-		
-		while ( i.more() ) {
-			mongo::BSONObj e = i.next().Obj();
-			std::string targetId = e.getFieldDotted("relationWith.$id").String();
-			mongo::BSONObj query = BSON("_id" << targetId);
-			
-			std::string targetNS = e.getFieldDotted("relationWith.$ref").String();
-			std::string type = e.getStringField("type");
-			
-			if (type.compare("sourceOf") == 0) {
-				arrayRem.append(BSON("ns" << targetNS << "inject" << BSON("_id" << targetId)));
-			} else {
-				arrayInj.append(BSON("ns" << targetNS << "query" << query << "inject" << BSON("$pull" << BSON("relation" << BSON("relationWith.$id" << idTmp)))));
-			}
-		}
-		
-		return BSON("remove" << arrayRem.arr() << "update" << arrayInj.arr());
 	}
 	
 	Tracking Object::createTrack(std::string activity) const
@@ -242,64 +174,6 @@ namespace unisys {
 		DataObj::appendArray("dataXref", xref.toBSONObj());
 	}
 	
-	mongo::BSONObj BioObject::createIdPair(bool strict) const
-	{
-		mongo::BSONArrayBuilder arrayTmp;
-		
-		std::string idTmp = DataObj::data.getStringField("_id");
-		
-//		Add IdPair with thier own Id
-		mongo::BSONObjBuilder tmp1;
-		tmp1.append("_id", idTmp);
-		tmp1.append("internal", idTmp);
-		tmp1.append("type", "main");
-		arrayTmp.append(tmp1.obj());
-		
-//		Add IdPair from dataPrimarySource
-		mongo::BSONObj beTmp = DataObj::data.getField("dataPrimarySource").Obj();
-		
-		mongo::BSONObjBuilder tmp2;
-		tmp2.append("_id", beTmp.getStringField("id"));
-		tmp2.append("internal", idTmp);
-		tmp2.append("type", "main");
-		arrayTmp.append(tmp2.obj());
-		
-		
-//		Add IdPair from cross reference
-		if (DataObj::data.hasField("dataXref") && strict) {
-			beTmp = DataObj::data.getField("dataXref").Obj();
-		
-			mongo::BSONObjIterator i(beTmp);
-		
-			while ( i.more() ) {
-				mongo::BSONObj e = i.next().Obj();
-				mongo::BSONObjBuilder tmp;
-				tmp.append("_id", e.getStringField("id"));
-				tmp.append("internal", idTmp);
-				tmp.append("type", "cross");
-				arrayTmp.append(tmp.obj());
-			}
-		}
-		
-//		Add IdPair with interactionKey
-		if (DataObj::data.hasField("interactionKey")) {
-			mongo::BSONObjBuilder tmp;
-			tmp.append("_id", DataObj::data.getStringField("interactionKey"));
-			tmp.append("internal", idTmp);
-			tmp.append("type", "main");
-			arrayTmp.append(tmp.obj());
-		}
-		
-//		Add IdPair with InCHi
-		if (DataObj::data.hasField("InChi")) {
-			mongo::BSONObjBuilder tmp;
-			tmp.append("_id", DataObj::data.getStringField("InChi"));
-			tmp.append("internal", idTmp);
-			tmp.append("type", "main");
-			arrayTmp.append(tmp.obj());
-		}
-		return arrayTmp.arr();
-	}
 	
 }
 /////////g++ object.cpp LitClass.cpp miriam.cpp tracking.cpp idref.cpp dataobject.cpp ../uni/*.cpp -lmongoclient -lboost_date_time -lboost_system -lboost_thread -lboost_filesystem -lboost_program_options -I/usr/include/mongo -I/data/Projects/UniSysDBLib/trunk -o test

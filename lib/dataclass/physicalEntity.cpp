@@ -150,9 +150,9 @@ namespace unisys {
 		DataObj::set("position", start, stop);
 	}
 	
-	void DNARegion::setDNASource(PEIdRef & peIdRef)
+	void DNARegion::setDNASource(std::string const& peIdRef)
 	{
-		Object::addRelation("dnaSource", peIdRef);
+		Object::addRelation("dnaSource", Miriam(peIdRef).toDBId());
 	}
 	
 	// RNA //
@@ -178,9 +178,9 @@ namespace unisys {
 		DataObj::appendArray("positions", start, stop);
 	}
 	
-	void RNA::setDNARegionSource(PEIdRef & peIdRef)
+	void RNA::setDNARegionSource(std::string const& peIdRef)
 	{
-		Object::addRelation("dnaRegionSource", peIdRef);
+		Object::addRelation("dnaRegionSource", Miriam(peIdRef).toDBId());
 	}
 	
 	// Protein //
@@ -201,9 +201,9 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Protein::addRNASource(PEIdRef & peIdRef)
+	void Protein::addRNASource(std::string const& peIdRef)
 	{
-		Object::addRelation("rnaSource", peIdRef);
+		Object::addRelation("rnaSource", Miriam(peIdRef).toDBId());
 	}
 	
 	void Protein::addSpecificKineticParameter(KineticParameter & kineticParameter)
@@ -231,9 +231,9 @@ namespace unisys {
 		DataObj::addWithCheck(bsonObj);
 	}
 	
-	void Complex::addComplexMember(PEIdRef & peIdRef)
+	void Complex::addComplexMember(std::string const& peIdRef)
 	{
-		Object::addRelation("complexMember", peIdRef);
+		Object::addRelation("complexMember", Miriam(peIdRef).toDBId());
 	}
 	
 	void Complex::addSpecificKineticParameter(KineticParameter & kineticParameter)

@@ -22,6 +22,7 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/algorithm/string/erase.hpp>
 #include <boost/algorithm/string/split.hpp>
+#include <boost/xpressive/xpressive.hpp>
 #include "client/dbclient.h"
 #include "database/database.h"
 
@@ -246,21 +247,17 @@ namespace unisys {
 			
 			std::string id; ///< Identifier
 			
-			unsigned int version; ///< Version
-			
-			void setUri(std::string const& uri);
-			
 		public:
 	
 			Miriam(); ///< Default constructor
 		
-			Miriam(std::string const& id, std::string const& ns = "", unsigned int version = 0); ///< Overloaded constructor
+			Miriam(std::string const& uri); ///< Overloaded constructor
 			
 			bool operator<(Miriam const& other) const; ///< Less than operator overload
 			
 			bool operator==(Miriam const& other) const; ///< Equal operator overload
 			
-			void set(std::string const& id, std::string const& ns = "", unsigned int version = 0);
+			void set(std::string const& uri);
 			
 			std::string toURI() const; ///< return URI string
 			
@@ -270,107 +267,6 @@ namespace unisys {
 			
 			bool isValid() const; ///< Check validity of data
 			
-			// Miriam annotation with version code
-			void operator++(int number = 1); ///< Increase the number of version with 1
-			
-			std::string toURIWithVer() const; ///< return URI string appended with version number(super-domain:domain.sub-domain namespace:Identifier.Version)
-			
-			std::string toDBIdWithVer() const; ///< return Database system ID string appended with version number(domain.sub-domain namespace:Identifier.Version)
-			
-			void increaseVer(int number = 1); ///< Increase the number of version with 1
-	};
-	/** 
-		\brief Identifier reference class
-
-		This class is used for storing database reference (DBRef) under MongoDb DBRef format, which is {"$ref": "collectionNS", "$id": "id"},
-		but it support only reference between objects in the same database. This class provides the member functions to manage, converse to 
-		another class and to dereference the data from specific database handler.
-		
-		BSON structure:
-		{	
-			$ref: \<collname\>,
-			$id: \<idvalue\>,
-		}
-	*/
-	class IdRef: public DataObj {
-	
-		protected:
-			void initField(); ///< set the field names
-		public:
-			IdRef(); ///< Default constructor
-			
-			IdRef(mongo::BSONObj const& bsonObj); ///< Overloaded constructor get a BSONObj as parameters.
-			
-			IdRef(std::string const& DBId, std::string const& collectionNS); ///< Overloaded constructor get a id string and collectionNS as parameters.
-			
-			void initMember(std::string const& DBId, std::string const& collectionNS); ///< 
-			
-			std::string getId() const; ///< Return Id string
-			
-			std::string getNS() const;
-			
-			bool isValid() const; ///< Check validity of class
-			
-//			mongo::BSONObj fetch(Database & db) const; ///< Derefernce this DBRef and return a boson object.
-	};
-	/** 
-		\brief Identifier reference class specific to physicalentity collection namespace
-
-		This class is the same as IdRef, but has specific collection namespace to physicalentity collection namespace.
-	*/
-	class PEIdRef: public IdRef {
-	
-		private:
-			void initMember() {}
-		public:
-			
-			PEIdRef() : IdRef("", "physicalentity") {} ///< Default constructor
-			
-			PEIdRef(mongo::BSONObj const& bsonObj) : IdRef(bsonObj) {}
-			
-			PEIdRef(std::string const& DBId) : IdRef(DBId, "physicalentity") {} ///< Overloaded constructor get a object id string as parameter.
-			
-			inline void setId(std::string const& DBId) { IdRef::initMember(DBId, "physicalentity"); }
-	};
-	/** 
-		\brief Identifier reference class specific to Iinteraction collection namespace
-
-		This class is the same as IdRef, but has specific collection namespace to interaction collection namespace.
-	*/
-	class IntIdRef: public IdRef {
-	
-		private:
-			void initMember() {}
-		public:
-	
-			IntIdRef() : IdRef("", "interaction") {} ///< Default constructor
-			
-			IntIdRef(mongo::BSONObj const& bsonObj) : IdRef(bsonObj) {}
-		
-			IntIdRef(std::string const& DBId) : IdRef(DBId, "interaction") {} ///< Overloaded constructor get a object id string as parameter.
-			
-			inline void setId(std::string const& DBId) { IdRef::initMember(DBId, "interaction"); }
-
-	};
-	/** 
-		\brief Identifier reference class specific to obo collection namespace
-
-		This class is the same as IdRef, but has specific collection namespace to obo collection namespace.
-	*/
-	class OntoIdRef: public IdRef {
-	
-		private:
-			void initMember() {}
-		public:
-	
-			OntoIdRef() : IdRef("", "ontology") {} ///< Default constructor
-			
-			OntoIdRef(mongo::BSONObj const& bsonObj) : IdRef(bsonObj) {}
-		
-			OntoIdRef(std::string const& DBId) : IdRef(DBId, "ontology") {} ///< Overloaded constructor get a object id string as parameter.
-			
-			inline void setId(std::string const& DBId) { IdRef::initMember(DBId, "ontology"); }
-
 	};
 	/** 
 		\brief Data updating history class

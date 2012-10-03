@@ -76,23 +76,6 @@ namespace unisys {
 		return arrayTmp.arr();
 	}
 	
-//	mongo::BSONObj Query::perform(const std::string &ns, int nToReturn, int nToSkip, 
-//		const mongo::BSONObj *fieldsToReturn, int queryOptions, int batchSize) throw (QueryError)
-//	{
-//		mongo::BSONArrayBuilder arrayTmp;
-//		
-//		std::string dbNS = (*databaseHandle).getDBName() + "." + ns;
-//		
-//		mongo::auto_ptr<mongo::DBClientCursor> cursor = (*databaseHandle).query(dbNS, Query::query, nToReturn, 
-//			nToSkip, fieldsToReturn, queryOptions, batchSize);
-//			
-//		while( cursor->more() ) {
-//			arrayTmp.append(cursor->next());
-//		}
-//		
-//		return arrayTmp.arr();
-//	}
-	
 	mongo::BSONObj Query::performOne(const std::string &ns, int nToReturn, int nToSkip, const mongo::BSONObj *fieldsToReturn, 
 		int queryOptions, int batchSize) throw (QueryError)
 	{
@@ -106,12 +89,19 @@ namespace unisys {
 			return mongo::BSONObj();
 	}
 	
-	mongo::BSONObj Query::queryById(const std::string &ns, const std::string &id) throw (QueryError)
+	mongo::BSONObj Query::queryById(const std::string &id) throw (QueryError)
 	{
 		Query::query = BSON( "_id" << id );
-		return Query::performOne(ns);
+		return Query::performOne("node");
 	}
 	
+	mongo::BSONObj Query::queryByRef(const std::string &id) throw (QueryError)
+	{
+		Query::query = BSON( '$or' << BSON_ARRAY( BSON("dataPrimarySource" << id), BSON("dataXref.id" << id) ) );
+		mongo::BSONObj fieldsToReturn = BSON('_id' << 1)
+		
+		return Query::perform("node", 0, 0, fieldsToReturn);
+	}
 }
 
 ////////////g++ query.cpp database.cpp oboxmlBatchInsert.cpp updater.cpp updaterUpdate.cpp updaterRemove.cpp updaterInsert.cpp batchInsert.cpp ../parser/oboXML.cpp ../parser/stanza.cpp ../uni/*.cpp ../parser/xmlParser.cpp ../dataclass/*.cpp -lmongoclient -lboost_thread -lboost_filesystem -lboost_date_time -lboost_system -lboost_program_options -I/usr/include/mongo -I/data/Projects/UniSysDBLib/trunk -o test
