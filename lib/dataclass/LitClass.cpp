@@ -309,7 +309,7 @@ namespace unisys {
 		DataObj::set("type", type);
 	}
 	
-	void Relation::setSource(std::string const& IdRefId)
+	void Relation::setSource(std::string IdRefId)
 	{
 		DataObj::set("source", Miriam(IdRefId).toURI());
 	}

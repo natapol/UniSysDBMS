@@ -45,8 +45,6 @@ namespace unisys {
 	
 		protected:
 			
-			std::set<Relation> relations;
-			
 			Object();
 			
 			void initField();

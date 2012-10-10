@@ -102,6 +102,8 @@ namespace unisys {
 		
 		return Query::perform("node", 0, 0, fieldsToReturn);
 	}
+	
+	bool isRedundantcy(BioObject obj, bool strict = true) const;
 }
 
 ////////////g++ query.cpp database.cpp oboxmlBatchInsert.cpp updater.cpp updaterUpdate.cpp updaterRemove.cpp updaterInsert.cpp batchInsert.cpp ../parser/oboXML.cpp ../parser/stanza.cpp ../uni/*.cpp ../parser/xmlParser.cpp ../dataclass/*.cpp -lmongoclient -lboost_thread -lboost_filesystem -lboost_date_time -lboost_system -lboost_program_options -I/usr/include/mongo -I/data/Projects/UniSysDBLib/trunk -o test

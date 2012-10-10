@@ -260,7 +260,7 @@ namespace unisys {
 			
 			void setType(std::string const& string);
 			
-			void setSource(std::string const& IdRefId);
+			void setSource(std::string IdRefId);
 			
 			void setRelationWith(std::string const& IdRefId);
 			

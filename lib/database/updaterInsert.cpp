@@ -30,16 +30,17 @@ namespace unisys {
 	
 	void Updater::insert(BioObject & object, bool strict) throw (UpdateError, DataError)
 	{
-		if (pedata.isValid()) {
+		if (object.isValid()) {
 			Updater::insert("node", object.toBSONObj());
 			Updater::insert(object.createTrack());
 			
-			std::set<Relation> relation = Object::getRelation();
-			std::set<Relation>::iterator it;
+			mongo::BSONObj beTmp = object.getField("relation").Obj();
 			
-			for (it = relation.begin(); it != relation.end(); it++) {
-				*it.setSource(object.getField('_id').toString(false))
-				Updater::insert("relation", (*it).toBSONObj());
+			mongo::BSONObjIterator i(beTmp);
+			
+			while ( i.more() ) {
+				mongo::BSONObj e = i.next().Obj();
+				Updater::insert("relation", e);
 			}
 			
 		} else {

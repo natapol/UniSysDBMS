@@ -41,7 +41,7 @@ namespace unisys {
 	void Object::addRelation(Relation & relation)
 	{
 		if (relation.isValid())
-			Object::relations.insert(relation);
+			DataObj::appendArray("relation", relation.toBSONObj());
 	}
 	
 	// add some code to check duplicate
@@ -49,6 +49,7 @@ namespace unisys {
 	{
 		Relation tmprelation;
 		tmprelation.setType(type);
+		tmprelation.setSource(DataObj::data.getStringField("_id"));
 		tmprelation.setRelationWith(idRef);
 		if (coefficient != 0)
 			tmprelation.setCoefficient(coefficient);
@@ -60,19 +61,15 @@ namespace unisys {
 	
 	std::set<Relation> Object::getRelation(std::string const& type) const
 	{
-		if (type.compare("") == 0) {
-			return Object::relations;
-		} else {
-			std::set<Relation>::iterator it;
-			std::set<Relation> result;
-			for (it = Object::relations.begin(); it != Object::relations.end(); it++) {
-				if ( strcmp( (*it).getField("type").toString(false).c_str(), type.c_str() ) ) {
-					result.insert(*it);
-				}
+		std::vector<mongo::BSONElement> tmpVec = DataObj::data.getField("relation").Array();
+		std::set<Relation> relation;
+		for (int i = 0; i < tmpVec.size(); i++) {
+			mongo::BSONObj obj = tmpVec[i].Obj();
+			if ( strcmp(obj.getStringField("type"), type.c_str()) == 0 ) {
+				relation.insert(Relation(obj));
 			}
-			
-			return result;
 		}
+		return relation;
 	}
 	
 	Tracking Object::createTrack(std::string activity) const

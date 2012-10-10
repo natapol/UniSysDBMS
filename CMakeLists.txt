@@ -77,7 +77,7 @@ SET( unisys_source
 	#lib/database/database.cpp
 	#lib/database/query.cpp
 	#lib/database/updater.cpp
-	#lib/database/updaterInsert.cpp
+	lib/database/updaterInsert.cpp
 	lib/dataclass/literalbson.cpp
 	lib/dataclass/tracking.cpp
 	lib/dataclass/miriam.cpp
