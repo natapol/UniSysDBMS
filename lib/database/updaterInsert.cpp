@@ -43,6 +43,9 @@ namespace unisys {
 				Updater::insert("relation", e);
 			}
 			
+			Updater::ensureIndexRelation();
+			Updater::ensureIndexNode();
+			
 		} else {
 			throw DataError("Inserted data not valid");
 		}

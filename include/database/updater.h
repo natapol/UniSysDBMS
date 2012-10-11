@@ -78,21 +78,22 @@ namespace unisys {
 				\param q compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 				\param justOne compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void ensureIndex(std::string const& collectionNS, mongo::BSONObj bsonObj);
+			void ensureIndex(std::string const& collectionNS, mongo::BSONObj keys, bool unique = false, 
+				const string & name = "", bool cache = true, bool background = false, int v = -1) throw (UpdateError);
 			/**
 				\brief compare cross reference to object in database
 				\param collectionNS boson object of BioObject class
 				\param q compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 				\param justOne compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void ensureIndexRelation();
+			void ensureIndexRelation() throw (UpdateError);
 			/**
 				\brief compare cross reference to object in database
 				\param collectionNS boson object of BioObject class
 				\param q compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 				\param justOne compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void ensureIndexNode();
+			void ensureIndexNode() throw (UpdateError);
 		public:
 
 			Updater();

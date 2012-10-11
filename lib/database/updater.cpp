@@ -24,10 +24,11 @@ namespace unisys {
 		Updater::databaseHandle = databaseHandlePt;
 	}
 	
-	void Updater::ensureIndex(std::string const& collectionNS, mongo::BSONObj bsonObj)
+	void Updater::ensureIndex(std::string const& collectionNS, mongo::BSONObj keys, bool unique, 
+				const string & name, bool cache, bool background, int v) throw (UpdateError)
 	{
 		std::string ns = (*Updater::databaseHandle).dbname + "." + collectionNS;
-		(*Updater::databaseHandle).ensureIndex(ns, bsonObj);
+		(*Updater::databaseHandle).ensureIndex(ns, keys, unique, name, cache, background, v);
 		
 		std::string error = (*Updater::databaseHandle).getLastError();
 		if(!error.empty()) {
@@ -37,11 +38,14 @@ namespace unisys {
 	
 	void Updater::ensureIndexRelation()
 	{
-		Updater::ensureIndex( "node", BSON() )
+		Updater::ensureIndex( "relation", BSON("source" << 1) );
+		Updater::ensureIndex( "relation", BSON("relationWith" << 1) );
+		Updater::ensureIndex( "relation", BSON("source" << 1 << "relationWith" << 1) );
 	}
 	
 	void Updater::ensureIndexNode()
 	{
-		Updater::ensureIndex( "relation", BSON() )
+		Updater::ensureIndex( "node", BSON("dataPrimarySource.id" << 1) );
+		Updater::ensureIndex( "node", BSON("dataXref.id" << 1) );
 	}
 }

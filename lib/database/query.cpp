@@ -103,7 +103,42 @@ namespace unisys {
 		return Query::perform("node", 0, 0, fieldsToReturn);
 	}
 	
-	bool isRedundantcy(BioObject obj, bool strict = true) const;
+	bool isRedundantcy(BioObject obj, bool strict = true) const throw (QueryError)
+	{
+		bool redundant = false;
+		
+		std::string main = obj.getStringField("dataPrimarySource")
+		
+		if strict {
+			Query::query = BSON( '$or' << BSON_ARRAY( BSON("dataPrimarySource" << id), BSON("dataXref.id" << id) ) );
+		} else {
+			Query::query = BSON( "dataPrimarySource" << id );
+		}
+		
+		if !Query::performOne("node").isEmpty()
+			redundant = true;
+		
+		
+		mongo::BSONObj beTmp = obj.getField("relation").Obj();
+		
+		mongo::BSONObjIterator i(beTmp);
+		
+		while ( i.more() ) {
+			
+			std::string id = i.next().Obj().getStringField("id");
+			
+			if strict {
+				Query::query = BSON( '$or' << BSON_ARRAY( BSON("dataPrimarySource" << id), BSON("dataXref.id" << id) ) );
+			} else {
+				Query::query = BSON( "dataPrimarySource" << id );
+			}
+			
+			if !Query::performOne("node").isEmpty()
+				redundant = true;
+		}
+		
+		return redundant;
+	}
 }
 
 ////////////g++ query.cpp database.cpp oboxmlBatchInsert.cpp updater.cpp updaterUpdate.cpp updaterRemove.cpp updaterInsert.cpp batchInsert.cpp ../parser/oboXML.cpp ../parser/stanza.cpp ../uni/*.cpp ../parser/xmlParser.cpp ../dataclass/*.cpp -lmongoclient -lboost_thread -lboost_filesystem -lboost_date_time -lboost_system -lboost_program_options -I/usr/include/mongo -I/data/Projects/UniSysDBLib/trunk -o test

@@ -242,8 +242,9 @@ namespace unisys {
 		{	
 			comment: <string>,
 			type: <string>, #format by idref class
+			source: <miraim>, #format by idref class
 			coefficient: <float>,
-			relationWith: {$ref: <collname>, $id: <idvalue>}, #format by idref class
+			relationWith: <miraim>, #format by idref class
 			evidence: <EvidenceBSONStructure>
 		}
 		\endverbatim
