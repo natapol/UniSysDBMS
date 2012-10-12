@@ -28,23 +28,31 @@ namespace unisys {
 		Updater::insert("tracking", tracking.toBSONObj());
 	}
 	
+	void Updater::insertRelation(BioObject & object) throw (UpdateError, DataError)
+	{
+		mongo::BSONObj beTmp = object.getField("relation").Obj();
+		
+		mongo::BSONObjIterator i(beTmp);
+		
+		while ( i.more() ) {
+			mongo::BSONObj e = i.next().Obj();
+			Updater::insert("relation", e);
+		}
+	}
+	
 	void Updater::insert(BioObject & object, bool strict) throw (UpdateError, DataError)
 	{
 		if (object.isValid()) {
 			Updater::insert("node", object.toBSONObj());
 			Updater::insert(object.createTrack());
 			
-			mongo::BSONObj beTmp = object.getField("relation").Obj();
-			
-			mongo::BSONObjIterator i(beTmp);
-			
-			while ( i.more() ) {
-				mongo::BSONObj e = i.next().Obj();
-				Updater::insert("relation", e);
-			}
+			Updater::insertRelation(object);
 			
 			Updater::ensureIndexRelation();
 			Updater::ensureIndexNode();
+			
+			if ( strcmp("SmallMolecule", object.getField("type").toString().c_str()) )
+				Updater::ensureIndexChem();
 			
 		} else {
 			throw DataError("Inserted data not valid");

@@ -79,7 +79,7 @@ namespace unisys {
 				\param justOne compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
 			void ensureIndex(std::string const& collectionNS, mongo::BSONObj keys, bool unique = false, 
-				const string & name = "", bool cache = true, bool background = false, int v = -1) throw (UpdateError);
+				const std::string & name = "", bool cache = true, bool background = false, int v = -1) throw (UpdateError);
 			/**
 				\brief compare cross reference to object in database
 				\param collectionNS boson object of BioObject class
@@ -94,6 +94,13 @@ namespace unisys {
 				\param justOne compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
 			void ensureIndexNode() throw (UpdateError);
+			/**
+				\brief compare cross reference to object in database
+				\param collectionNS boson object of BioObject class
+				\param q compare all cross refernces and if obj is Interaction object, also compare with interactionKey
+				\param justOne compare all cross refernces and if obj is Interaction object, also compare with interactionKey
+			*/
+			void ensureIndexChem() throw (UpdateError);
 		public:
 
 			Updater();
@@ -119,8 +126,14 @@ namespace unisys {
 				\param removeProduct compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
 			void insert(BioObject & object, bool strict) throw (UpdateError, DataError);
-
-
+			/**
+				\brief compare cross reference to object in database
+				\param collectionNS boson object of BioObject class
+				\param id compare all cross refernces and if obj is Interaction object, also compare with interactionKey
+				\param removeRela boson object of BioObject class
+				\param removeProduct compare all cross refernces and if obj is Interaction object, also compare with interactionKey
+			*/
+			void insertRelation(BioObject & object) throw (UpdateError, DataError);
 			/////// remove function
 			/**
 				\brief compare cross reference to object in database
@@ -137,7 +150,7 @@ namespace unisys {
 				\param removeRela boson object of BioObject class
 				\param removeProduct compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void remove(std::string const& collectionNS, std::set<std::string> const& ids, bool removeRela = true, bool removeProduct = true) throw (UpdateError);
+			void remove(std::string const& collectionNS, std::set<std::string> const& ids, bool removeRela = true, bool removeProduct = true) throw (UpdateError, QueryError);
 
 			/////// update function
 			/**

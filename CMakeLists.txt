@@ -71,12 +71,12 @@ SET( unisys_header
 SET( unisys_source
 	${unisys_header}
 #	lib/database/batchInsert.cpp
-	#lib/database/updaterRemove.cpp
+	lib/database/updaterRemove.cpp
 #	lib/database/batchUpdater.cpp
 	#lib/database/updaterUpdate.cpp
-	#lib/database/database.cpp
-	#lib/database/query.cpp
-	#lib/database/updater.cpp
+	lib/database/database.cpp
+	lib/database/query.cpp
+	lib/database/updater.cpp
 	lib/database/updaterInsert.cpp
 	lib/dataclass/literalbson.cpp
 	lib/dataclass/tracking.cpp

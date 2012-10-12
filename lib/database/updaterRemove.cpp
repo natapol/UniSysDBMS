@@ -25,18 +25,28 @@ namespace unisys {
 	
 	
 	
-	void Updater::remove(std::string const& collectionNS, std::string const& id, bool removeRela, bool removeProduct) throw (UpdateError)
+	void Updater::remove(std::string const& collectionNS, std::string const& id, bool removeRela, bool removeProduct) throw (UpdateError, QueryError)
 	{
+		mongo::BSONObj object = Query::queryById(id);
+		if object.isEmpty() {
+			throw QueryError("No data relate with this id");
+		}
 		if (removeRela) {
-			Query q(Updater::databaseHandle);
-			Object tmpObj(q.queryById(collectionNS, id));
-			tmpObj.toBSONObj();
-			Updater::updateRelationDel(tmpObj, removeProduct);
+			try {
+				Updater::remove("relation", mongo::Query("{source: \'" + id + "\'}"), 0);
+				Updater::remove("relation", mongo::Query("{relationWith: \'" + id + "\'}"), 0);
+			} catch (UpdateError &e) {
+				Updater::insertRelation(object);
+				throw UpdateError("Cannot remove ralation document");
+			}
 		}
 		
-		Updater::remove(collectionNS, mongo::Query("{_id: \'" + id + "\'}"), 0);
-		Updater::remove("idpair", mongo::Query("{internal: \'" + id + "\'}"), 0);
-		Updater::remove("idpair", mongo::Query("{_id: \'" + id + "\'}"), 0);
+		try {
+			Updater::remove("node", mongo::Query("{_id: \'" + id + "\'}"), 0);
+		} catch (UpdateError &e) {
+			Updater::insertRelation(object);
+			throw UpdateError("Cannot remove ralation document");
+		}
 	}
 	
 	void Updater::remove(std::string const& collectionNS, std::set<std::string> const& ids, bool removeRela, bool removeProduct) throw (UpdateError)
