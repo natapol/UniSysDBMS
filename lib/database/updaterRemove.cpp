@@ -27,8 +27,11 @@ namespace unisys {
 	
 	void Updater::remove(std::string const& collectionNS, std::string const& id, bool removeRela, bool removeProduct) throw (UpdateError, QueryError)
 	{
-		mongo::BSONObj object = Query::queryById(id);
-		if object.isEmpty() {
+		Query query(Updater::databaseHandle);
+		
+		mongo::BSONObj object = query.queryById(id);
+		
+		if (object.isEmpty()) {
 			throw QueryError("No data relate with this id");
 		}
 		if (removeRela) {
@@ -36,7 +39,7 @@ namespace unisys {
 				Updater::remove("relation", mongo::Query("{source: \'" + id + "\'}"), 0);
 				Updater::remove("relation", mongo::Query("{relationWith: \'" + id + "\'}"), 0);
 			} catch (UpdateError &e) {
-				Updater::insertRelation(object);
+				Updater::insertRelation(BioObject(object));
 				throw UpdateError("Cannot remove ralation document");
 			}
 		}
@@ -44,12 +47,12 @@ namespace unisys {
 		try {
 			Updater::remove("node", mongo::Query("{_id: \'" + id + "\'}"), 0);
 		} catch (UpdateError &e) {
-			Updater::insertRelation(object);
+			Updater::insertRelation(BioObject(object));
 			throw UpdateError("Cannot remove ralation document");
 		}
 	}
 	
-	void Updater::remove(std::string const& collectionNS, std::set<std::string> const& ids, bool removeRela, bool removeProduct) throw (UpdateError)
+	void Updater::remove(std::string const& collectionNS, std::set<std::string> const& ids, bool removeRela, bool removeProduct) throw (UpdateError, QueryError)
 	{
 		std::set<std::string>::const_iterator cit;
 		for (cit = ids.begin(); cit != ids.end(); cit++) {

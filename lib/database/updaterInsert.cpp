@@ -28,7 +28,7 @@ namespace unisys {
 		Updater::insert("tracking", tracking.toBSONObj());
 	}
 	
-	void Updater::insertRelation(BioObject & object) throw (UpdateError, DataError)
+	void Updater::insertRelation(BioObject object) throw (UpdateError, DataError)
 	{
 		mongo::BSONObj beTmp = object.getField("relation").Obj();
 		

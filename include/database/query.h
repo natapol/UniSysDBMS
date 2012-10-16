@@ -61,7 +61,11 @@ namespace unisys {
 			mongo::BSONObj performOne(const std::string &ns, int nToReturn=0, int nToSkip=0, const mongo::BSONObj *fieldsToReturn=0, 
 				int queryOptions=0, int batchSize=0) throw (QueryError);
 				
-			mongo::BSONObj queryById(const std::string &ns, const std::string &id) throw (QueryError);
+			mongo::BSONObj queryById(const std::string &id) throw (QueryError);
+			
+			mongo::BSONObj queryByRef(const std::string &id) throw (QueryError);
+			
+			bool isRedundantcy(BioObject obj, bool strict = true) throw (QueryError);
 	};
 }
 #endif

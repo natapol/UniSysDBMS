@@ -97,6 +97,8 @@ namespace unisys {
 			void setType(std::string const& name);
 		
 		public:
+		
+			BioObject(mongo::BSONObj const& bsonObj);
 			
 			void setMainName(std::string const& name);
 			

@@ -91,31 +91,31 @@ namespace unisys {
 	
 	mongo::BSONObj Query::queryById(const std::string &id) throw (QueryError)
 	{
-		Query::query = BSON( "_id" << id );
+		Query::query = mongo::Query(BSON( "_id" << id ));
 		return Query::performOne("node");
 	}
 	
 	mongo::BSONObj Query::queryByRef(const std::string &id) throw (QueryError)
 	{
-		Query::query = BSON( '$or' << BSON_ARRAY( BSON("dataPrimarySource" << id), BSON("dataXref.id" << id) ) );
-		mongo::BSONObj fieldsToReturn = BSON('_id' << 1)
+		Query::query = BSON( "$or" << BSON_ARRAY( BSON("dataPrimarySource" << id) << BSON("dataXref.id" << id) ) );
+		mongo::BSONObj fieldsToReturn = BSON("_id" << 1);
 		
-		return Query::perform("node", 0, 0, fieldsToReturn);
+		return Query::perform("node", 0, 0, &fieldsToReturn);
 	}
 	
-	bool isRedundantcy(BioObject obj, bool strict = true) const throw (QueryError)
+	bool Query::isRedundantcy(BioObject obj, bool strict) throw (QueryError)
 	{
 		bool redundant = false;
 		
-		std::string main = obj.getStringField("dataPrimarySource")
+		std::string main = obj.getField("dataPrimarySource").toString();
 		
-		if strict {
-			Query::query = BSON( '$or' << BSON_ARRAY( BSON("dataPrimarySource" << id), BSON("dataXref.id" << id) ) );
+		if ( strict ) {
+			Query::query = mongo::Query(BSON( "$or" << BSON_ARRAY( BSON("dataPrimarySource" << main) << BSON("dataXref.id" << main) ) ));
 		} else {
-			Query::query = BSON( "dataPrimarySource" << id );
+			Query::query = mongo::Query(BSON( "dataPrimarySource" << main ));
 		}
 		
-		if !Query::performOne("node").isEmpty()
+		if ( !Query::performOne("node").isEmpty() )
 			redundant = true;
 		
 		
@@ -127,13 +127,13 @@ namespace unisys {
 			
 			std::string id = i.next().Obj().getStringField("id");
 			
-			if strict {
-				Query::query = BSON( '$or' << BSON_ARRAY( BSON("dataPrimarySource" << id), BSON("dataXref.id" << id) ) );
+			if ( strict ) {
+				Query::query = mongo::Query(BSON( "$or" << BSON_ARRAY( BSON("dataPrimarySource" << id) << BSON("dataXref.id" << id) ) ));
 			} else {
-				Query::query = BSON( "dataPrimarySource" << id );
+				Query::query = mongo::Query(BSON( "dataPrimarySource" << id ));
 			}
 			
-			if !Query::performOne("node").isEmpty()
+			if ( !Query::performOne("node").isEmpty() )
 				redundant = true;
 		}
 		

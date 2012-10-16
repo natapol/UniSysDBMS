@@ -33,6 +33,7 @@ OPTION( BUILD_LATEX_DOCUMENTATION "Use Doxygen to create the HTML based API docu
 
 ##CMAKE_C_FLAGS
 ##CMAKE_CXX_FLAGS
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 SET( usisys_header_dir
 	include/database

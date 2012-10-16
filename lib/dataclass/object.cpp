@@ -103,6 +103,12 @@ namespace unisys {
 		BioObject::initField();
 	}
 	
+	BioObject::BioObject(mongo::BSONObj const& bsonObj)
+	{
+		Object::initField();
+		DataObj::addWithOutCheck(bsonObj);
+	}
+	
 	void BioObject::setMainName(std::string const& name)
 	{
 		mongo::BSONObjBuilder tmp;

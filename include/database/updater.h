@@ -133,7 +133,7 @@ namespace unisys {
 				\param removeRela boson object of BioObject class
 				\param removeProduct compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void insertRelation(BioObject & object) throw (UpdateError, DataError);
+			void insertRelation(BioObject object) throw (UpdateError, DataError);
 			/////// remove function
 			/**
 				\brief compare cross reference to object in database
@@ -142,7 +142,7 @@ namespace unisys {
 				\param removeRela boson object of BioObject class
 				\param removeProduct compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void remove(std::string const& collectionNS, std::string const& id, bool removeRela = true, bool removeProduct = true) throw (UpdateError);
+			void remove(std::string const& collectionNS, std::string const& id, bool removeRela = true, bool removeProduct = true) throw (UpdateError, QueryError);
 			/**
 				\brief compare cross reference to object in database
 				\param collectionNS boson object of BioObject class
