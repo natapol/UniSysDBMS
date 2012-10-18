@@ -53,7 +53,7 @@ namespace unisys {
 			Updater::ensureIndexRelation();
 			Updater::ensureIndexNode();
 			
-			if ( strcmp("SmallMolecule", object.getField("type").toString().c_str()) )
+			if ( strcmp("SmallMolecule", object.getField("type").toString().c_str()) != 0 )
 				Updater::ensureIndexChem();
 			
 		} else {
