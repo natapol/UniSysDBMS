@@ -30,13 +30,15 @@ namespace unisys {
 	
 	void Updater::insertRelation(BioObject object) throw (UpdateError, DataError)
 	{
-		mongo::BSONObj beTmp = object.getField("relation").Obj();
+		if (object.hasField("relation")) {
+			mongo::BSONObj beTmp = object.getField("relation").Obj();
 		
-		mongo::BSONObjIterator i(beTmp);
+			mongo::BSONObjIterator i(beTmp);
 		
-		while ( i.more() ) {
-			mongo::BSONObj e = i.next().Obj();
-			Updater::insert("relation", e);
+			while ( i.more() ) {
+				mongo::BSONObj e = i.next().Obj();
+				Updater::insert("relation", e);
+			}
 		}
 	}
 	
