@@ -75,8 +75,8 @@ namespace unisys {
 		
 		boost::xpressive::sregex ns_regex, domain_regex, subdomain_regex, id_regex, dn_regex, urn_regex;
 		{
-			domain_regex = +boost::xpressive::lower;
-			subdomain_regex = +boost::xpressive::lower;
+			domain_regex = +boost::xpressive::set[ boost::xpressive::lower | '-' ];
+			subdomain_regex = +boost::xpressive::set[ boost::xpressive::lower | '-' ];
 			ns_regex = domain_regex | ( domain_regex >> '.' >> subdomain_regex );
 			id_regex = ( +boost::xpressive::set[ _w | '%' | '-' ] | 
 				( +boost::xpressive::upper >> ':' >> +boost::xpressive::set[ _w | '-' ]) ) 
