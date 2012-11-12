@@ -316,7 +316,7 @@ namespace unisys {
 	
 	void Relation::setRelationWith(std::string const& IdRefId)
 	{
-		DataObj::set("relationWith", Miriam(IdRefId).toURI());
+		DataObj::set("relationWith", Miriam(IdRefId).toDBId());
 	}
 	
 	void Relation::setEvidence(Evidence & evidence)
