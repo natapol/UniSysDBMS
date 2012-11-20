@@ -114,7 +114,8 @@ namespace unisys {
 			size_t colonPos = Miriam::id.find(":");
 			std::string tmpid = cleanURLString(Miriam::id);
 			
-			return "urn:miriam:" + Miriam::ns + ":" + tmpid;
+//			return "urn:miriam:" + Miriam::ns + ":" + tmpid;
+			return Miriam::ns + ":" + tmpid;
 		}
 		
 	}
