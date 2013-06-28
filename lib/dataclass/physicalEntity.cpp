@@ -18,7 +18,7 @@ namespace unisys {
 	void PhysicalEntity::initField()
 	{
 		DataObj::addFieldSet("subRegion");
-		DataObj::addFieldSet("CellularLocation");
+		DataObj::addFieldSet("cellularLocation");
 	}
 	
 	PhysicalEntity::PhysicalEntity(): BioObject()

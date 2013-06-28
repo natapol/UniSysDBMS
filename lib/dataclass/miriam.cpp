@@ -79,7 +79,8 @@ namespace unisys {
 			subdomain_regex = +boost::xpressive::set[ boost::xpressive::lower | '-' ];
 			ns_regex = domain_regex | ( domain_regex >> '.' >> subdomain_regex );
 			id_regex = ( +boost::xpressive::set[ _w | '%' | '-' | '.'] | 
-				( +boost::xpressive::upper >> ':' >> +boost::xpressive::set[ _w | '-' | '.']) ) 
+				( +boost::xpressive::upper >> ':' >> +boost::xpressive::set[ _w | '-' | '.']) |
+				( +boost::xpressive::upper >> '_' >> +boost::xpressive::set[ _w | '-' | '.']) ) 
 				>> boost::xpressive::repeat<0,1>( '.' >> +boost::xpressive::range('0','9'));
 			urn_regex = (
 							boost::xpressive::bos >> "urn:miriam:" 
