@@ -125,12 +125,12 @@ namespace unisys {
 	
 	void MolecularInteraction::addLeft(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("left", Miriam(peIdRef).toDBId());
+		Object::addRelation("left", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
 	void MolecularInteraction::addRight(std::string const& peIdRef, double coefficient)
 	{
-		Object::addRelation("right", Miriam(peIdRef).toDBId());
+		Object::addRelation("right", Miriam(peIdRef).toDBId(), coefficient);
 	}
 	
 	

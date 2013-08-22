@@ -42,7 +42,8 @@ namespace unisys {
 		}
 	}
 	
-	void Updater::insert(BioObject & object, bool strict) throw (UpdateError, DataError)
+	//void Updater::insert(BioObject & object, bool strict) throw (UpdateError, DataError)
+	void Updater::insert(BioObject & object) throw (UpdateError, DataError)
 	{
 		if (object.isValid()) {
 			mongo::BSONObj tmp_object = object;
