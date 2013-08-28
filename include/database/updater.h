@@ -126,7 +126,8 @@ namespace unisys {
 				\param removeRela boson object of BioObject class
 				\param removeProduct compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			void insert(BioObject & object, bool strict) throw (UpdateError, DataError);
+			void insert(BioObject & object) throw (UpdateError, DataError);
+			//void insert(BioObject & object, bool strict) throw (UpdateError, DataError);
 			/**
 				\brief compare cross reference to object in database
 				\param collectionNS boson object of BioObject class
