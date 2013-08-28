@@ -51,7 +51,8 @@ namespace unisys {
 				\param obj boson object of BioObject class
 				\param strict compare all cross refernces and if obj is Interaction object, also compare with interactionKey
 			*/
-			bool isRedundantcy(BioObject obj, bool strict = true) const;
+			bool isRedundantcy(BioObject obj) const;
+			//bool isRedundantcy(BioObject obj, bool strict = true) const;
 			/**
 				\brief compare cross reference to object in database compare all cross references to IdPair collection. If found, return true.
 				\param bsonobj boson object of BioObject class

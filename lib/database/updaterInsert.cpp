@@ -46,11 +46,11 @@ namespace unisys {
 	void Updater::insert(BioObject & object) throw (UpdateError, DataError)
 	{
 		if (object.isValid()) {
-			mongo::BSONObj tmp_object = object;
+			mongo::BSONObj tmp_object = object.toBSONObj();
 			
 			tmp_object.removeField("relation");
 			
-			Updater::insert("node", tmp_object.toBSONObj());
+			Updater::insert("node", tmp_object);
 			Updater::insert(object.createTrack());
 			
 			Updater::insertRelation(object);
